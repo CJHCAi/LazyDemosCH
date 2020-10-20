@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LKCommentListReplyContentCell" rowHeight="50" id="KGk-i7-Jjw" customClass="LKCommentListReplyContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYw-O7-5yi">
+                        <rect key="frame" x="56" y="8" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="JR8-WV-z5Y"/>
+                            <constraint firstAttribute="width" constant="17" id="V0T-kP-gIY"/>
+                        </constraints>
+                        <state key="normal" image="head_list_small"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="橘阳菜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyO-IG-6IJ">
+                        <rect key="frame" x="77" y="8" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZN-8I-1HG">
+                        <rect key="frame" x="268" y="8" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="OMU-bg-xeM"/>
+                            <constraint firstAttribute="height" constant="30" id="R29-qj-pJY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="点赞"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="嘿白匪军是一群黑乌想把我们踏在脚底下从英国沿海到西伯利亚嘿世界上红军最强大红军的战士们把刺刀亮要紧紧握住手中枪我们都应当越战越顽强和敌人决死在疆场决死在疆场" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7u-KT-GRW">
+                        <rect key="frame" x="77" y="29" width="183" height="86"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cyO-IG-6IJ" firstAttribute="leading" secondItem="oYw-O7-5yi" secondAttribute="trailing" constant="4" id="Lpm-v9-twf"/>
+                    <constraint firstItem="J7u-KT-GRW" firstAttribute="leading" secondItem="cyO-IG-6IJ" secondAttribute="leading" id="VDt-9h-cyv"/>
+                    <constraint firstItem="cyO-IG-6IJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Zjw-BI-5p2"/>
+                    <constraint firstItem="EZN-8I-1HG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="dN3-H4-Sms"/>
+                    <constraint firstItem="oYw-O7-5yi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="56" id="gCc-61-bB2"/>
+                    <constraint firstItem="oYw-O7-5yi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gfv-LG-MEF"/>
+                    <constraint firstAttribute="trailing" secondItem="EZN-8I-1HG" secondAttribute="trailing" constant="22" id="lz7-xA-iMo"/>
+                    <constraint firstItem="EZN-8I-1HG" firstAttribute="leading" secondItem="J7u-KT-GRW" secondAttribute="trailing" constant="8" id="r2a-2s-0DB"/>
+                    <constraint firstItem="J7u-KT-GRW" firstAttribute="top" secondItem="cyO-IG-6IJ" secondAttribute="bottom" constant="4" id="zaw-DS-peK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="contentLabel" destination="J7u-KT-GRW" id="EJv-0L-FCq"/>
+                <outlet property="iconBtn" destination="oYw-O7-5yi" id="l7p-Wc-Dr5"/>
+                <outlet property="likeBtn" destination="EZN-8I-1HG" id="bwg-YB-NyC"/>
+                <outlet property="userNameLabel" destination="cyO-IG-6IJ" id="udK-s4-mhr"/>
+            </connections>
+            <point key="canvasLocation" x="-140.80000000000001" y="84.557721139430285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="head_list_small" width="34" height="34"/>
+    </resources>
+</document>

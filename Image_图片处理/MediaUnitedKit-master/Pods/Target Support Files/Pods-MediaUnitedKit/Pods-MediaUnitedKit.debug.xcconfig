@@ -1,0 +1,11 @@
+CLANG_MODULES_AUTOLINK = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/UMengAnalytics-NO-IDFA/umsdk_IOS_analyics_no-idfa_v4.2.5" "${PODS_ROOT}/mp3lame-for-ios"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FMDB" "${PODS_ROOT}/Headers/Public/GPUImage" "${PODS_ROOT}/Headers/Public/MMPhotoPicker" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/UMengAnalytics-NO-IDFA" "${PODS_ROOT}/Headers/Public/UUButton" "${PODS_ROOT}/Headers/Public/mp3lame-for-ios"
+LIBRARY_SEARCH_PATHS = $(inherited) "$(PODS_ROOT)/UMengAnalytics-NO-IDFA/**" "${PODS_CONFIGURATION_BUILD_DIR}/FMDB" "${PODS_CONFIGURATION_BUILD_DIR}/GPUImage" "${PODS_CONFIGURATION_BUILD_DIR}/MMPhotoPicker" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/UUButton"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FMDB" -isystem "${PODS_ROOT}/Headers/Public/GPUImage" -isystem "${PODS_ROOT}/Headers/Public/MMPhotoPicker" -isystem "${PODS_ROOT}/Headers/Public/Masonry" -isystem "${PODS_ROOT}/Headers/Public/UMengAnalytics-NO-IDFA" -isystem "${PODS_ROOT}/Headers/Public/UUButton" -isystem "${PODS_ROOT}/Headers/Public/mp3lame-for-ios"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"FMDB" -l"GPUImage" -l"MMPhotoPicker" -l"Masonry" -l"UUButton" -l"sqlite3" -l"z" -framework "AVFoundation" -framework "CoreMedia" -framework "CoreTelephony" -framework "Foundation" -framework "OpenGLES" -framework "Photos" -framework "QuartzCore" -framework "UIKit" -framework "UMMobClick" -framework "lame"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

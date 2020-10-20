@@ -1,0 +1,3 @@
+# xib-storyboard-LocalizedString
+现在很多APP的开发因为要赶进度都采用大量的xib和storyboard, 但是如果是做了国际化的APP,这些界面的国际化如何处理, 一个一个拖线会很麻烦; 
+直接通过category方式,添加IBInspectable修饰重写getter和setter方法会方便一些;

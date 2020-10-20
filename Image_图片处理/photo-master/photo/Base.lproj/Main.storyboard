@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzs-uw-eRd">
+                                <rect key="frame" x="282" y="511" width="36" height="36"/>
+                                <state key="normal" image="photoImg" backgroundImage="photoImg"/>
+                                <connections>
+                                    <action selector="photoButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gB0-gU-IXt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsF-YL-Fus">
+                                <rect key="frame" x="369" y="515" width="32" height="30"/>
+                                <state key="normal" title="save"/>
+                                <connections>
+                                    <action selector="saveButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pnz-f7-48g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7q-tb-nNU">
+                                <rect key="frame" x="213" y="511" width="36" height="36"/>
+                                <state key="normal" image="libImg" backgroundImage="libImg"/>
+                                <connections>
+                                    <action selector="imgButtongTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DjP-iu-tpB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hzs-uw-eRd" firstAttribute="leading" secondItem="E7q-tb-nNU" secondAttribute="trailing" constant="33" id="67L-gH-yPW"/>
+                            <constraint firstItem="BsF-YL-Fus" firstAttribute="leading" secondItem="hzs-uw-eRd" secondAttribute="trailing" constant="51" id="GK9-LI-YyX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BsF-YL-Fus" secondAttribute="bottom" constant="55" id="Gaf-Ns-lRC"/>
+                            <constraint firstItem="hzs-uw-eRd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ROM-uz-aJF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hzs-uw-eRd" secondAttribute="bottom" constant="53" id="o4D-5u-X8d"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E7q-tb-nNU" secondAttribute="bottom" constant="53" id="s0C-yj-fGT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547" y="437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="libImg" width="36" height="36"/>
+        <image name="photoImg" width="36" height="36"/>
+    </resources>
+</document>

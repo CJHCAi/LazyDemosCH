@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		277952101BDCBF050052C825 /* VPNAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2779520F1BDCBF050052C825 /* VPNAccount.m */; };
+		277952141BDD1CC40052C825 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277952131BDD1CC40052C825 /* Security.framework */; };
+		27CA4BEC1BBE88F80026DA27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CA4BEB1BBE88F80026DA27 /* main.m */; };
+		27CA4BEF1BBE88F80026DA27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CA4BEE1BBE88F80026DA27 /* AppDelegate.m */; };
+		27CA4BF21BBE88F80026DA27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CA4BF11BBE88F80026DA27 /* ViewController.m */; };
+		27CA4BF51BBE88F80026DA27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CA4BF31BBE88F80026DA27 /* Main.storyboard */; };
+		27CA4BF71BBE88F80026DA27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CA4BF61BBE88F80026DA27 /* Images.xcassets */; };
+		27CA4BFA1BBE88F80026DA27 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27CA4BF81BBE88F80026DA27 /* LaunchScreen.xib */; };
+		27CA4C061BBE88F80026DA27 /* VPN_AirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CA4C051BBE88F80026DA27 /* VPN_AirTests.m */; };
+		27CA4C3B1BBE8C6A0026DA27 /* ConfigVPN.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CA4C3A1BBE8C6A0026DA27 /* ConfigVPN.m */; };
+		DB3FF8AD20BB03BF00D3327C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3FF8AC20BB03BF00D3327C /* ExternalAccessory.framework */; };
+		DBECB08820BAC12500CEDB62 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBECB08720BAC12500CEDB62 /* NetworkExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27CA4C001BBE88F80026DA27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27CA4BDE1BBE88F80026DA27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27CA4BE51BBE88F80026DA27;
+			remoteInfo = "VPN-Air";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2779520E1BDCBF050052C825 /* VPNAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNAccount.h; sourceTree = "<group>"; };
+		2779520F1BDCBF050052C825 /* VPNAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNAccount.m; sourceTree = "<group>"; };
+		277952131BDD1CC40052C825 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		27CA4BE61BBE88F80026DA27 /* VPN-Air.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VPN-Air.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CA4BEA1BBE88F80026DA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27CA4BEB1BBE88F80026DA27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27CA4BED1BBE88F80026DA27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27CA4BEE1BBE88F80026DA27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27CA4BF01BBE88F80026DA27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		27CA4BF11BBE88F80026DA27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		27CA4BF41BBE88F80026DA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27CA4BF61BBE88F80026DA27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		27CA4BF91BBE88F80026DA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		27CA4BFF1BBE88F80026DA27 /* VPN-AirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VPN-AirTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CA4C041BBE88F80026DA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27CA4C051BBE88F80026DA27 /* VPN_AirTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPN_AirTests.m; sourceTree = "<group>"; };
+		27CA4C391BBE8C6A0026DA27 /* ConfigVPN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ConfigVPN.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		27CA4C3A1BBE8C6A0026DA27 /* ConfigVPN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ConfigVPN.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		27CA4C3D1BBE90CD0026DA27 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		DB3FF8AC20BB03BF00D3327C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		DBECB08720BAC12500CEDB62 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		DBECB08920BAC12500CEDB62 /* VPN-Air.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VPN-Air.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27CA4BE31BBE88F80026DA27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3FF8AD20BB03BF00D3327C /* ExternalAccessory.framework in Frameworks */,
+				277952141BDD1CC40052C825 /* Security.framework in Frameworks */,
+				DBECB08820BAC12500CEDB62 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27CA4BFC1BBE88F80026DA27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27CA4BDD1BBE88F80026DA27 = {
+			isa = PBXGroup;
+			children = (
+				277952131BDD1CC40052C825 /* Security.framework */,
+				27CA4BE81BBE88F80026DA27 /* VPN-Air */,
+				27CA4C021BBE88F80026DA27 /* VPN-AirTests */,
+				27CA4BE71BBE88F80026DA27 /* Products */,
+				DBECB06A20BA974000CEDB62 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27CA4BE71BBE88F80026DA27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27CA4BE61BBE88F80026DA27 /* VPN-Air.app */,
+				27CA4BFF1BBE88F80026DA27 /* VPN-AirTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27CA4BE81BBE88F80026DA27 /* VPN-Air */ = {
+			isa = PBXGroup;
+			children = (
+				DBECB08920BAC12500CEDB62 /* VPN-Air.entitlements */,
+				27CA4BED1BBE88F80026DA27 /* AppDelegate.h */,
+				27CA4BEE1BBE88F80026DA27 /* AppDelegate.m */,
+				27CA4BF01BBE88F80026DA27 /* ViewController.h */,
+				27CA4BF11BBE88F80026DA27 /* ViewController.m */,
+				27CA4C391BBE8C6A0026DA27 /* ConfigVPN.h */,
+				27CA4C3A1BBE8C6A0026DA27 /* ConfigVPN.m */,
+				27CA4C3D1BBE90CD0026DA27 /* Utility.h */,
+				2779520E1BDCBF050052C825 /* VPNAccount.h */,
+				2779520F1BDCBF050052C825 /* VPNAccount.m */,
+				27CA4BE91BBE88F80026DA27 /* Supporting Files */,
+			);
+			path = "VPN-Air";
+			sourceTree = "<group>";
+		};
+		27CA4BE91BBE88F80026DA27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27CA4BF61BBE88F80026DA27 /* Images.xcassets */,
+				27CA4BF31BBE88F80026DA27 /* Main.storyboard */,
+				27CA4BF81BBE88F80026DA27 /* LaunchScreen.xib */,
+				27CA4BEA1BBE88F80026DA27 /* Info.plist */,
+				27CA4BEB1BBE88F80026DA27 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27CA4C021BBE88F80026DA27 /* VPN-AirTests */ = {
+			isa = PBXGroup;
+			children = (
+				27CA4C051BBE88F80026DA27 /* VPN_AirTests.m */,
+				27CA4C031BBE88F80026DA27 /* Supporting Files */,
+			);
+			path = "VPN-AirTests";
+			sourceTree = "<group>";
+		};
+		27CA4C031BBE88F80026DA27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27CA4C041BBE88F80026DA27 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBECB06A20BA974000CEDB62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB3FF8AC20BB03BF00D3327C /* ExternalAccessory.framework */,
+				DBECB08720BAC12500CEDB62 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27CA4BE51BBE88F80026DA27 /* VPN-Air */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27CA4C091BBE88F80026DA27 /* Build configuration list for PBXNativeTarget "VPN-Air" */;
+			buildPhases = (
+				27CA4BE21BBE88F80026DA27 /* Sources */,
+				27CA4BE31BBE88F80026DA27 /* Frameworks */,
+				27CA4BE41BBE88F80026DA27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VPN-Air";
+			productName = "VPN-Air";
+			productReference = 27CA4BE61BBE88F80026DA27 /* VPN-Air.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27CA4BFE1BBE88F80026DA27 /* VPN-AirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27CA4C0C1BBE88F80026DA27 /* Build configuration list for PBXNativeTarget "VPN-AirTests" */;
+			buildPhases = (
+				27CA4BFB1BBE88F80026DA27 /* Sources */,
+				27CA4BFC1BBE88F80026DA27 /* Frameworks */,
+				27CA4BFD1BBE88F80026DA27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27CA4C011BBE88F80026DA27 /* PBXTargetDependency */,
+			);
+			name = "VPN-AirTests";
+			productName = "VPN-AirTests";
+			productReference = 27CA4BFF1BBE88F80026DA27 /* VPN-AirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27CA4BDE1BBE88F80026DA27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ZQP;
+				TargetAttributes = {
+					27CA4BE51BBE88F80026DA27 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = VF8XM5X8U6;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
+					};
+					27CA4BFE1BBE88F80026DA27 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 27CA4BE51BBE88F80026DA27;
+					};
+				};
+			};
+			buildConfigurationList = 27CA4BE11BBE88F80026DA27 /* Build configuration list for PBXProject "VPN-Air" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27CA4BDD1BBE88F80026DA27;
+			productRefGroup = 27CA4BE71BBE88F80026DA27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27CA4BE51BBE88F80026DA27 /* VPN-Air */,
+				27CA4BFE1BBE88F80026DA27 /* VPN-AirTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27CA4BE41BBE88F80026DA27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CA4BF51BBE88F80026DA27 /* Main.storyboard in Resources */,
+				27CA4BFA1BBE88F80026DA27 /* LaunchScreen.xib in Resources */,
+				27CA4BF71BBE88F80026DA27 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27CA4BFD1BBE88F80026DA27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27CA4BE21BBE88F80026DA27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CA4BF21BBE88F80026DA27 /* ViewController.m in Sources */,
+				277952101BDCBF050052C825 /* VPNAccount.m in Sources */,
+				27CA4BEF1BBE88F80026DA27 /* AppDelegate.m in Sources */,
+				27CA4C3B1BBE8C6A0026DA27 /* ConfigVPN.m in Sources */,
+				27CA4BEC1BBE88F80026DA27 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27CA4BFB1BBE88F80026DA27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CA4C061BBE88F80026DA27 /* VPN_AirTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27CA4C011BBE88F80026DA27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27CA4BE51BBE88F80026DA27 /* VPN-Air */;
+			targetProxy = 27CA4C001BBE88F80026DA27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27CA4BF31BBE88F80026DA27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27CA4BF41BBE88F80026DA27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27CA4BF81BBE88F80026DA27 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27CA4BF91BBE88F80026DA27 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27CA4C071BBE88F80026DA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		27CA4C081BBE88F80026DA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27CA4C0A1BBE88F80026DA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "VPN-Air/VPN-Air.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF8XM5X8U6;
+				INFOPLIST_FILE = "VPN-Air/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CH.zqp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		27CA4C0B1BBE88F80026DA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "VPN-Air/VPN-Air.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF8XM5X8U6;
+				INFOPLIST_FILE = "VPN-Air/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CH.zqp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		27CA4C0D1BBE88F80026DA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VPN-AirTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VPN-Air.app/VPN-Air";
+			};
+			name = Debug;
+		};
+		27CA4C0E1BBE88F80026DA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VPN-AirTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VPN-Air.app/VPN-Air";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27CA4BE11BBE88F80026DA27 /* Build configuration list for PBXProject "VPN-Air" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27CA4C071BBE88F80026DA27 /* Debug */,
+				27CA4C081BBE88F80026DA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27CA4C091BBE88F80026DA27 /* Build configuration list for PBXNativeTarget "VPN-Air" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27CA4C0A1BBE88F80026DA27 /* Debug */,
+				27CA4C0B1BBE88F80026DA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27CA4C0C1BBE88F80026DA27 /* Build configuration list for PBXNativeTarget "VPN-AirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27CA4C0D1BBE88F80026DA27 /* Debug */,
+				27CA4C0E1BBE88F80026DA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27CA4BDE1BBE88F80026DA27 /* Project object */;
+}
