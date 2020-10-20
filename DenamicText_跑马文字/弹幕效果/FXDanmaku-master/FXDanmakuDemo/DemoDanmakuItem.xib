@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DemoDanmakuItem">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="danmaku_item_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Gyh-kT-nUF">
+                    <rect key="frame" x="0.0" y="0.0" width="96" height="40"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xd9-J5-GIG">
+                    <rect key="frame" x="5" y="5" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="6oY-hI-yVU"/>
+                        <constraint firstAttribute="width" constant="30" id="thn-i0-eoD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1O-fo-B43">
+                    <rect key="frame" x="43" y="10" width="45" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xd9-J5-GIG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3My-8f-TgR"/>
+                <constraint firstItem="b1O-fo-B43" firstAttribute="centerY" secondItem="xd9-J5-GIG" secondAttribute="centerY" id="9Gb-Pl-ke8"/>
+                <constraint firstItem="Gyh-kT-nUF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IuB-jU-dMi"/>
+                <constraint firstItem="xd9-J5-GIG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="N1j-Fa-d3X"/>
+                <constraint firstItem="b1O-fo-B43" firstAttribute="leading" secondItem="xd9-J5-GIG" secondAttribute="trailing" constant="8" id="SDb-94-Csn"/>
+                <constraint firstAttribute="bottom" secondItem="Gyh-kT-nUF" secondAttribute="bottom" id="UmS-ii-59F"/>
+                <constraint firstItem="Gyh-kT-nUF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WRD-vF-TRN"/>
+                <constraint firstAttribute="trailing" secondItem="b1O-fo-B43" secondAttribute="trailing" constant="8" id="r2e-iY-tKX"/>
+                <constraint firstAttribute="trailing" secondItem="Gyh-kT-nUF" secondAttribute="trailing" id="rSr-ci-DwA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="Identifier" value="DemoItemIdentifier"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="avatarHeightConst" destination="6oY-hI-yVU" id="GX7-bQ-GX6"/>
+                <outlet property="avatarImageView" destination="xd9-J5-GIG" id="YG0-Oy-wS2"/>
+                <outlet property="avatarWidthConst" destination="thn-i0-eoD" id="IVx-uR-2TA"/>
+                <outlet property="descLabel" destination="b1O-fo-B43" id="3QR-3y-U5M"/>
+            </connections>
+            <point key="canvasLocation" x="74" y="-85"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="danmaku_item_bg" width="60" height="40"/>
+    </resources>
+</document>

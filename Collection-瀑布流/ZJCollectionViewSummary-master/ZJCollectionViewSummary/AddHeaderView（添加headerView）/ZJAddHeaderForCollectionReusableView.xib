@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="ZJAddHeaderForCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PCS-RJ-hpv">
+                    <rect key="frame" x="10" y="10" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Xvr-tv-pRP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adidas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alh-mv-V2s">
+                    <rect key="frame" x="120" y="20" width="190" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="X0b-EV-FGk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40G-KC-Hm2">
+                    <rect key="frame" x="120" y="41" width="190" height="69"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="40G-KC-Hm2" secondAttribute="bottom" constant="10" id="0zh-49-zz2"/>
+                <constraint firstAttribute="trailing" secondItem="40G-KC-Hm2" secondAttribute="trailing" constant="10" id="17q-Dn-Qhp"/>
+                <constraint firstItem="PCS-RJ-hpv" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="6jY-QQ-U0P"/>
+                <constraint firstAttribute="trailing" secondItem="alh-mv-V2s" secondAttribute="trailing" constant="10" id="DS2-Sx-ZS6"/>
+                <constraint firstItem="PCS-RJ-hpv" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="GGD-hQ-hVp"/>
+                <constraint firstAttribute="bottom" secondItem="PCS-RJ-hpv" secondAttribute="bottom" constant="10" id="NQE-im-MFC"/>
+                <constraint firstItem="40G-KC-Hm2" firstAttribute="leading" secondItem="PCS-RJ-hpv" secondAttribute="trailing" constant="10" id="QaH-sk-Czs"/>
+                <constraint firstItem="alh-mv-V2s" firstAttribute="leading" secondItem="PCS-RJ-hpv" secondAttribute="trailing" constant="10" id="Rxj-Ls-Drb"/>
+                <constraint firstItem="alh-mv-V2s" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="20" id="SZH-de-S4S"/>
+                <constraint firstItem="40G-KC-Hm2" firstAttribute="top" secondItem="alh-mv-V2s" secondAttribute="bottom" id="Zyf-1S-Sbc"/>
+            </constraints>
+            <connections>
+                <outlet property="detailL" destination="40G-KC-Hm2" id="wZR-o0-djt"/>
+                <outlet property="imageV" destination="PCS-RJ-hpv" id="JVH-wm-3be"/>
+                <outlet property="titleL" destination="alh-mv-V2s" id="tFS-K0-8qh"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="36"/>
+        </collectionReusableView>
+    </objects>
+</document>
