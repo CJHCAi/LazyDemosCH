@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMGMyLotteryViewController">
+            <connections>
+                <outlet property="loginBtn" destination="vVk-fo-0fd" id="DWt-yb-D6A"/>
+                <outlet property="view" destination="iN0-l3-epB" id="iZW-3N-qE6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="xgM-vW-N4M">
+                    <rect key="frame" x="61" y="22" width="239" height="220"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="239" id="DSv-RN-zSF"/>
+                        <constraint firstAttribute="height" constant="220" id="GSi-pf-ra1"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVk-fo-0fd">
+                    <rect key="frame" x="40" y="319" width="295" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                    <state key="normal" title=" 登录" backgroundImage="RedButton">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedButton" translatesAutoresizingMaskIntoConstraints="NO" id="cpp-vo-dfG">
+                    <rect key="frame" x="40" y="366" width="300" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xgM-vW-N4M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="V7K-GB-e1K"/>
+                <constraint firstItem="xgM-vW-N4M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="61" id="smv-gl-Q7m"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="LoginScreen" width="296" height="138"/>
+        <image name="RedButton" width="61" height="34"/>
+    </resources>
+</document>

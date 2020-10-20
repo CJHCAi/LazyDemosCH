@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  SXT
+//
+//  Created by 赵金鹏 on 16/8/10.
+//  Copyright © 2016年 赵金鹏. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define MainColor [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1]
+#define VIEW_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define VIEW_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+
+#ifdef DEBUG        //判断是不是开发、调试状态，如果是开发、调试状态，就让SXTLog替换NSLog
+#define SXTLog(...) NSLog(__VA_ARGS__)      //SXTLog是不限制参数的，中间用三个英文句号表示
+#elif               //如果是发布状态SXTLog就直接为空
+#define SXTLog(...)
+#endif
+
+
+#import <Masonry.h>
+
+#endif /* PrefixHeader_pch */

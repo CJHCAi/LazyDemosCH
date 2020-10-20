@@ -1,0 +1,41 @@
+//
+//  PrefixHeader.pch
+//  集成GPUImage2
+//
+//  Created by 七啸网络 on 2017/8/23.
+//  Copyright © 2017年 youbei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <GPUImage.h>
+#import "UIView+Extension.h"
+#import "UIColor+Hex.h"
+#import "Masonry.h"
+
+//弱引用防止循环引用
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+//适配
+#define MatchWidth(X) X * [UIScreen mainScreen].bounds.size.width/414.0
+#define MatchHeight(Y) Y * ([UIScreen mainScreen].bounds.size.height/736.0)
+
+#define MatchW(X) X * [UIScreen mainScreen].bounds.size.width/375.0
+#define MatchH(Y) Y * [UIScreen mainScreen].bounds.size.height/667.0
+
+//屏宽屏高
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+//弧度
+#define Angle2Radian(angle) ((angle) / 180.0 * M_PI)
+
+//自定义LOG
+#ifdef DEBUG
+# define DLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+# define DLog(...)
+#endif
+
+#endif /* PrefixHeader_pch */
