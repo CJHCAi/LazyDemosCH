@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE415A9A2180507800405D28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE415A992180507800405D28 /* AppDelegate.m */; };
+		FE415A9D2180507900405D28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE415A9C2180507900405D28 /* ViewController.m */; };
+		FE415AA02180507900405D28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE415A9E2180507900405D28 /* Main.storyboard */; };
+		FE415AA22180507A00405D28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE415AA12180507A00405D28 /* Assets.xcassets */; };
+		FE415AA52180507A00405D28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE415AA32180507A00405D28 /* LaunchScreen.storyboard */; };
+		FE415AA82180507A00405D28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE415AA72180507A00405D28 /* main.m */; };
+		FE415AB22180507A00405D28 /* SKVoiceWaveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE415AB12180507A00405D28 /* SKVoiceWaveTests.m */; };
+		FE415ABD2180507A00405D28 /* SKVoiceWaveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE415ABC2180507A00405D28 /* SKVoiceWaveUITests.m */; };
+		FE415ACD218050E800405D28 /* SKVoiceWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE415ACC218050E800405D28 /* SKVoiceWaveView.m */; };
+		FE415AD02180516000405D28 /* SKVoiceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE415ACF2180516000405D28 /* SKVoiceFilter.m */; };
+		FE415AD32180518200405D28 /* SKVoiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FE415AD22180518200405D28 /* SKVoiceProvider.m */; };
+		FE415AD82180548400405D28 /* 李荣浩 - 老街.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE415AD52180548300405D28 /* 李荣浩 - 老街.mp3 */; };
+		FE415AD92180548400405D28 /* keys.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE415AD62180548300405D28 /* keys.mp3 */; };
+		FE415ADA2180548400405D28 /* beat.aiff in Resources */ = {isa = PBXBuildFile; fileRef = FE415AD72180548400405D28 /* beat.aiff */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE415AAE2180507A00405D28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE415A8D2180507800405D28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE415A942180507800405D28;
+			remoteInfo = SKVoiceWave;
+		};
+		FE415AB92180507A00405D28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE415A8D2180507800405D28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE415A942180507800405D28;
+			remoteInfo = SKVoiceWave;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE415A952180507800405D28 /* SKVoiceWave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKVoiceWave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE415A982180507800405D28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE415A992180507800405D28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE415A9B2180507900405D28 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FE415A9C2180507900405D28 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FE415A9F2180507900405D28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE415AA12180507A00405D28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE415AA42180507A00405D28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE415AA62180507A00405D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE415AA72180507A00405D28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE415AAD2180507A00405D28 /* SKVoiceWaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKVoiceWaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE415AB12180507A00405D28 /* SKVoiceWaveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKVoiceWaveTests.m; sourceTree = "<group>"; };
+		FE415AB32180507A00405D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE415AB82180507A00405D28 /* SKVoiceWaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKVoiceWaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE415ABC2180507A00405D28 /* SKVoiceWaveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKVoiceWaveUITests.m; sourceTree = "<group>"; };
+		FE415ABE2180507A00405D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE415ACB218050E800405D28 /* SKVoiceWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKVoiceWaveView.h; sourceTree = "<group>"; };
+		FE415ACC218050E800405D28 /* SKVoiceWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKVoiceWaveView.m; sourceTree = "<group>"; };
+		FE415ACE2180516000405D28 /* SKVoiceFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKVoiceFilter.h; sourceTree = "<group>"; };
+		FE415ACF2180516000405D28 /* SKVoiceFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKVoiceFilter.m; sourceTree = "<group>"; };
+		FE415AD12180518200405D28 /* SKVoiceProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKVoiceProvider.h; sourceTree = "<group>"; };
+		FE415AD22180518200405D28 /* SKVoiceProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKVoiceProvider.m; sourceTree = "<group>"; };
+		FE415AD52180548300405D28 /* 李荣浩 - 老街.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "李荣浩 - 老街.mp3"; sourceTree = "<group>"; };
+		FE415AD62180548300405D28 /* keys.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = keys.mp3; sourceTree = "<group>"; };
+		FE415AD72180548400405D28 /* beat.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = beat.aiff; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE415A922180507800405D28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE415AAA2180507A00405D28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE415AB52180507A00405D28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE415A8C2180507800405D28 = {
+			isa = PBXGroup;
+			children = (
+				FE415AD42180547000405D28 /* Resource */,
+				FE415ACA218050CA00405D28 /* SKVoiceWaveView */,
+				FE415A972180507800405D28 /* SKVoiceWave */,
+				FE415AB02180507A00405D28 /* SKVoiceWaveTests */,
+				FE415ABB2180507A00405D28 /* SKVoiceWaveUITests */,
+				FE415A962180507800405D28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE415A962180507800405D28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE415A952180507800405D28 /* SKVoiceWave.app */,
+				FE415AAD2180507A00405D28 /* SKVoiceWaveTests.xctest */,
+				FE415AB82180507A00405D28 /* SKVoiceWaveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE415A972180507800405D28 /* SKVoiceWave */ = {
+			isa = PBXGroup;
+			children = (
+				FE415A982180507800405D28 /* AppDelegate.h */,
+				FE415A992180507800405D28 /* AppDelegate.m */,
+				FE415A9B2180507900405D28 /* ViewController.h */,
+				FE415A9C2180507900405D28 /* ViewController.m */,
+				FE415A9E2180507900405D28 /* Main.storyboard */,
+				FE415AA12180507A00405D28 /* Assets.xcassets */,
+				FE415AA32180507A00405D28 /* LaunchScreen.storyboard */,
+				FE415AA62180507A00405D28 /* Info.plist */,
+				FE415AA72180507A00405D28 /* main.m */,
+			);
+			path = SKVoiceWave;
+			sourceTree = "<group>";
+		};
+		FE415AB02180507A00405D28 /* SKVoiceWaveTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE415AB12180507A00405D28 /* SKVoiceWaveTests.m */,
+				FE415AB32180507A00405D28 /* Info.plist */,
+			);
+			path = SKVoiceWaveTests;
+			sourceTree = "<group>";
+		};
+		FE415ABB2180507A00405D28 /* SKVoiceWaveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE415ABC2180507A00405D28 /* SKVoiceWaveUITests.m */,
+				FE415ABE2180507A00405D28 /* Info.plist */,
+			);
+			path = SKVoiceWaveUITests;
+			sourceTree = "<group>";
+		};
+		FE415ACA218050CA00405D28 /* SKVoiceWaveView */ = {
+			isa = PBXGroup;
+			children = (
+				FE415ACB218050E800405D28 /* SKVoiceWaveView.h */,
+				FE415ACC218050E800405D28 /* SKVoiceWaveView.m */,
+				FE415ACE2180516000405D28 /* SKVoiceFilter.h */,
+				FE415ACF2180516000405D28 /* SKVoiceFilter.m */,
+				FE415AD12180518200405D28 /* SKVoiceProvider.h */,
+				FE415AD22180518200405D28 /* SKVoiceProvider.m */,
+			);
+			path = SKVoiceWaveView;
+			sourceTree = "<group>";
+		};
+		FE415AD42180547000405D28 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FE415AD52180548300405D28 /* 李荣浩 - 老街.mp3 */,
+				FE415AD72180548400405D28 /* beat.aiff */,
+				FE415AD62180548300405D28 /* keys.mp3 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE415A942180507800405D28 /* SKVoiceWave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE415AC12180507A00405D28 /* Build configuration list for PBXNativeTarget "SKVoiceWave" */;
+			buildPhases = (
+				FE415A912180507800405D28 /* Sources */,
+				FE415A922180507800405D28 /* Frameworks */,
+				FE415A932180507800405D28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKVoiceWave;
+			productName = SKVoiceWave;
+			productReference = FE415A952180507800405D28 /* SKVoiceWave.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE415AAC2180507A00405D28 /* SKVoiceWaveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE415AC42180507A00405D28 /* Build configuration list for PBXNativeTarget "SKVoiceWaveTests" */;
+			buildPhases = (
+				FE415AA92180507A00405D28 /* Sources */,
+				FE415AAA2180507A00405D28 /* Frameworks */,
+				FE415AAB2180507A00405D28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE415AAF2180507A00405D28 /* PBXTargetDependency */,
+			);
+			name = SKVoiceWaveTests;
+			productName = SKVoiceWaveTests;
+			productReference = FE415AAD2180507A00405D28 /* SKVoiceWaveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE415AB72180507A00405D28 /* SKVoiceWaveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE415AC72180507A00405D28 /* Build configuration list for PBXNativeTarget "SKVoiceWaveUITests" */;
+			buildPhases = (
+				FE415AB42180507A00405D28 /* Sources */,
+				FE415AB52180507A00405D28 /* Frameworks */,
+				FE415AB62180507A00405D28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE415ABA2180507A00405D28 /* PBXTargetDependency */,
+			);
+			name = SKVoiceWaveUITests;
+			productName = SKVoiceWaveUITests;
+			productReference = FE415AB82180507A00405D28 /* SKVoiceWaveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE415A8D2180507800405D28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "SK-HU";
+				TargetAttributes = {
+					FE415A942180507800405D28 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					FE415AAC2180507A00405D28 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FE415A942180507800405D28;
+					};
+					FE415AB72180507A00405D28 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FE415A942180507800405D28;
+					};
+				};
+			};
+			buildConfigurationList = FE415A902180507800405D28 /* Build configuration list for PBXProject "SKVoiceWave" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE415A8C2180507800405D28;
+			productRefGroup = FE415A962180507800405D28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE415A942180507800405D28 /* SKVoiceWave */,
+				FE415AAC2180507A00405D28 /* SKVoiceWaveTests */,
+				FE415AB72180507A00405D28 /* SKVoiceWaveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE415A932180507800405D28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE415AA52180507A00405D28 /* LaunchScreen.storyboard in Resources */,
+				FE415AD92180548400405D28 /* keys.mp3 in Resources */,
+				FE415AD82180548400405D28 /* 李荣浩 - 老街.mp3 in Resources */,
+				FE415ADA2180548400405D28 /* beat.aiff in Resources */,
+				FE415AA22180507A00405D28 /* Assets.xcassets in Resources */,
+				FE415AA02180507900405D28 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE415AAB2180507A00405D28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE415AB62180507A00405D28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE415A912180507800405D28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE415A9D2180507900405D28 /* ViewController.m in Sources */,
+				FE415AD32180518200405D28 /* SKVoiceProvider.m in Sources */,
+				FE415AA82180507A00405D28 /* main.m in Sources */,
+				FE415AD02180516000405D28 /* SKVoiceFilter.m in Sources */,
+				FE415ACD218050E800405D28 /* SKVoiceWaveView.m in Sources */,
+				FE415A9A2180507800405D28 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE415AA92180507A00405D28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE415AB22180507A00405D28 /* SKVoiceWaveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE415AB42180507A00405D28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE415ABD2180507A00405D28 /* SKVoiceWaveUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE415AAF2180507A00405D28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE415A942180507800405D28 /* SKVoiceWave */;
+			targetProxy = FE415AAE2180507A00405D28 /* PBXContainerItemProxy */;
+		};
+		FE415ABA2180507A00405D28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE415A942180507800405D28 /* SKVoiceWave */;
+			targetProxy = FE415AB92180507A00405D28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE415A9E2180507900405D28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE415A9F2180507900405D28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE415AA32180507A00405D28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE415AA42180507A00405D28 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE415ABF2180507A00405D28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE415AC02180507A00405D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE415AC22180507A00405D28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SKVoiceWave/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SKVoiceWave.SKVoiceWave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE415AC32180507A00405D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SKVoiceWave/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SKVoiceWave.SKVoiceWave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE415AC52180507A00405D28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SKVoiceWaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SKVoiceWave.SKVoiceWaveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKVoiceWave.app/SKVoiceWave";
+			};
+			name = Debug;
+		};
+		FE415AC62180507A00405D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SKVoiceWaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SKVoiceWave.SKVoiceWaveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKVoiceWave.app/SKVoiceWave";
+			};
+			name = Release;
+		};
+		FE415AC82180507A00405D28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SKVoiceWaveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SKVoiceWave.SKVoiceWaveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SKVoiceWave;
+			};
+			name = Debug;
+		};
+		FE415AC92180507A00405D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SKVoiceWaveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SKVoiceWave.SKVoiceWaveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SKVoiceWave;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE415A902180507800405D28 /* Build configuration list for PBXProject "SKVoiceWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE415ABF2180507A00405D28 /* Debug */,
+				FE415AC02180507A00405D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE415AC12180507A00405D28 /* Build configuration list for PBXNativeTarget "SKVoiceWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE415AC22180507A00405D28 /* Debug */,
+				FE415AC32180507A00405D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE415AC42180507A00405D28 /* Build configuration list for PBXNativeTarget "SKVoiceWaveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE415AC52180507A00405D28 /* Debug */,
+				FE415AC62180507A00405D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE415AC72180507A00405D28 /* Build configuration list for PBXNativeTarget "SKVoiceWaveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE415AC82180507A00405D28 /* Debug */,
+				FE415AC92180507A00405D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE415A8D2180507800405D28 /* Project object */;
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WelcomeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="Cnv-vi-h5E">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compose_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="exj-xd-ile">
+                    <rect key="frame" x="110" y="100" width="154" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="154" id="JNN-7J-8XG"/>
+                        <constraint firstAttribute="height" constant="48" id="O9Z-UF-MsC"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doubi" translatesAutoresizingMaskIntoConstraints="NO" id="yiL-a7-tAx">
+                    <rect key="frame" x="137" y="74" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="U4G-SG-7Xx"/>
+                        <constraint firstAttribute="width" constant="100" id="uhX-uk-N3Z"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPV-Xj-ZX2">
+                    <rect key="frame" x="153" y="189" width="68" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="bCR-TB-ayM"/>
+                        <constraint firstAttribute="height" constant="21" id="skr-ap-AuV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zPV-Xj-ZX2" firstAttribute="top" secondItem="yiL-a7-tAx" secondAttribute="bottom" constant="15" id="AV8-4H-lpj"/>
+                <constraint firstAttribute="centerX" secondItem="exj-xd-ile" secondAttribute="centerX" id="JhI-O1-zb8"/>
+                <constraint firstItem="exj-xd-ile" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="Kpt-UF-4MD"/>
+                <constraint firstItem="yiL-a7-tAx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="74" id="NEZ-eu-xu5"/>
+                <constraint firstAttribute="trailing" secondItem="Cnv-vi-h5E" secondAttribute="trailing" id="ZBr-Jb-BR8"/>
+                <constraint firstAttribute="centerX" secondItem="zPV-Xj-ZX2" secondAttribute="centerX" id="bd7-xk-Wga"/>
+                <constraint firstAttribute="bottom" secondItem="Cnv-vi-h5E" secondAttribute="bottom" id="dZc-MG-cHi"/>
+                <constraint firstItem="Cnv-vi-h5E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hjb-Ka-mpV"/>
+                <constraint firstAttribute="centerX" secondItem="yiL-a7-tAx" secondAttribute="centerX" id="odL-8v-7Zj"/>
+                <constraint firstItem="Cnv-vi-h5E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xCV-YV-qDa"/>
+            </constraints>
+            <connections>
+                <outlet property="iconView" destination="yiL-a7-tAx" id="OQ3-uH-3rF"/>
+                <outlet property="sloganView" destination="exj-xd-ile" id="iL6-jx-mCx"/>
+                <outlet property="textView" destination="zPV-Xj-ZX2" id="l7o-QN-F43"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad_background" width="320" height="480"/>
+        <image name="compose_slogan" width="154" height="48"/>
+        <image name="doubi" width="200" height="200"/>
+    </resources>
+</document>

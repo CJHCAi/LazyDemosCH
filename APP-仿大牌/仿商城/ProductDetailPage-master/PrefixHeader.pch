@@ -1,0 +1,58 @@
+//
+//  PrefixHeader.pch
+//  ProductDetailPage
+//
+//  Created by 方绍晟 on 2018/8/13.
+//  Copyright © 2018年 fss_someThing. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Masonry.h"
+#import "UIView+YYAdd.h"
+#import "YYModel.h"
+#import "UIScreen+Additions.h"
+#import "UIImageView+YYWebImage.h"
+
+/**
+ 商品详情处section
+ */
+typedef NS_ENUM(NSUInteger, GoodDetailSectionType) {
+    GoodDetailSectionTypeBasicInfo, // 基础信息
+    GoodDetailSectionTypeComment, // 评论行
+    GoodDetailSectionTypeReCommend, // 为您推荐行
+};
+
+
+
+//是否为空或是[NSNull null]
+#define NotNilAndNull(_ref)  (((_ref) != nil) && (![(_ref) isEqual:[NSNull null]]))
+#define IsNilOrNull(_ref)   (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]))
+
+//字符串是否为空
+#define IsStrEmpty(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref)isEqualToString:@""]))
+//数组是否为空
+#define IsArrEmpty(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref) count] == 0))
+
+#define IsDictionaryClass(_ref)     (!IsNilOrNull(_ref) && ([(_ref) isKindOfClass:[NSDictionary class]]))
+#define IsArrayClass(_ref)          (!IsNilOrNull(_ref) && ([(_ref) isKindOfClass:[NSArray class]]))
+
+
+// main screen's width (portrait)
+#ifndef kScreenWidth
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#endif
+
+// main screen's height (portrait)
+#ifndef kScreenHeight
+#define kScreenHeight  [UIScreen mainScreen].bounds.size.height
+#endif
+
+
+/** color **/
+#define ColorWithHex(rgbValue) ([UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0])
+#define ColorWithHexAlpha(rgbValue,a) ([UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)])
+
+
+#endif /* PrefixHeader_pch */

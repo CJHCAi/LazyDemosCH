@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11355C2F9AF336CA04EFACCF /* Pods_Douban_today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83900C6A45A7F68A52B3CE33 /* Pods_Douban_today.framework */; };
+		436D0E57B7EEADAA88D4F686 /* Pods_Douban_todayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFC7BF30E638C5C402017BD /* Pods_Douban_todayTests.framework */; };
+		9600EAEE20FDC69400627338 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9600EAED20FDC69400627338 /* AppDelegate.m */; };
+		9600EAF120FDC69400627338 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9600EAF020FDC69400627338 /* ViewController.m */; };
+		9600EAF420FDC69400627338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9600EAF220FDC69400627338 /* Main.storyboard */; };
+		9600EAF620FDC69500627338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9600EAF520FDC69500627338 /* Assets.xcassets */; };
+		9600EAF920FDC69500627338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9600EAF720FDC69500627338 /* LaunchScreen.storyboard */; };
+		9600EAFC20FDC69500627338 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9600EAFB20FDC69500627338 /* main.m */; };
+		9600EB0620FDC69500627338 /* Douban_todayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9600EB0520FDC69500627338 /* Douban_todayTests.m */; };
+		9600EB1120FDC69500627338 /* Douban_todayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9600EB1020FDC69500627338 /* Douban_todayUITests.m */; };
+		9616CC2E20FEDFBF00AE2632 /* DouTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616CC2D20FEDFBF00AE2632 /* DouTodayViewController.m */; };
+		9616CC3120FEE21000AE2632 /* DouFilmInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616CC3020FEE21000AE2632 /* DouFilmInfoViewController.m */; };
+		9616CC3920FEE2A700AE2632 /* DzwSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616CC3620FEE2A700AE2632 /* DzwSessionManager.m */; };
+		9616CC3A20FEE2A700AE2632 /* DzwBaseNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616CC3720FEE2A700AE2632 /* DzwBaseNetWork.m */; };
+		9616CC3E20FEE42200AE2632 /* MainTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616CC3D20FEE42200AE2632 /* MainTabbarViewController.m */; };
+		9616CC4320FEEA4600AE2632 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616CC4220FEEA4600AE2632 /* Utils.m */; };
+		9616CC4620FEEB3B00AE2632 /* TodayTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616CC4520FEEB3B00AE2632 /* TodayTransition.m */; };
+		9616CC4920FEEBA000AE2632 /* DouTodayFilmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616CC4820FEEBA000AE2632 /* DouTodayFilmCell.m */; };
+		9616CC4C20FEEC8500AE2632 /* DzwSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616CC4A20FEEC8400AE2632 /* DzwSingleton.m */; };
+		9616CC5D20FF385500AE2632 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616CC5C20FF385500AE2632 /* MovieModel.m */; };
+		9637EBA620FF87F000FFFD48 /* MovieInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9637EBA520FF87F000FFFD48 /* MovieInfoModel.m */; };
+		CBAC4B6DF79E85DD0C36121A /* Pods_Douban_todayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB81AC56AEB613E65F5FAEFB /* Pods_Douban_todayUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9600EB0220FDC69500627338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9600EAE120FDC69400627338 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9600EAE820FDC69400627338;
+			remoteInfo = "Douban-today";
+		};
+		9600EB0D20FDC69500627338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9600EAE120FDC69400627338 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9600EAE820FDC69400627338;
+			remoteInfo = "Douban-today";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0570E18EF88521EC7F0B314D /* Pods-Douban-today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douban-today.release.xcconfig"; path = "Pods/Target Support Files/Pods-Douban-today/Pods-Douban-today.release.xcconfig"; sourceTree = "<group>"; };
+		81B49DE314FE9146A9B7B7A0 /* Pods-Douban-todayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douban-todayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Douban-todayTests/Pods-Douban-todayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		83900C6A45A7F68A52B3CE33 /* Pods_Douban_today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Douban_today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B1035216B2A339DE6EC1DC /* Pods-Douban-todayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douban-todayUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Douban-todayUITests/Pods-Douban-todayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9600EAE920FDC69400627338 /* Douban-today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Douban-today.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9600EAEC20FDC69400627338 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9600EAED20FDC69400627338 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9600EAEF20FDC69400627338 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9600EAF020FDC69400627338 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9600EAF320FDC69400627338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9600EAF520FDC69500627338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9600EAF820FDC69500627338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9600EAFA20FDC69500627338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9600EAFB20FDC69500627338 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9600EB0120FDC69500627338 /* Douban-todayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Douban-todayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9600EB0520FDC69500627338 /* Douban_todayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Douban_todayTests.m; sourceTree = "<group>"; };
+		9600EB0720FDC69500627338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9600EB0C20FDC69500627338 /* Douban-todayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Douban-todayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9600EB1020FDC69500627338 /* Douban_todayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Douban_todayUITests.m; sourceTree = "<group>"; };
+		9600EB1220FDC69500627338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9616CC2C20FEDFBF00AE2632 /* DouTodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouTodayViewController.h; sourceTree = "<group>"; };
+		9616CC2D20FEDFBF00AE2632 /* DouTodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouTodayViewController.m; sourceTree = "<group>"; };
+		9616CC2F20FEE21000AE2632 /* DouFilmInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouFilmInfoViewController.h; sourceTree = "<group>"; };
+		9616CC3020FEE21000AE2632 /* DouFilmInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouFilmInfoViewController.m; sourceTree = "<group>"; };
+		9616CC3320FEE2A700AE2632 /* DzwSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DzwSessionManager.h; sourceTree = "<group>"; };
+		9616CC3420FEE2A700AE2632 /* DzwBaseNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DzwBaseNetWork.h; sourceTree = "<group>"; };
+		9616CC3620FEE2A700AE2632 /* DzwSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DzwSessionManager.m; sourceTree = "<group>"; };
+		9616CC3720FEE2A700AE2632 /* DzwBaseNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DzwBaseNetWork.m; sourceTree = "<group>"; };
+		9616CC3C20FEE42200AE2632 /* MainTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabbarViewController.h; sourceTree = "<group>"; };
+		9616CC3D20FEE42200AE2632 /* MainTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabbarViewController.m; sourceTree = "<group>"; };
+		9616CC4120FEEA4600AE2632 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		9616CC4220FEEA4600AE2632 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		9616CC4420FEEB3B00AE2632 /* TodayTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayTransition.h; sourceTree = "<group>"; };
+		9616CC4520FEEB3B00AE2632 /* TodayTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayTransition.m; sourceTree = "<group>"; };
+		9616CC4720FEEBA000AE2632 /* DouTodayFilmCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DouTodayFilmCell.h; sourceTree = "<group>"; };
+		9616CC4820FEEBA000AE2632 /* DouTodayFilmCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DouTodayFilmCell.m; sourceTree = "<group>"; };
+		9616CC4A20FEEC8400AE2632 /* DzwSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DzwSingleton.m; sourceTree = "<group>"; };
+		9616CC4B20FEEC8400AE2632 /* DzwSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DzwSingleton.h; sourceTree = "<group>"; };
+		9616CC5920FF32B000AE2632 /* GlobeHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobeHeader.pch; sourceTree = "<group>"; };
+		9616CC5B20FF385500AE2632 /* MovieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieModel.h; sourceTree = "<group>"; };
+		9616CC5C20FF385500AE2632 /* MovieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieModel.m; sourceTree = "<group>"; };
+		9637EBA420FF87F000FFFD48 /* MovieInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieInfoModel.h; sourceTree = "<group>"; };
+		9637EBA520FF87F000FFFD48 /* MovieInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieInfoModel.m; sourceTree = "<group>"; };
+		A339074DCC69815C5DDBF85A /* Pods-Douban-today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douban-today.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Douban-today/Pods-Douban-today.debug.xcconfig"; sourceTree = "<group>"; };
+		CFFC7BF30E638C5C402017BD /* Pods_Douban_todayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Douban_todayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D45EF26F9B3ABAC8DF70EE /* Pods-Douban-todayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douban-todayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Douban-todayTests/Pods-Douban-todayTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB81AC56AEB613E65F5FAEFB /* Pods_Douban_todayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Douban_todayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC1E087AF734CF76A1E39B68 /* Pods-Douban-todayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douban-todayUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Douban-todayUITests/Pods-Douban-todayUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9600EAE620FDC69400627338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11355C2F9AF336CA04EFACCF /* Pods_Douban_today.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9600EAFE20FDC69500627338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436D0E57B7EEADAA88D4F686 /* Pods_Douban_todayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9600EB0920FDC69500627338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAC4B6DF79E85DD0C36121A /* Pods_Douban_todayUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C304EBB7C25F5EA5B961607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83900C6A45A7F68A52B3CE33 /* Pods_Douban_today.framework */,
+				CFFC7BF30E638C5C402017BD /* Pods_Douban_todayTests.framework */,
+				DB81AC56AEB613E65F5FAEFB /* Pods_Douban_todayUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9600EAE020FDC69400627338 = {
+			isa = PBXGroup;
+			children = (
+				9600EAEB20FDC69400627338 /* Douban-today */,
+				9600EB0420FDC69500627338 /* Douban-todayTests */,
+				9600EB0F20FDC69500627338 /* Douban-todayUITests */,
+				9600EAEA20FDC69400627338 /* Products */,
+				F78C32660A1AC039C897DBF6 /* Pods */,
+				4C304EBB7C25F5EA5B961607 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9600EAEA20FDC69400627338 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9600EAE920FDC69400627338 /* Douban-today.app */,
+				9600EB0120FDC69500627338 /* Douban-todayTests.xctest */,
+				9600EB0C20FDC69500627338 /* Douban-todayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9600EAEB20FDC69400627338 /* Douban-today */ = {
+			isa = PBXGroup;
+			children = (
+				9600EAEC20FDC69400627338 /* AppDelegate.h */,
+				9600EAED20FDC69400627338 /* AppDelegate.m */,
+				9600EAEF20FDC69400627338 /* ViewController.h */,
+				9600EAF020FDC69400627338 /* ViewController.m */,
+				9616CC2B20FEDD4000AE2632 /* Classes */,
+				9616CC3F20FEE9AE00AE2632 /* tababr */,
+				9616CC4020FEEA1D00AE2632 /* Utils */,
+				9616CC3220FEE2A700AE2632 /* Network */,
+				9600EAF220FDC69400627338 /* Main.storyboard */,
+				9600EAF520FDC69500627338 /* Assets.xcassets */,
+				9600EAF720FDC69500627338 /* LaunchScreen.storyboard */,
+				9600EAFA20FDC69500627338 /* Info.plist */,
+				9600EAFB20FDC69500627338 /* main.m */,
+			);
+			path = "Douban-today";
+			sourceTree = "<group>";
+		};
+		9600EB0420FDC69500627338 /* Douban-todayTests */ = {
+			isa = PBXGroup;
+			children = (
+				9600EB0520FDC69500627338 /* Douban_todayTests.m */,
+				9600EB0720FDC69500627338 /* Info.plist */,
+			);
+			path = "Douban-todayTests";
+			sourceTree = "<group>";
+		};
+		9600EB0F20FDC69500627338 /* Douban-todayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9600EB1020FDC69500627338 /* Douban_todayUITests.m */,
+				9600EB1220FDC69500627338 /* Info.plist */,
+			);
+			path = "Douban-todayUITests";
+			sourceTree = "<group>";
+		};
+		9616CC2B20FEDD4000AE2632 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9616CC4420FEEB3B00AE2632 /* TodayTransition.h */,
+				9616CC4520FEEB3B00AE2632 /* TodayTransition.m */,
+				9616CC2C20FEDFBF00AE2632 /* DouTodayViewController.h */,
+				9616CC2D20FEDFBF00AE2632 /* DouTodayViewController.m */,
+				9616CC2F20FEE21000AE2632 /* DouFilmInfoViewController.h */,
+				9616CC3020FEE21000AE2632 /* DouFilmInfoViewController.m */,
+				9616CC4720FEEBA000AE2632 /* DouTodayFilmCell.h */,
+				9616CC4820FEEBA000AE2632 /* DouTodayFilmCell.m */,
+				9616CC5A20FF383F00AE2632 /* model */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9616CC3220FEE2A700AE2632 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9616CC3420FEE2A700AE2632 /* DzwBaseNetWork.h */,
+				9616CC3720FEE2A700AE2632 /* DzwBaseNetWork.m */,
+				9616CC3320FEE2A700AE2632 /* DzwSessionManager.h */,
+				9616CC3620FEE2A700AE2632 /* DzwSessionManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9616CC3F20FEE9AE00AE2632 /* tababr */ = {
+			isa = PBXGroup;
+			children = (
+				9616CC3C20FEE42200AE2632 /* MainTabbarViewController.h */,
+				9616CC3D20FEE42200AE2632 /* MainTabbarViewController.m */,
+			);
+			path = tababr;
+			sourceTree = "<group>";
+		};
+		9616CC4020FEEA1D00AE2632 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9616CC4120FEEA4600AE2632 /* Utils.h */,
+				9616CC4220FEEA4600AE2632 /* Utils.m */,
+				9616CC4B20FEEC8400AE2632 /* DzwSingleton.h */,
+				9616CC4A20FEEC8400AE2632 /* DzwSingleton.m */,
+				9616CC5920FF32B000AE2632 /* GlobeHeader.pch */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9616CC5A20FF383F00AE2632 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9616CC5B20FF385500AE2632 /* MovieModel.h */,
+				9616CC5C20FF385500AE2632 /* MovieModel.m */,
+				9637EBA420FF87F000FFFD48 /* MovieInfoModel.h */,
+				9637EBA520FF87F000FFFD48 /* MovieInfoModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F78C32660A1AC039C897DBF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A339074DCC69815C5DDBF85A /* Pods-Douban-today.debug.xcconfig */,
+				0570E18EF88521EC7F0B314D /* Pods-Douban-today.release.xcconfig */,
+				81B49DE314FE9146A9B7B7A0 /* Pods-Douban-todayTests.debug.xcconfig */,
+				D6D45EF26F9B3ABAC8DF70EE /* Pods-Douban-todayTests.release.xcconfig */,
+				84B1035216B2A339DE6EC1DC /* Pods-Douban-todayUITests.debug.xcconfig */,
+				EC1E087AF734CF76A1E39B68 /* Pods-Douban-todayUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9600EAE820FDC69400627338 /* Douban-today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9600EB1520FDC69500627338 /* Build configuration list for PBXNativeTarget "Douban-today" */;
+			buildPhases = (
+				E1ECC50AF1018CBBB0F94654 /* [CP] Check Pods Manifest.lock */,
+				9600EAE520FDC69400627338 /* Sources */,
+				9600EAE620FDC69400627338 /* Frameworks */,
+				9600EAE720FDC69400627338 /* Resources */,
+				50C2E7CE7A1165DCCB26081B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Douban-today";
+			productName = "Douban-today";
+			productReference = 9600EAE920FDC69400627338 /* Douban-today.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9600EB0020FDC69500627338 /* Douban-todayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9600EB1820FDC69500627338 /* Build configuration list for PBXNativeTarget "Douban-todayTests" */;
+			buildPhases = (
+				CE0DB98662D563C294DB5B9E /* [CP] Check Pods Manifest.lock */,
+				9600EAFD20FDC69500627338 /* Sources */,
+				9600EAFE20FDC69500627338 /* Frameworks */,
+				9600EAFF20FDC69500627338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9600EB0320FDC69500627338 /* PBXTargetDependency */,
+			);
+			name = "Douban-todayTests";
+			productName = "Douban-todayTests";
+			productReference = 9600EB0120FDC69500627338 /* Douban-todayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9600EB0B20FDC69500627338 /* Douban-todayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9600EB1B20FDC69500627338 /* Build configuration list for PBXNativeTarget "Douban-todayUITests" */;
+			buildPhases = (
+				5A70DD6A3530F18F61BD02A1 /* [CP] Check Pods Manifest.lock */,
+				9600EB0820FDC69500627338 /* Sources */,
+				9600EB0920FDC69500627338 /* Frameworks */,
+				9600EB0A20FDC69500627338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9600EB0E20FDC69500627338 /* PBXTargetDependency */,
+			);
+			name = "Douban-todayUITests";
+			productName = "Douban-todayUITests";
+			productReference = 9600EB0C20FDC69500627338 /* Douban-todayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9600EAE120FDC69400627338 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = dzw;
+				TargetAttributes = {
+					9600EAE820FDC69400627338 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					9600EB0020FDC69500627338 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 9600EAE820FDC69400627338;
+					};
+					9600EB0B20FDC69500627338 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 9600EAE820FDC69400627338;
+					};
+				};
+			};
+			buildConfigurationList = 9600EAE420FDC69400627338 /* Build configuration list for PBXProject "Douban-today" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9600EAE020FDC69400627338;
+			productRefGroup = 9600EAEA20FDC69400627338 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9600EAE820FDC69400627338 /* Douban-today */,
+				9600EB0020FDC69500627338 /* Douban-todayTests */,
+				9600EB0B20FDC69500627338 /* Douban-todayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9600EAE720FDC69400627338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9600EAF920FDC69500627338 /* LaunchScreen.storyboard in Resources */,
+				9600EAF620FDC69500627338 /* Assets.xcassets in Resources */,
+				9600EAF420FDC69400627338 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9600EAFF20FDC69500627338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9600EB0A20FDC69500627338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50C2E7CE7A1165DCCB26081B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Douban-today/Pods-Douban-today-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Douban-today/Pods-Douban-today-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A70DD6A3530F18F61BD02A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Douban-todayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE0DB98662D563C294DB5B9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Douban-todayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1ECC50AF1018CBBB0F94654 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Douban-today-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9600EAE520FDC69400627338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9616CC5D20FF385500AE2632 /* MovieModel.m in Sources */,
+				9616CC4620FEEB3B00AE2632 /* TodayTransition.m in Sources */,
+				9616CC4C20FEEC8500AE2632 /* DzwSingleton.m in Sources */,
+				9616CC4320FEEA4600AE2632 /* Utils.m in Sources */,
+				9616CC4920FEEBA000AE2632 /* DouTodayFilmCell.m in Sources */,
+				9616CC3920FEE2A700AE2632 /* DzwSessionManager.m in Sources */,
+				9600EAF120FDC69400627338 /* ViewController.m in Sources */,
+				9600EAFC20FDC69500627338 /* main.m in Sources */,
+				9637EBA620FF87F000FFFD48 /* MovieInfoModel.m in Sources */,
+				9616CC3A20FEE2A700AE2632 /* DzwBaseNetWork.m in Sources */,
+				9600EAEE20FDC69400627338 /* AppDelegate.m in Sources */,
+				9616CC3E20FEE42200AE2632 /* MainTabbarViewController.m in Sources */,
+				9616CC3120FEE21000AE2632 /* DouFilmInfoViewController.m in Sources */,
+				9616CC2E20FEDFBF00AE2632 /* DouTodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9600EAFD20FDC69500627338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9600EB0620FDC69500627338 /* Douban_todayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9600EB0820FDC69500627338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9600EB1120FDC69500627338 /* Douban_todayUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9600EB0320FDC69500627338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9600EAE820FDC69400627338 /* Douban-today */;
+			targetProxy = 9600EB0220FDC69500627338 /* PBXContainerItemProxy */;
+		};
+		9600EB0E20FDC69500627338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9600EAE820FDC69400627338 /* Douban-today */;
+			targetProxy = 9600EB0D20FDC69500627338 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9600EAF220FDC69400627338 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9600EAF320FDC69400627338 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9600EAF720FDC69500627338 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9600EAF820FDC69500627338 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9600EB1320FDC69500627338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9600EB1420FDC69500627338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9600EB1620FDC69500627338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A339074DCC69815C5DDBF85A /* Pods-Douban-today.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97KXK82D47;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Douban-today/Utils/GlobeHeader.pch";
+				INFOPLIST_FILE = "Douban-today/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dzw.Douban-today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9600EB1720FDC69500627338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0570E18EF88521EC7F0B314D /* Pods-Douban-today.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97KXK82D47;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Douban-today/Utils/GlobeHeader.pch";
+				INFOPLIST_FILE = "Douban-today/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dzw.Douban-today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9600EB1920FDC69500627338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B49DE314FE9146A9B7B7A0 /* Pods-Douban-todayTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97KXK82D47;
+				INFOPLIST_FILE = "Douban-todayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dzw.Douban-todayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Douban-today.app/Douban-today";
+			};
+			name = Debug;
+		};
+		9600EB1A20FDC69500627338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D45EF26F9B3ABAC8DF70EE /* Pods-Douban-todayTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97KXK82D47;
+				INFOPLIST_FILE = "Douban-todayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dzw.Douban-todayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Douban-today.app/Douban-today";
+			};
+			name = Release;
+		};
+		9600EB1C20FDC69500627338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B1035216B2A339DE6EC1DC /* Pods-Douban-todayUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97KXK82D47;
+				INFOPLIST_FILE = "Douban-todayUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dzw.Douban-todayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Douban-today";
+			};
+			name = Debug;
+		};
+		9600EB1D20FDC69500627338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC1E087AF734CF76A1E39B68 /* Pods-Douban-todayUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97KXK82D47;
+				INFOPLIST_FILE = "Douban-todayUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dzw.Douban-todayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Douban-today";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9600EAE420FDC69400627338 /* Build configuration list for PBXProject "Douban-today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9600EB1320FDC69500627338 /* Debug */,
+				9600EB1420FDC69500627338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9600EB1520FDC69500627338 /* Build configuration list for PBXNativeTarget "Douban-today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9600EB1620FDC69500627338 /* Debug */,
+				9600EB1720FDC69500627338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9600EB1820FDC69500627338 /* Build configuration list for PBXNativeTarget "Douban-todayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9600EB1920FDC69500627338 /* Debug */,
+				9600EB1A20FDC69500627338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9600EB1B20FDC69500627338 /* Build configuration list for PBXNativeTarget "Douban-todayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9600EB1C20FDC69500627338 /* Debug */,
+				9600EB1D20FDC69500627338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9600EAE120FDC69400627338 /* Project object */;
+}
