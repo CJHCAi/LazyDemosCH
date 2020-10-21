@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A676ED315E18CDF00F3E8BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A676ED215E18CDF00F3E8BD /* UIKit.framework */; };
+		2A676ED515E18CDF00F3E8BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A676ED415E18CDF00F3E8BD /* Foundation.framework */; };
+		2A676ED715E18CDF00F3E8BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A676ED615E18CDF00F3E8BD /* CoreGraphics.framework */; };
+		2A676EDD15E18CDF00F3E8BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A676EDB15E18CDF00F3E8BD /* InfoPlist.strings */; };
+		2A676EDF15E18CDF00F3E8BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A676EDE15E18CDF00F3E8BD /* main.m */; };
+		2A676EE615E18CDF00F3E8BD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A676EE415E18CDF00F3E8BD /* MainStoryboard.storyboard */; };
+		2A676EF215E18CE000F3E8BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A676ED215E18CDF00F3E8BD /* UIKit.framework */; };
+		2A676EF315E18CE000F3E8BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A676ED415E18CDF00F3E8BD /* Foundation.framework */; };
+		2A676EFB15E18CE000F3E8BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A676EF915E18CE000F3E8BD /* InfoPlist.strings */; };
+		2A676EFE15E18CE000F3E8BD /* ReverseClipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A676EFD15E18CE000F3E8BD /* ReverseClipTests.m */; };
+		2A676F1C15E18E6200F3E8BD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A676F1B15E18E6200F3E8BD /* AVFoundation.framework */; };
+		2A676F1E15E18E6700F3E8BD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A676F1D15E18E6700F3E8BD /* CoreMedia.framework */; };
+		2A676F2015E18E7900F3E8BD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A676F1F15E18E7900F3E8BD /* CoreVideo.framework */; };
+		581B09B01A95C568007C8E7E /* Video_AudioDemo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 581B09AF1A95C568007C8E7E /* Video_AudioDemo.mp4 */; };
+		581B09B81A95EED3007C8E7E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581B09B71A95EED3007C8E7E /* AssetsLibrary.framework */; };
+		581B09BA1A95EF9B007C8E7E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581B09B91A95EF9B007C8E7E /* MediaPlayer.framework */; };
+		581B09D21A95F837007C8E7E /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 581B09D11A95F837007C8E7E /* SVProgressHUD.bundle */; };
+		581B09D41A95F842007C8E7E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581B09D31A95F842007C8E7E /* QuartzCore.framework */; };
+		581B09D61A95FEA3007C8E7E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 581B09D51A95FEA3007C8E7E /* Default-568h@2x.png */; };
+		581B09DF1A960FFF007C8E7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 581B09DE1A960FFF007C8E7E /* ViewController.m */; };
+		581B09EB1A961030007C8E7E /* RCComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 581B09E01A961030007C8E7E /* RCComposer.m */; };
+		581B09EC1A961030007C8E7E /* RCExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 581B09E11A961030007C8E7E /* RCExporter.m */; };
+		581B09ED1A961030007C8E7E /* RCFileHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 581B09E21A961030007C8E7E /* RCFileHandler.m */; };
+		581B09EE1A961030007C8E7E /* RCImageSequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 581B09E31A961030007C8E7E /* RCImageSequencer.m */; };
+		581B09EF1A961030007C8E7E /* RCToolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 581B09EA1A961030007C8E7E /* RCToolbox.m */; };
+		581B09F41A96103F007C8E7E /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 581B09F11A96103F007C8E7E /* SVIndefiniteAnimatedView.m */; };
+		581B09F51A96103F007C8E7E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 581B09F31A96103F007C8E7E /* SVProgressHUD.m */; };
+		581B09F81A961049007C8E7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 581B09F71A961049007C8E7E /* AppDelegate.m */; };
+		581B09FB1A96105F007C8E7E /* Button_Discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 581B09F91A96105F007C8E7E /* Button_Discover@2x.png */; };
+		581B09FC1A96105F007C8E7E /* Button_Discover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 581B09FA1A96105F007C8E7E /* Button_Discover@3x.png */; };
+		8A38457C2504F63B002B4C14 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A38457B2504F63A002B4C14 /* AVKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A676EF415E18CE000F3E8BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A676EC515E18CDF00F3E8BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A676ECD15E18CDF00F3E8BD;
+			remoteInfo = ReverseClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A676ECE15E18CDF00F3E8BD /* ReverseClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReverseClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A676ED215E18CDF00F3E8BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2A676ED415E18CDF00F3E8BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2A676ED615E18CDF00F3E8BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A676EDA15E18CDF00F3E8BD /* ReverseClip-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReverseClip-Info.plist"; sourceTree = "<group>"; };
+		2A676EDC15E18CDF00F3E8BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A676EDE15E18CDF00F3E8BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A676EE015E18CDF00F3E8BD /* ReverseClip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReverseClip-Prefix.pch"; sourceTree = "<group>"; };
+		2A676EE515E18CDF00F3E8BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2A676EEF15E18CE000F3E8BD /* ReverseClipTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ReverseClipTests.octest; path = ReverseClipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A676EF815E18CE000F3E8BD /* ReverseClipTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReverseClipTests-Info.plist"; sourceTree = "<group>"; };
+		2A676EFA15E18CE000F3E8BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A676EFC15E18CE000F3E8BD /* ReverseClipTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseClipTests.h; sourceTree = "<group>"; };
+		2A676EFD15E18CE000F3E8BD /* ReverseClipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseClipTests.m; sourceTree = "<group>"; };
+		2A676F1B15E18E6200F3E8BD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2A676F1D15E18E6700F3E8BD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2A676F1F15E18E7900F3E8BD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		581B09AF1A95C568007C8E7E /* Video_AudioDemo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video_AudioDemo.mp4; sourceTree = "<group>"; };
+		581B09B71A95EED3007C8E7E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		581B09B91A95EF9B007C8E7E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		581B09D11A95F837007C8E7E /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		581B09D31A95F842007C8E7E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		581B09D51A95FEA3007C8E7E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		581B09DD1A960FFF007C8E7E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Controller/ViewController.h; sourceTree = "<group>"; };
+		581B09DE1A960FFF007C8E7E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controller/ViewController.m; sourceTree = "<group>"; };
+		581B09E01A961030007C8E7E /* RCComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCComposer.m; path = ReverseClip/Library/RCToolbox/RCComposer.m; sourceTree = SOURCE_ROOT; };
+		581B09E11A961030007C8E7E /* RCExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCExporter.m; path = ReverseClip/Library/RCToolbox/RCExporter.m; sourceTree = SOURCE_ROOT; };
+		581B09E21A961030007C8E7E /* RCFileHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCFileHandler.m; path = ReverseClip/Library/RCToolbox/RCFileHandler.m; sourceTree = SOURCE_ROOT; };
+		581B09E31A961030007C8E7E /* RCImageSequencer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCImageSequencer.m; path = ReverseClip/Library/RCToolbox/RCImageSequencer.m; sourceTree = SOURCE_ROOT; };
+		581B09E41A961030007C8E7E /* RCComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCComposer.h; path = ReverseClip/Library/RCToolbox/RCComposer.h; sourceTree = SOURCE_ROOT; };
+		581B09E51A961030007C8E7E /* RCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCConstants.h; path = ReverseClip/Library/RCToolbox/RCConstants.h; sourceTree = SOURCE_ROOT; };
+		581B09E61A961030007C8E7E /* RCExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCExporter.h; path = ReverseClip/Library/RCToolbox/RCExporter.h; sourceTree = SOURCE_ROOT; };
+		581B09E71A961030007C8E7E /* RCFileHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCFileHandler.h; path = ReverseClip/Library/RCToolbox/RCFileHandler.h; sourceTree = SOURCE_ROOT; };
+		581B09E81A961030007C8E7E /* RCImageSequencer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCImageSequencer.h; path = ReverseClip/Library/RCToolbox/RCImageSequencer.h; sourceTree = SOURCE_ROOT; };
+		581B09E91A961030007C8E7E /* RCToolbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCToolbox.h; path = ReverseClip/Library/RCToolbox/RCToolbox.h; sourceTree = SOURCE_ROOT; };
+		581B09EA1A961030007C8E7E /* RCToolbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCToolbox.m; path = ReverseClip/Library/RCToolbox/RCToolbox.m; sourceTree = SOURCE_ROOT; };
+		581B09F01A96103F007C8E7E /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = Library/SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		581B09F11A96103F007C8E7E /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = Library/SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		581B09F21A96103F007C8E7E /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = Library/SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		581B09F31A96103F007C8E7E /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = Library/SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		581B09F61A961049007C8E7E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
+		581B09F71A961049007C8E7E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
+		581B09F91A96105F007C8E7E /* Button_Discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Button_Discover@2x.png"; path = "Controller/Button_Discover@2x.png"; sourceTree = "<group>"; };
+		581B09FA1A96105F007C8E7E /* Button_Discover@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Button_Discover@3x.png"; path = "Controller/Button_Discover@3x.png"; sourceTree = "<group>"; };
+		581B09FD1A96109E007C8E7E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ReverseClip/Controller/Constants.h; sourceTree = SOURCE_ROOT; };
+		8A38457B2504F63A002B4C14 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A676ECB15E18CDF00F3E8BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A38457C2504F63B002B4C14 /* AVKit.framework in Frameworks */,
+				581B09D41A95F842007C8E7E /* QuartzCore.framework in Frameworks */,
+				581B09BA1A95EF9B007C8E7E /* MediaPlayer.framework in Frameworks */,
+				581B09B81A95EED3007C8E7E /* AssetsLibrary.framework in Frameworks */,
+				2A676F2015E18E7900F3E8BD /* CoreVideo.framework in Frameworks */,
+				2A676F1E15E18E6700F3E8BD /* CoreMedia.framework in Frameworks */,
+				2A676F1C15E18E6200F3E8BD /* AVFoundation.framework in Frameworks */,
+				2A676ED315E18CDF00F3E8BD /* UIKit.framework in Frameworks */,
+				2A676ED515E18CDF00F3E8BD /* Foundation.framework in Frameworks */,
+				2A676ED715E18CDF00F3E8BD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A676EEB15E18CE000F3E8BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A676EF215E18CE000F3E8BD /* UIKit.framework in Frameworks */,
+				2A676EF315E18CE000F3E8BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A676EC315E18CDF00F3E8BD = {
+			isa = PBXGroup;
+			children = (
+				2A676ED815E18CDF00F3E8BD /* ReverseClip */,
+				2A676EF615E18CE000F3E8BD /* ReverseClipTests */,
+				2A676ED115E18CDF00F3E8BD /* Frameworks */,
+				2A676ECF15E18CDF00F3E8BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A676ECF15E18CDF00F3E8BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A676ECE15E18CDF00F3E8BD /* ReverseClip.app */,
+				2A676EEF15E18CE000F3E8BD /* ReverseClipTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A676ED115E18CDF00F3E8BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A38457B2504F63A002B4C14 /* AVKit.framework */,
+				581B09D11A95F837007C8E7E /* SVProgressHUD.bundle */,
+				581B09D31A95F842007C8E7E /* QuartzCore.framework */,
+				581B09B91A95EF9B007C8E7E /* MediaPlayer.framework */,
+				581B09B71A95EED3007C8E7E /* AssetsLibrary.framework */,
+				2A676F1F15E18E7900F3E8BD /* CoreVideo.framework */,
+				2A676F1D15E18E6700F3E8BD /* CoreMedia.framework */,
+				2A676F1B15E18E6200F3E8BD /* AVFoundation.framework */,
+				2A676ED215E18CDF00F3E8BD /* UIKit.framework */,
+				2A676ED415E18CDF00F3E8BD /* Foundation.framework */,
+				2A676ED615E18CDF00F3E8BD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A676ED815E18CDF00F3E8BD /* ReverseClip */ = {
+			isa = PBXGroup;
+			children = (
+				581B09D81A96015C007C8E7E /* AppDelegate Class */,
+				581B09D71A96014F007C8E7E /* Library */,
+				2A676EE415E18CDF00F3E8BD /* MainStoryboard.storyboard */,
+				581B09DD1A960FFF007C8E7E /* ViewController.h */,
+				581B09DE1A960FFF007C8E7E /* ViewController.m */,
+				2A676F1A15E18D1100F3E8BD /* Recources */,
+				2A676ED915E18CDF00F3E8BD /* Supporting Files */,
+			);
+			path = ReverseClip;
+			sourceTree = "<group>";
+		};
+		2A676ED915E18CDF00F3E8BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				581B09F91A96105F007C8E7E /* Button_Discover@2x.png */,
+				581B09FA1A96105F007C8E7E /* Button_Discover@3x.png */,
+				581B09D51A95FEA3007C8E7E /* Default-568h@2x.png */,
+				2A676EDA15E18CDF00F3E8BD /* ReverseClip-Info.plist */,
+				2A676EDB15E18CDF00F3E8BD /* InfoPlist.strings */,
+				2A676EDE15E18CDF00F3E8BD /* main.m */,
+				2A676EE015E18CDF00F3E8BD /* ReverseClip-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A676EF615E18CE000F3E8BD /* ReverseClipTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A676EFC15E18CE000F3E8BD /* ReverseClipTests.h */,
+				2A676EFD15E18CE000F3E8BD /* ReverseClipTests.m */,
+				2A676EF715E18CE000F3E8BD /* Supporting Files */,
+			);
+			path = ReverseClipTests;
+			sourceTree = "<group>";
+		};
+		2A676EF715E18CE000F3E8BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A676EF815E18CE000F3E8BD /* ReverseClipTests-Info.plist */,
+				2A676EF915E18CE000F3E8BD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A676F0715E18CF100F3E8BD /* RCToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				581B09E01A961030007C8E7E /* RCComposer.m */,
+				581B09FD1A96109E007C8E7E /* Constants.h */,
+				581B09E11A961030007C8E7E /* RCExporter.m */,
+				581B09E21A961030007C8E7E /* RCFileHandler.m */,
+				581B09E31A961030007C8E7E /* RCImageSequencer.m */,
+				581B09E41A961030007C8E7E /* RCComposer.h */,
+				581B09E51A961030007C8E7E /* RCConstants.h */,
+				581B09E61A961030007C8E7E /* RCExporter.h */,
+				581B09E71A961030007C8E7E /* RCFileHandler.h */,
+				581B09E81A961030007C8E7E /* RCImageSequencer.h */,
+				581B09E91A961030007C8E7E /* RCToolbox.h */,
+				581B09EA1A961030007C8E7E /* RCToolbox.m */,
+			);
+			path = RCToolbox;
+			sourceTree = "<group>";
+		};
+		2A676F1A15E18D1100F3E8BD /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				581B09AF1A95C568007C8E7E /* Video_AudioDemo.mp4 */,
+			);
+			name = Recources;
+			sourceTree = "<group>";
+		};
+		581B09C11A95F671007C8E7E /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				581B09F01A96103F007C8E7E /* SVIndefiniteAnimatedView.h */,
+				581B09F11A96103F007C8E7E /* SVIndefiniteAnimatedView.m */,
+				581B09F21A96103F007C8E7E /* SVProgressHUD.h */,
+				581B09F31A96103F007C8E7E /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		581B09D71A96014F007C8E7E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				581B09C11A95F671007C8E7E /* SVProgressHUD */,
+				2A676F0715E18CF100F3E8BD /* RCToolbox */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		581B09D81A96015C007C8E7E /* AppDelegate Class */ = {
+			isa = PBXGroup;
+			children = (
+				581B09F61A961049007C8E7E /* AppDelegate.h */,
+				581B09F71A961049007C8E7E /* AppDelegate.m */,
+			);
+			name = "AppDelegate Class";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A676ECD15E18CDF00F3E8BD /* ReverseClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A676F0115E18CE000F3E8BD /* Build configuration list for PBXNativeTarget "ReverseClip" */;
+			buildPhases = (
+				2A676ECA15E18CDF00F3E8BD /* Sources */,
+				2A676ECB15E18CDF00F3E8BD /* Frameworks */,
+				2A676ECC15E18CDF00F3E8BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReverseClip;
+			productName = ReverseClip;
+			productReference = 2A676ECE15E18CDF00F3E8BD /* ReverseClip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A676EEE15E18CE000F3E8BD /* ReverseClipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A676F0415E18CE000F3E8BD /* Build configuration list for PBXNativeTarget "ReverseClipTests" */;
+			buildPhases = (
+				2A676EEA15E18CE000F3E8BD /* Sources */,
+				2A676EEB15E18CE000F3E8BD /* Frameworks */,
+				2A676EEC15E18CE000F3E8BD /* Resources */,
+				2A676EED15E18CE000F3E8BD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A676EF515E18CE000F3E8BD /* PBXTargetDependency */,
+			);
+			name = ReverseClipTests;
+			productName = ReverseClipTests;
+			productReference = 2A676EEF15E18CE000F3E8BD /* ReverseClipTests.octest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A676EC515E18CDF00F3E8BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastTestingUpgradeCheck = 0610;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mikael Hellqvist";
+				TargetAttributes = {
+					2A676ECD15E18CDF00F3E8BD = {
+						DevelopmentTeam = AW85KHZ9N7;
+					};
+				};
+			};
+			buildConfigurationList = 2A676EC815E18CDF00F3E8BD /* Build configuration list for PBXProject "ReverseClip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 2A676EC315E18CDF00F3E8BD;
+			productRefGroup = 2A676ECF15E18CDF00F3E8BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A676ECD15E18CDF00F3E8BD /* ReverseClip */,
+				2A676EEE15E18CE000F3E8BD /* ReverseClipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A676ECC15E18CDF00F3E8BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581B09D21A95F837007C8E7E /* SVProgressHUD.bundle in Resources */,
+				581B09FB1A96105F007C8E7E /* Button_Discover@2x.png in Resources */,
+				2A676EDD15E18CDF00F3E8BD /* InfoPlist.strings in Resources */,
+				581B09FC1A96105F007C8E7E /* Button_Discover@3x.png in Resources */,
+				581B09D61A95FEA3007C8E7E /* Default-568h@2x.png in Resources */,
+				2A676EE615E18CDF00F3E8BD /* MainStoryboard.storyboard in Resources */,
+				581B09B01A95C568007C8E7E /* Video_AudioDemo.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A676EEC15E18CE000F3E8BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A676EFB15E18CE000F3E8BD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A676EED15E18CE000F3E8BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A676ECA15E18CDF00F3E8BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581B09EE1A961030007C8E7E /* RCImageSequencer.m in Sources */,
+				581B09EB1A961030007C8E7E /* RCComposer.m in Sources */,
+				581B09F41A96103F007C8E7E /* SVIndefiniteAnimatedView.m in Sources */,
+				581B09EF1A961030007C8E7E /* RCToolbox.m in Sources */,
+				581B09F81A961049007C8E7E /* AppDelegate.m in Sources */,
+				581B09EC1A961030007C8E7E /* RCExporter.m in Sources */,
+				2A676EDF15E18CDF00F3E8BD /* main.m in Sources */,
+				581B09F51A96103F007C8E7E /* SVProgressHUD.m in Sources */,
+				581B09ED1A961030007C8E7E /* RCFileHandler.m in Sources */,
+				581B09DF1A960FFF007C8E7E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A676EEA15E18CE000F3E8BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A676EFE15E18CE000F3E8BD /* ReverseClipTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A676EF515E18CE000F3E8BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A676ECD15E18CDF00F3E8BD /* ReverseClip */;
+			targetProxy = 2A676EF415E18CE000F3E8BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A676EDB15E18CDF00F3E8BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A676EDC15E18CDF00F3E8BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A676EE415E18CDF00F3E8BD /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A676EE515E18CDF00F3E8BD /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		2A676EF915E18CE000F3E8BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A676EFA15E18CE000F3E8BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A676EFF15E18CE000F3E8BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A676F0015E18CE000F3E8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A676F0215E18CE000F3E8BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AW85KHZ9N7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReverseClip/ReverseClip-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "ReverseClip/ReverseClip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2A676F0315E18CE000F3E8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AW85KHZ9N7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReverseClip/ReverseClip-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "ReverseClip/ReverseClip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2A676F0515E18CE000F3E8BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReverseClip.app/ReverseClip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReverseClip/ReverseClip-Prefix.pch";
+				INFOPLIST_FILE = "ReverseClipTests/ReverseClipTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		2A676F0615E18CE000F3E8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReverseClip.app/ReverseClip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReverseClip/ReverseClip-Prefix.pch";
+				INFOPLIST_FILE = "ReverseClipTests/ReverseClipTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A676EC815E18CDF00F3E8BD /* Build configuration list for PBXProject "ReverseClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A676EFF15E18CE000F3E8BD /* Debug */,
+				2A676F0015E18CE000F3E8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A676F0115E18CE000F3E8BD /* Build configuration list for PBXNativeTarget "ReverseClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A676F0215E18CE000F3E8BD /* Debug */,
+				2A676F0315E18CE000F3E8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A676F0415E18CE000F3E8BD /* Build configuration list for PBXNativeTarget "ReverseClipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A676F0515E18CE000F3E8BD /* Debug */,
+				2A676F0615E18CE000F3E8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A676EC515E18CDF00F3E8BD /* Project object */;
+}

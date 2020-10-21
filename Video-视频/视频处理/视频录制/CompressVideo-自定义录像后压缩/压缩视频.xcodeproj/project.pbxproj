@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88874A0E1D2E343C0016A0FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88874A0D1D2E343C0016A0FA /* main.m */; };
+		88874A111D2E343C0016A0FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88874A101D2E343C0016A0FA /* AppDelegate.m */; };
+		88874A141D2E343C0016A0FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88874A131D2E343C0016A0FA /* ViewController.m */; };
+		88874A171D2E343C0016A0FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88874A151D2E343C0016A0FA /* Main.storyboard */; };
+		88874A191D2E343C0016A0FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88874A181D2E343C0016A0FA /* Assets.xcassets */; };
+		88874A1C1D2E343C0016A0FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88874A1A1D2E343C0016A0FA /* LaunchScreen.storyboard */; };
+		88874A271D2E343C0016A0FA /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88874A261D2E343C0016A0FA /* ____Tests.m */; };
+		88874A321D2E343C0016A0FA /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88874A311D2E343C0016A0FA /* ____UITests.m */; };
+		88874A411D2E352F0016A0FA /* CustomCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 88874A401D2E352F0016A0FA /* CustomCamera.m */; };
+		88874A471D2E36A50016A0FA /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 88874A441D2E36A50016A0FA /* UITableView+SDAutoTableViewCellHeight.m */; };
+		88874A481D2E36A50016A0FA /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 88874A461D2E36A50016A0FA /* UIView+SDAutoLayout.m */; };
+		88874A4B1D2E37130016A0FA /* ShortVideoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88874A4A1D2E37130016A0FA /* ShortVideoProgressView.m */; };
+		88874A4E1D2E37500016A0FA /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 88874A4D1D2E37500016A0FA /* UIView+Extension.m */; };
+		88874A511D2E38670016A0FA /* SendVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88874A501D2E38670016A0FA /* SendVideoView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88874A231D2E343C0016A0FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88874A011D2E343C0016A0FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88874A081D2E343C0016A0FA;
+			remoteInfo = "压缩视频";
+		};
+		88874A2E1D2E343C0016A0FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88874A011D2E343C0016A0FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88874A081D2E343C0016A0FA;
+			remoteInfo = "压缩视频";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88874A091D2E343C0016A0FA /* 压缩视频.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "压缩视频.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88874A0D1D2E343C0016A0FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88874A0F1D2E343C0016A0FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		88874A101D2E343C0016A0FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		88874A121D2E343C0016A0FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		88874A131D2E343C0016A0FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		88874A161D2E343C0016A0FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88874A181D2E343C0016A0FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88874A1B1D2E343C0016A0FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88874A1D1D2E343C0016A0FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88874A221D2E343C0016A0FA /* 压缩视频Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "压缩视频Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88874A261D2E343C0016A0FA /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		88874A281D2E343C0016A0FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88874A2D1D2E343C0016A0FA /* 压缩视频UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "压缩视频UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88874A311D2E343C0016A0FA /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		88874A331D2E343C0016A0FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88874A3F1D2E352F0016A0FA /* CustomCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCamera.h; sourceTree = "<group>"; };
+		88874A401D2E352F0016A0FA /* CustomCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCamera.m; sourceTree = "<group>"; };
+		88874A431D2E36A50016A0FA /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		88874A441D2E36A50016A0FA /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		88874A451D2E36A50016A0FA /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		88874A461D2E36A50016A0FA /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		88874A491D2E37130016A0FA /* ShortVideoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortVideoProgressView.h; sourceTree = "<group>"; };
+		88874A4A1D2E37130016A0FA /* ShortVideoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortVideoProgressView.m; sourceTree = "<group>"; };
+		88874A4C1D2E37500016A0FA /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "../UIView+Extension.h"; sourceTree = "<group>"; };
+		88874A4D1D2E37500016A0FA /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "../UIView+Extension.m"; sourceTree = "<group>"; };
+		88874A4F1D2E38670016A0FA /* SendVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendVideoView.h; sourceTree = "<group>"; };
+		88874A501D2E38670016A0FA /* SendVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendVideoView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88874A061D2E343C0016A0FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88874A1F1D2E343C0016A0FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88874A2A1D2E343C0016A0FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88874A001D2E343C0016A0FA = {
+			isa = PBXGroup;
+			children = (
+				88874A0B1D2E343C0016A0FA /* 压缩视频 */,
+				88874A251D2E343C0016A0FA /* 压缩视频Tests */,
+				88874A301D2E343C0016A0FA /* 压缩视频UITests */,
+				88874A0A1D2E343C0016A0FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88874A0A1D2E343C0016A0FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88874A091D2E343C0016A0FA /* 压缩视频.app */,
+				88874A221D2E343C0016A0FA /* 压缩视频Tests.xctest */,
+				88874A2D1D2E343C0016A0FA /* 压缩视频UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88874A0B1D2E343C0016A0FA /* 压缩视频 */ = {
+			isa = PBXGroup;
+			children = (
+				88874A421D2E36A50016A0FA /* SDAutoLayout */,
+				88874A0F1D2E343C0016A0FA /* AppDelegate.h */,
+				88874A101D2E343C0016A0FA /* AppDelegate.m */,
+				88874A121D2E343C0016A0FA /* ViewController.h */,
+				88874A131D2E343C0016A0FA /* ViewController.m */,
+				88874A3F1D2E352F0016A0FA /* CustomCamera.h */,
+				88874A401D2E352F0016A0FA /* CustomCamera.m */,
+				88874A4F1D2E38670016A0FA /* SendVideoView.h */,
+				88874A501D2E38670016A0FA /* SendVideoView.m */,
+				88874A491D2E37130016A0FA /* ShortVideoProgressView.h */,
+				88874A4A1D2E37130016A0FA /* ShortVideoProgressView.m */,
+				88874A151D2E343C0016A0FA /* Main.storyboard */,
+				88874A181D2E343C0016A0FA /* Assets.xcassets */,
+				88874A1A1D2E343C0016A0FA /* LaunchScreen.storyboard */,
+				88874A1D1D2E343C0016A0FA /* Info.plist */,
+				88874A0C1D2E343C0016A0FA /* Supporting Files */,
+			);
+			path = "压缩视频";
+			sourceTree = "<group>";
+		};
+		88874A0C1D2E343C0016A0FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88874A0D1D2E343C0016A0FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88874A251D2E343C0016A0FA /* 压缩视频Tests */ = {
+			isa = PBXGroup;
+			children = (
+				88874A261D2E343C0016A0FA /* ____Tests.m */,
+				88874A281D2E343C0016A0FA /* Info.plist */,
+			);
+			path = "压缩视频Tests";
+			sourceTree = "<group>";
+		};
+		88874A301D2E343C0016A0FA /* 压缩视频UITests */ = {
+			isa = PBXGroup;
+			children = (
+				88874A311D2E343C0016A0FA /* ____UITests.m */,
+				88874A331D2E343C0016A0FA /* Info.plist */,
+			);
+			path = "压缩视频UITests";
+			sourceTree = "<group>";
+		};
+		88874A421D2E36A50016A0FA /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				88874A4C1D2E37500016A0FA /* UIView+Extension.h */,
+				88874A4D1D2E37500016A0FA /* UIView+Extension.m */,
+				88874A431D2E36A50016A0FA /* UITableView+SDAutoTableViewCellHeight.h */,
+				88874A441D2E36A50016A0FA /* UITableView+SDAutoTableViewCellHeight.m */,
+				88874A451D2E36A50016A0FA /* UIView+SDAutoLayout.h */,
+				88874A461D2E36A50016A0FA /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88874A081D2E343C0016A0FA /* 压缩视频 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88874A361D2E343C0016A0FA /* Build configuration list for PBXNativeTarget "压缩视频" */;
+			buildPhases = (
+				88874A051D2E343C0016A0FA /* Sources */,
+				88874A061D2E343C0016A0FA /* Frameworks */,
+				88874A071D2E343C0016A0FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "压缩视频";
+			productName = "压缩视频";
+			productReference = 88874A091D2E343C0016A0FA /* 压缩视频.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88874A211D2E343C0016A0FA /* 压缩视频Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88874A391D2E343C0016A0FA /* Build configuration list for PBXNativeTarget "压缩视频Tests" */;
+			buildPhases = (
+				88874A1E1D2E343C0016A0FA /* Sources */,
+				88874A1F1D2E343C0016A0FA /* Frameworks */,
+				88874A201D2E343C0016A0FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88874A241D2E343C0016A0FA /* PBXTargetDependency */,
+			);
+			name = "压缩视频Tests";
+			productName = "压缩视频Tests";
+			productReference = 88874A221D2E343C0016A0FA /* 压缩视频Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88874A2C1D2E343C0016A0FA /* 压缩视频UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88874A3C1D2E343C0016A0FA /* Build configuration list for PBXNativeTarget "压缩视频UITests" */;
+			buildPhases = (
+				88874A291D2E343C0016A0FA /* Sources */,
+				88874A2A1D2E343C0016A0FA /* Frameworks */,
+				88874A2B1D2E343C0016A0FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88874A2F1D2E343C0016A0FA /* PBXTargetDependency */,
+			);
+			name = "压缩视频UITests";
+			productName = "压缩视频UITests";
+			productReference = 88874A2D1D2E343C0016A0FA /* 压缩视频UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88874A011D2E343C0016A0FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					88874A081D2E343C0016A0FA = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = V8KZUF7PTN;
+					};
+					88874A211D2E343C0016A0FA = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 88874A081D2E343C0016A0FA;
+					};
+					88874A2C1D2E343C0016A0FA = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 88874A081D2E343C0016A0FA;
+					};
+				};
+			};
+			buildConfigurationList = 88874A041D2E343C0016A0FA /* Build configuration list for PBXProject "压缩视频" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88874A001D2E343C0016A0FA;
+			productRefGroup = 88874A0A1D2E343C0016A0FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88874A081D2E343C0016A0FA /* 压缩视频 */,
+				88874A211D2E343C0016A0FA /* 压缩视频Tests */,
+				88874A2C1D2E343C0016A0FA /* 压缩视频UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88874A071D2E343C0016A0FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88874A1C1D2E343C0016A0FA /* LaunchScreen.storyboard in Resources */,
+				88874A191D2E343C0016A0FA /* Assets.xcassets in Resources */,
+				88874A171D2E343C0016A0FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88874A201D2E343C0016A0FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88874A2B1D2E343C0016A0FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88874A051D2E343C0016A0FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88874A141D2E343C0016A0FA /* ViewController.m in Sources */,
+				88874A511D2E38670016A0FA /* SendVideoView.m in Sources */,
+				88874A411D2E352F0016A0FA /* CustomCamera.m in Sources */,
+				88874A481D2E36A50016A0FA /* UIView+SDAutoLayout.m in Sources */,
+				88874A111D2E343C0016A0FA /* AppDelegate.m in Sources */,
+				88874A0E1D2E343C0016A0FA /* main.m in Sources */,
+				88874A471D2E36A50016A0FA /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				88874A4E1D2E37500016A0FA /* UIView+Extension.m in Sources */,
+				88874A4B1D2E37130016A0FA /* ShortVideoProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88874A1E1D2E343C0016A0FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88874A271D2E343C0016A0FA /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88874A291D2E343C0016A0FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88874A321D2E343C0016A0FA /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88874A241D2E343C0016A0FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88874A081D2E343C0016A0FA /* 压缩视频 */;
+			targetProxy = 88874A231D2E343C0016A0FA /* PBXContainerItemProxy */;
+		};
+		88874A2F1D2E343C0016A0FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88874A081D2E343C0016A0FA /* 压缩视频 */;
+			targetProxy = 88874A2E1D2E343C0016A0FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88874A151D2E343C0016A0FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88874A161D2E343C0016A0FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88874A1A1D2E343C0016A0FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88874A1B1D2E343C0016A0FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88874A341D2E343C0016A0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88874A351D2E343C0016A0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88874A371D2E343C0016A0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = V8KZUF7PTN;
+				INFOPLIST_FILE = "压缩视频/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BeiJingHaiRuiKe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		88874A381D2E343C0016A0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = V8KZUF7PTN;
+				INFOPLIST_FILE = "压缩视频/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BeiJingHaiRuiKe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		88874A3A1D2E343C0016A0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "压缩视频Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "style--.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/压缩视频.app/压缩视频";
+			};
+			name = Debug;
+		};
+		88874A3B1D2E343C0016A0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "压缩视频Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "style--.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/压缩视频.app/压缩视频";
+			};
+			name = Release;
+		};
+		88874A3D1D2E343C0016A0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "压缩视频UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "style--.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "压缩视频";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		88874A3E1D2E343C0016A0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "压缩视频UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "style--.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "压缩视频";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88874A041D2E343C0016A0FA /* Build configuration list for PBXProject "压缩视频" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88874A341D2E343C0016A0FA /* Debug */,
+				88874A351D2E343C0016A0FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88874A361D2E343C0016A0FA /* Build configuration list for PBXNativeTarget "压缩视频" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88874A371D2E343C0016A0FA /* Debug */,
+				88874A381D2E343C0016A0FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88874A391D2E343C0016A0FA /* Build configuration list for PBXNativeTarget "压缩视频Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88874A3A1D2E343C0016A0FA /* Debug */,
+				88874A3B1D2E343C0016A0FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88874A3C1D2E343C0016A0FA /* Build configuration list for PBXNativeTarget "压缩视频UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88874A3D1D2E343C0016A0FA /* Debug */,
+				88874A3E1D2E343C0016A0FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88874A011D2E343C0016A0FA /* Project object */;
+}

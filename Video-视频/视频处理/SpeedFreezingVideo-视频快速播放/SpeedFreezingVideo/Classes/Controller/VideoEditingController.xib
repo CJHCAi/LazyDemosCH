@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoEditingController">
+            <connections>
+                <outlet property="prepareMaskView" destination="eCJ-4b-cgn" id="LF6-s2-3hg"/>
+                <outlet property="speedMultipleHolderView" destination="BIZ-Lg-RkG" id="a2H-BX-sXG"/>
+                <outlet property="videoPlayerView" destination="YiP-ZY-FnV" id="oIo-PM-eyA"/>
+                <outlet property="videoPlayerViewWidthConstraint" destination="zok-q8-H4A" id="lGA-DQ-v6Q"/>
+                <outlet property="videoRangeButton" destination="Qc8-dq-2JP" id="ZiF-XG-lIF"/>
+                <outlet property="videoRangeButtonLeadingConstraint" destination="GS1-KC-Nvz" id="e5w-LM-xyz"/>
+                <outlet property="videoSpeedButton" destination="fRl-D0-dYP" id="sD0-4a-HYE"/>
+                <outlet property="videoSpeedButtonTrailingConstraint" destination="mYb-8S-c4t" id="8vq-Fu-IFS"/>
+                <outlet property="videoTrimmerHolderView" destination="U2e-Uf-2zW" id="LrJ-gp-pzn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="sizeAdaptiveConstraints" destination="wFx-f5-gVP" id="faa-nK-MLi"/>
+                <outletCollection property="sizeAdaptiveConstraints" destination="5r9-6c-T0T" id="tFf-6O-X5x"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZ8-vg-LZG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                    <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="wFx-f5-gVP"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YiP-ZY-FnV" customClass="VideoPlayingView">
+                    <rect key="frame" x="40" y="0.0" width="295" height="250"/>
+                    <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="A9f-bi-c1m"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="600" constant="20" id="ERr-d3-Rg9"/>
+                        <constraint firstAttribute="height" constant="400" id="Krh-2e-mbr"/>
+                        <constraint firstAttribute="height" constant="250" id="LkD-FA-1v6"/>
+                        <constraint firstAttribute="width" secondItem="YiP-ZY-FnV" secondAttribute="height" multiplier="16:9" id="lPy-st-4RR"/>
+                        <constraint firstAttribute="width" constant="295" id="zok-q8-H4A"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="A9f-bi-c1m"/>
+                            <exclude reference="ERr-d3-Rg9"/>
+                            <exclude reference="Krh-2e-mbr"/>
+                            <exclude reference="LkD-FA-1v6"/>
+                            <exclude reference="lPy-st-4RR"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2e-Uf-2zW">
+                    <rect key="frame" x="15" y="289" width="345" height="89"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="89" id="5r9-6c-T0T"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BIZ-Lg-RkG">
+                    <rect key="frame" x="15" y="459" width="345" height="2"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="700" constant="2" id="GUv-Oe-H7X"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc8-dq-2JP">
+                    <rect key="frame" x="55" y="418" width="110" height="21"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="Lqi-FP-RLe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="裁剪视频" image="rangeEditing_white"/>
+                    <connections>
+                        <action selector="clickOperatingRangeButton:" destination="-1" eventType="touchUpInside" id="biC-P2-Pym"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRl-D0-dYP">
+                    <rect key="frame" x="210" y="418" width="110" height="21"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="X78-Y7-dp7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="速度控制" image="speedEditing_yellow">
+                        <color key="titleColor" red="1" green="0.94509803921568625" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickOperatingSpeedButton:" destination="-1" eventType="touchUpInside" id="Nrq-33-vTj"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCJ-4b-cgn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YiP-ZY-FnV" secondAttribute="trailing" id="082-tf-IaP"/>
+                <constraint firstAttribute="trailing" secondItem="YiP-ZY-FnV" secondAttribute="trailing" id="0jr-KQ-W44"/>
+                <constraint firstAttribute="bottom" secondItem="eCJ-4b-cgn" secondAttribute="bottom" id="3x8-ki-9XS"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="centerX" secondItem="dZ8-vg-LZG" secondAttribute="centerX" id="6Q0-tL-Rib"/>
+                <constraint firstItem="dZ8-vg-LZG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6po-JA-rNb"/>
+                <constraint firstAttribute="trailing" secondItem="dZ8-vg-LZG" secondAttribute="trailing" id="ATW-QE-Q7c"/>
+                <constraint firstItem="BIZ-Lg-RkG" firstAttribute="trailing" secondItem="U2e-Uf-2zW" secondAttribute="trailing" id="BI4-Ar-J5R"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="leading" relation="lessThanOrEqual" secondItem="dZ8-vg-LZG" secondAttribute="leading" constant="60" id="ClP-AS-Gtc"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DG2-He-hR0"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" priority="700" constant="40" id="EhH-wf-IFd"/>
+                <constraint firstItem="dZ8-vg-LZG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="El2-M1-ayU"/>
+                <constraint firstItem="Qc8-dq-2JP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="GS1-KC-Nvz"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dZ8-vg-LZG" secondAttribute="leading" constant="30" id="HXF-Zd-NUh"/>
+                <constraint firstItem="fRl-D0-dYP" firstAttribute="leading" secondItem="U2e-Uf-2zW" secondAttribute="leading" id="IiK-cg-CFx"/>
+                <constraint firstItem="U2e-Uf-2zW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LSx-Cd-BJq"/>
+                <constraint firstItem="BIZ-Lg-RkG" firstAttribute="leading" secondItem="U2e-Uf-2zW" secondAttribute="leading" id="Qch-OJ-c2y"/>
+                <constraint firstItem="fRl-D0-dYP" firstAttribute="top" secondItem="U2e-Uf-2zW" secondAttribute="bottom" constant="40" id="RIL-Da-30a"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="trailing" secondItem="dZ8-vg-LZG" secondAttribute="trailing" constant="-30" id="RRK-no-Zus"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SeI-nD-OrP"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="width" secondItem="dZ8-vg-LZG" secondAttribute="width" multiplier="0.3:1" priority="600" id="UXZ-em-iQc"/>
+                <constraint firstAttribute="trailing" secondItem="eCJ-4b-cgn" secondAttribute="trailing" id="UyL-Nz-xlg"/>
+                <constraint firstItem="eCJ-4b-cgn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Z9L-Gi-6AB"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dZ8-vg-LZG" secondAttribute="leading" constant="20" id="Zbb-nS-2Hl"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dk9-Ra-VA1"/>
+                <constraint firstItem="BIZ-Lg-RkG" firstAttribute="top" secondItem="fRl-D0-dYP" secondAttribute="bottom" constant="20" id="h2P-fn-4yt"/>
+                <constraint firstItem="eCJ-4b-cgn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mHB-OG-25B"/>
+                <constraint firstAttribute="trailing" secondItem="fRl-D0-dYP" secondAttribute="trailing" constant="55" id="mYb-8S-c4t"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="trailing" secondItem="dZ8-vg-LZG" secondAttribute="trailing" constant="-30" id="o8m-SD-gMn"/>
+                <constraint firstItem="U2e-Uf-2zW" firstAttribute="top" secondItem="YiP-ZY-FnV" secondAttribute="bottom" constant="60" id="puJ-ep-pZs"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vGE-vi-N3L"/>
+                <constraint firstItem="U2e-Uf-2zW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="va9-jG-gCX"/>
+                <constraint firstItem="YiP-ZY-FnV" firstAttribute="height" secondItem="dZ8-vg-LZG" secondAttribute="height" id="wkN-oD-ymk"/>
+                <constraint firstAttribute="trailing" secondItem="U2e-Uf-2zW" secondAttribute="trailing" constant="15" id="xI9-Hq-3l7"/>
+                <constraint firstItem="Qc8-dq-2JP" firstAttribute="top" secondItem="fRl-D0-dYP" secondAttribute="top" id="zDp-Gq-IOK"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="082-tf-IaP"/>
+                    <exclude reference="0jr-KQ-W44"/>
+                    <exclude reference="ClP-AS-Gtc"/>
+                    <exclude reference="DG2-He-hR0"/>
+                    <exclude reference="EhH-wf-IFd"/>
+                    <exclude reference="HXF-Zd-NUh"/>
+                    <exclude reference="RRK-no-Zus"/>
+                    <exclude reference="UXZ-em-iQc"/>
+                    <exclude reference="Zbb-nS-2Hl"/>
+                    <exclude reference="dk9-Ra-VA1"/>
+                    <exclude reference="o8m-SD-gMn"/>
+                    <exclude reference="vGE-vi-N3L"/>
+                    <exclude reference="puJ-ep-pZs"/>
+                    <exclude reference="IiK-cg-CFx"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="rangeEditing_white" width="27" height="18"/>
+        <image name="speedEditing_yellow" width="27" height="18"/>
+    </resources>
+</document>

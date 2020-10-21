@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A0B93C91F28908D009190F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B93C81F28908D009190F6 /* main.m */; };
+		2A0B93CC1F28908D009190F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B93CB1F28908D009190F6 /* AppDelegate.m */; };
+		2A0B93CF1F28908D009190F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B93CE1F28908D009190F6 /* ViewController.m */; };
+		2A0B93D21F28908D009190F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0B93D01F28908D009190F6 /* Main.storyboard */; };
+		2A0B93D41F28908D009190F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A0B93D31F28908D009190F6 /* Assets.xcassets */; };
+		2A0B93D71F28908D009190F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0B93D51F28908D009190F6 /* LaunchScreen.storyboard */; };
+		2A0B93FB1F2890B0009190F6 /* SNHVideoTrimmerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B93E11F2890B0009190F6 /* SNHVideoTrimmerController.m */; };
+		2A0B93FC1F2890B0009190F6 /* videoEditor_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A0B93E41F2890B0009190F6 /* videoEditor_delete@2x.png */; };
+		2A0B93FD1F2890B0009190F6 /* videoEditor_delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A0B93E51F2890B0009190F6 /* videoEditor_delete@3x.png */; };
+		2A0B93FE1F2890B0009190F6 /* videoEditor_play_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A0B93E61F2890B0009190F6 /* videoEditor_play_h@2x.png */; };
+		2A0B93FF1F2890B0009190F6 /* videoEditor_play_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A0B93E71F2890B0009190F6 /* videoEditor_play_h@3x.png */; };
+		2A0B94001F2890B0009190F6 /* SNHVideoEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B93EA1F2890B0009190F6 /* SNHVideoEditor.m */; };
+		2A0B94011F2890B0009190F6 /* SNHVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B93EC1F2890B0009190F6 /* SNHVideoModel.m */; };
+		2A0B94051F2890B0009190F6 /* SNHScrollCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B93F71F2890B0009190F6 /* SNHScrollCellView.m */; };
+		2A0B94061F2890B0009190F6 /* SNHVideoPartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B93F91F2890B0009190F6 /* SNHVideoPartCell.m */; };
+		2A0B94071F2890B0009190F6 /* SNHVideoPartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0B93FA1F2890B0009190F6 /* SNHVideoPartCell.xib */; };
+		2A3F13001F29C14400B710B6 /* SNHRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F12F81F29C14400B710B6 /* SNHRulerView.m */; };
+		2A3F13011F29C14400B710B6 /* SNHThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F12FA1F29C14400B710B6 /* SNHThumbView.m */; };
+		2A3F13021F29C14400B710B6 /* SNHTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F12FC1F29C14400B710B6 /* SNHTimerView.m */; };
+		2A3F13031F29C14400B710B6 /* SNHVideoTrimmerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F12FF1F29C14400B710B6 /* SNHVideoTrimmerView.m */; };
+		2A99B34D1FC676B400C4B0C0 /* SNHVideoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A99B34C1FC676B400C4B0C0 /* SNHVideoTool.m */; };
+		2AD5A7C21F6915120078499A /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7A61F6915120078499A /* NSBundle+TZImagePicker.m */; };
+		2AD5A7C31F6915120078499A /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7A81F6915120078499A /* TZAssetCell.m */; };
+		2AD5A7C41F6915120078499A /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7AA1F6915120078499A /* TZAssetModel.m */; };
+		2AD5A7C51F6915120078499A /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7AC1F6915120078499A /* TZGifPhotoPreviewController.m */; };
+		2AD5A7C61F6915120078499A /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7AE1F6915120078499A /* TZImageCropManager.m */; };
+		2AD5A7C71F6915120078499A /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7B01F6915120078499A /* TZImageManager.m */; };
+		2AD5A7C81F6915120078499A /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AD5A7B11F6915120078499A /* TZImagePickerController.bundle */; };
+		2AD5A7C91F6915120078499A /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7B31F6915120078499A /* TZImagePickerController.m */; };
+		2AD5A7CA1F6915120078499A /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7B51F6915120078499A /* TZLocationManager.m */; };
+		2AD5A7CB1F6915120078499A /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7B71F6915120078499A /* TZPhotoPickerController.m */; };
+		2AD5A7CC1F6915120078499A /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7B91F6915120078499A /* TZPhotoPreviewCell.m */; };
+		2AD5A7CD1F6915120078499A /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7BB1F6915120078499A /* TZPhotoPreviewController.m */; };
+		2AD5A7CE1F6915120078499A /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7BD1F6915120078499A /* TZProgressView.m */; };
+		2AD5A7CF1F6915120078499A /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7BF1F6915120078499A /* TZVideoPlayerController.m */; };
+		2AD5A7D01F6915120078499A /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5A7C11F6915120078499A /* UIView+Layout.m */; };
+		2ADD2A2D1F29DA490043B954 /* SNHVideoEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD2A2C1F29DA490043B954 /* SNHVideoEditViewController.m */; };
+		2ADD2A311F29DE9F0043B954 /* NSString+TimeConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD2A301F29DE9F0043B954 /* NSString+TimeConvert.m */; };
+		2ADD2A341F29E0150043B954 /* MBProgressHUD+SHN.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD2A331F29E0150043B954 /* MBProgressHUD+SHN.m */; };
+		2ADD2A461F2B12600043B954 /* back12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD2A431F2B12600043B954 /* back12@2x.png */; };
+		2ADD2A471F2B12600043B954 /* mov_bbb.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD2A441F2B12600043B954 /* mov_bbb.mp4 */; };
+		2ADD2A481F2B12600043B954 /* ping20s.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD2A451F2B12600043B954 /* ping20s.mp4 */; };
+		2ADD2A501F2B126A0043B954 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD2A4B1F2B126A0043B954 /* MBProgressHUD.m */; };
+		2ADD2A511F2B126A0043B954 /* ZYQAssetPicker.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD2A4D1F2B126A0043B954 /* ZYQAssetPicker.Bundle */; };
+		2ADD2A521F2B126A0043B954 /* ZYQAssetPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD2A4F1F2B126A0043B954 /* ZYQAssetPickerController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A0B93C41F28908D009190F6 /* SNHVideoEditorTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNHVideoEditorTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A0B93C81F28908D009190F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A0B93CA1F28908D009190F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2A0B93CB1F28908D009190F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2A0B93CD1F28908D009190F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2A0B93CE1F28908D009190F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2A0B93D11F28908D009190F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A0B93D31F28908D009190F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A0B93D61F28908D009190F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A0B93D81F28908D009190F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A0B93E01F2890B0009190F6 /* SNHVideoTrimmerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNHVideoTrimmerController.h; sourceTree = "<group>"; };
+		2A0B93E11F2890B0009190F6 /* SNHVideoTrimmerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNHVideoTrimmerController.m; sourceTree = "<group>"; };
+		2A0B93E41F2890B0009190F6 /* videoEditor_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoEditor_delete@2x.png"; sourceTree = "<group>"; };
+		2A0B93E51F2890B0009190F6 /* videoEditor_delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoEditor_delete@3x.png"; sourceTree = "<group>"; };
+		2A0B93E61F2890B0009190F6 /* videoEditor_play_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoEditor_play_h@2x.png"; sourceTree = "<group>"; };
+		2A0B93E71F2890B0009190F6 /* videoEditor_play_h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoEditor_play_h@3x.png"; sourceTree = "<group>"; };
+		2A0B93E91F2890B0009190F6 /* SNHVideoEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNHVideoEditor.h; sourceTree = "<group>"; };
+		2A0B93EA1F2890B0009190F6 /* SNHVideoEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNHVideoEditor.m; sourceTree = "<group>"; };
+		2A0B93EB1F2890B0009190F6 /* SNHVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNHVideoModel.h; sourceTree = "<group>"; };
+		2A0B93EC1F2890B0009190F6 /* SNHVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNHVideoModel.m; sourceTree = "<group>"; };
+		2A0B93F61F2890B0009190F6 /* SNHScrollCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNHScrollCellView.h; sourceTree = "<group>"; };
+		2A0B93F71F2890B0009190F6 /* SNHScrollCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNHScrollCellView.m; sourceTree = "<group>"; };
+		2A0B93F81F2890B0009190F6 /* SNHVideoPartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNHVideoPartCell.h; sourceTree = "<group>"; };
+		2A0B93F91F2890B0009190F6 /* SNHVideoPartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNHVideoPartCell.m; sourceTree = "<group>"; };
+		2A0B93FA1F2890B0009190F6 /* SNHVideoPartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNHVideoPartCell.xib; sourceTree = "<group>"; };
+		2A3F12F71F29C14400B710B6 /* SNHRulerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNHRulerView.h; sourceTree = "<group>"; };
+		2A3F12F81F29C14400B710B6 /* SNHRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNHRulerView.m; sourceTree = "<group>"; };
+		2A3F12F91F29C14400B710B6 /* SNHThumbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNHThumbView.h; sourceTree = "<group>"; };
+		2A3F12FA1F29C14400B710B6 /* SNHThumbView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNHThumbView.m; sourceTree = "<group>"; };
+		2A3F12FB1F29C14400B710B6 /* SNHTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNHTimerView.h; sourceTree = "<group>"; };
+		2A3F12FC1F29C14400B710B6 /* SNHTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNHTimerView.m; sourceTree = "<group>"; };
+		2A3F12FD1F29C14400B710B6 /* SNHVideoTrimmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNHVideoTrimmer.h; sourceTree = "<group>"; };
+		2A3F12FE1F29C14400B710B6 /* SNHVideoTrimmerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNHVideoTrimmerView.h; sourceTree = "<group>"; };
+		2A3F12FF1F29C14400B710B6 /* SNHVideoTrimmerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNHVideoTrimmerView.m; sourceTree = "<group>"; };
+		2A99B34B1FC676B400C4B0C0 /* SNHVideoTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNHVideoTool.h; sourceTree = "<group>"; };
+		2A99B34C1FC676B400C4B0C0 /* SNHVideoTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNHVideoTool.m; sourceTree = "<group>"; };
+		2A99B34E1FC6AA8E00C4B0C0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2AD5A7A51F6915120078499A /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
+		2AD5A7A61F6915120078499A /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
+		2AD5A7A71F6915120078499A /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
+		2AD5A7A81F6915120078499A /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
+		2AD5A7A91F6915120078499A /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
+		2AD5A7AA1F6915120078499A /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
+		2AD5A7AB1F6915120078499A /* TZGifPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZGifPhotoPreviewController.h; sourceTree = "<group>"; };
+		2AD5A7AC1F6915120078499A /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
+		2AD5A7AD1F6915120078499A /* TZImageCropManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageCropManager.h; sourceTree = "<group>"; };
+		2AD5A7AE1F6915120078499A /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
+		2AD5A7AF1F6915120078499A /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
+		2AD5A7B01F6915120078499A /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
+		2AD5A7B11F6915120078499A /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
+		2AD5A7B21F6915120078499A /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
+		2AD5A7B31F6915120078499A /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
+		2AD5A7B41F6915120078499A /* TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLocationManager.h; sourceTree = "<group>"; };
+		2AD5A7B51F6915120078499A /* TZLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLocationManager.m; sourceTree = "<group>"; };
+		2AD5A7B61F6915120078499A /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
+		2AD5A7B71F6915120078499A /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
+		2AD5A7B81F6915120078499A /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
+		2AD5A7B91F6915120078499A /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
+		2AD5A7BA1F6915120078499A /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
+		2AD5A7BB1F6915120078499A /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
+		2AD5A7BC1F6915120078499A /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
+		2AD5A7BD1F6915120078499A /* TZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZProgressView.m; sourceTree = "<group>"; };
+		2AD5A7BE1F6915120078499A /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
+		2AD5A7BF1F6915120078499A /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
+		2AD5A7C01F6915120078499A /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		2AD5A7C11F6915120078499A /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		2ADD2A2B1F29DA490043B954 /* SNHVideoEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNHVideoEditViewController.h; sourceTree = "<group>"; };
+		2ADD2A2C1F29DA490043B954 /* SNHVideoEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNHVideoEditViewController.m; sourceTree = "<group>"; };
+		2ADD2A2F1F29DE9F0043B954 /* NSString+TimeConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TimeConvert.h"; sourceTree = "<group>"; };
+		2ADD2A301F29DE9F0043B954 /* NSString+TimeConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TimeConvert.m"; sourceTree = "<group>"; };
+		2ADD2A321F29E0150043B954 /* MBProgressHUD+SHN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+SHN.h"; sourceTree = "<group>"; };
+		2ADD2A331F29E0150043B954 /* MBProgressHUD+SHN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+SHN.m"; sourceTree = "<group>"; };
+		2ADD2A431F2B12600043B954 /* back12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back12@2x.png"; sourceTree = "<group>"; };
+		2ADD2A441F2B12600043B954 /* mov_bbb.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mov_bbb.mp4; sourceTree = "<group>"; };
+		2ADD2A451F2B12600043B954 /* ping20s.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ping20s.mp4; sourceTree = "<group>"; };
+		2ADD2A4A1F2B126A0043B954 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		2ADD2A4B1F2B126A0043B954 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2ADD2A4D1F2B126A0043B954 /* ZYQAssetPicker.Bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYQAssetPicker.Bundle; sourceTree = "<group>"; };
+		2ADD2A4E1F2B126A0043B954 /* ZYQAssetPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYQAssetPickerController.h; sourceTree = "<group>"; };
+		2ADD2A4F1F2B126A0043B954 /* ZYQAssetPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYQAssetPickerController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A0B93C11F28908D009190F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A0B93BB1F28908D009190F6 = {
+			isa = PBXGroup;
+			children = (
+				2A0B93C61F28908D009190F6 /* SNHVideoEditorTool */,
+				2A0B93C51F28908D009190F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A0B93C51F28908D009190F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A0B93C41F28908D009190F6 /* SNHVideoEditorTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A0B93C61F28908D009190F6 /* SNHVideoEditorTool */ = {
+			isa = PBXGroup;
+			children = (
+				2ADD2A421F2B12380043B954 /* Librarys */,
+				2ADD2A411F2B12100043B954 /* Resources */,
+				2ADD2A2E1F29DE760043B954 /* Category */,
+				2A0B93DE1F2890B0009190F6 /* VideoEditor */,
+				2A0B93CA1F28908D009190F6 /* AppDelegate.h */,
+				2A0B93CB1F28908D009190F6 /* AppDelegate.m */,
+				2A0B93CD1F28908D009190F6 /* ViewController.h */,
+				2A0B93CE1F28908D009190F6 /* ViewController.m */,
+				2A0B93D01F28908D009190F6 /* Main.storyboard */,
+				2A99B34E1FC6AA8E00C4B0C0 /* PrefixHeader.pch */,
+				2A0B93D31F28908D009190F6 /* Assets.xcassets */,
+				2A0B93D51F28908D009190F6 /* LaunchScreen.storyboard */,
+				2A0B93D81F28908D009190F6 /* Info.plist */,
+				2A0B93C71F28908D009190F6 /* Supporting Files */,
+			);
+			path = SNHVideoEditorTool;
+			sourceTree = "<group>";
+		};
+		2A0B93C71F28908D009190F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A0B93C81F28908D009190F6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A0B93DE1F2890B0009190F6 /* VideoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				2A0B93DF1F2890B0009190F6 /* Controller */,
+				2A0B93E31F2890B0009190F6 /* Resource */,
+				2A0B93E81F2890B0009190F6 /* VideoEditorTools */,
+				2A0B93ED1F2890B0009190F6 /* VideoTrimmer */,
+				2A0B93F51F2890B0009190F6 /* View */,
+			);
+			path = VideoEditor;
+			sourceTree = "<group>";
+		};
+		2A0B93DF1F2890B0009190F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A0B93E01F2890B0009190F6 /* SNHVideoTrimmerController.h */,
+				2A0B93E11F2890B0009190F6 /* SNHVideoTrimmerController.m */,
+				2ADD2A2B1F29DA490043B954 /* SNHVideoEditViewController.h */,
+				2ADD2A2C1F29DA490043B954 /* SNHVideoEditViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A0B93E31F2890B0009190F6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2A0B93E41F2890B0009190F6 /* videoEditor_delete@2x.png */,
+				2A0B93E51F2890B0009190F6 /* videoEditor_delete@3x.png */,
+				2A0B93E61F2890B0009190F6 /* videoEditor_play_h@2x.png */,
+				2A0B93E71F2890B0009190F6 /* videoEditor_play_h@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2A0B93E81F2890B0009190F6 /* VideoEditorTools */ = {
+			isa = PBXGroup;
+			children = (
+				2A0B93E91F2890B0009190F6 /* SNHVideoEditor.h */,
+				2A0B93EA1F2890B0009190F6 /* SNHVideoEditor.m */,
+				2A0B93EB1F2890B0009190F6 /* SNHVideoModel.h */,
+				2A0B93EC1F2890B0009190F6 /* SNHVideoModel.m */,
+				2A99B34B1FC676B400C4B0C0 /* SNHVideoTool.h */,
+				2A99B34C1FC676B400C4B0C0 /* SNHVideoTool.m */,
+			);
+			path = VideoEditorTools;
+			sourceTree = "<group>";
+		};
+		2A0B93ED1F2890B0009190F6 /* VideoTrimmer */ = {
+			isa = PBXGroup;
+			children = (
+				2A3F12F71F29C14400B710B6 /* SNHRulerView.h */,
+				2A3F12F81F29C14400B710B6 /* SNHRulerView.m */,
+				2A3F12F91F29C14400B710B6 /* SNHThumbView.h */,
+				2A3F12FA1F29C14400B710B6 /* SNHThumbView.m */,
+				2A3F12FB1F29C14400B710B6 /* SNHTimerView.h */,
+				2A3F12FC1F29C14400B710B6 /* SNHTimerView.m */,
+				2A3F12FD1F29C14400B710B6 /* SNHVideoTrimmer.h */,
+				2A3F12FE1F29C14400B710B6 /* SNHVideoTrimmerView.h */,
+				2A3F12FF1F29C14400B710B6 /* SNHVideoTrimmerView.m */,
+			);
+			path = VideoTrimmer;
+			sourceTree = "<group>";
+		};
+		2A0B93F51F2890B0009190F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A0B93F61F2890B0009190F6 /* SNHScrollCellView.h */,
+				2A0B93F71F2890B0009190F6 /* SNHScrollCellView.m */,
+				2A0B93F81F2890B0009190F6 /* SNHVideoPartCell.h */,
+				2A0B93F91F2890B0009190F6 /* SNHVideoPartCell.m */,
+				2A0B93FA1F2890B0009190F6 /* SNHVideoPartCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2AD5A7A41F6915120078499A /* TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				2AD5A7A51F6915120078499A /* NSBundle+TZImagePicker.h */,
+				2AD5A7A61F6915120078499A /* NSBundle+TZImagePicker.m */,
+				2AD5A7A71F6915120078499A /* TZAssetCell.h */,
+				2AD5A7A81F6915120078499A /* TZAssetCell.m */,
+				2AD5A7A91F6915120078499A /* TZAssetModel.h */,
+				2AD5A7AA1F6915120078499A /* TZAssetModel.m */,
+				2AD5A7AB1F6915120078499A /* TZGifPhotoPreviewController.h */,
+				2AD5A7AC1F6915120078499A /* TZGifPhotoPreviewController.m */,
+				2AD5A7AD1F6915120078499A /* TZImageCropManager.h */,
+				2AD5A7AE1F6915120078499A /* TZImageCropManager.m */,
+				2AD5A7AF1F6915120078499A /* TZImageManager.h */,
+				2AD5A7B01F6915120078499A /* TZImageManager.m */,
+				2AD5A7B11F6915120078499A /* TZImagePickerController.bundle */,
+				2AD5A7B21F6915120078499A /* TZImagePickerController.h */,
+				2AD5A7B31F6915120078499A /* TZImagePickerController.m */,
+				2AD5A7B41F6915120078499A /* TZLocationManager.h */,
+				2AD5A7B51F6915120078499A /* TZLocationManager.m */,
+				2AD5A7B61F6915120078499A /* TZPhotoPickerController.h */,
+				2AD5A7B71F6915120078499A /* TZPhotoPickerController.m */,
+				2AD5A7B81F6915120078499A /* TZPhotoPreviewCell.h */,
+				2AD5A7B91F6915120078499A /* TZPhotoPreviewCell.m */,
+				2AD5A7BA1F6915120078499A /* TZPhotoPreviewController.h */,
+				2AD5A7BB1F6915120078499A /* TZPhotoPreviewController.m */,
+				2AD5A7BC1F6915120078499A /* TZProgressView.h */,
+				2AD5A7BD1F6915120078499A /* TZProgressView.m */,
+				2AD5A7BE1F6915120078499A /* TZVideoPlayerController.h */,
+				2AD5A7BF1F6915120078499A /* TZVideoPlayerController.m */,
+				2AD5A7C01F6915120078499A /* UIView+Layout.h */,
+				2AD5A7C11F6915120078499A /* UIView+Layout.m */,
+			);
+			path = TZImagePickerController;
+			sourceTree = "<group>";
+		};
+		2ADD2A2E1F29DE760043B954 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2ADD2A2F1F29DE9F0043B954 /* NSString+TimeConvert.h */,
+				2ADD2A301F29DE9F0043B954 /* NSString+TimeConvert.m */,
+				2ADD2A321F29E0150043B954 /* MBProgressHUD+SHN.h */,
+				2ADD2A331F29E0150043B954 /* MBProgressHUD+SHN.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2ADD2A411F2B12100043B954 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2ADD2A431F2B12600043B954 /* back12@2x.png */,
+				2ADD2A441F2B12600043B954 /* mov_bbb.mp4 */,
+				2ADD2A451F2B12600043B954 /* ping20s.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2ADD2A421F2B12380043B954 /* Librarys */ = {
+			isa = PBXGroup;
+			children = (
+				2AD5A7A41F6915120078499A /* TZImagePickerController */,
+				2ADD2A491F2B126A0043B954 /* MBProgressHUD */,
+				2ADD2A4C1F2B126A0043B954 /* ZYQAssetPickerController */,
+			);
+			path = Librarys;
+			sourceTree = "<group>";
+		};
+		2ADD2A491F2B126A0043B954 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2ADD2A4A1F2B126A0043B954 /* MBProgressHUD.h */,
+				2ADD2A4B1F2B126A0043B954 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		2ADD2A4C1F2B126A0043B954 /* ZYQAssetPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				2ADD2A4D1F2B126A0043B954 /* ZYQAssetPicker.Bundle */,
+				2ADD2A4E1F2B126A0043B954 /* ZYQAssetPickerController.h */,
+				2ADD2A4F1F2B126A0043B954 /* ZYQAssetPickerController.m */,
+			);
+			path = ZYQAssetPickerController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A0B93C31F28908D009190F6 /* SNHVideoEditorTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A0B93DB1F28908D009190F6 /* Build configuration list for PBXNativeTarget "SNHVideoEditorTool" */;
+			buildPhases = (
+				2A0B93C01F28908D009190F6 /* Sources */,
+				2A0B93C11F28908D009190F6 /* Frameworks */,
+				2A0B93C21F28908D009190F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNHVideoEditorTool;
+			productName = SNHVideoEditorTool;
+			productReference = 2A0B93C41F28908D009190F6 /* SNHVideoEditorTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A0B93BC1F28908D009190F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = huangshuni;
+				TargetAttributes = {
+					2A0B93C31F28908D009190F6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VF8XM5X8U6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2A0B93BF1F28908D009190F6 /* Build configuration list for PBXProject "SNHVideoEditorTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 2A0B93BB1F28908D009190F6;
+			productRefGroup = 2A0B93C51F28908D009190F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A0B93C31F28908D009190F6 /* SNHVideoEditorTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A0B93C21F28908D009190F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A0B93D71F28908D009190F6 /* LaunchScreen.storyboard in Resources */,
+				2A0B94071F2890B0009190F6 /* SNHVideoPartCell.xib in Resources */,
+				2A0B93FF1F2890B0009190F6 /* videoEditor_play_h@3x.png in Resources */,
+				2ADD2A481F2B12600043B954 /* ping20s.mp4 in Resources */,
+				2A0B93D41F28908D009190F6 /* Assets.xcassets in Resources */,
+				2A0B93FC1F2890B0009190F6 /* videoEditor_delete@2x.png in Resources */,
+				2A0B93FD1F2890B0009190F6 /* videoEditor_delete@3x.png in Resources */,
+				2A0B93FE1F2890B0009190F6 /* videoEditor_play_h@2x.png in Resources */,
+				2ADD2A471F2B12600043B954 /* mov_bbb.mp4 in Resources */,
+				2ADD2A461F2B12600043B954 /* back12@2x.png in Resources */,
+				2A0B93D21F28908D009190F6 /* Main.storyboard in Resources */,
+				2ADD2A511F2B126A0043B954 /* ZYQAssetPicker.Bundle in Resources */,
+				2AD5A7C81F6915120078499A /* TZImagePickerController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A0B93C01F28908D009190F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD5A7C21F6915120078499A /* NSBundle+TZImagePicker.m in Sources */,
+				2A0B93CF1F28908D009190F6 /* ViewController.m in Sources */,
+				2A0B94011F2890B0009190F6 /* SNHVideoModel.m in Sources */,
+				2AD5A7CA1F6915120078499A /* TZLocationManager.m in Sources */,
+				2ADD2A521F2B126A0043B954 /* ZYQAssetPickerController.m in Sources */,
+				2A3F13031F29C14400B710B6 /* SNHVideoTrimmerView.m in Sources */,
+				2AD5A7C51F6915120078499A /* TZGifPhotoPreviewController.m in Sources */,
+				2A99B34D1FC676B400C4B0C0 /* SNHVideoTool.m in Sources */,
+				2A3F13021F29C14400B710B6 /* SNHTimerView.m in Sources */,
+				2AD5A7C91F6915120078499A /* TZImagePickerController.m in Sources */,
+				2A0B94051F2890B0009190F6 /* SNHScrollCellView.m in Sources */,
+				2AD5A7CB1F6915120078499A /* TZPhotoPickerController.m in Sources */,
+				2A3F13001F29C14400B710B6 /* SNHRulerView.m in Sources */,
+				2AD5A7C71F6915120078499A /* TZImageManager.m in Sources */,
+				2A0B94061F2890B0009190F6 /* SNHVideoPartCell.m in Sources */,
+				2AD5A7CF1F6915120078499A /* TZVideoPlayerController.m in Sources */,
+				2A0B93CC1F28908D009190F6 /* AppDelegate.m in Sources */,
+				2AD5A7CD1F6915120078499A /* TZPhotoPreviewController.m in Sources */,
+				2AD5A7C31F6915120078499A /* TZAssetCell.m in Sources */,
+				2A0B94001F2890B0009190F6 /* SNHVideoEditor.m in Sources */,
+				2AD5A7C41F6915120078499A /* TZAssetModel.m in Sources */,
+				2ADD2A341F29E0150043B954 /* MBProgressHUD+SHN.m in Sources */,
+				2ADD2A2D1F29DA490043B954 /* SNHVideoEditViewController.m in Sources */,
+				2ADD2A311F29DE9F0043B954 /* NSString+TimeConvert.m in Sources */,
+				2AD5A7CC1F6915120078499A /* TZPhotoPreviewCell.m in Sources */,
+				2A3F13011F29C14400B710B6 /* SNHThumbView.m in Sources */,
+				2AD5A7CE1F6915120078499A /* TZProgressView.m in Sources */,
+				2A0B93C91F28908D009190F6 /* main.m in Sources */,
+				2AD5A7C61F6915120078499A /* TZImageCropManager.m in Sources */,
+				2AD5A7D01F6915120078499A /* UIView+Layout.m in Sources */,
+				2A0B93FB1F2890B0009190F6 /* SNHVideoTrimmerController.m in Sources */,
+				2ADD2A501F2B126A0043B954 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A0B93D01F28908D009190F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A0B93D11F28908D009190F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A0B93D51F28908D009190F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A0B93D61F28908D009190F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A0B93D91F28908D009190F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A0B93DA1F28908D009190F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A0B93DC1F28908D009190F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VF8XM5X8U6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SNHVideoEditorTool/ZYQAssetPickerController",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SNHVideoEditorTool/PrefixHeader.pch";
+				INFOPLIST_FILE = SNHVideoEditorTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsn.text.SNHVideoEditorTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A0B93DD1F28908D009190F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V8KZUF7PTN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SNHVideoEditorTool/ZYQAssetPickerController",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SNHVideoEditorTool/PrefixHeader.pch";
+				INFOPLIST_FILE = SNHVideoEditorTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsn.text.SNHVideoEditorTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A0B93BF1F28908D009190F6 /* Build configuration list for PBXProject "SNHVideoEditorTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A0B93D91F28908D009190F6 /* Debug */,
+				2A0B93DA1F28908D009190F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A0B93DB1F28908D009190F6 /* Build configuration list for PBXNativeTarget "SNHVideoEditorTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A0B93DC1F28908D009190F6 /* Debug */,
+				2A0B93DD1F28908D009190F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A0B93BC1F28908D009190F6 /* Project object */;
+}

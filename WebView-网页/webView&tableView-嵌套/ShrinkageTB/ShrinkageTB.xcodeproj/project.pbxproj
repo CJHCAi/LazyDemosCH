@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D43294A23CE502D2BC5F9A3 /* libPods-ShrinkageTB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A383A9C1B005B71C0F7E44F /* libPods-ShrinkageTB.a */; };
+		A3961BA1BFE6C38F4DB7CD74 /* libPods-ShrinkageTBUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 165DC58BA1BB0256EC5653EF /* libPods-ShrinkageTBUITests.a */; };
+		A462191696199FA7B1592144 /* libPods-ShrinkageTBTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99736D331C0AF4ABA120F511 /* libPods-ShrinkageTBTests.a */; };
+		D84AA76422C20099001D0111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D84AA76322C20099001D0111 /* AppDelegate.m */; };
+		D84AA76722C20099001D0111 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84AA76622C20099001D0111 /* ViewController.m */; };
+		D84AA76A22C20099001D0111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84AA76822C20099001D0111 /* Main.storyboard */; };
+		D84AA76C22C200B6001D0111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84AA76B22C200B6001D0111 /* Assets.xcassets */; };
+		D84AA76F22C200B6001D0111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84AA76D22C200B6001D0111 /* LaunchScreen.storyboard */; };
+		D84AA77222C200B6001D0111 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D84AA77122C200B6001D0111 /* main.m */; };
+		D84AA77C22C200B7001D0111 /* ShrinkageTBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D84AA77B22C200B7001D0111 /* ShrinkageTBTests.m */; };
+		D84AA78722C200B7001D0111 /* ShrinkageTBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D84AA78622C200B7001D0111 /* ShrinkageTBUITests.m */; };
+		D84AA79F22C3412F001D0111 /* HomeNewDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D84AA79B22C3412F001D0111 /* HomeNewDetailsCell.m */; };
+		D84AA7A022C3412F001D0111 /* HomeFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D84AA79D22C3412F001D0111 /* HomeFooterCell.m */; };
+		D84AA7A322C34224001D0111 /* YSLCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D84AA7A122C34224001D0111 /* YSLCustomButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D84AA77822C200B7001D0111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D84AA75722C20098001D0111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D84AA75E22C20099001D0111;
+			remoteInfo = ShrinkageTB;
+		};
+		D84AA78322C200B7001D0111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D84AA75722C20098001D0111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D84AA75E22C20099001D0111;
+			remoteInfo = ShrinkageTB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		165DC58BA1BB0256EC5653EF /* libPods-ShrinkageTBUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShrinkageTBUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A383A9C1B005B71C0F7E44F /* libPods-ShrinkageTB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShrinkageTB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF1AD35906BA58AF5B2DA73 /* Pods-ShrinkageTBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShrinkageTBUITests.release.xcconfig"; path = "Target Support Files/Pods-ShrinkageTBUITests/Pods-ShrinkageTBUITests.release.xcconfig"; sourceTree = "<group>"; };
+		77F0009D5DEB18A84F312EED /* Pods-ShrinkageTBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShrinkageTBTests.release.xcconfig"; path = "Target Support Files/Pods-ShrinkageTBTests/Pods-ShrinkageTBTests.release.xcconfig"; sourceTree = "<group>"; };
+		861D909FCBC21E9A964B8B15 /* Pods-ShrinkageTBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShrinkageTBTests.debug.xcconfig"; path = "Target Support Files/Pods-ShrinkageTBTests/Pods-ShrinkageTBTests.debug.xcconfig"; sourceTree = "<group>"; };
+		99736D331C0AF4ABA120F511 /* libPods-ShrinkageTBTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShrinkageTBTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD95737450740D672303357 /* Pods-ShrinkageTBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShrinkageTBUITests.debug.xcconfig"; path = "Target Support Files/Pods-ShrinkageTBUITests/Pods-ShrinkageTBUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2F3F7707D0BB755A3FCDE27 /* Pods-ShrinkageTB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShrinkageTB.debug.xcconfig"; path = "Target Support Files/Pods-ShrinkageTB/Pods-ShrinkageTB.debug.xcconfig"; sourceTree = "<group>"; };
+		C9A357540637CCDC4079A86B /* Pods-ShrinkageTB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShrinkageTB.release.xcconfig"; path = "Target Support Files/Pods-ShrinkageTB/Pods-ShrinkageTB.release.xcconfig"; sourceTree = "<group>"; };
+		D84AA75F22C20099001D0111 /* ShrinkageTB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShrinkageTB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84AA76222C20099001D0111 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D84AA76322C20099001D0111 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D84AA76522C20099001D0111 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D84AA76622C20099001D0111 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D84AA76922C20099001D0111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D84AA76B22C200B6001D0111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D84AA76E22C200B6001D0111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D84AA77022C200B6001D0111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84AA77122C200B6001D0111 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D84AA77722C200B7001D0111 /* ShrinkageTBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShrinkageTBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84AA77B22C200B7001D0111 /* ShrinkageTBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShrinkageTBTests.m; sourceTree = "<group>"; };
+		D84AA77D22C200B7001D0111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84AA78222C200B7001D0111 /* ShrinkageTBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShrinkageTBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84AA78622C200B7001D0111 /* ShrinkageTBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShrinkageTBUITests.m; sourceTree = "<group>"; };
+		D84AA78822C200B7001D0111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84AA79722C212F8001D0111 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		D84AA79B22C3412F001D0111 /* HomeNewDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNewDetailsCell.m; sourceTree = "<group>"; };
+		D84AA79C22C3412F001D0111 /* HomeNewDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNewDetailsCell.h; sourceTree = "<group>"; };
+		D84AA79D22C3412F001D0111 /* HomeFooterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeFooterCell.m; sourceTree = "<group>"; };
+		D84AA79E22C3412F001D0111 /* HomeFooterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeFooterCell.h; sourceTree = "<group>"; };
+		D84AA7A122C34224001D0111 /* YSLCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSLCustomButton.m; sourceTree = "<group>"; };
+		D84AA7A222C34224001D0111 /* YSLCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLCustomButton.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D84AA75C22C20099001D0111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D43294A23CE502D2BC5F9A3 /* libPods-ShrinkageTB.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84AA77422C200B7001D0111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A462191696199FA7B1592144 /* libPods-ShrinkageTBTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84AA77F22C200B7001D0111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3961BA1BFE6C38F4DB7CD74 /* libPods-ShrinkageTBUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A4EA66C637DB244D2F85C62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2F3F7707D0BB755A3FCDE27 /* Pods-ShrinkageTB.debug.xcconfig */,
+				C9A357540637CCDC4079A86B /* Pods-ShrinkageTB.release.xcconfig */,
+				861D909FCBC21E9A964B8B15 /* Pods-ShrinkageTBTests.debug.xcconfig */,
+				77F0009D5DEB18A84F312EED /* Pods-ShrinkageTBTests.release.xcconfig */,
+				9AD95737450740D672303357 /* Pods-ShrinkageTBUITests.debug.xcconfig */,
+				6CF1AD35906BA58AF5B2DA73 /* Pods-ShrinkageTBUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		43C5E9B0C66EE2C51754CBA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A383A9C1B005B71C0F7E44F /* libPods-ShrinkageTB.a */,
+				99736D331C0AF4ABA120F511 /* libPods-ShrinkageTBTests.a */,
+				165DC58BA1BB0256EC5653EF /* libPods-ShrinkageTBUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D84AA75622C20098001D0111 = {
+			isa = PBXGroup;
+			children = (
+				D84AA76122C20099001D0111 /* ShrinkageTB */,
+				D84AA77A22C200B7001D0111 /* ShrinkageTBTests */,
+				D84AA78522C200B7001D0111 /* ShrinkageTBUITests */,
+				D84AA76022C20099001D0111 /* Products */,
+				2A4EA66C637DB244D2F85C62 /* Pods */,
+				43C5E9B0C66EE2C51754CBA1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D84AA76022C20099001D0111 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D84AA75F22C20099001D0111 /* ShrinkageTB.app */,
+				D84AA77722C200B7001D0111 /* ShrinkageTBTests.xctest */,
+				D84AA78222C200B7001D0111 /* ShrinkageTBUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D84AA76122C20099001D0111 /* ShrinkageTB */ = {
+			isa = PBXGroup;
+			children = (
+				D84AA76222C20099001D0111 /* AppDelegate.h */,
+				D84AA76322C20099001D0111 /* AppDelegate.m */,
+				D84AA76522C20099001D0111 /* ViewController.h */,
+				D84AA76622C20099001D0111 /* ViewController.m */,
+				D84AA79E22C3412F001D0111 /* HomeFooterCell.h */,
+				D84AA79D22C3412F001D0111 /* HomeFooterCell.m */,
+				D84AA79C22C3412F001D0111 /* HomeNewDetailsCell.h */,
+				D84AA79B22C3412F001D0111 /* HomeNewDetailsCell.m */,
+				D84AA7A222C34224001D0111 /* YSLCustomButton.h */,
+				D84AA7A122C34224001D0111 /* YSLCustomButton.m */,
+				D84AA76822C20099001D0111 /* Main.storyboard */,
+				D84AA76B22C200B6001D0111 /* Assets.xcassets */,
+				D84AA76D22C200B6001D0111 /* LaunchScreen.storyboard */,
+				D84AA77022C200B6001D0111 /* Info.plist */,
+				D84AA77122C200B6001D0111 /* main.m */,
+			);
+			path = ShrinkageTB;
+			sourceTree = "<group>";
+		};
+		D84AA77A22C200B7001D0111 /* ShrinkageTBTests */ = {
+			isa = PBXGroup;
+			children = (
+				D84AA77B22C200B7001D0111 /* ShrinkageTBTests.m */,
+				D84AA77D22C200B7001D0111 /* Info.plist */,
+				D84AA79722C212F8001D0111 /* Header.h */,
+			);
+			path = ShrinkageTBTests;
+			sourceTree = "<group>";
+		};
+		D84AA78522C200B7001D0111 /* ShrinkageTBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D84AA78622C200B7001D0111 /* ShrinkageTBUITests.m */,
+				D84AA78822C200B7001D0111 /* Info.plist */,
+			);
+			path = ShrinkageTBUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D84AA75E22C20099001D0111 /* ShrinkageTB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84AA78B22C200B7001D0111 /* Build configuration list for PBXNativeTarget "ShrinkageTB" */;
+			buildPhases = (
+				C6191AFAADB65F3D1F928EE1 /* [CP] Check Pods Manifest.lock */,
+				D84AA75B22C20099001D0111 /* Sources */,
+				D84AA75C22C20099001D0111 /* Frameworks */,
+				D84AA75D22C20099001D0111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShrinkageTB;
+			productName = ShrinkageTB;
+			productReference = D84AA75F22C20099001D0111 /* ShrinkageTB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D84AA77622C200B7001D0111 /* ShrinkageTBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84AA78E22C200B7001D0111 /* Build configuration list for PBXNativeTarget "ShrinkageTBTests" */;
+			buildPhases = (
+				A07210662073C9623AA67E47 /* [CP] Check Pods Manifest.lock */,
+				D84AA77322C200B7001D0111 /* Sources */,
+				D84AA77422C200B7001D0111 /* Frameworks */,
+				D84AA77522C200B7001D0111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D84AA77922C200B7001D0111 /* PBXTargetDependency */,
+			);
+			name = ShrinkageTBTests;
+			productName = ShrinkageTBTests;
+			productReference = D84AA77722C200B7001D0111 /* ShrinkageTBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D84AA78122C200B7001D0111 /* ShrinkageTBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84AA79122C200B7001D0111 /* Build configuration list for PBXNativeTarget "ShrinkageTBUITests" */;
+			buildPhases = (
+				316D4159C27B579C2BCD7313 /* [CP] Check Pods Manifest.lock */,
+				D84AA77E22C200B7001D0111 /* Sources */,
+				D84AA77F22C200B7001D0111 /* Frameworks */,
+				D84AA78022C200B7001D0111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D84AA78422C200B7001D0111 /* PBXTargetDependency */,
+			);
+			name = ShrinkageTBUITests;
+			productName = ShrinkageTBUITests;
+			productReference = D84AA78222C200B7001D0111 /* ShrinkageTBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D84AA75722C20098001D0111 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = yunfu;
+				TargetAttributes = {
+					D84AA75E22C20099001D0111 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					D84AA77622C200B7001D0111 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D84AA75E22C20099001D0111;
+					};
+					D84AA78122C200B7001D0111 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D84AA75E22C20099001D0111;
+					};
+				};
+			};
+			buildConfigurationList = D84AA75A22C20098001D0111 /* Build configuration list for PBXProject "ShrinkageTB" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D84AA75622C20098001D0111;
+			productRefGroup = D84AA76022C20099001D0111 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D84AA75E22C20099001D0111 /* ShrinkageTB */,
+				D84AA77622C200B7001D0111 /* ShrinkageTBTests */,
+				D84AA78122C200B7001D0111 /* ShrinkageTBUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D84AA75D22C20099001D0111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84AA76F22C200B6001D0111 /* LaunchScreen.storyboard in Resources */,
+				D84AA76C22C200B6001D0111 /* Assets.xcassets in Resources */,
+				D84AA76A22C20099001D0111 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84AA77522C200B7001D0111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84AA78022C200B7001D0111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		316D4159C27B579C2BCD7313 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShrinkageTBUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A07210662073C9623AA67E47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShrinkageTBTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6191AFAADB65F3D1F928EE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShrinkageTB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D84AA75B22C20099001D0111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84AA76722C20099001D0111 /* ViewController.m in Sources */,
+				D84AA79F22C3412F001D0111 /* HomeNewDetailsCell.m in Sources */,
+				D84AA77222C200B6001D0111 /* main.m in Sources */,
+				D84AA76422C20099001D0111 /* AppDelegate.m in Sources */,
+				D84AA7A322C34224001D0111 /* YSLCustomButton.m in Sources */,
+				D84AA7A022C3412F001D0111 /* HomeFooterCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84AA77322C200B7001D0111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84AA77C22C200B7001D0111 /* ShrinkageTBTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84AA77E22C200B7001D0111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84AA78722C200B7001D0111 /* ShrinkageTBUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D84AA77922C200B7001D0111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D84AA75E22C20099001D0111 /* ShrinkageTB */;
+			targetProxy = D84AA77822C200B7001D0111 /* PBXContainerItemProxy */;
+		};
+		D84AA78422C200B7001D0111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D84AA75E22C20099001D0111 /* ShrinkageTB */;
+			targetProxy = D84AA78322C200B7001D0111 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D84AA76822C20099001D0111 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D84AA76922C20099001D0111 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D84AA76D22C200B6001D0111 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D84AA76E22C200B6001D0111 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D84AA78922C200B7001D0111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D84AA78A22C200B7001D0111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D84AA78C22C200B7001D0111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F3F7707D0BB755A3FCDE27 /* Pods-ShrinkageTB.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 625VG3HZVL;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ShrinkageTBTests/Header.h";
+				INFOPLIST_FILE = ShrinkageTB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunfucloud.ShrinkageTB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D84AA78D22C200B7001D0111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A357540637CCDC4079A86B /* Pods-ShrinkageTB.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 625VG3HZVL;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ShrinkageTBTests/Header.h";
+				INFOPLIST_FILE = ShrinkageTB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunfucloud.ShrinkageTB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D84AA78F22C200B7001D0111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 861D909FCBC21E9A964B8B15 /* Pods-ShrinkageTBTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShrinkageTBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunfucloud.ShrinkageTBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShrinkageTB.app/ShrinkageTB";
+			};
+			name = Debug;
+		};
+		D84AA79022C200B7001D0111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F0009D5DEB18A84F312EED /* Pods-ShrinkageTBTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShrinkageTBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunfucloud.ShrinkageTBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShrinkageTB.app/ShrinkageTB";
+			};
+			name = Release;
+		};
+		D84AA79222C200B7001D0111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AD95737450740D672303357 /* Pods-ShrinkageTBUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShrinkageTBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunfucloud.ShrinkageTBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShrinkageTB;
+			};
+			name = Debug;
+		};
+		D84AA79322C200B7001D0111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF1AD35906BA58AF5B2DA73 /* Pods-ShrinkageTBUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShrinkageTBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunfucloud.ShrinkageTBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShrinkageTB;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D84AA75A22C20098001D0111 /* Build configuration list for PBXProject "ShrinkageTB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84AA78922C200B7001D0111 /* Debug */,
+				D84AA78A22C200B7001D0111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84AA78B22C200B7001D0111 /* Build configuration list for PBXNativeTarget "ShrinkageTB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84AA78C22C200B7001D0111 /* Debug */,
+				D84AA78D22C200B7001D0111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84AA78E22C200B7001D0111 /* Build configuration list for PBXNativeTarget "ShrinkageTBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84AA78F22C200B7001D0111 /* Debug */,
+				D84AA79022C200B7001D0111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84AA79122C200B7001D0111 /* Build configuration list for PBXNativeTarget "ShrinkageTBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84AA79222C200B7001D0111 /* Debug */,
+				D84AA79322C200B7001D0111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D84AA75722C20098001D0111 /* Project object */;
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Record Video View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="RecordVideoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="RecordVideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNk-LE-XkP">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gvx-XX-Qba"/>
+                                    <constraint firstAttribute="width" constant="67" id="nlE-g1-WFA"/>
+                                </constraints>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="launchCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KYn-mX-RIz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qNk-LE-XkP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4Ia-X5-dGJ"/>
+                            <constraint firstItem="qNk-LE-XkP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4qM-6s-cV6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NE2-zR-W0f">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9wN-qJ-JwM" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Cx-Ek-IDe"/>
+                        <viewControllerLayoutGuide type="bottom" id="XuA-lo-9mz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HpD-Gq-GWS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F64-W8-Z6y">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="nUc-nr-ymi"/>
+                                    <constraint firstAttribute="height" constant="30" id="re5-x5-QQI"/>
+                                </constraints>
+                                <state key="normal" title="Make it square"/>
+                                <connections>
+                                    <action selector="makeItSquare:" destination="9wN-qJ-JwM" eventType="touchUpInside" id="MyM-RN-xIO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F64-W8-Z6y" firstAttribute="centerY" secondItem="HpD-Gq-GWS" secondAttribute="centerY" id="2th-9p-YZo"/>
+                            <constraint firstItem="F64-W8-Z6y" firstAttribute="centerX" secondItem="HpD-Gq-GWS" secondAttribute="centerX" id="SkZ-WE-jQt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyg-vT-Qd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="429"/>
+        </scene>
+    </scenes>
+</document>

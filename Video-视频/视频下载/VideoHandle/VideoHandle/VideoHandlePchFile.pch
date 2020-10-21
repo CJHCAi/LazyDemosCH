@@ -1,0 +1,43 @@
+//
+//  VideoHandlePchFile.pch
+//  VideoHandle
+//
+//  Created by JSB - Leidong on 17/7/6.
+//  Copyright © 2017年 JSB - leidong. All rights reserved.
+//
+
+#ifndef VideoHandlePchFile_pch
+#define VideoHandlePchFile_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Masonry.h"
+#import "MBProgressHUD.h"
+
+//网络请求类
+#import "AFNetworking.h"
+
+#import "UIImageView+WebCache.h"
+
+#define DEFAULT [NSUserDefaults standardUserDefaults]
+
+//当前使用设备的宽高
+#define SCREENWIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT  [UIScreen mainScreen].bounds.size.height
+
+//自定义RGB颜色
+#define COLOR(R,G,B,A) [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:A]
+
+//已下载视频模型存放路径
+#define VIDEO [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/videoModel"]
+
+//添加HUD文字提示
+#define HUDTEXT(text,object) MBProgressHUD *textHUD = [MBProgressHUD showHUDAddedTo:object animated:YES];\
+textHUD.mode = MBProgressHUDModeText;\
+textHUD.margin = 10.f;\
+textHUD.labelText = text;\
+textHUD.yOffset = [UIScreen mainScreen].bounds.size.height / 2.0 - 120;\
+[textHUD hide:YES afterDelay:1];\
+
+#endif /* VideoHandlePchFile_pch */

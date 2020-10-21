@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownloadViewController">
+            <connections>
+                <outlet property="segmentCtl" destination="Boj-4I-gDs" id="xxW-Q9-M4p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Boj-4I-gDs">
+                    <rect key="frame" x="20" y="15" width="335" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="UiS-J7-RQh"/>
+                    </constraints>
+                    <segments>
+                        <segment title="已下载"/>
+                        <segment title="下载中"/>
+                    </segments>
+                    <color key="tintColor" red="1" green="0.42745098039215684" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="changeIndex:" destination="-1" eventType="valueChanged" id="7MM-Cx-alw"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Boj-4I-gDs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="1uF-Nh-wpa"/>
+                <constraint firstItem="Boj-4I-gDs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="Gw6-WW-x9N"/>
+                <constraint firstAttribute="trailing" secondItem="Boj-4I-gDs" secondAttribute="trailing" constant="20" id="lp1-Sf-0Pc"/>
+            </constraints>
+            <point key="canvasLocation" x="-70.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

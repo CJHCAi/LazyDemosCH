@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownloadWebView">
+            <connections>
+                <outlet property="downloadBtn" destination="yks-WS-wC9" id="L4X-OH-Wen"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="9Fz-JL-T1M" id="h10-hs-Nx2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fz-JL-T1M">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yks-WS-wC9">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.062745098039215685" green="0.55686274509803924" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="RTx-3W-pqu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="下载视频" image="xzym_xzsp.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" image="xzym_xzsp.png"/>
+                    <connections>
+                        <action selector="downloadAction:" destination="-1" eventType="touchUpInside" id="cSH-lv-g9n"/>
+                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="sHd-ZD-fq8"/>
+                        <action selector="touchUpOut:" destination="-1" eventType="touchUpOutside" id="ImF-sN-iVr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yks-WS-wC9" secondAttribute="bottom" id="6ya-jf-fdh"/>
+                <constraint firstItem="yks-WS-wC9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZF1-7H-EJq"/>
+                <constraint firstItem="9Fz-JL-T1M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ef9-Ia-ef7"/>
+                <constraint firstAttribute="trailing" secondItem="9Fz-JL-T1M" secondAttribute="trailing" id="ioi-cO-tQB"/>
+                <constraint firstItem="yks-WS-wC9" firstAttribute="top" secondItem="9Fz-JL-T1M" secondAttribute="bottom" id="p9r-gf-Ep8"/>
+                <constraint firstItem="9Fz-JL-T1M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xFx-yh-x7B"/>
+                <constraint firstAttribute="trailing" secondItem="yks-WS-wC9" secondAttribute="trailing" id="zNo-c3-aub"/>
+            </constraints>
+            <point key="canvasLocation" x="-111.5" y="14.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xzym_xzsp.png" width="24" height="24"/>
+    </resources>
+</document>

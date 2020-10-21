@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xgq-k6-zeh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsd-wl-tvO">
+                                <rect key="frame" x="0.0" y="395" width="375" height="272"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifg-gl-6Rb">
+                                <rect key="frame" x="70" y="478.5" width="60" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ifg-gl-6Rb" secondAttribute="height" multiplier="4:3" id="Ifz-Bg-Wtk"/>
+                                    <constraint firstAttribute="width" constant="60" id="j8Z-Ud-Hkm"/>
+                                    <constraint firstAttribute="width" secondItem="ifg-gl-6Rb" secondAttribute="height" id="q7e-Ai-pYz"/>
+                                </constraints>
+                                <state key="normal" image="album_button"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="q7e-Ai-pYz"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="clickLibraryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kSB-nP-D9L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghd-av-FVz">
+                                <rect key="frame" x="245" y="478.5" width="60" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ghd-av-FVz" secondAttribute="height" multiplier="4:3" id="aQ6-UR-lD7"/>
+                                    <constraint firstAttribute="width" secondItem="ghd-av-FVz" secondAttribute="height" id="wSA-uH-Dly"/>
+                                </constraints>
+                                <state key="normal" image="camera_button"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="wSA-uH-Dly"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="clickCameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZ7-LF-c55"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIBRARY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgB-nY-LCI">
+                                <rect key="frame" x="60" y="543.5" width="79" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVIE CAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTI-Jy-MhF">
+                                <rect key="frame" x="220" y="543.5" width="110" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="YC4-oG-Xta">
+                                <rect key="frame" x="168" y="368" width="39" height="37"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUx-T0-5Kl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hUx-T0-5Kl" secondAttribute="height" id="hF1-48-Um8"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gsd-wl-tvO" firstAttribute="top" secondItem="YC4-oG-Xta" secondAttribute="bottom" constant="-10" id="166-9n-Q9A"/>
+                            <constraint firstItem="hUx-T0-5Kl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1OV-oG-Em7"/>
+                            <constraint firstAttribute="trailing" secondItem="Gsd-wl-tvO" secondAttribute="trailing" id="3fl-Qe-E99"/>
+                            <constraint firstItem="Gsd-wl-tvO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4Ds-y2-opS"/>
+                            <constraint firstItem="Gsd-wl-tvO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="745-uA-yV1"/>
+                            <constraint firstItem="IgB-nY-LCI" firstAttribute="top" secondItem="ifg-gl-6Rb" secondAttribute="bottom" constant="20" id="D4G-96-pwY"/>
+                            <constraint firstItem="DTI-Jy-MhF" firstAttribute="top" secondItem="IgB-nY-LCI" secondAttribute="top" id="Em4-X2-z5E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gsd-wl-tvO" secondAttribute="trailing" id="GvA-7R-7L8"/>
+                            <constraint firstAttribute="trailing" secondItem="ghd-av-FVz" secondAttribute="trailing" id="H8D-6W-3q7"/>
+                            <constraint firstItem="DTI-Jy-MhF" firstAttribute="centerX" secondItem="ghd-av-FVz" secondAttribute="centerX" id="I0R-KT-Y72"/>
+                            <constraint firstItem="hUx-T0-5Kl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Ka1-E0-WHS"/>
+                            <constraint firstItem="ghd-av-FVz" firstAttribute="width" secondItem="ifg-gl-6Rb" secondAttribute="width" id="NZp-qz-WTZ"/>
+                            <constraint firstItem="ghd-av-FVz" firstAttribute="width" secondItem="ifg-gl-6Rb" secondAttribute="width" id="O7n-2D-c6x"/>
+                            <constraint firstItem="ghd-av-FVz" firstAttribute="leading" secondItem="ifg-gl-6Rb" secondAttribute="trailing" id="Slm-Ro-EoR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gsd-wl-tvO" secondAttribute="bottom" id="TSa-8A-aSr"/>
+                            <constraint firstItem="YC4-oG-Xta" firstAttribute="centerX" secondItem="hUx-T0-5Kl" secondAttribute="centerX" id="VKg-EC-Ir3"/>
+                            <constraint firstItem="ifg-gl-6Rb" firstAttribute="top" secondItem="YC4-oG-Xta" secondAttribute="bottom" constant="30" id="Vfy-3E-myg"/>
+                            <constraint firstItem="ifg-gl-6Rb" firstAttribute="centerY" secondItem="Gsd-wl-tvO" secondAttribute="centerY" constant="-30" id="adE-Ye-1rg"/>
+                            <constraint firstItem="ifg-gl-6Rb" firstAttribute="top" secondItem="hUx-T0-5Kl" secondAttribute="bottom" constant="75" id="cwl-ST-Yir"/>
+                            <constraint firstItem="ghd-av-FVz" firstAttribute="top" secondItem="ifg-gl-6Rb" secondAttribute="top" id="e68-3q-YRe"/>
+                            <constraint firstItem="IgB-nY-LCI" firstAttribute="centerX" secondItem="ifg-gl-6Rb" secondAttribute="centerX" id="f52-X2-kV6"/>
+                            <constraint firstItem="hUx-T0-5Kl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="gou-Qh-HI4"/>
+                            <constraint firstItem="ifg-gl-6Rb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iGT-Gy-gE3"/>
+                            <constraint firstItem="ifg-gl-6Rb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="jkl-dR-LGe"/>
+                            <constraint firstItem="hUx-T0-5Kl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="m1R-5v-XCE"/>
+                            <constraint firstItem="ifg-gl-6Rb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qxI-dk-3i1"/>
+                            <constraint firstItem="hUx-T0-5Kl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sCj-We-i3V"/>
+                            <constraint firstItem="DTI-Jy-MhF" firstAttribute="top" secondItem="ghd-av-FVz" secondAttribute="bottom" constant="20" id="sMS-x4-p53"/>
+                            <constraint firstAttribute="trailing" secondItem="ghd-av-FVz" secondAttribute="trailing" constant="70" id="vzq-PU-ffn"/>
+                            <constraint firstItem="hUx-T0-5Kl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ycO-u8-XJq"/>
+                            <constraint firstItem="YC4-oG-Xta" firstAttribute="bottom" secondItem="hUx-T0-5Kl" secondAttribute="bottom" constant="30" id="zVg-47-5Wp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="m1R-5v-XCE"/>
+                                <exclude reference="sCj-We-i3V"/>
+                                <exclude reference="ycO-u8-XJq"/>
+                                <exclude reference="745-uA-yV1"/>
+                                <exclude reference="GvA-7R-7L8"/>
+                                <exclude reference="Vfy-3E-myg"/>
+                                <exclude reference="cwl-ST-Yir"/>
+                                <exclude reference="iGT-Gy-gE3"/>
+                                <exclude reference="qxI-dk-3i1"/>
+                                <exclude reference="H8D-6W-3q7"/>
+                                <exclude reference="O7n-2D-c6x"/>
+                                <exclude reference="Slm-Ro-EoR"/>
+                                <exclude reference="sMS-x4-p53"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="ezn-Rf-tXX"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="ghd-av-FVz" id="jbb-S6-N8v"/>
+                        <outlet property="cameraButtonTralingConstraint" destination="vzq-PU-ffn" id="kYW-ew-PXr"/>
+                        <outlet property="cameraLabel" destination="DTI-Jy-MhF" id="H9f-EZ-woB"/>
+                        <outlet property="imageScrollView" destination="hUx-T0-5Kl" id="muZ-Xk-giR"/>
+                        <outlet property="imageScrollViewPageControl" destination="YC4-oG-Xta" id="haw-rO-6he"/>
+                        <outlet property="libraryButton" destination="ifg-gl-6Rb" id="DQd-79-Wdm"/>
+                        <outlet property="libraryButtonLeadingConstraint" destination="jkl-dR-LGe" id="ajD-6m-bly"/>
+                        <outlet property="libraryButtonWidthConstraint" destination="j8Z-Ud-Hkm" id="DTE-Me-t86"/>
+                        <outlet property="libraryCenterYConstraint" destination="adE-Ye-1rg" id="KB9-0K-Fx6"/>
+                        <outlet property="libraryLabel" destination="IgB-nY-LCI" id="hAk-No-OnA"/>
+                        <outlet property="libraryTopConstraint" destination="D4G-96-pwY" id="aRa-Es-d51"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WaN-hb-P5I">
+            <objects>
+                <navigationController id="xgq-k6-zeh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YNY-M9-kuR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="S6Z-2x-6kd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJ7-zY-LQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-880" y="939"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="album_button" width="60" height="45"/>
+        <image name="camera_button" width="60" height="45"/>
+    </resources>
+</document>
