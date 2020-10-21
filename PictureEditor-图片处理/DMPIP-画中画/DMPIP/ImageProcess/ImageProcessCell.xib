@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageProcessCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XXX-67-Ite">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LkC-ZS-weg">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="LkC-ZS-weg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="20s-Zj-cRc"/>
+                <constraint firstItem="LkC-ZS-weg" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="3aX-Zc-s0m"/>
+                <constraint firstItem="XXX-67-Ite" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="C86-cL-Sxi"/>
+                <constraint firstItem="XXX-67-Ite" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HHy-bL-A8n"/>
+                <constraint firstAttribute="bottom" secondItem="XXX-67-Ite" secondAttribute="bottom" id="O5k-p0-kRY"/>
+                <constraint firstItem="LkC-ZS-weg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QbG-UM-4sV"/>
+                <constraint firstAttribute="trailing" secondItem="LkC-ZS-weg" secondAttribute="trailing" id="UiF-0C-1L4"/>
+                <constraint firstAttribute="trailing" secondItem="XXX-67-Ite" secondAttribute="trailing" id="g6t-3f-Zev"/>
+                <constraint firstItem="XXX-67-Ite" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ksw-9K-qLX"/>
+                <constraint firstItem="XXX-67-Ite" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="nM4-ey-HLZ"/>
+                <constraint firstAttribute="bottom" secondItem="LkC-ZS-weg" secondAttribute="bottom" id="orH-Ar-J6M"/>
+                <constraint firstItem="LkC-ZS-weg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ozZ-WA-q9M"/>
+            </constraints>
+            <connections>
+                <outlet property="coverImageView" destination="LkC-ZS-weg" id="W2e-km-JIi"/>
+                <outlet property="imageView" destination="XXX-67-Ite" id="sve-QO-6Cf"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

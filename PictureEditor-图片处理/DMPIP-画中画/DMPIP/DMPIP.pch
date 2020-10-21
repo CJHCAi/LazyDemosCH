@@ -1,0 +1,32 @@
+//
+//  DMPIP.pch
+//  DMPIP
+//
+//  Created by Rick on 16/4/25.
+//  Copyright © 2016年 Rick. All rights reserved.
+//
+
+#ifndef DMPIP_pch
+#define DMPIP_pch
+
+#ifdef DEBUG  // 调试状态
+// 打开LOG功能
+#define MJLog(...) NSLog(__VA_ARGS__)
+#else // 发布状态
+// 关闭LOG功能
+#define MJLog(...)
+#endif
+
+// 获取RGB颜色
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+//获取屏幕 宽度、高度
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#import "MBProgressHUD+Utils.h"
+#import "MBProgressHUD.h"
+MBProgressHUD *hud;
+typedef MBProgressHUD MBHUD;
+#endif /* DMPIP_pch */
