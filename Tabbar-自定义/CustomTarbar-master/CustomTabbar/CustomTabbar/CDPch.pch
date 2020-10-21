@@ -1,0 +1,32 @@
+//
+//  CDPch.pch
+//  CustomTabbar
+//
+//  Created by Dong Chen on 2017/9/1.
+//  Copyright © 2017年 Dong Chen. All rights reserved.
+//
+
+#ifndef CDPch_pch
+#define CDPch_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* CDPch_pch */
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+
+#import <Foundation/Foundation.h>
+
+#import "UIView+Size.h"
+
+#import "UIButton+Edge.h"
+
+#import "NSString+Size.h"
+
+#import "MyObject.h"
+//屏幕大小
+#define WW [UIScreen mainScreen].bounds.size.width
+#define HH [UIScreen mainScreen].bounds.size.height
+#endif

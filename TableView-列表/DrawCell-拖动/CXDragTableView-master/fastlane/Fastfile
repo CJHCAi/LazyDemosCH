@@ -1,0 +1,18 @@
+
+import_from_git(url:'https://gitee.com/caixiang19901217/CXActionLanes.git',branch:'master',path:"fastlane/ios_fastfile.rb")
+
+platform :ios do
+	desc 'CXLib 针对私有库快速升级维护'
+	lane :CXLib do |options|
+
+	# 打标签需要和podspec的版本对应
+	tagName = options[:tag]
+	# 被上传的目标podspec文件
+	targetName = options[:target]
+	# 本次更新的内容
+	msgName = options[:msg]
+
+	cx_gitHubLib(tag:tagName,target:targetName,msg:msgName) 
+	
+	end
+end
