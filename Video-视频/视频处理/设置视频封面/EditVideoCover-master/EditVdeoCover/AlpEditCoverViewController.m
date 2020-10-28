@@ -62,45 +62,19 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blackColor];
     self.photoArrays = [[NSMutableArray alloc] init];
+    
     [self setupUI];
     [self getVideoTotalValueAndScale];
 }
 
-- (void)setupNavigationBar {
-    // 禁止系统手势
-    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-    self.navigationController.navigationBarHidden = YES;
-    AlpEditVideoNavigationBar *headerBar = [[AlpEditVideoNavigationBar alloc] init];
-    _navigationBar = headerBar;
-    [headerBar.rightButton setTitle:@"确定" forState:UIControlStateNormal];
-    [headerBar.leftButton setTitle:@"取消" forState:UIControlStateNormal];
-    [headerBar.leftButton setImage:nil forState:UIControlStateNormal];
-    headerBar.titleLabel.text = @"";
-    headerBar.rightButton.backgroundColor = [UIColor redColor];
-    headerBar.rightButton.layer.cornerRadius = 3.0;
-    headerBar.rightButton.layer.masksToBounds = YES;
-    headerBar.backgroundColor = [UIColor clearColor];
-    headerBar.rightButton.contentEdgeInsets = UIEdgeInsetsMake(5.0, 5.0, 5.0, 5.0);
-    [headerBar.rightButton addTarget:self action:@selector(didClickNextButton) forControlEvents:UIControlEventTouchUpInside];
-    [headerBar.leftButton addTarget:self action:@selector(didClickBackButton) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:headerBar];
-    headerBar.translatesAutoresizingMaskIntoConstraints = false;
-    if (@available(iOS 11.0, *)) {
-        [NSLayoutConstraint constraintWithItem:headerBar attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view.safeAreaLayoutGuide attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0].active = YES;
-    } else {
-        [NSLayoutConstraint constraintWithItem:headerBar attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0].active = YES;
-    }
-    [NSLayoutConstraint constraintWithItem:headerBar attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0.0].active = YES;
-    [NSLayoutConstraint constraintWithItem:headerBar attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0.0].active = YES;
-    [NSLayoutConstraint constraintWithItem:headerBar attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:44.0].active = YES;
-}
-
 - (void)setupUI {
     [self setupNavigationBar];
+    
     // 选定的封面
     _coverPlayerView = [[AlpVideoCameraCoverPlayerView alloc] init];
     _coverPlayerView.clipsToBounds  = YES;
     [self.view addSubview:_coverPlayerView];
+    
     _coverPlayerView.translatesAutoresizingMaskIntoConstraints = NO;
     [NSLayoutConstraint constraintWithItem:_coverPlayerView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0 constant:35.0].active = YES;
     [NSLayoutConstraint constraintWithItem:_coverPlayerView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0].active = YES;
@@ -118,6 +92,7 @@
     [NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0 constant:20.0].active = YES;
     [NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_coverPlayerView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:10.0].active = YES;
     [NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:20.0].active = YES;
+    
     [self.view addSubview:self.coverImageCollectionView];
     _coverImageCollectionView.translatesAutoresizingMaskIntoConstraints = NO;
     [NSLayoutConstraint constraintWithItem:self.coverImageCollectionView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0 constant:COLLECTION_VIEW_LEFT].active = YES;
@@ -145,6 +120,37 @@
     
     [self setupPlayer];
     
+}
+
+- (void)setupNavigationBar {
+    // 禁止系统手势
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    self.navigationController.navigationBarHidden = YES;
+    
+    AlpEditVideoNavigationBar *headerBar = [[AlpEditVideoNavigationBar alloc] init];
+    _navigationBar = headerBar;
+    [headerBar.rightButton setTitle:@"确定" forState:UIControlStateNormal];
+    [headerBar.leftButton setTitle:@"取消" forState:UIControlStateNormal];
+    [headerBar.leftButton setImage:nil forState:UIControlStateNormal];
+    headerBar.titleLabel.text = @"";
+    headerBar.rightButton.backgroundColor = [UIColor redColor];
+    headerBar.rightButton.layer.cornerRadius = 3.0;
+    headerBar.rightButton.layer.masksToBounds = YES;
+    headerBar.backgroundColor = [UIColor clearColor];
+    headerBar.rightButton.contentEdgeInsets = UIEdgeInsetsMake(5.0, 5.0, 5.0, 5.0);
+    [headerBar.rightButton addTarget:self action:@selector(didClickNextButton) forControlEvents:UIControlEventTouchUpInside];
+    [headerBar.leftButton addTarget:self action:@selector(didClickBackButton) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:headerBar];
+    headerBar.translatesAutoresizingMaskIntoConstraints = false;
+    
+    if (@available(iOS 11.0, *)) {
+        [NSLayoutConstraint constraintWithItem:headerBar attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view.safeAreaLayoutGuide attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0].active = YES;
+    } else {
+        [NSLayoutConstraint constraintWithItem:headerBar attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0].active = YES;
+    }
+    [NSLayoutConstraint constraintWithItem:headerBar attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0.0].active = YES;
+    [NSLayoutConstraint constraintWithItem:headerBar attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0.0].active = YES;
+    [NSLayoutConstraint constraintWithItem:headerBar attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:44.0].active = YES;
 }
 
 - (void)setupPlayer {
@@ -287,7 +293,7 @@
 - (void)slidValueChange:(AlpVideoCameraCoverSlider *)slider {
     
     NSInteger timeValue = slider.range.location;
-    
+
     [self chooseWithTime:timeValue];
 }
 
@@ -334,10 +340,13 @@
     return cell;
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    UIImage * coverImage = _photoArrays[indexPath.item].firstFrameImage;
+    NSLog(@"%@",coverImage);
+}
 
-////////////////////////////////////////////////////////////////////////
+
 #pragma mark - Getter
-////////////////////////////////////////////////////////////////////////
 
 - (UICollectionView *)coverImageCollectionView {
     if (!_coverImageCollectionView) {
@@ -360,8 +369,8 @@
     return _coverImageCollectionView;
 }
 
-
 @end
+
 
 @implementation AlpCoverImageCollectionViewCell
 - (instancetype)initWithFrame:(CGRect)frame
@@ -373,6 +382,7 @@
         _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
         _imageView.contentMode = UIViewContentModeScaleAspectFill;
         _imageView.clipsToBounds  = YES;
+        _imageView.backgroundColor = [UIColor orangeColor];
         [self.contentView addSubview:_imageView];
         _imageView.translatesAutoresizingMaskIntoConstraints = NO;
         [NSLayoutConstraint constraintWithItem:_imageView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0.0].active = YES;
