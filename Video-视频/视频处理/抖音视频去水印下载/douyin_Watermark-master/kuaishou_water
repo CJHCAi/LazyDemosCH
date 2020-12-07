@@ -1,0 +1,22 @@
+#encoding=utf-8
+import requests,re,json
+#快手的分享地址
+url='https://v.kuaishou.com/5dfGJZ'
+headers = {
+            'User-Agent': 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3329.0 Mobile Safari/537.36'}
+req=requests.get(url=url,headers=headers).url
+headers = {
+'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+'Accept-Encoding': 'gzip, deflate, br',
+'Accept-Language': 'zh-CN,zh;q=0.9',
+'Connection': 'keep-alive',
+# 'Cookie': 'did=web_282e70945a114e2389e104b8bdc7388a; didv=1596413681000; clientid=3; client_key=65890b29; Hm_lvt_86a27b7db2c5c0ae37fee4a8a35033ee=1596413682; Hm_lpvt_86a27b7db2c5c0ae37fee4a8a35033ee=1596413697',
+'Cookie': '换成自己的cookie',
+'Host': 'v.kuaishou.com',
+'Sec-Fetch-Dest':'document',
+'Sec-Fetch-Mode': 'navigate',
+'Sec-Fetch-Site':'none',
+ 'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Mobile Safari/537.36',}
+est1=requests.get(url=req,headers=headers).text
+url=re.findall('srcNoMark":"(.*?)"',est1)[0]
+print(url)
