@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91E46A62AF2B54D6C9CA91B0 /* libPods-SogouYuedu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD520F640B722B6BADE2BF3C /* libPods-SogouYuedu.a */; };
+		EF0F13111F7D21260046A762 /* JPFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0F13101F7D21250046A762 /* JPFPSStatus.m */; };
+		EF61E6C51F79557F00039F5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6C41F79557F00039F5E /* AppDelegate.m */; };
+		EF61E6C81F79557F00039F5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6C71F79557F00039F5E /* ViewController.m */; };
+		EF61E6CB1F79557F00039F5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6C91F79557F00039F5E /* Main.storyboard */; };
+		EF61E6CD1F79557F00039F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6CC1F79557F00039F5E /* Assets.xcassets */; };
+		EF61E6D01F79557F00039F5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6CE1F79557F00039F5E /* LaunchScreen.storyboard */; };
+		EF61E6D31F79557F00039F5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6D21F79557F00039F5E /* main.m */; };
+		EF61E6DC1F795F2600039F5E /* ARBookstoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6DB1F795F2600039F5E /* ARBookstoreViewController.m */; };
+		EF61E6E01F79679C00039F5E /* ARSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6DF1F79679C00039F5E /* ARSearchViewController.m */; };
+		EF61E6E31F7967C800039F5E /* ARSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6E21F7967C800039F5E /* ARSearchBar.m */; };
+		EF61E6E91F7968DF00039F5E /* ARSearchFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6E81F7968DF00039F5E /* ARSearchFooter.m */; };
+		EF61E6F01F7969A300039F5E /* ARResultCellWithbkey.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6EE1F7969A300039F5E /* ARResultCellWithbkey.m */; };
+		EF61E6F11F7969A300039F5E /* ARResultCellWithbkey.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6EF1F7969A300039F5E /* ARResultCellWithbkey.xib */; };
+		EF61E6F51F7969DC00039F5E /* ARResultCellNobkey.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6F31F7969DC00039F5E /* ARResultCellNobkey.m */; };
+		EF61E6F61F7969DC00039F5E /* ARResultCellNobkey.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6F41F7969DC00039F5E /* ARResultCellNobkey.xib */; };
+		EF61E6F91F796A0800039F5E /* ARSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6F81F796A0800039F5E /* ARSectionHeaderView.m */; };
+		EF61E6FC1F796A4C00039F5E /* ARSearchKeyWords.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6FB1F796A4C00039F5E /* ARSearchKeyWords.m */; };
+		EF61E7001F796A8500039F5E /* ARSearchResultItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6FF1F796A8500039F5E /* ARSearchResultItem.m */; };
+		EF61E7031F796D1D00039F5E /* ARResultGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7021F796D1D00039F5E /* ARResultGroup.m */; };
+		EF61E7061F796DEC00039F5E /* ARSearchAllResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7051F796DEC00039F5E /* ARSearchAllResult.m */; };
+		EF61E7091F7979E700039F5E /* ARNetCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7081F7979E700039F5E /* ARNetCommand.m */; };
+		EF61E70D1F79809300039F5E /* ARDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E70C1F79809300039F5E /* ARDetailViewController.m */; };
+		EF61E7121F7980E600039F5E /* ARChaptersItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7111F7980E600039F5E /* ARChaptersItem.m */; };
+		EF61E7151F7981AE00039F5E /* ARSqliteTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7141F7981AE00039F5E /* ARSqliteTool.m */; };
+		EF61E7181F79825000039F5E /* ARBookItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7171F79825000039F5E /* ARBookItem.m */; };
+		EF61E71E1F798AE300039F5E /* ARDetailNobkeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E71D1F798AE300039F5E /* ARDetailNobkeyViewController.m */; };
+		EF61E7231F7A9DC200039F5E /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7221F7A9DC200039F5E /* UIBarButtonItem+Extension.m */; };
+		EF61E7271F7AA52100039F5E /* ARParamLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7261F7AA52100039F5E /* ARParamLoop.m */; };
+		EF61E72A1F7AA5F900039F5E /* ARNavAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7291F7AA5F900039F5E /* ARNavAnimation.m */; };
+		EF61E72D1F7AA84700039F5E /* ARRotateRefreshIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E72C1F7AA84700039F5E /* ARRotateRefreshIcon.m */; };
+		EF61E7301F7AB27700039F5E /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E72F1F7AB27700039F5E /* LeftSlideViewController.m */; };
+		EF61E7341F7AB2DC00039F5E /* UIView+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7331F7AB2DC00039F5E /* UIView+extra.m */; };
+		EF61E7381F7AB66800039F5E /* ARBookshelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7371F7AB66800039F5E /* ARBookshelfViewController.m */; };
+		EF61E73C1F7AB6A000039F5E /* ARBookCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E73B1F7AB6A000039F5E /* ARBookCollectionViewCell.m */; };
+		EF61E7401F7AB85A00039F5E /* XTPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E73F1F7AB85A00039F5E /* XTPopView.m */; };
+		EF61E7541F7AB99900039F5E /* NSString+PCPaging.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7431F7AB99900039F5E /* NSString+PCPaging.m */; };
+		EF61E7551F7AB99900039F5E /* PCCollectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7451F7AB99900039F5E /* PCCollectViewModel.m */; };
+		EF61E7561F7AB99900039F5E /* PCDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7471F7AB99900039F5E /* PCDataViewController.m */; };
+		EF61E7571F7AB99900039F5E /* PCGlobalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7491F7AB99900039F5E /* PCGlobalModel.m */; };
+		EF61E7581F7AB99900039F5E /* PCModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E74B1F7AB99900039F5E /* PCModelViewController.m */; };
+		EF61E7591F7AB99900039F5E /* PCPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E74D1F7AB99900039F5E /* PCPageCell.m */; };
+		EF61E75A1F7AB99900039F5E /* PCPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E74F1F7AB99900039F5E /* PCPageView.m */; };
+		EF61E75B1F7AB99900039F5E /* PCReaderTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7511F7AB99900039F5E /* PCReaderTool.m */; };
+		EF61E75C1F7AB99900039F5E /* PCReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7531F7AB99900039F5E /* PCReaderViewController.m */; };
+		EF61E75F1F7AB9E300039F5E /* ARNovelContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E75E1F7AB9E300039F5E /* ARNovelContentController.m */; };
+		EF61E7631F7ABA7C00039F5E /* ARRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7621F7ABA7C00039F5E /* ARRegularExpression.m */; };
+		EF61E7661F7AC16400039F5E /* ARTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7651F7AC16400039F5E /* ARTabBarController.m */; };
+		EF61E7691F7AC18900039F5E /* ARNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF61E7681F7AC18900039F5E /* ARNavController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C45EC95AA501D9A9A2F511D /* Pods-SogouYuedu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SogouYuedu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SogouYuedu/Pods-SogouYuedu.release.xcconfig"; sourceTree = "<group>"; };
+		BD520F640B722B6BADE2BF3C /* libPods-SogouYuedu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SogouYuedu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB94E37C5E8B54D23BC672E /* Pods-SogouYuedu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SogouYuedu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SogouYuedu/Pods-SogouYuedu.debug.xcconfig"; sourceTree = "<group>"; };
+		EF0F130F1F7D21250046A762 /* JPFPSStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPFPSStatus.h; sourceTree = "<group>"; };
+		EF0F13101F7D21250046A762 /* JPFPSStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFPSStatus.m; sourceTree = "<group>"; };
+		EF61E6C01F79557F00039F5E /* SogouYuedu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SogouYuedu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF61E6C31F79557F00039F5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF61E6C41F79557F00039F5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF61E6C61F79557F00039F5E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF61E6C71F79557F00039F5E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF61E6CA1F79557F00039F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF61E6CC1F79557F00039F5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF61E6CF1F79557F00039F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF61E6D11F79557F00039F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF61E6D21F79557F00039F5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF61E6DA1F795F2500039F5E /* ARBookstoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARBookstoreViewController.h; sourceTree = "<group>"; };
+		EF61E6DB1F795F2600039F5E /* ARBookstoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARBookstoreViewController.m; sourceTree = "<group>"; };
+		EF61E6DE1F79679C00039F5E /* ARSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSearchViewController.h; sourceTree = "<group>"; };
+		EF61E6DF1F79679C00039F5E /* ARSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSearchViewController.m; sourceTree = "<group>"; };
+		EF61E6E11F7967C800039F5E /* ARSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSearchBar.h; sourceTree = "<group>"; };
+		EF61E6E21F7967C800039F5E /* ARSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSearchBar.m; sourceTree = "<group>"; };
+		EF61E6E71F7968DF00039F5E /* ARSearchFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSearchFooter.h; sourceTree = "<group>"; };
+		EF61E6E81F7968DF00039F5E /* ARSearchFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSearchFooter.m; sourceTree = "<group>"; };
+		EF61E6ED1F7969A300039F5E /* ARResultCellWithbkey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARResultCellWithbkey.h; sourceTree = "<group>"; };
+		EF61E6EE1F7969A300039F5E /* ARResultCellWithbkey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARResultCellWithbkey.m; sourceTree = "<group>"; };
+		EF61E6EF1F7969A300039F5E /* ARResultCellWithbkey.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARResultCellWithbkey.xib; sourceTree = "<group>"; };
+		EF61E6F21F7969DC00039F5E /* ARResultCellNobkey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARResultCellNobkey.h; sourceTree = "<group>"; };
+		EF61E6F31F7969DC00039F5E /* ARResultCellNobkey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARResultCellNobkey.m; sourceTree = "<group>"; };
+		EF61E6F41F7969DC00039F5E /* ARResultCellNobkey.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARResultCellNobkey.xib; sourceTree = "<group>"; };
+		EF61E6F71F796A0800039F5E /* ARSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSectionHeaderView.h; sourceTree = "<group>"; };
+		EF61E6F81F796A0800039F5E /* ARSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSectionHeaderView.m; sourceTree = "<group>"; };
+		EF61E6FA1F796A4C00039F5E /* ARSearchKeyWords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSearchKeyWords.h; sourceTree = "<group>"; };
+		EF61E6FB1F796A4C00039F5E /* ARSearchKeyWords.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSearchKeyWords.m; sourceTree = "<group>"; };
+		EF61E6FE1F796A8500039F5E /* ARSearchResultItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSearchResultItem.h; sourceTree = "<group>"; };
+		EF61E6FF1F796A8500039F5E /* ARSearchResultItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSearchResultItem.m; sourceTree = "<group>"; };
+		EF61E7011F796D1D00039F5E /* ARResultGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARResultGroup.h; sourceTree = "<group>"; };
+		EF61E7021F796D1D00039F5E /* ARResultGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARResultGroup.m; sourceTree = "<group>"; };
+		EF61E7041F796DEC00039F5E /* ARSearchAllResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSearchAllResult.h; sourceTree = "<group>"; };
+		EF61E7051F796DEC00039F5E /* ARSearchAllResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSearchAllResult.m; sourceTree = "<group>"; };
+		EF61E7071F7979E700039F5E /* ARNetCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARNetCommand.h; sourceTree = "<group>"; };
+		EF61E7081F7979E700039F5E /* ARNetCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARNetCommand.m; sourceTree = "<group>"; };
+		EF61E70B1F79809300039F5E /* ARDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARDetailViewController.h; sourceTree = "<group>"; };
+		EF61E70C1F79809300039F5E /* ARDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDetailViewController.m; sourceTree = "<group>"; };
+		EF61E7101F7980E600039F5E /* ARChaptersItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARChaptersItem.h; sourceTree = "<group>"; };
+		EF61E7111F7980E600039F5E /* ARChaptersItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARChaptersItem.m; sourceTree = "<group>"; };
+		EF61E7131F7981AE00039F5E /* ARSqliteTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSqliteTool.h; sourceTree = "<group>"; };
+		EF61E7141F7981AE00039F5E /* ARSqliteTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSqliteTool.m; sourceTree = "<group>"; };
+		EF61E7161F79825000039F5E /* ARBookItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARBookItem.h; sourceTree = "<group>"; };
+		EF61E7171F79825000039F5E /* ARBookItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARBookItem.m; sourceTree = "<group>"; };
+		EF61E71C1F798AE300039F5E /* ARDetailNobkeyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARDetailNobkeyViewController.h; sourceTree = "<group>"; };
+		EF61E71D1F798AE300039F5E /* ARDetailNobkeyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDetailNobkeyViewController.m; sourceTree = "<group>"; };
+		EF61E7201F7A94CC00039F5E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EF61E7211F7A9DC200039F5E /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		EF61E7221F7A9DC200039F5E /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		EF61E7251F7AA52100039F5E /* ARParamLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARParamLoop.h; sourceTree = "<group>"; };
+		EF61E7261F7AA52100039F5E /* ARParamLoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARParamLoop.m; sourceTree = "<group>"; };
+		EF61E7281F7AA5F900039F5E /* ARNavAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARNavAnimation.h; sourceTree = "<group>"; };
+		EF61E7291F7AA5F900039F5E /* ARNavAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARNavAnimation.m; sourceTree = "<group>"; };
+		EF61E72B1F7AA84700039F5E /* ARRotateRefreshIcon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARRotateRefreshIcon.h; sourceTree = "<group>"; };
+		EF61E72C1F7AA84700039F5E /* ARRotateRefreshIcon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARRotateRefreshIcon.m; sourceTree = "<group>"; };
+		EF61E72E1F7AB27700039F5E /* LeftSlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
+		EF61E72F1F7AB27700039F5E /* LeftSlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
+		EF61E7321F7AB2DC00039F5E /* UIView+extra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+extra.h"; sourceTree = "<group>"; };
+		EF61E7331F7AB2DC00039F5E /* UIView+extra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+extra.m"; sourceTree = "<group>"; };
+		EF61E7361F7AB66800039F5E /* ARBookshelfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARBookshelfViewController.h; sourceTree = "<group>"; };
+		EF61E7371F7AB66800039F5E /* ARBookshelfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARBookshelfViewController.m; sourceTree = "<group>"; };
+		EF61E73A1F7AB6A000039F5E /* ARBookCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARBookCollectionViewCell.h; sourceTree = "<group>"; };
+		EF61E73B1F7AB6A000039F5E /* ARBookCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARBookCollectionViewCell.m; sourceTree = "<group>"; };
+		EF61E73E1F7AB85A00039F5E /* XTPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTPopView.h; sourceTree = "<group>"; };
+		EF61E73F1F7AB85A00039F5E /* XTPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTPopView.m; sourceTree = "<group>"; };
+		EF61E7421F7AB99900039F5E /* NSString+PCPaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PCPaging.h"; sourceTree = "<group>"; };
+		EF61E7431F7AB99900039F5E /* NSString+PCPaging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PCPaging.m"; sourceTree = "<group>"; };
+		EF61E7441F7AB99900039F5E /* PCCollectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCollectViewModel.h; sourceTree = "<group>"; };
+		EF61E7451F7AB99900039F5E /* PCCollectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCollectViewModel.m; sourceTree = "<group>"; };
+		EF61E7461F7AB99900039F5E /* PCDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDataViewController.h; sourceTree = "<group>"; };
+		EF61E7471F7AB99900039F5E /* PCDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDataViewController.m; sourceTree = "<group>"; };
+		EF61E7481F7AB99900039F5E /* PCGlobalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGlobalModel.h; sourceTree = "<group>"; };
+		EF61E7491F7AB99900039F5E /* PCGlobalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGlobalModel.m; sourceTree = "<group>"; };
+		EF61E74A1F7AB99900039F5E /* PCModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCModelViewController.h; sourceTree = "<group>"; };
+		EF61E74B1F7AB99900039F5E /* PCModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCModelViewController.m; sourceTree = "<group>"; };
+		EF61E74C1F7AB99900039F5E /* PCPageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCPageCell.h; sourceTree = "<group>"; };
+		EF61E74D1F7AB99900039F5E /* PCPageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPageCell.m; sourceTree = "<group>"; };
+		EF61E74E1F7AB99900039F5E /* PCPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCPageView.h; sourceTree = "<group>"; };
+		EF61E74F1F7AB99900039F5E /* PCPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPageView.m; sourceTree = "<group>"; };
+		EF61E7501F7AB99900039F5E /* PCReaderTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCReaderTool.h; sourceTree = "<group>"; };
+		EF61E7511F7AB99900039F5E /* PCReaderTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCReaderTool.m; sourceTree = "<group>"; };
+		EF61E7521F7AB99900039F5E /* PCReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCReaderViewController.h; sourceTree = "<group>"; };
+		EF61E7531F7AB99900039F5E /* PCReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCReaderViewController.m; sourceTree = "<group>"; };
+		EF61E75D1F7AB9E300039F5E /* ARNovelContentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARNovelContentController.h; sourceTree = "<group>"; };
+		EF61E75E1F7AB9E300039F5E /* ARNovelContentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARNovelContentController.m; sourceTree = "<group>"; };
+		EF61E7611F7ABA7C00039F5E /* ARRegularExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARRegularExpression.h; sourceTree = "<group>"; };
+		EF61E7621F7ABA7C00039F5E /* ARRegularExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARRegularExpression.m; sourceTree = "<group>"; };
+		EF61E7641F7AC16400039F5E /* ARTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTabBarController.h; sourceTree = "<group>"; };
+		EF61E7651F7AC16400039F5E /* ARTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARTabBarController.m; sourceTree = "<group>"; };
+		EF61E7671F7AC18900039F5E /* ARNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARNavController.h; sourceTree = "<group>"; };
+		EF61E7681F7AC18900039F5E /* ARNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARNavController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF61E6BD1F79557F00039F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E46A62AF2B54D6C9CA91B0 /* libPods-SogouYuedu.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C19051B98C5F761F99461BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEB94E37C5E8B54D23BC672E /* Pods-SogouYuedu.debug.xcconfig */,
+				2C45EC95AA501D9A9A2F511D /* Pods-SogouYuedu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C5D19966D0CF3F64B2395DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD520F640B722B6BADE2BF3C /* libPods-SogouYuedu.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF0F130E1F7D21250046A762 /* JPFPSStatus */ = {
+			isa = PBXGroup;
+			children = (
+				EF0F130F1F7D21250046A762 /* JPFPSStatus.h */,
+				EF0F13101F7D21250046A762 /* JPFPSStatus.m */,
+			);
+			path = JPFPSStatus;
+			sourceTree = "<group>";
+		};
+		EF61E6B71F79557F00039F5E = {
+			isa = PBXGroup;
+			children = (
+				EF61E6C21F79557F00039F5E /* SogouYuedu */,
+				EF61E6C11F79557F00039F5E /* Products */,
+				3C19051B98C5F761F99461BE /* Pods */,
+				7C5D19966D0CF3F64B2395DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF61E6C11F79557F00039F5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E6C01F79557F00039F5E /* SogouYuedu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF61E6C21F79557F00039F5E /* SogouYuedu */ = {
+			isa = PBXGroup;
+			children = (
+				EF0F130E1F7D21250046A762 /* JPFPSStatus */,
+				EF61E6C31F79557F00039F5E /* AppDelegate.h */,
+				EF61E6C41F79557F00039F5E /* AppDelegate.m */,
+				EF61E6C61F79557F00039F5E /* ViewController.h */,
+				EF61E6C71F79557F00039F5E /* ViewController.m */,
+				EF61E76A1F7AC18F00039F5E /* Main */,
+				EF61E7601F7AB9E900039F5E /* NovelContent */,
+				EF61E7311F7AB27D00039F5E /* Lib */,
+				EF61E7241F7A9DCA00039F5E /* Other */,
+				EF61E7191F79825500039F5E /* Bookshelf */,
+				EF61E70E1F79809B00039F5E /* DetailContent */,
+				EF61E70A1F7979F300039F5E /* Tools */,
+				EF61E6E41F7967DA00039F5E /* Search */,
+				EF61E6DD1F795F3400039F5E /* Bookstore */,
+				EF61E6C91F79557F00039F5E /* Main.storyboard */,
+				EF61E6CC1F79557F00039F5E /* Assets.xcassets */,
+				EF61E6CE1F79557F00039F5E /* LaunchScreen.storyboard */,
+				EF61E6D11F79557F00039F5E /* Info.plist */,
+				EF61E6D91F79596700039F5E /* Supporting Files */,
+			);
+			path = SogouYuedu;
+			sourceTree = "<group>";
+		};
+		EF61E6D91F79596700039F5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E6D21F79557F00039F5E /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF61E6DD1F795F3400039F5E /* Bookstore */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E6DA1F795F2500039F5E /* ARBookstoreViewController.h */,
+				EF61E6DB1F795F2600039F5E /* ARBookstoreViewController.m */,
+			);
+			path = Bookstore;
+			sourceTree = "<group>";
+		};
+		EF61E6E41F7967DA00039F5E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E6E51F7967E500039F5E /* Controller */,
+				EF61E6E61F7967F500039F5E /* View */,
+				EF61E6FD1F796A5100039F5E /* Model */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		EF61E6E51F7967E500039F5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E6DE1F79679C00039F5E /* ARSearchViewController.h */,
+				EF61E6DF1F79679C00039F5E /* ARSearchViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF61E6E61F7967F500039F5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E6E11F7967C800039F5E /* ARSearchBar.h */,
+				EF61E6E21F7967C800039F5E /* ARSearchBar.m */,
+				EF61E6E71F7968DF00039F5E /* ARSearchFooter.h */,
+				EF61E6E81F7968DF00039F5E /* ARSearchFooter.m */,
+				EF61E6ED1F7969A300039F5E /* ARResultCellWithbkey.h */,
+				EF61E6EE1F7969A300039F5E /* ARResultCellWithbkey.m */,
+				EF61E6EF1F7969A300039F5E /* ARResultCellWithbkey.xib */,
+				EF61E6F21F7969DC00039F5E /* ARResultCellNobkey.h */,
+				EF61E6F31F7969DC00039F5E /* ARResultCellNobkey.m */,
+				EF61E6F41F7969DC00039F5E /* ARResultCellNobkey.xib */,
+				EF61E6F71F796A0800039F5E /* ARSectionHeaderView.h */,
+				EF61E6F81F796A0800039F5E /* ARSectionHeaderView.m */,
+				EF61E72B1F7AA84700039F5E /* ARRotateRefreshIcon.h */,
+				EF61E72C1F7AA84700039F5E /* ARRotateRefreshIcon.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF61E6FD1F796A5100039F5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E6FA1F796A4C00039F5E /* ARSearchKeyWords.h */,
+				EF61E6FB1F796A4C00039F5E /* ARSearchKeyWords.m */,
+				EF61E6FE1F796A8500039F5E /* ARSearchResultItem.h */,
+				EF61E6FF1F796A8500039F5E /* ARSearchResultItem.m */,
+				EF61E7011F796D1D00039F5E /* ARResultGroup.h */,
+				EF61E7021F796D1D00039F5E /* ARResultGroup.m */,
+				EF61E7041F796DEC00039F5E /* ARSearchAllResult.h */,
+				EF61E7051F796DEC00039F5E /* ARSearchAllResult.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF61E70A1F7979F300039F5E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E7071F7979E700039F5E /* ARNetCommand.h */,
+				EF61E7081F7979E700039F5E /* ARNetCommand.m */,
+				EF61E7131F7981AE00039F5E /* ARSqliteTool.h */,
+				EF61E7141F7981AE00039F5E /* ARSqliteTool.m */,
+				EF61E7251F7AA52100039F5E /* ARParamLoop.h */,
+				EF61E7261F7AA52100039F5E /* ARParamLoop.m */,
+				EF61E7281F7AA5F900039F5E /* ARNavAnimation.h */,
+				EF61E7291F7AA5F900039F5E /* ARNavAnimation.m */,
+				EF61E7611F7ABA7C00039F5E /* ARRegularExpression.h */,
+				EF61E7621F7ABA7C00039F5E /* ARRegularExpression.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		EF61E70E1F79809B00039F5E /* DetailContent */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E70F1F7980AD00039F5E /* Controller */,
+				EF61E71B1F7982DF00039F5E /* Model */,
+			);
+			path = DetailContent;
+			sourceTree = "<group>";
+		};
+		EF61E70F1F7980AD00039F5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E70B1F79809300039F5E /* ARDetailViewController.h */,
+				EF61E70C1F79809300039F5E /* ARDetailViewController.m */,
+				EF61E71C1F798AE300039F5E /* ARDetailNobkeyViewController.h */,
+				EF61E71D1F798AE300039F5E /* ARDetailNobkeyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF61E7191F79825500039F5E /* Bookshelf */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E71A1F79826600039F5E /* Model */,
+				EF61E7391F7AB66E00039F5E /* Controller */,
+				EF61E73D1F7AB6A400039F5E /* View */,
+			);
+			path = Bookshelf;
+			sourceTree = "<group>";
+		};
+		EF61E71A1F79826600039F5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E7161F79825000039F5E /* ARBookItem.h */,
+				EF61E7171F79825000039F5E /* ARBookItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF61E71B1F7982DF00039F5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E7101F7980E600039F5E /* ARChaptersItem.h */,
+				EF61E7111F7980E600039F5E /* ARChaptersItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF61E7241F7A9DCA00039F5E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E7201F7A94CC00039F5E /* PrefixHeader.pch */,
+				EF61E7211F7A9DC200039F5E /* UIBarButtonItem+Extension.h */,
+				EF61E7221F7A9DC200039F5E /* UIBarButtonItem+Extension.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EF61E7311F7AB27D00039F5E /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E7411F7AB99900039F5E /* reader */,
+				EF61E7351F7AB35F00039F5E /* LeftSlideViewController */,
+				EF61E73E1F7AB85A00039F5E /* XTPopView.h */,
+				EF61E73F1F7AB85A00039F5E /* XTPopView.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		EF61E7351F7AB35F00039F5E /* LeftSlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E72E1F7AB27700039F5E /* LeftSlideViewController.h */,
+				EF61E72F1F7AB27700039F5E /* LeftSlideViewController.m */,
+				EF61E7321F7AB2DC00039F5E /* UIView+extra.h */,
+				EF61E7331F7AB2DC00039F5E /* UIView+extra.m */,
+			);
+			path = LeftSlideViewController;
+			sourceTree = "<group>";
+		};
+		EF61E7391F7AB66E00039F5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E7361F7AB66800039F5E /* ARBookshelfViewController.h */,
+				EF61E7371F7AB66800039F5E /* ARBookshelfViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF61E73D1F7AB6A400039F5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E73A1F7AB6A000039F5E /* ARBookCollectionViewCell.h */,
+				EF61E73B1F7AB6A000039F5E /* ARBookCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF61E7411F7AB99900039F5E /* reader */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E7421F7AB99900039F5E /* NSString+PCPaging.h */,
+				EF61E7431F7AB99900039F5E /* NSString+PCPaging.m */,
+				EF61E7441F7AB99900039F5E /* PCCollectViewModel.h */,
+				EF61E7451F7AB99900039F5E /* PCCollectViewModel.m */,
+				EF61E7461F7AB99900039F5E /* PCDataViewController.h */,
+				EF61E7471F7AB99900039F5E /* PCDataViewController.m */,
+				EF61E7481F7AB99900039F5E /* PCGlobalModel.h */,
+				EF61E7491F7AB99900039F5E /* PCGlobalModel.m */,
+				EF61E74A1F7AB99900039F5E /* PCModelViewController.h */,
+				EF61E74B1F7AB99900039F5E /* PCModelViewController.m */,
+				EF61E74C1F7AB99900039F5E /* PCPageCell.h */,
+				EF61E74D1F7AB99900039F5E /* PCPageCell.m */,
+				EF61E74E1F7AB99900039F5E /* PCPageView.h */,
+				EF61E74F1F7AB99900039F5E /* PCPageView.m */,
+				EF61E7501F7AB99900039F5E /* PCReaderTool.h */,
+				EF61E7511F7AB99900039F5E /* PCReaderTool.m */,
+				EF61E7521F7AB99900039F5E /* PCReaderViewController.h */,
+				EF61E7531F7AB99900039F5E /* PCReaderViewController.m */,
+			);
+			path = reader;
+			sourceTree = "<group>";
+		};
+		EF61E7601F7AB9E900039F5E /* NovelContent */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E75D1F7AB9E300039F5E /* ARNovelContentController.h */,
+				EF61E75E1F7AB9E300039F5E /* ARNovelContentController.m */,
+			);
+			path = NovelContent;
+			sourceTree = "<group>";
+		};
+		EF61E76A1F7AC18F00039F5E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E7641F7AC16400039F5E /* ARTabBarController.h */,
+				EF61E7651F7AC16400039F5E /* ARTabBarController.m */,
+				EF61E7671F7AC18900039F5E /* ARNavController.h */,
+				EF61E7681F7AC18900039F5E /* ARNavController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF61E6BF1F79557F00039F5E /* SogouYuedu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF61E6D61F79557F00039F5E /* Build configuration list for PBXNativeTarget "SogouYuedu" */;
+			buildPhases = (
+				90269E70DA478C7B2BB5D09A /* [CP] Check Pods Manifest.lock */,
+				EF61E6BC1F79557F00039F5E /* Sources */,
+				EF61E6BD1F79557F00039F5E /* Frameworks */,
+				EF61E6BE1F79557F00039F5E /* Resources */,
+				0D2B92A1F1192C57062B4426 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SogouYuedu;
+			productName = SogouYuedu;
+			productReference = EF61E6C01F79557F00039F5E /* SogouYuedu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF61E6B81F79557F00039F5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = andyron;
+				TargetAttributes = {
+					EF61E6BF1F79557F00039F5E = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EF61E6BB1F79557F00039F5E /* Build configuration list for PBXProject "SogouYuedu" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF61E6B71F79557F00039F5E;
+			productRefGroup = EF61E6C11F79557F00039F5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF61E6BF1F79557F00039F5E /* SogouYuedu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF61E6BE1F79557F00039F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF61E6D01F79557F00039F5E /* LaunchScreen.storyboard in Resources */,
+				EF61E6F61F7969DC00039F5E /* ARResultCellNobkey.xib in Resources */,
+				EF61E6CD1F79557F00039F5E /* Assets.xcassets in Resources */,
+				EF61E6F11F7969A300039F5E /* ARResultCellWithbkey.xib in Resources */,
+				EF61E6CB1F79557F00039F5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D2B92A1F1192C57062B4426 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SogouYuedu/Pods-SogouYuedu-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SogouYuedu/Pods-SogouYuedu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90269E70DA478C7B2BB5D09A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SogouYuedu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF61E6BC1F79557F00039F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF61E75B1F7AB99900039F5E /* PCReaderTool.m in Sources */,
+				EF61E7541F7AB99900039F5E /* NSString+PCPaging.m in Sources */,
+				EF61E7181F79825000039F5E /* ARBookItem.m in Sources */,
+				EF61E75A1F7AB99900039F5E /* PCPageView.m in Sources */,
+				EF61E6FC1F796A4C00039F5E /* ARSearchKeyWords.m in Sources */,
+				EF61E72D1F7AA84700039F5E /* ARRotateRefreshIcon.m in Sources */,
+				EF61E7061F796DEC00039F5E /* ARSearchAllResult.m in Sources */,
+				EF61E72A1F7AA5F900039F5E /* ARNavAnimation.m in Sources */,
+				EF61E7151F7981AE00039F5E /* ARSqliteTool.m in Sources */,
+				EF61E7301F7AB27700039F5E /* LeftSlideViewController.m in Sources */,
+				EF61E75C1F7AB99900039F5E /* PCReaderViewController.m in Sources */,
+				EF61E6E01F79679C00039F5E /* ARSearchViewController.m in Sources */,
+				EF61E7001F796A8500039F5E /* ARSearchResultItem.m in Sources */,
+				EF61E75F1F7AB9E300039F5E /* ARNovelContentController.m in Sources */,
+				EF61E7691F7AC18900039F5E /* ARNavController.m in Sources */,
+				EF61E7271F7AA52100039F5E /* ARParamLoop.m in Sources */,
+				EF61E6DC1F795F2600039F5E /* ARBookstoreViewController.m in Sources */,
+				EF61E7381F7AB66800039F5E /* ARBookshelfViewController.m in Sources */,
+				EF61E7581F7AB99900039F5E /* PCModelViewController.m in Sources */,
+				EF61E6F01F7969A300039F5E /* ARResultCellWithbkey.m in Sources */,
+				EF61E6E31F7967C800039F5E /* ARSearchBar.m in Sources */,
+				EF61E6C81F79557F00039F5E /* ViewController.m in Sources */,
+				EF0F13111F7D21260046A762 /* JPFPSStatus.m in Sources */,
+				EF61E7661F7AC16400039F5E /* ARTabBarController.m in Sources */,
+				EF61E7591F7AB99900039F5E /* PCPageCell.m in Sources */,
+				EF61E71E1F798AE300039F5E /* ARDetailNobkeyViewController.m in Sources */,
+				EF61E70D1F79809300039F5E /* ARDetailViewController.m in Sources */,
+				EF61E7121F7980E600039F5E /* ARChaptersItem.m in Sources */,
+				EF61E7031F796D1D00039F5E /* ARResultGroup.m in Sources */,
+				EF61E7401F7AB85A00039F5E /* XTPopView.m in Sources */,
+				EF61E7571F7AB99900039F5E /* PCGlobalModel.m in Sources */,
+				EF61E6E91F7968DF00039F5E /* ARSearchFooter.m in Sources */,
+				EF61E7231F7A9DC200039F5E /* UIBarButtonItem+Extension.m in Sources */,
+				EF61E6F91F796A0800039F5E /* ARSectionHeaderView.m in Sources */,
+				EF61E73C1F7AB6A000039F5E /* ARBookCollectionViewCell.m in Sources */,
+				EF61E7091F7979E700039F5E /* ARNetCommand.m in Sources */,
+				EF61E7551F7AB99900039F5E /* PCCollectViewModel.m in Sources */,
+				EF61E6F51F7969DC00039F5E /* ARResultCellNobkey.m in Sources */,
+				EF61E6D31F79557F00039F5E /* main.m in Sources */,
+				EF61E7561F7AB99900039F5E /* PCDataViewController.m in Sources */,
+				EF61E7631F7ABA7C00039F5E /* ARRegularExpression.m in Sources */,
+				EF61E6C51F79557F00039F5E /* AppDelegate.m in Sources */,
+				EF61E7341F7AB2DC00039F5E /* UIView+extra.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF61E6C91F79557F00039F5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF61E6CA1F79557F00039F5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF61E6CE1F79557F00039F5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF61E6CF1F79557F00039F5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF61E6D41F79557F00039F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF61E6D51F79557F00039F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF61E6D71F79557F00039F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB94E37C5E8B54D23BC672E /* Pods-SogouYuedu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T83V24XLS2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SogouYuedu/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = SogouYuedu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyron.SogouYuedu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF61E6D81F79557F00039F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C45EC95AA501D9A9A2F511D /* Pods-SogouYuedu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T83V24XLS2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SogouYuedu/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = SogouYuedu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyron.SogouYuedu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF61E6BB1F79557F00039F5E /* Build configuration list for PBXProject "SogouYuedu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF61E6D41F79557F00039F5E /* Debug */,
+				EF61E6D51F79557F00039F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF61E6D61F79557F00039F5E /* Build configuration list for PBXNativeTarget "SogouYuedu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF61E6D71F79557F00039F5E /* Debug */,
+				EF61E6D81F79557F00039F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF61E6B81F79557F00039F5E /* Project object */;
+}
