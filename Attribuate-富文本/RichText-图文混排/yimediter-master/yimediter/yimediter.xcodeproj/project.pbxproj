@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C09B6131FC65F6F0069C40A /* YIMEditerTextColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C09B6121FC65F6F0069C40A /* YIMEditerTextColorCell.m */; };
+		5C2F6B131FD4245400715E94 /* UIColor+YIMEditerExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2F6B121FD4245400715E94 /* UIColor+YIMEditerExtend.m */; };
+		5C2F6B191FD42C4000715E94 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2F6B181FD42C4000715E94 /* WebViewController.m */; };
+		5C2F6B1C1FD453AA00715E94 /* yimediter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C2F6B1B1FD453AA00715E94 /* yimediter.bundle */; };
+		5C2F6B1F1FD4EEEA00715E94 /* DefualtUndoTypingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2F6B1E1FD4EEEA00715E94 /* DefualtUndoTypingItem.m */; };
+		5C63187A1FCA93DE000A1F92 /* YIMEditerFontFamilyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6318791FCA93DE000A1F92 /* YIMEditerFontFamilyManager.m */; };
+		5C7615201FCFFE5E0032C516 /* YIMEditerParagraphStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C76151F1FCFFE5E0032C516 /* YIMEditerParagraphStyle.m */; };
+		5C7615231FD001820032C516 /* YIMEditerParagraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7615221FD001820032C516 /* YIMEditerParagraphView.m */; };
+		5C7615261FD003DD0032C516 /* YIMEditerParagraphAlignmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7615251FD003DD0032C516 /* YIMEditerParagraphAlignmentCell.m */; };
+		5C7615291FD014010032C516 /* YIMEditerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7615281FD014010032C516 /* YIMEditerStyle.m */; };
+		5C781B131FDE93CD00CCFDB4 /* HtmlElement.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C781B121FDE93CD00CCFDB4 /* HtmlElement.c */; };
+		5CB23B621FD163EE000F2F57 /* DefualtParagraphItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB23B611FD163EE000F2F57 /* DefualtParagraphItem.m */; };
+		5CB23B651FD2522C000F2F57 /* YIMEditerParagraphLineIndentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB23B641FD2522C000F2F57 /* YIMEditerParagraphLineIndentCell.m */; };
+		5CB23B681FD298FF000F2F57 /* YIMEditerParagraphSpacingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB23B671FD298FF000F2F57 /* YIMEditerParagraphSpacingCell.m */; };
+		5CB74A861FFDC5D70001D0C2 /* NSBundle+YIMBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB74A851FFDC5D70001D0C2 /* NSBundle+YIMBundle.m */; };
+		5CBEA0611FBEBB4700D29998 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEA0601FBEBB4700D29998 /* AppDelegate.m */; };
+		5CBEA0641FBEBB4700D29998 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEA0631FBEBB4700D29998 /* ViewController.m */; };
+		5CBEA0671FBEBB4700D29998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBEA0651FBEBB4700D29998 /* Main.storyboard */; };
+		5CBEA0691FBEBB4700D29998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CBEA0681FBEBB4700D29998 /* Assets.xcassets */; };
+		5CBEA06C1FBEBB4700D29998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBEA06A1FBEBB4700D29998 /* LaunchScreen.storyboard */; };
+		5CBEA06F1FBEBB4700D29998 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEA06E1FBEBB4700D29998 /* main.m */; };
+		5CBEA0791FBEBC7800D29998 /* YIMEditerInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEA0781FBEBC7800D29998 /* YIMEditerInputAccessoryView.m */; };
+		5CC628081FC962B40094D972 /* YIMEditerTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC628061FC962B40094D972 /* YIMEditerTextView.m */; };
+		5CC6280B1FC964660094D972 /* YIMEditerTextFontFamilyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC6280A1FC964660094D972 /* YIMEditerTextFontFamilyCell.m */; };
+		5CC628121FC965ED0094D972 /* String.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CC628141FC965ED0094D972 /* String.strings */; };
+		5CC628191FC97B9D0094D972 /* YIMFontFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC628181FC97B9D0094D972 /* YIMFontFamilyViewController.m */; };
+		5CED35CE1FC3FC10002FAAAE /* YIMEditerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CED35CD1FC3FC10002FAAAE /* YIMEditerView.m */; };
+		5CED35D11FC3FF3D002FAAAE /* YIMEditerFontView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CED35D01FC3FF3D002FAAAE /* YIMEditerFontView.m */; };
+		5CED35D51FC403B5002FAAAE /* YIMEditerAccessoryMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CED35D41FC403B5002FAAAE /* YIMEditerAccessoryMenuItem.m */; };
+		5CED35DB1FC4148A002FAAAE /* YIMEditerTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CED35DA1FC4148A002FAAAE /* YIMEditerTextStyle.m */; };
+		5CED35E21FC42B2F002FAAAE /* YIMEditerStyleBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CED35E11FC42B2F002FAAAE /* YIMEditerStyleBaseCell.m */; };
+		5CED35E51FC42B6A002FAAAE /* YIMEditerTextStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CED35E41FC42B6A002FAAAE /* YIMEditerTextStyleCell.m */; };
+		5CED35E81FC4330F002FAAAE /* YIMEditerSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CED35E71FC4330F002FAAAE /* YIMEditerSetting.m */; };
+		5CED35EF1FC436AA002FAAAE /* UIImage+YIMEditerImageExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CED35EE1FC436AA002FAAAE /* UIImage+YIMEditerImageExtend.m */; };
+		5CED35F51FC47808002FAAAE /* YIMScrollSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CED35F41FC47808002FAAAE /* YIMScrollSelectView.m */; };
+		5CED35F81FC48786002FAAAE /* YIMEditerTextFontSizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CED35F71FC48786002FAAAE /* YIMEditerTextFontSizeCell.m */; };
+		5CEE24F91FE0F90D00EA171F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5CEE24F81FE0F90D00EA171F /* README.md */; };
+		5CEE24FB1FE0F97500EA171F /* yimediter.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5CEE24FA1FE0F97500EA171F /* yimediter.podspec */; };
+		5CF749121FD10876000061A7 /* YIMEditerDrawAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF749111FD10876000061A7 /* YIMEditerDrawAttributes.m */; };
+		5CF749161FD13AAB000061A7 /* DefualtFontItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF749151FD13AAB000061A7 /* DefualtFontItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C09B6111FC65F6F0069C40A /* YIMEditerTextColorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerTextColorCell.h; sourceTree = "<group>"; };
+		5C09B6121FC65F6F0069C40A /* YIMEditerTextColorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerTextColorCell.m; sourceTree = "<group>"; };
+		5C2F6B111FD4245400715E94 /* UIColor+YIMEditerExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+YIMEditerExtend.h"; sourceTree = "<group>"; };
+		5C2F6B121FD4245400715E94 /* UIColor+YIMEditerExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YIMEditerExtend.m"; sourceTree = "<group>"; };
+		5C2F6B171FD42C4000715E94 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		5C2F6B181FD42C4000715E94 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		5C2F6B1B1FD453AA00715E94 /* yimediter.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = yimediter.bundle; sourceTree = "<group>"; };
+		5C2F6B1D1FD4EEEA00715E94 /* DefualtUndoTypingItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefualtUndoTypingItem.h; sourceTree = "<group>"; };
+		5C2F6B1E1FD4EEEA00715E94 /* DefualtUndoTypingItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefualtUndoTypingItem.m; sourceTree = "<group>"; };
+		5C6318781FCA93DE000A1F92 /* YIMEditerFontFamilyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerFontFamilyManager.h; sourceTree = "<group>"; };
+		5C6318791FCA93DE000A1F92 /* YIMEditerFontFamilyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerFontFamilyManager.m; sourceTree = "<group>"; };
+		5C76151E1FCFFE5E0032C516 /* YIMEditerParagraphStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerParagraphStyle.h; sourceTree = "<group>"; };
+		5C76151F1FCFFE5E0032C516 /* YIMEditerParagraphStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerParagraphStyle.m; sourceTree = "<group>"; };
+		5C7615211FD001820032C516 /* YIMEditerParagraphView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerParagraphView.h; sourceTree = "<group>"; };
+		5C7615221FD001820032C516 /* YIMEditerParagraphView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerParagraphView.m; sourceTree = "<group>"; };
+		5C7615241FD003DD0032C516 /* YIMEditerParagraphAlignmentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerParagraphAlignmentCell.h; sourceTree = "<group>"; };
+		5C7615251FD003DD0032C516 /* YIMEditerParagraphAlignmentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerParagraphAlignmentCell.m; sourceTree = "<group>"; };
+		5C7615271FD014010032C516 /* YIMEditerStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerStyle.h; sourceTree = "<group>"; };
+		5C7615281FD014010032C516 /* YIMEditerStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerStyle.m; sourceTree = "<group>"; };
+		5C76152E1FD01E860032C516 /* YIMEditerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerProtocol.h; sourceTree = "<group>"; };
+		5C781B111FDE93CD00CCFDB4 /* HtmlElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HtmlElement.h; sourceTree = "<group>"; };
+		5C781B121FDE93CD00CCFDB4 /* HtmlElement.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HtmlElement.c; sourceTree = "<group>"; };
+		5CB23B601FD163EE000F2F57 /* DefualtParagraphItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefualtParagraphItem.h; sourceTree = "<group>"; };
+		5CB23B611FD163EE000F2F57 /* DefualtParagraphItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefualtParagraphItem.m; sourceTree = "<group>"; };
+		5CB23B631FD2522C000F2F57 /* YIMEditerParagraphLineIndentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerParagraphLineIndentCell.h; sourceTree = "<group>"; };
+		5CB23B641FD2522C000F2F57 /* YIMEditerParagraphLineIndentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerParagraphLineIndentCell.m; sourceTree = "<group>"; };
+		5CB23B661FD298FF000F2F57 /* YIMEditerParagraphSpacingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerParagraphSpacingCell.h; sourceTree = "<group>"; };
+		5CB23B671FD298FF000F2F57 /* YIMEditerParagraphSpacingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerParagraphSpacingCell.m; sourceTree = "<group>"; };
+		5CB74A841FFDC5D70001D0C2 /* NSBundle+YIMBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YIMBundle.h"; sourceTree = "<group>"; };
+		5CB74A851FFDC5D70001D0C2 /* NSBundle+YIMBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YIMBundle.m"; sourceTree = "<group>"; };
+		5CBEA05C1FBEBB4700D29998 /* yimediter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yimediter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBEA05F1FBEBB4700D29998 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5CBEA0601FBEBB4700D29998 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5CBEA0621FBEBB4700D29998 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5CBEA0631FBEBB4700D29998 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5CBEA0661FBEBB4700D29998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CBEA0681FBEBB4700D29998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CBEA06B1FBEBB4700D29998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CBEA06D1FBEBB4700D29998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CBEA06E1FBEBB4700D29998 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CBEA0771FBEBC7800D29998 /* YIMEditerInputAccessoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerInputAccessoryView.h; sourceTree = "<group>"; };
+		5CBEA0781FBEBC7800D29998 /* YIMEditerInputAccessoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerInputAccessoryView.m; sourceTree = "<group>"; };
+		5CC628061FC962B40094D972 /* YIMEditerTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMEditerTextView.m; sourceTree = "<group>"; };
+		5CC628071FC962B40094D972 /* YIMEditerTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMEditerTextView.h; sourceTree = "<group>"; };
+		5CC628091FC964660094D972 /* YIMEditerTextFontFamilyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerTextFontFamilyCell.h; sourceTree = "<group>"; };
+		5CC6280A1FC964660094D972 /* YIMEditerTextFontFamilyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerTextFontFamilyCell.m; sourceTree = "<group>"; };
+		5CC6280C1FC9651A0094D972 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		5CC6280D1FC9651B0094D972 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		5CC628131FC965ED0094D972 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/String.strings; sourceTree = "<group>"; };
+		5CC628151FC965F00094D972 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/String.strings"; sourceTree = "<group>"; };
+		5CC628161FC965F70094D972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/String.strings; sourceTree = "<group>"; };
+		5CC628171FC97B9D0094D972 /* YIMFontFamilyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMFontFamilyViewController.h; sourceTree = "<group>"; };
+		5CC628181FC97B9D0094D972 /* YIMFontFamilyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMFontFamilyViewController.m; sourceTree = "<group>"; };
+		5CED35CC1FC3FC10002FAAAE /* YIMEditerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerView.h; sourceTree = "<group>"; };
+		5CED35CD1FC3FC10002FAAAE /* YIMEditerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerView.m; sourceTree = "<group>"; };
+		5CED35CF1FC3FF3D002FAAAE /* YIMEditerFontView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerFontView.h; sourceTree = "<group>"; };
+		5CED35D01FC3FF3D002FAAAE /* YIMEditerFontView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerFontView.m; sourceTree = "<group>"; };
+		5CED35D31FC403B5002FAAAE /* YIMEditerAccessoryMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerAccessoryMenuItem.h; sourceTree = "<group>"; };
+		5CED35D41FC403B5002FAAAE /* YIMEditerAccessoryMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerAccessoryMenuItem.m; sourceTree = "<group>"; };
+		5CED35D91FC4148A002FAAAE /* YIMEditerTextStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerTextStyle.h; sourceTree = "<group>"; };
+		5CED35DA1FC4148A002FAAAE /* YIMEditerTextStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerTextStyle.m; sourceTree = "<group>"; };
+		5CED35E01FC42B2F002FAAAE /* YIMEditerStyleBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerStyleBaseCell.h; sourceTree = "<group>"; };
+		5CED35E11FC42B2F002FAAAE /* YIMEditerStyleBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerStyleBaseCell.m; sourceTree = "<group>"; };
+		5CED35E31FC42B6A002FAAAE /* YIMEditerTextStyleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerTextStyleCell.h; sourceTree = "<group>"; };
+		5CED35E41FC42B6A002FAAAE /* YIMEditerTextStyleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerTextStyleCell.m; sourceTree = "<group>"; };
+		5CED35E61FC4330F002FAAAE /* YIMEditerSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerSetting.h; sourceTree = "<group>"; };
+		5CED35E71FC4330F002FAAAE /* YIMEditerSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerSetting.m; sourceTree = "<group>"; };
+		5CED35ED1FC436AA002FAAAE /* UIImage+YIMEditerImageExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YIMEditerImageExtend.h"; sourceTree = "<group>"; };
+		5CED35EE1FC436AA002FAAAE /* UIImage+YIMEditerImageExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YIMEditerImageExtend.m"; sourceTree = "<group>"; };
+		5CED35F31FC47808002FAAAE /* YIMScrollSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMScrollSelectView.h; sourceTree = "<group>"; };
+		5CED35F41FC47808002FAAAE /* YIMScrollSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMScrollSelectView.m; sourceTree = "<group>"; };
+		5CED35F61FC48786002FAAAE /* YIMEditerTextFontSizeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerTextFontSizeCell.h; sourceTree = "<group>"; };
+		5CED35F71FC48786002FAAAE /* YIMEditerTextFontSizeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerTextFontSizeCell.m; sourceTree = "<group>"; };
+		5CEE24F81FE0F90D00EA171F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		5CEE24FA1FE0F97500EA171F /* yimediter.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = yimediter.podspec; path = ../../yimediter.podspec; sourceTree = "<group>"; };
+		5CF749101FD10876000061A7 /* YIMEditerDrawAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerDrawAttributes.h; sourceTree = "<group>"; };
+		5CF749111FD10876000061A7 /* YIMEditerDrawAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerDrawAttributes.m; sourceTree = "<group>"; };
+		5CF749141FD13AAB000061A7 /* DefualtFontItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefualtFontItem.h; sourceTree = "<group>"; };
+		5CF749151FD13AAB000061A7 /* DefualtFontItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefualtFontItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CBEA0591FBEBB4700D29998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C2F6B1A1FD4516500715E94 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				5C2F6B1B1FD453AA00715E94 /* yimediter.bundle */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		5CBEA0531FBEBB4700D29998 = {
+			isa = PBXGroup;
+			children = (
+				5CBEA05E1FBEBB4700D29998 /* yimediter */,
+				5CBEA05D1FBEBB4700D29998 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CBEA05D1FBEBB4700D29998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEA05C1FBEBB4700D29998 /* yimediter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CBEA05E1FBEBB4700D29998 /* yimediter */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEA0751FBEBB6100D29998 /* ybzediter */,
+				5CBEA05F1FBEBB4700D29998 /* AppDelegate.h */,
+				5CBEA0601FBEBB4700D29998 /* AppDelegate.m */,
+				5CBEA0621FBEBB4700D29998 /* ViewController.h */,
+				5CBEA0631FBEBB4700D29998 /* ViewController.m */,
+				5C2F6B171FD42C4000715E94 /* WebViewController.h */,
+				5C2F6B181FD42C4000715E94 /* WebViewController.m */,
+				5CBEA0651FBEBB4700D29998 /* Main.storyboard */,
+				5CBEA0681FBEBB4700D29998 /* Assets.xcassets */,
+				5CBEA06A1FBEBB4700D29998 /* LaunchScreen.storyboard */,
+				5CBEA06D1FBEBB4700D29998 /* Info.plist */,
+				5CBEA06E1FBEBB4700D29998 /* main.m */,
+				5CEE24F81FE0F90D00EA171F /* README.md */,
+				5CEE24FA1FE0F97500EA171F /* yimediter.podspec */,
+				5CC628141FC965ED0094D972 /* String.strings */,
+			);
+			path = yimediter;
+			sourceTree = "<group>";
+		};
+		5CBEA0751FBEBB6100D29998 /* ybzediter */ = {
+			isa = PBXGroup;
+			children = (
+				5CC628071FC962B40094D972 /* YIMEditerTextView.h */,
+				5CC628061FC962B40094D972 /* YIMEditerTextView.m */,
+				5C2F6B1A1FD4516500715E94 /* resource */,
+				5CF749131FD139F4000061A7 /* items */,
+				5CC6281A1FC9C9120094D972 /* fonts */,
+				5CED35E91FC43619002FAAAE /* extends */,
+				5CED35DC1FC42AF5002FAAAE /* cells */,
+				5CED35D21FC403A5002FAAAE /* models */,
+				5CBEA0761FBEBC2000D29998 /* views */,
+			);
+			path = ybzediter;
+			sourceTree = "<group>";
+		};
+		5CBEA0761FBEBC2000D29998 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEA0771FBEBC7800D29998 /* YIMEditerInputAccessoryView.h */,
+				5CBEA0781FBEBC7800D29998 /* YIMEditerInputAccessoryView.m */,
+				5CED35CC1FC3FC10002FAAAE /* YIMEditerView.h */,
+				5CED35CD1FC3FC10002FAAAE /* YIMEditerView.m */,
+				5CED35CF1FC3FF3D002FAAAE /* YIMEditerFontView.h */,
+				5CED35D01FC3FF3D002FAAAE /* YIMEditerFontView.m */,
+				5C7615211FD001820032C516 /* YIMEditerParagraphView.h */,
+				5C7615221FD001820032C516 /* YIMEditerParagraphView.m */,
+				5CED35F31FC47808002FAAAE /* YIMScrollSelectView.h */,
+				5CED35F41FC47808002FAAAE /* YIMScrollSelectView.m */,
+				5CC628171FC97B9D0094D972 /* YIMFontFamilyViewController.h */,
+				5CC628181FC97B9D0094D972 /* YIMFontFamilyViewController.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		5CC6281A1FC9C9120094D972 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		5CED35D21FC403A5002FAAAE /* models */ = {
+			isa = PBXGroup;
+			children = (
+				5CED35D31FC403B5002FAAAE /* YIMEditerAccessoryMenuItem.h */,
+				5CED35D41FC403B5002FAAAE /* YIMEditerAccessoryMenuItem.m */,
+				5C7615271FD014010032C516 /* YIMEditerStyle.h */,
+				5C7615281FD014010032C516 /* YIMEditerStyle.m */,
+				5CED35D91FC4148A002FAAAE /* YIMEditerTextStyle.h */,
+				5CED35DA1FC4148A002FAAAE /* YIMEditerTextStyle.m */,
+				5C76151E1FCFFE5E0032C516 /* YIMEditerParagraphStyle.h */,
+				5C76151F1FCFFE5E0032C516 /* YIMEditerParagraphStyle.m */,
+				5CED35E61FC4330F002FAAAE /* YIMEditerSetting.h */,
+				5CED35E71FC4330F002FAAAE /* YIMEditerSetting.m */,
+				5C6318781FCA93DE000A1F92 /* YIMEditerFontFamilyManager.h */,
+				5C6318791FCA93DE000A1F92 /* YIMEditerFontFamilyManager.m */,
+				5C76152E1FD01E860032C516 /* YIMEditerProtocol.h */,
+				5CF749101FD10876000061A7 /* YIMEditerDrawAttributes.h */,
+				5CF749111FD10876000061A7 /* YIMEditerDrawAttributes.m */,
+				5C781B111FDE93CD00CCFDB4 /* HtmlElement.h */,
+				5C781B121FDE93CD00CCFDB4 /* HtmlElement.c */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		5CED35DC1FC42AF5002FAAAE /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				5CED35E01FC42B2F002FAAAE /* YIMEditerStyleBaseCell.h */,
+				5CED35E11FC42B2F002FAAAE /* YIMEditerStyleBaseCell.m */,
+				5CED35E31FC42B6A002FAAAE /* YIMEditerTextStyleCell.h */,
+				5CED35E41FC42B6A002FAAAE /* YIMEditerTextStyleCell.m */,
+				5CED35F61FC48786002FAAAE /* YIMEditerTextFontSizeCell.h */,
+				5CED35F71FC48786002FAAAE /* YIMEditerTextFontSizeCell.m */,
+				5C09B6111FC65F6F0069C40A /* YIMEditerTextColorCell.h */,
+				5C09B6121FC65F6F0069C40A /* YIMEditerTextColorCell.m */,
+				5CC628091FC964660094D972 /* YIMEditerTextFontFamilyCell.h */,
+				5CC6280A1FC964660094D972 /* YIMEditerTextFontFamilyCell.m */,
+				5C7615241FD003DD0032C516 /* YIMEditerParagraphAlignmentCell.h */,
+				5C7615251FD003DD0032C516 /* YIMEditerParagraphAlignmentCell.m */,
+				5CB23B631FD2522C000F2F57 /* YIMEditerParagraphLineIndentCell.h */,
+				5CB23B641FD2522C000F2F57 /* YIMEditerParagraphLineIndentCell.m */,
+				5CB23B661FD298FF000F2F57 /* YIMEditerParagraphSpacingCell.h */,
+				5CB23B671FD298FF000F2F57 /* YIMEditerParagraphSpacingCell.m */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		5CED35E91FC43619002FAAAE /* extends */ = {
+			isa = PBXGroup;
+			children = (
+				5CED35ED1FC436AA002FAAAE /* UIImage+YIMEditerImageExtend.h */,
+				5CED35EE1FC436AA002FAAAE /* UIImage+YIMEditerImageExtend.m */,
+				5C2F6B111FD4245400715E94 /* UIColor+YIMEditerExtend.h */,
+				5C2F6B121FD4245400715E94 /* UIColor+YIMEditerExtend.m */,
+				5CB74A841FFDC5D70001D0C2 /* NSBundle+YIMBundle.h */,
+				5CB74A851FFDC5D70001D0C2 /* NSBundle+YIMBundle.m */,
+			);
+			path = extends;
+			sourceTree = "<group>";
+		};
+		5CF749131FD139F4000061A7 /* items */ = {
+			isa = PBXGroup;
+			children = (
+				5CF749141FD13AAB000061A7 /* DefualtFontItem.h */,
+				5CF749151FD13AAB000061A7 /* DefualtFontItem.m */,
+				5CB23B601FD163EE000F2F57 /* DefualtParagraphItem.h */,
+				5CB23B611FD163EE000F2F57 /* DefualtParagraphItem.m */,
+				5C2F6B1D1FD4EEEA00715E94 /* DefualtUndoTypingItem.h */,
+				5C2F6B1E1FD4EEEA00715E94 /* DefualtUndoTypingItem.m */,
+			);
+			path = items;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CBEA05B1FBEBB4700D29998 /* yimediter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CBEA0721FBEBB4700D29998 /* Build configuration list for PBXNativeTarget "yimediter" */;
+			buildPhases = (
+				5CBEA0581FBEBB4700D29998 /* Sources */,
+				5CBEA0591FBEBB4700D29998 /* Frameworks */,
+				5CBEA05A1FBEBB4700D29998 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yimediter;
+			productName = yimediter;
+			productReference = 5CBEA05C1FBEBB4700D29998 /* yimediter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CBEA0541FBEBB4700D29998 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ybz;
+				TargetAttributes = {
+					5CBEA05B1FBEBB4700D29998 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5CBEA0571FBEBB4700D29998 /* Build configuration list for PBXProject "yimediter" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 5CBEA0531FBEBB4700D29998;
+			productRefGroup = 5CBEA05D1FBEBB4700D29998 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CBEA05B1FBEBB4700D29998 /* yimediter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CBEA05A1FBEBB4700D29998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CEE24F91FE0F90D00EA171F /* README.md in Resources */,
+				5C2F6B1C1FD453AA00715E94 /* yimediter.bundle in Resources */,
+				5CBEA06C1FBEBB4700D29998 /* LaunchScreen.storyboard in Resources */,
+				5CC628121FC965ED0094D972 /* String.strings in Resources */,
+				5CBEA0691FBEBB4700D29998 /* Assets.xcassets in Resources */,
+				5CBEA0671FBEBB4700D29998 /* Main.storyboard in Resources */,
+				5CEE24FB1FE0F97500EA171F /* yimediter.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CBEA0581FBEBB4700D29998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CED35D11FC3FF3D002FAAAE /* YIMEditerFontView.m in Sources */,
+				5CB23B681FD298FF000F2F57 /* YIMEditerParagraphSpacingCell.m in Sources */,
+				5CBEA0641FBEBB4700D29998 /* ViewController.m in Sources */,
+				5CBEA06F1FBEBB4700D29998 /* main.m in Sources */,
+				5C09B6131FC65F6F0069C40A /* YIMEditerTextColorCell.m in Sources */,
+				5CED35E21FC42B2F002FAAAE /* YIMEditerStyleBaseCell.m in Sources */,
+				5CED35DB1FC4148A002FAAAE /* YIMEditerTextStyle.m in Sources */,
+				5C63187A1FCA93DE000A1F92 /* YIMEditerFontFamilyManager.m in Sources */,
+				5C7615291FD014010032C516 /* YIMEditerStyle.m in Sources */,
+				5C7615231FD001820032C516 /* YIMEditerParagraphView.m in Sources */,
+				5C2F6B191FD42C4000715E94 /* WebViewController.m in Sources */,
+				5CED35D51FC403B5002FAAAE /* YIMEditerAccessoryMenuItem.m in Sources */,
+				5C7615261FD003DD0032C516 /* YIMEditerParagraphAlignmentCell.m in Sources */,
+				5CB23B621FD163EE000F2F57 /* DefualtParagraphItem.m in Sources */,
+				5CBEA0611FBEBB4700D29998 /* AppDelegate.m in Sources */,
+				5CB74A861FFDC5D70001D0C2 /* NSBundle+YIMBundle.m in Sources */,
+				5CED35E81FC4330F002FAAAE /* YIMEditerSetting.m in Sources */,
+				5CF749121FD10876000061A7 /* YIMEditerDrawAttributes.m in Sources */,
+				5CED35E51FC42B6A002FAAAE /* YIMEditerTextStyleCell.m in Sources */,
+				5CC6280B1FC964660094D972 /* YIMEditerTextFontFamilyCell.m in Sources */,
+				5CC628191FC97B9D0094D972 /* YIMFontFamilyViewController.m in Sources */,
+				5CC628081FC962B40094D972 /* YIMEditerTextView.m in Sources */,
+				5CED35F51FC47808002FAAAE /* YIMScrollSelectView.m in Sources */,
+				5C2F6B1F1FD4EEEA00715E94 /* DefualtUndoTypingItem.m in Sources */,
+				5CED35EF1FC436AA002FAAAE /* UIImage+YIMEditerImageExtend.m in Sources */,
+				5C2F6B131FD4245400715E94 /* UIColor+YIMEditerExtend.m in Sources */,
+				5CED35CE1FC3FC10002FAAAE /* YIMEditerView.m in Sources */,
+				5CBEA0791FBEBC7800D29998 /* YIMEditerInputAccessoryView.m in Sources */,
+				5CF749161FD13AAB000061A7 /* DefualtFontItem.m in Sources */,
+				5CED35F81FC48786002FAAAE /* YIMEditerTextFontSizeCell.m in Sources */,
+				5C781B131FDE93CD00CCFDB4 /* HtmlElement.c in Sources */,
+				5C7615201FCFFE5E0032C516 /* YIMEditerParagraphStyle.m in Sources */,
+				5CB23B651FD2522C000F2F57 /* YIMEditerParagraphLineIndentCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5CBEA0651FBEBB4700D29998 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CBEA0661FBEBB4700D29998 /* Base */,
+				5CC6280C1FC9651A0094D972 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CBEA06A1FBEBB4700D29998 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CBEA06B1FBEBB4700D29998 /* Base */,
+				5CC6280D1FC9651B0094D972 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5CC628141FC965ED0094D972 /* String.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CC628131FC965ED0094D972 /* en */,
+				5CC628151FC965F00094D972 /* zh-Hans */,
+				5CC628161FC965F70094D972 /* Base */,
+			);
+			name = String.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CBEA0701FBEBB4700D29998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5CBEA0711FBEBB4700D29998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CBEA0731FBEBB4700D29998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q5KU2HBEN;
+				INFOPLIST_FILE = yimediter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ybz.yimediter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CBEA0741FBEBB4700D29998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q5KU2HBEN;
+				INFOPLIST_FILE = yimediter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ybz.yimediter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CBEA0571FBEBB4700D29998 /* Build configuration list for PBXProject "yimediter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBEA0701FBEBB4700D29998 /* Debug */,
+				5CBEA0711FBEBB4700D29998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CBEA0721FBEBB4700D29998 /* Build configuration list for PBXNativeTarget "yimediter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBEA0731FBEBB4700D29998 /* Debug */,
+				5CBEA0741FBEBB4700D29998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CBEA0541FBEBB4700D29998 /* Project object */;
+}

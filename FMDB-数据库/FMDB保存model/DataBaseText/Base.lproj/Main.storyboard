@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaC-BO-k50">
+                                <rect key="frame" x="95" y="137" width="185" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="oNr-Z2-1Ev"/>
+                                    <constraint firstAttribute="height" constant="30" id="yPe-sS-KAR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="删除表数据">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteTableData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBS-EM-LIc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TC3-qX-X8p">
+                                <rect key="frame" x="95" y="169" width="185" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nmm-oy-MHc"/>
+                                    <constraint firstAttribute="width" constant="185" id="v5R-tH-OVo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="删除表">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dorpTableAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="apH-OW-0ci"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRf-gG-cKr">
+                                <rect key="frame" x="95" y="201" width="185" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eSM-Aj-Ywo"/>
+                                    <constraint firstAttribute="width" constant="185" id="tGV-UX-PIP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="插入所有model">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="inserModelArray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H3h-Pf-X1C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJn-Iv-NeQ">
+                                <rect key="frame" x="95" y="105" width="185" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="FKr-ar-hmT"/>
+                                    <constraint firstAttribute="height" constant="30" id="RbZ-7N-X3A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="创建表">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createTableAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tsl-se-WFu"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="要操作的表名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j3l-oJ-VAx">
+                                <rect key="frame" x="95" y="63" width="185" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0jc-ib-Drz"/>
+                                    <constraint firstAttribute="width" constant="185" id="g7D-Xx-El0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R2A-Kj-LhS">
+                                <rect key="frame" x="0.0" y="239" width="375" height="408"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Hul-MV-ZRL"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4kW-Hk-wQ6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R2A-Kj-LhS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3IG-v8-rH4"/>
+                            <constraint firstItem="DaC-BO-k50" firstAttribute="top" secondItem="nJn-Iv-NeQ" secondAttribute="bottom" constant="2" id="4Gm-vW-8jx"/>
+                            <constraint firstItem="j3l-oJ-VAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Jv-GP-ctX"/>
+                            <constraint firstItem="TC3-qX-X8p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dts-t2-JRz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R2A-Kj-LhS" secondAttribute="bottom" constant="20" id="DvE-sT-gRn"/>
+                            <constraint firstItem="DaC-BO-k50" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FFE-Ir-bBc"/>
+                            <constraint firstItem="YRf-gG-cKr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FvL-bv-DGr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DaC-BO-k50" secondAttribute="trailing" constant="79" id="JxH-GW-fgs"/>
+                            <constraint firstItem="j3l-oJ-VAx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="XRD-nU-bgZ"/>
+                            <constraint firstItem="YRf-gG-cKr" firstAttribute="top" secondItem="TC3-qX-X8p" secondAttribute="bottom" constant="2" id="owh-nx-bAv"/>
+                            <constraint firstItem="nJn-Iv-NeQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rhe-uE-tUf"/>
+                            <constraint firstItem="TC3-qX-X8p" firstAttribute="top" secondItem="DaC-BO-k50" secondAttribute="bottom" constant="2" id="tL8-xs-oy6"/>
+                            <constraint firstItem="nJn-Iv-NeQ" firstAttribute="top" secondItem="j3l-oJ-VAx" secondAttribute="bottom" constant="12" id="toi-9z-TXh"/>
+                            <constraint firstAttribute="trailing" secondItem="R2A-Kj-LhS" secondAttribute="trailing" id="vSa-Pn-stA"/>
+                            <constraint firstItem="R2A-Kj-LhS" firstAttribute="top" secondItem="YRf-gG-cKr" secondAttribute="bottom" constant="8" id="xCI-pM-lR2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableName" destination="j3l-oJ-VAx" id="QKt-ma-DFe"/>
+                        <outlet property="tableView" destination="R2A-Kj-LhS" id="zQW-6N-2z1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194.40000000000001" y="-19.340329835082461"/>
+        </scene>
+    </scenes>
+</document>
