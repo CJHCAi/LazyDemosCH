@@ -1,0 +1,52 @@
+//
+//  PrefixHeader.pch
+//  SogouYuedu
+//
+//  Created by andyron on 2017/9/26.
+//  Copyright © 2017年 andyron. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "ARSearchBar.h"
+#import "UIBarButtonItem+Extension.h"
+#import "ARNavAnimation.h"
+//#import "LBProgressHUD.h"
+//#import "YTNetCommand.h"
+#import <FMDB.h>
+#import "ARSqliteTool.h"
+#import <AFNetworking.h>
+#import <SSZipArchive.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+//#import "MBProgressHUD+YT.h"
+
+#define ARUserDefaults [NSUserDefaults standardUserDefaults]
+#define ARScreenBounds [UIScreen mainScreen].bounds
+#define ARScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ARScreenHeight [UIScreen mainScreen].bounds.size.height
+#define keyWordsUrl @"http://wap.sogou.com/book/sgapp_ranking_u.jsp"
+#define searchUrl @"http://api.apt.k.sogou.com/apt/app/search"
+#define detailUrl @"http://k.sogou.com/abs/ios/v3/detail"
+#define menuUrl @"http://k.sogou.com/s/api/ios/b/m"
+#define menuNobkeyUrl @"http://api.apt.k.sogou.com/apt/app/menu"
+#define NobkeyChapterContentUrl @"http://api.apt.k.sogou.com/apt/app/chapter"
+
+
+
+#define WeakSelf __weak typeof(self) weakSelf = self;
+/**
+ *  1.返回一个RGBA格式的UIColor对象
+ */
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+/**
+ *  2.返回一个RGB格式的UIColor对象
+ */
+#define RGB(r, g, b) RGBA(r, g, b, 1.0f)
+
+#endif /* PrefixHeader_pch */

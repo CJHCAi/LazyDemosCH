@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41517F321FD44B4200E11E87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41517F311FD44B4200E11E87 /* AppDelegate.m */; };
+		41517F351FD44B4200E11E87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41517F341FD44B4200E11E87 /* ViewController.m */; };
+		41517F3A1FD44B4200E11E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41517F391FD44B4200E11E87 /* Assets.xcassets */; };
+		41517F3D1FD44B4200E11E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41517F3B1FD44B4200E11E87 /* LaunchScreen.storyboard */; };
+		41517F401FD44B4200E11E87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41517F3F1FD44B4200E11E87 /* main.m */; };
+		41517F4C1FD44E2500E11E87 /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41517F4B1FD44E2500E11E87 /* ShoppingCartViewController.m */; };
+		41517F4F1FD44E6400E11E87 /* ShoppingCartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41517F4E1FD44E6400E11E87 /* ShoppingCartModel.m */; };
+		4180B2351FD980DC00D906EA /* UIView+DDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4180B2331FD980DB00D906EA /* UIView+DDView.m */; };
+		41BDF0CE1FD8341400A18208 /* ShoppingCartSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDF0CD1FD8341400A18208 /* ShoppingCartSectionHeaderView.m */; };
+		41BEE0991FD6C037006471D6 /* ShoppingCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BEE0981FD6C037006471D6 /* ShoppingCartCell.m */; };
+		41BEE09C1FD6C2E0006471D6 /* ShoopingCartBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BEE09B1FD6C2E0006471D6 /* ShoopingCartBottomView.m */; };
+		41BEE1311FD6CD04006471D6 /* DDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BEE1301FD6CD04006471D6 /* DDButton.m */; };
+		41BEE1321FD6CF1F006471D6 /* UIButton+DDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BEE0B01FD6CBCE006471D6 /* UIButton+DDButton.m */; };
+		41BEE1331FD6CF1F006471D6 /* UIColor+DDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BEE0B21FD6CBCE006471D6 /* UIColor+DDColor.m */; };
+		41BEE1361FD6CF56006471D6 /* DDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BEE1351FD6CF56006471D6 /* DDLabel.m */; };
+		41BEE1391FD6D6BC006471D6 /* ShopCartList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41BEE1381FD6D6A9006471D6 /* ShopCartList.plist */; };
+		AE971C0402D9E7DCC7334AB6 /* libPods-ShoppingCartDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D84B4FB22BEACEB151EF0532 /* libPods-ShoppingCartDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41517F2D1FD44B4200E11E87 /* ShoppingCartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingCartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41517F301FD44B4200E11E87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		41517F311FD44B4200E11E87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		41517F331FD44B4200E11E87 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		41517F341FD44B4200E11E87 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		41517F391FD44B4200E11E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41517F3C1FD44B4200E11E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41517F3E1FD44B4200E11E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41517F3F1FD44B4200E11E87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		41517F4A1FD44E2500E11E87 /* ShoppingCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartViewController.h; sourceTree = "<group>"; };
+		41517F4B1FD44E2500E11E87 /* ShoppingCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartViewController.m; sourceTree = "<group>"; };
+		41517F4D1FD44E6400E11E87 /* ShoppingCartModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartModel.h; sourceTree = "<group>"; };
+		41517F4E1FD44E6400E11E87 /* ShoppingCartModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartModel.m; sourceTree = "<group>"; };
+		41517F511FD44FCF00E11E87 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		4180B2331FD980DB00D906EA /* UIView+DDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDView.m"; sourceTree = "<group>"; };
+		4180B2341FD980DC00D906EA /* UIView+DDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DDView.h"; sourceTree = "<group>"; };
+		41BDF0CC1FD8341400A18208 /* ShoppingCartSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartSectionHeaderView.h; sourceTree = "<group>"; };
+		41BDF0CD1FD8341400A18208 /* ShoppingCartSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartSectionHeaderView.m; sourceTree = "<group>"; };
+		41BEE0971FD6C037006471D6 /* ShoppingCartCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartCell.h; sourceTree = "<group>"; };
+		41BEE0981FD6C037006471D6 /* ShoppingCartCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartCell.m; sourceTree = "<group>"; };
+		41BEE09A1FD6C2E0006471D6 /* ShoopingCartBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoopingCartBottomView.h; sourceTree = "<group>"; };
+		41BEE09B1FD6C2E0006471D6 /* ShoopingCartBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoopingCartBottomView.m; sourceTree = "<group>"; };
+		41BEE0A21FD6CBCE006471D6 /* DDCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCategory.h; sourceTree = "<group>"; };
+		41BEE0AF1FD6CBCE006471D6 /* UIButton+DDButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+DDButton.h"; sourceTree = "<group>"; };
+		41BEE0B01FD6CBCE006471D6 /* UIButton+DDButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DDButton.m"; sourceTree = "<group>"; };
+		41BEE0B11FD6CBCE006471D6 /* UIColor+DDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+DDColor.h"; sourceTree = "<group>"; };
+		41BEE0B21FD6CBCE006471D6 /* UIColor+DDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DDColor.m"; sourceTree = "<group>"; };
+		41BEE12F1FD6CD04006471D6 /* DDButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDButton.h; sourceTree = "<group>"; };
+		41BEE1301FD6CD04006471D6 /* DDButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDButton.m; sourceTree = "<group>"; };
+		41BEE1341FD6CF56006471D6 /* DDLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDLabel.h; sourceTree = "<group>"; };
+		41BEE1351FD6CF56006471D6 /* DDLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDLabel.m; sourceTree = "<group>"; };
+		41BEE1381FD6D6A9006471D6 /* ShopCartList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ShopCartList.plist; sourceTree = "<group>"; };
+		6EF964D4926D088474BDE9AC /* Pods-ShoppingCartDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingCartDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShoppingCartDemo/Pods-ShoppingCartDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7D0F62699F285CE4C5841046 /* Pods-ShoppingCartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingCartDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShoppingCartDemo/Pods-ShoppingCartDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D84B4FB22BEACEB151EF0532 /* libPods-ShoppingCartDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShoppingCartDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41517F2A1FD44B4200E11E87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE971C0402D9E7DCC7334AB6 /* libPods-ShoppingCartDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		075CFF0AC0C74A41C29F09E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D84B4FB22BEACEB151EF0532 /* libPods-ShoppingCartDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41517F241FD44B4200E11E87 = {
+			isa = PBXGroup;
+			children = (
+				41517F2F1FD44B4200E11E87 /* ShoppingCartDemo */,
+				41517F2E1FD44B4200E11E87 /* Products */,
+				E554642183FEC5354CBE3BEA /* Pods */,
+				075CFF0AC0C74A41C29F09E9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		41517F2E1FD44B4200E11E87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41517F2D1FD44B4200E11E87 /* ShoppingCartDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41517F2F1FD44B4200E11E87 /* ShoppingCartDemo */ = {
+			isa = PBXGroup;
+			children = (
+				41BEE12E1FD6CCE5006471D6 /* Base */,
+				41517F461FD44DC600E11E87 /* ShoppingCart */,
+				41BEE09F1FD6CBCE006471D6 /* Util */,
+				41517F301FD44B4200E11E87 /* AppDelegate.h */,
+				41517F311FD44B4200E11E87 /* AppDelegate.m */,
+				41517F331FD44B4200E11E87 /* ViewController.h */,
+				41517F341FD44B4200E11E87 /* ViewController.m */,
+				41517F501FD44EF100E11E87 /* SupportFile */,
+			);
+			path = ShoppingCartDemo;
+			sourceTree = "<group>";
+		};
+		41517F461FD44DC600E11E87 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				41517F491FD44DF100E11E87 /* Controller */,
+				41517F481FD44DEA00E11E87 /* View */,
+				41517F471FD44DE200E11E87 /* Model */,
+			);
+			path = ShoppingCart;
+			sourceTree = "<group>";
+		};
+		41517F471FD44DE200E11E87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41517F4D1FD44E6400E11E87 /* ShoppingCartModel.h */,
+				41517F4E1FD44E6400E11E87 /* ShoppingCartModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41517F481FD44DEA00E11E87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41BEE0971FD6C037006471D6 /* ShoppingCartCell.h */,
+				41BEE0981FD6C037006471D6 /* ShoppingCartCell.m */,
+				41BEE09A1FD6C2E0006471D6 /* ShoopingCartBottomView.h */,
+				41BEE09B1FD6C2E0006471D6 /* ShoopingCartBottomView.m */,
+				41BDF0CC1FD8341400A18208 /* ShoppingCartSectionHeaderView.h */,
+				41BDF0CD1FD8341400A18208 /* ShoppingCartSectionHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41517F491FD44DF100E11E87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41517F4A1FD44E2500E11E87 /* ShoppingCartViewController.h */,
+				41517F4B1FD44E2500E11E87 /* ShoppingCartViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41517F501FD44EF100E11E87 /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				41BEE1371FD6D69C006471D6 /* DataSource */,
+				41517F391FD44B4200E11E87 /* Assets.xcassets */,
+				41517F3B1FD44B4200E11E87 /* LaunchScreen.storyboard */,
+				41517F3E1FD44B4200E11E87 /* Info.plist */,
+				41517F3F1FD44B4200E11E87 /* main.m */,
+				41517F511FD44FCF00E11E87 /* Header.h */,
+			);
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		41BEE09F1FD6CBCE006471D6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				41BEE0A01FD6CBCE006471D6 /* Category */,
+				41BEE12A1FD6CBCE006471D6 /* Tool */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		41BEE0A01FD6CBCE006471D6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				41BEE0A21FD6CBCE006471D6 /* DDCategory.h */,
+				4180B2341FD980DC00D906EA /* UIView+DDView.h */,
+				4180B2331FD980DB00D906EA /* UIView+DDView.m */,
+				41BEE0AF1FD6CBCE006471D6 /* UIButton+DDButton.h */,
+				41BEE0B01FD6CBCE006471D6 /* UIButton+DDButton.m */,
+				41BEE0B11FD6CBCE006471D6 /* UIColor+DDColor.h */,
+				41BEE0B21FD6CBCE006471D6 /* UIColor+DDColor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		41BEE12A1FD6CBCE006471D6 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		41BEE12E1FD6CCE5006471D6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				41BEE12F1FD6CD04006471D6 /* DDButton.h */,
+				41BEE1301FD6CD04006471D6 /* DDButton.m */,
+				41BEE1341FD6CF56006471D6 /* DDLabel.h */,
+				41BEE1351FD6CF56006471D6 /* DDLabel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		41BEE1371FD6D69C006471D6 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				41BEE1381FD6D6A9006471D6 /* ShopCartList.plist */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		E554642183FEC5354CBE3BEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EF964D4926D088474BDE9AC /* Pods-ShoppingCartDemo.debug.xcconfig */,
+				7D0F62699F285CE4C5841046 /* Pods-ShoppingCartDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41517F2C1FD44B4200E11E87 /* ShoppingCartDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41517F431FD44B4200E11E87 /* Build configuration list for PBXNativeTarget "ShoppingCartDemo" */;
+			buildPhases = (
+				7E7AD058386BAA4053E73E99 /* [CP] Check Pods Manifest.lock */,
+				41517F291FD44B4200E11E87 /* Sources */,
+				41517F2A1FD44B4200E11E87 /* Frameworks */,
+				41517F2B1FD44B4200E11E87 /* Resources */,
+				D075ED15F8DB13FE2D7614AC /* [CP] Embed Pods Frameworks */,
+				8722A157F8457082EB5AA552 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShoppingCartDemo;
+			productName = ShoppingCartDemo;
+			productReference = 41517F2D1FD44B4200E11E87 /* ShoppingCartDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41517F251FD44B4200E11E87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = MorrisMeng;
+				TargetAttributes = {
+					41517F2C1FD44B4200E11E87 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 41517F281FD44B4200E11E87 /* Build configuration list for PBXProject "ShoppingCartDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41517F241FD44B4200E11E87;
+			productRefGroup = 41517F2E1FD44B4200E11E87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41517F2C1FD44B4200E11E87 /* ShoppingCartDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41517F2B1FD44B4200E11E87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BEE1391FD6D6BC006471D6 /* ShopCartList.plist in Resources */,
+				41517F3D1FD44B4200E11E87 /* LaunchScreen.storyboard in Resources */,
+				41517F3A1FD44B4200E11E87 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E7AD058386BAA4053E73E99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShoppingCartDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8722A157F8457082EB5AA552 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShoppingCartDemo/Pods-ShoppingCartDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D075ED15F8DB13FE2D7614AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShoppingCartDemo/Pods-ShoppingCartDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41517F291FD44B4200E11E87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BEE1321FD6CF1F006471D6 /* UIButton+DDButton.m in Sources */,
+				41BEE1331FD6CF1F006471D6 /* UIColor+DDColor.m in Sources */,
+				41BEE1311FD6CD04006471D6 /* DDButton.m in Sources */,
+				41BEE09C1FD6C2E0006471D6 /* ShoopingCartBottomView.m in Sources */,
+				41517F351FD44B4200E11E87 /* ViewController.m in Sources */,
+				41517F4C1FD44E2500E11E87 /* ShoppingCartViewController.m in Sources */,
+				41517F401FD44B4200E11E87 /* main.m in Sources */,
+				41517F321FD44B4200E11E87 /* AppDelegate.m in Sources */,
+				4180B2351FD980DC00D906EA /* UIView+DDView.m in Sources */,
+				41BEE1361FD6CF56006471D6 /* DDLabel.m in Sources */,
+				41BDF0CE1FD8341400A18208 /* ShoppingCartSectionHeaderView.m in Sources */,
+				41517F4F1FD44E6400E11E87 /* ShoppingCartModel.m in Sources */,
+				41BEE0991FD6C037006471D6 /* ShoppingCartCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		41517F3B1FD44B4200E11E87 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41517F3C1FD44B4200E11E87 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41517F411FD44B4200E11E87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		41517F421FD44B4200E11E87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41517F441FD44B4200E11E87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF964D4926D088474BDE9AC /* Pods-ShoppingCartDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ShoppingCartDemo/SupportFile/Header.h";
+				INFOPLIST_FILE = ShoppingCartDemo/SupportFile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MorrisMeng.ShoppingCartDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41517F451FD44B4200E11E87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D0F62699F285CE4C5841046 /* Pods-ShoppingCartDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ShoppingCartDemo/SupportFile/Header.h";
+				INFOPLIST_FILE = ShoppingCartDemo/SupportFile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MorrisMeng.ShoppingCartDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41517F281FD44B4200E11E87 /* Build configuration list for PBXProject "ShoppingCartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41517F411FD44B4200E11E87 /* Debug */,
+				41517F421FD44B4200E11E87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41517F431FD44B4200E11E87 /* Build configuration list for PBXNativeTarget "ShoppingCartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41517F441FD44B4200E11E87 /* Debug */,
+				41517F451FD44B4200E11E87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41517F251FD44B4200E11E87 /* Project object */;
+}

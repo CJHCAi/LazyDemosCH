@@ -1,0 +1,93 @@
+//
+//  PrefixHeader.pch
+//  IOS_ShopDetail
+//
+//  Created by 苟应航 on 2018/8/20.
+//  Copyright © 2018年 GH. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "Masonry.h"
+
+#import "SelecterContentScrollView.h"
+
+#import "SelecterToolsScrolView.h"
+
+#import "ValidateTool.h"
+
+#import "UIView+Extension.h"
+
+#import "MJRefresh.h"
+
+#import "MJExtension.h"
+
+
+#import "UIImageView+WebCache.h"
+
+#import "SDCycleScrollView.h"
+
+#import "ParentClassScrollViewController.h" // 作为 商品-推荐-热门-评论使用的
+#import "ShopHotController.h"// 热门推荐
+#import "ShopCommentsController.h" //评论
+
+#import "ShopImageDetailController.h" // 商品图片
+#import "DetaImagetableViewCell.h" // 商品图片cell
+
+#import "ShopModel.h" // 模型
+#import "ShopHeadDetailView.h" // 商品详情的view
+#import "MainTouchTableVIew.h" //作为商品 头部使用的tabview
+#import "JoinShoppingVIew.h" // 加入购物车弹出view
+#import "ShopNavView.h" // 商品项目的头部view
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//  尺寸
+#define  SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define  SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define  SCREEN_BOUNDS [UIScreen mainScreen].bounds
+#define WIDTH_6 375
+//设备宽度与6p的比例，使用设计给图片尺寸/2再乘以SCALEWITH6 得到宽度
+#define SCALEWITH6 SCREEN_WIDTH / WIDTH_6
+#define Application [UIApplication sharedApplication].keyWindow
+
+//弹出--------购物车---框用的
+#define PopViewSize  ([[UIScreen mainScreen] bounds].size)
+#define PopViewInitBackColor ([UIColor colorWithWhite:0.0f alpha:0.0f])
+#define ContentViewInitFrame (CGRectMake(0, PopViewSize.height, PopViewSize.width, SCREEN_HEIGHT))
+#define ContentViewPopFrame  (CGRectMake(0, 0, PopViewSize.width, SCREEN_HEIGHT))
+
+
+#define LDColor(r,g,b)[UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define LDrgba(r,g,b,a)       [UIColor colorWithRed:(r)/255.f \
+green:(g)/255.f \
+blue:(b)/255.f \
+alpha:(a)]
+
+#define Heightscrooler 53.0f // 作为投资列表头部的高度
+#define ActionHeights 40 // 2级菜单高度
+//白色
+#define Kwhite [UIColor whiteColor]
+
+#define LDhax(a) [ValidateTool colorWithHex:a]
+#define AllbackColor LDhax(@"#314149") //bb0104
+#define Colorlen LDhax(@"#333333")
+#define AlltexthighlightedColor LDhax(@"#222222")
+#define AllxianBinColor LDhax(@"#c0a682")
+#define AlltextgrayColor LDhax(@"#a8a8a8")
+#define lencolor LDhax(@"#e9e8e7")
+//是否为iphoneX
+#define SafeAreaTopHeight (SCREEN_HEIGHT == 812.0 ? 88 : 64)
+
+#define GHImage(a) [UIImage imageNamed:a]
+
+// 字体大小
+#define sizemin 12
+#define sizecenter 15
+#define sizemax 27
+#define GHFont(a) [UIFont systemFontOfSize:a]
+#define GHxiti(sizea) [UIFont fontWithName:@"PingFangSC-Light" size:sizea]
+#define GHBold(sizea) [UIFont fontWithName:@"AmericanTypewriter-Bold" size:sizea]
+#define GHSonBole(sizea) [UIFont fontWithName:@"Helvetica-Bold" size:sizea]
+#endif /* PrefixHeader_pch */
