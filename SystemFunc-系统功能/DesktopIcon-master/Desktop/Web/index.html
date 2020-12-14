@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta content="text/html charset=UTF-8" http-equiv="Content-Type">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <link rel="apple-touch-icon" href="IconImageString">
+        <title>Title</title>
+        </head>
+    <body>
+        <a href="Operation" id="qbt" style="display:none"></a>
+        <span id="msg"></span>
+    </body>
+    <script>
+        if (window.navigator.standalone == true) {
+            document.getElementById("qbt").click();
+        } else {
+            document.getElementById("msg").innerHTML='<center>添加到桌面快捷方式</center><center style="position:absolute;bottom:1px;left:1px;right:1px"><img style="width:320px" src="ImageString" /></center>';
+        }
+    </script>
+</html>

@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07C1B647187E405100A11AF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C1B646187E405100A11AF6 /* Foundation.framework */; };
+		07C1B649187E405100A11AF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C1B648187E405100A11AF6 /* CoreGraphics.framework */; };
+		07C1B64B187E405100A11AF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C1B64A187E405100A11AF6 /* UIKit.framework */; };
+		07C1B651187E405100A11AF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07C1B64F187E405100A11AF6 /* InfoPlist.strings */; };
+		07C1B653187E405100A11AF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B652187E405100A11AF6 /* main.m */; };
+		07C1B657187E405100A11AF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B656187E405100A11AF6 /* AppDelegate.m */; };
+		07C1B65A187E405100A11AF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C1B658187E405100A11AF6 /* Main.storyboard */; };
+		07C1B65D187E405100A11AF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B65C187E405100A11AF6 /* ViewController.m */; };
+		07C1B65F187E405100A11AF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C1B65E187E405100A11AF6 /* Images.xcassets */; };
+		07C1B666187E405100A11AF6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C1B665187E405100A11AF6 /* XCTest.framework */; };
+		07C1B667187E405100A11AF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C1B646187E405100A11AF6 /* Foundation.framework */; };
+		07C1B668187E405100A11AF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C1B64A187E405100A11AF6 /* UIKit.framework */; };
+		07C1B670187E405100A11AF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07C1B66E187E405100A11AF6 /* InfoPlist.strings */; };
+		07C1B672187E405100A11AF6 /* JCMosaicImgViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B671187E405100A11AF6 /* JCMosaicImgViewDemoTests.m */; };
+		07C1B694187E406A00A11AF6 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B67D187E406A00A11AF6 /* AFHTTPRequestOperation.m */; };
+		07C1B695187E406A00A11AF6 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B67F187E406A00A11AF6 /* AFHTTPRequestOperationManager.m */; };
+		07C1B696187E406A00A11AF6 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B681187E406A00A11AF6 /* AFHTTPSessionManager.m */; };
+		07C1B697187E406A00A11AF6 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B684187E406A00A11AF6 /* AFNetworkReachabilityManager.m */; };
+		07C1B698187E406A00A11AF6 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B686187E406A00A11AF6 /* AFSecurityPolicy.m */; };
+		07C1B699187E406A00A11AF6 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B688187E406A00A11AF6 /* AFURLConnectionOperation.m */; };
+		07C1B69A187E406A00A11AF6 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B68A187E406A00A11AF6 /* AFURLRequestSerialization.m */; };
+		07C1B69B187E406A00A11AF6 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B68C187E406A00A11AF6 /* AFURLResponseSerialization.m */; };
+		07C1B69C187E406A00A11AF6 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B68E187E406A00A11AF6 /* AFURLSessionManager.m */; };
+		07C1B69D187E406A00A11AF6 /* RemoteImgListOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B691187E406A00A11AF6 /* RemoteImgListOperator.m */; };
+		07C1B69E187E406A00A11AF6 /* RemoteImgOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B693187E406A00A11AF6 /* RemoteImgOperator.m */; };
+		07C1B6A2187E408E00A11AF6 /* JCMosaicImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1B6A1187E408E00A11AF6 /* JCMosaicImgView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07C1B669187E405100A11AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C1B63B187E405100A11AF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07C1B642187E405100A11AF6;
+			remoteInfo = JCMosaicImgViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07C1B643187E405100A11AF6 /* JCMosaicImgViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCMosaicImgViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C1B646187E405100A11AF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07C1B648187E405100A11AF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07C1B64A187E405100A11AF6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		07C1B64E187E405100A11AF6 /* JCMosaicImgViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCMosaicImgViewDemo-Info.plist"; sourceTree = "<group>"; };
+		07C1B650187E405100A11AF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07C1B652187E405100A11AF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07C1B654187E405100A11AF6 /* JCMosaicImgViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCMosaicImgViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		07C1B655187E405100A11AF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		07C1B656187E405100A11AF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		07C1B659187E405100A11AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07C1B65B187E405100A11AF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		07C1B65C187E405100A11AF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		07C1B65E187E405100A11AF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		07C1B664187E405100A11AF6 /* JCMosaicImgViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCMosaicImgViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C1B665187E405100A11AF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		07C1B66D187E405100A11AF6 /* JCMosaicImgViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCMosaicImgViewDemoTests-Info.plist"; sourceTree = "<group>"; };
+		07C1B66F187E405100A11AF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07C1B671187E405100A11AF6 /* JCMosaicImgViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMosaicImgViewDemoTests.m; sourceTree = "<group>"; };
+		07C1B67C187E406A00A11AF6 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		07C1B67D187E406A00A11AF6 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		07C1B67E187E406A00A11AF6 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		07C1B67F187E406A00A11AF6 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		07C1B680187E406A00A11AF6 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		07C1B681187E406A00A11AF6 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		07C1B682187E406A00A11AF6 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		07C1B683187E406A00A11AF6 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		07C1B684187E406A00A11AF6 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		07C1B685187E406A00A11AF6 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		07C1B686187E406A00A11AF6 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		07C1B687187E406A00A11AF6 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		07C1B688187E406A00A11AF6 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		07C1B689187E406A00A11AF6 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		07C1B68A187E406A00A11AF6 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		07C1B68B187E406A00A11AF6 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		07C1B68C187E406A00A11AF6 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		07C1B68D187E406A00A11AF6 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		07C1B68E187E406A00A11AF6 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		07C1B690187E406A00A11AF6 /* RemoteImgListOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteImgListOperator.h; sourceTree = "<group>"; };
+		07C1B691187E406A00A11AF6 /* RemoteImgListOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteImgListOperator.m; sourceTree = "<group>"; };
+		07C1B692187E406A00A11AF6 /* RemoteImgOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteImgOperator.h; sourceTree = "<group>"; };
+		07C1B693187E406A00A11AF6 /* RemoteImgOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteImgOperator.m; sourceTree = "<group>"; };
+		07C1B6A0187E408E00A11AF6 /* JCMosaicImgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCMosaicImgView.h; sourceTree = "<group>"; };
+		07C1B6A1187E408E00A11AF6 /* JCMosaicImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCMosaicImgView.m; sourceTree = "<group>"; };
+		07C1B6A3187E415700A11AF6 /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07C1B640187E405100A11AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C1B649187E405100A11AF6 /* CoreGraphics.framework in Frameworks */,
+				07C1B64B187E405100A11AF6 /* UIKit.framework in Frameworks */,
+				07C1B647187E405100A11AF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C1B661187E405100A11AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C1B666187E405100A11AF6 /* XCTest.framework in Frameworks */,
+				07C1B668187E405100A11AF6 /* UIKit.framework in Frameworks */,
+				07C1B667187E405100A11AF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07C1B63A187E405100A11AF6 = {
+			isa = PBXGroup;
+			children = (
+				07C1B67B187E406A00A11AF6 /* AFNetworking */,
+				07C1B68F187E406A00A11AF6 /* JCRemoteImgListOperator */,
+				07C1B69F187E407700A11AF6 /* JCMosaicImgView */,
+				07C1B64C187E405100A11AF6 /* JCMosaicImgViewDemo */,
+				07C1B66B187E405100A11AF6 /* JCMosaicImgViewDemoTests */,
+				07C1B645187E405100A11AF6 /* Frameworks */,
+				07C1B644187E405100A11AF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07C1B644187E405100A11AF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07C1B643187E405100A11AF6 /* JCMosaicImgViewDemo.app */,
+				07C1B664187E405100A11AF6 /* JCMosaicImgViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07C1B645187E405100A11AF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07C1B646187E405100A11AF6 /* Foundation.framework */,
+				07C1B648187E405100A11AF6 /* CoreGraphics.framework */,
+				07C1B64A187E405100A11AF6 /* UIKit.framework */,
+				07C1B665187E405100A11AF6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07C1B64C187E405100A11AF6 /* JCMosaicImgViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				07C1B655187E405100A11AF6 /* AppDelegate.h */,
+				07C1B656187E405100A11AF6 /* AppDelegate.m */,
+				07C1B658187E405100A11AF6 /* Main.storyboard */,
+				07C1B65B187E405100A11AF6 /* ViewController.h */,
+				07C1B65C187E405100A11AF6 /* ViewController.m */,
+				07C1B65E187E405100A11AF6 /* Images.xcassets */,
+				07C1B64D187E405100A11AF6 /* Supporting Files */,
+			);
+			path = JCMosaicImgViewDemo;
+			sourceTree = "<group>";
+		};
+		07C1B64D187E405100A11AF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07C1B64E187E405100A11AF6 /* JCMosaicImgViewDemo-Info.plist */,
+				07C1B64F187E405100A11AF6 /* InfoPlist.strings */,
+				07C1B652187E405100A11AF6 /* main.m */,
+				07C1B654187E405100A11AF6 /* JCMosaicImgViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07C1B66B187E405100A11AF6 /* JCMosaicImgViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				07C1B671187E405100A11AF6 /* JCMosaicImgViewDemoTests.m */,
+				07C1B66C187E405100A11AF6 /* Supporting Files */,
+			);
+			path = JCMosaicImgViewDemoTests;
+			sourceTree = "<group>";
+		};
+		07C1B66C187E405100A11AF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07C1B66D187E405100A11AF6 /* JCMosaicImgViewDemoTests-Info.plist */,
+				07C1B66E187E405100A11AF6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07C1B67B187E406A00A11AF6 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				07C1B67C187E406A00A11AF6 /* AFHTTPRequestOperation.h */,
+				07C1B67D187E406A00A11AF6 /* AFHTTPRequestOperation.m */,
+				07C1B67E187E406A00A11AF6 /* AFHTTPRequestOperationManager.h */,
+				07C1B67F187E406A00A11AF6 /* AFHTTPRequestOperationManager.m */,
+				07C1B680187E406A00A11AF6 /* AFHTTPSessionManager.h */,
+				07C1B681187E406A00A11AF6 /* AFHTTPSessionManager.m */,
+				07C1B682187E406A00A11AF6 /* AFNetworking.h */,
+				07C1B683187E406A00A11AF6 /* AFNetworkReachabilityManager.h */,
+				07C1B684187E406A00A11AF6 /* AFNetworkReachabilityManager.m */,
+				07C1B685187E406A00A11AF6 /* AFSecurityPolicy.h */,
+				07C1B686187E406A00A11AF6 /* AFSecurityPolicy.m */,
+				07C1B687187E406A00A11AF6 /* AFURLConnectionOperation.h */,
+				07C1B688187E406A00A11AF6 /* AFURLConnectionOperation.m */,
+				07C1B689187E406A00A11AF6 /* AFURLRequestSerialization.h */,
+				07C1B68A187E406A00A11AF6 /* AFURLRequestSerialization.m */,
+				07C1B68B187E406A00A11AF6 /* AFURLResponseSerialization.h */,
+				07C1B68C187E406A00A11AF6 /* AFURLResponseSerialization.m */,
+				07C1B68D187E406A00A11AF6 /* AFURLSessionManager.h */,
+				07C1B68E187E406A00A11AF6 /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
+			path = ../AFNetworking;
+			sourceTree = "<group>";
+		};
+		07C1B68F187E406A00A11AF6 /* JCRemoteImgListOperator */ = {
+			isa = PBXGroup;
+			children = (
+				07C1B690187E406A00A11AF6 /* RemoteImgListOperator.h */,
+				07C1B691187E406A00A11AF6 /* RemoteImgListOperator.m */,
+				07C1B692187E406A00A11AF6 /* RemoteImgOperator.h */,
+				07C1B693187E406A00A11AF6 /* RemoteImgOperator.m */,
+			);
+			name = JCRemoteImgListOperator;
+			path = ../JCRemoteImgListOperator;
+			sourceTree = "<group>";
+		};
+		07C1B69F187E407700A11AF6 /* JCMosaicImgView */ = {
+			isa = PBXGroup;
+			children = (
+				07C1B6A3187E415700A11AF6 /* GlobalDefine.h */,
+				07C1B6A0187E408E00A11AF6 /* JCMosaicImgView.h */,
+				07C1B6A1187E408E00A11AF6 /* JCMosaicImgView.m */,
+			);
+			name = JCMosaicImgView;
+			path = ../JCMosaicImgView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07C1B642187E405100A11AF6 /* JCMosaicImgViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C1B675187E405100A11AF6 /* Build configuration list for PBXNativeTarget "JCMosaicImgViewDemo" */;
+			buildPhases = (
+				07C1B63F187E405100A11AF6 /* Sources */,
+				07C1B640187E405100A11AF6 /* Frameworks */,
+				07C1B641187E405100A11AF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCMosaicImgViewDemo;
+			productName = JCMosaicImgViewDemo;
+			productReference = 07C1B643187E405100A11AF6 /* JCMosaicImgViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07C1B663187E405100A11AF6 /* JCMosaicImgViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C1B678187E405100A11AF6 /* Build configuration list for PBXNativeTarget "JCMosaicImgViewDemoTests" */;
+			buildPhases = (
+				07C1B660187E405100A11AF6 /* Sources */,
+				07C1B661187E405100A11AF6 /* Frameworks */,
+				07C1B662187E405100A11AF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07C1B66A187E405100A11AF6 /* PBXTargetDependency */,
+			);
+			name = JCMosaicImgViewDemoTests;
+			productName = JCMosaicImgViewDemoTests;
+			productReference = 07C1B664187E405100A11AF6 /* JCMosaicImgViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07C1B63B187E405100A11AF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jimple Chen";
+				TargetAttributes = {
+					07C1B642187E405100A11AF6 = {
+						DevelopmentTeam = V8KZUF7PTN;
+					};
+					07C1B663187E405100A11AF6 = {
+						TestTargetID = 07C1B642187E405100A11AF6;
+					};
+				};
+			};
+			buildConfigurationList = 07C1B63E187E405100A11AF6 /* Build configuration list for PBXProject "JCMosaicImgViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07C1B63A187E405100A11AF6;
+			productRefGroup = 07C1B644187E405100A11AF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07C1B642187E405100A11AF6 /* JCMosaicImgViewDemo */,
+				07C1B663187E405100A11AF6 /* JCMosaicImgViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07C1B641187E405100A11AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C1B65F187E405100A11AF6 /* Images.xcassets in Resources */,
+				07C1B651187E405100A11AF6 /* InfoPlist.strings in Resources */,
+				07C1B65A187E405100A11AF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C1B662187E405100A11AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C1B670187E405100A11AF6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07C1B63F187E405100A11AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C1B694187E406A00A11AF6 /* AFHTTPRequestOperation.m in Sources */,
+				07C1B65D187E405100A11AF6 /* ViewController.m in Sources */,
+				07C1B695187E406A00A11AF6 /* AFHTTPRequestOperationManager.m in Sources */,
+				07C1B69E187E406A00A11AF6 /* RemoteImgOperator.m in Sources */,
+				07C1B697187E406A00A11AF6 /* AFNetworkReachabilityManager.m in Sources */,
+				07C1B69B187E406A00A11AF6 /* AFURLResponseSerialization.m in Sources */,
+				07C1B699187E406A00A11AF6 /* AFURLConnectionOperation.m in Sources */,
+				07C1B698187E406A00A11AF6 /* AFSecurityPolicy.m in Sources */,
+				07C1B69D187E406A00A11AF6 /* RemoteImgListOperator.m in Sources */,
+				07C1B696187E406A00A11AF6 /* AFHTTPSessionManager.m in Sources */,
+				07C1B69A187E406A00A11AF6 /* AFURLRequestSerialization.m in Sources */,
+				07C1B69C187E406A00A11AF6 /* AFURLSessionManager.m in Sources */,
+				07C1B657187E405100A11AF6 /* AppDelegate.m in Sources */,
+				07C1B6A2187E408E00A11AF6 /* JCMosaicImgView.m in Sources */,
+				07C1B653187E405100A11AF6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C1B660187E405100A11AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C1B672187E405100A11AF6 /* JCMosaicImgViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07C1B66A187E405100A11AF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07C1B642187E405100A11AF6 /* JCMosaicImgViewDemo */;
+			targetProxy = 07C1B669187E405100A11AF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07C1B64F187E405100A11AF6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C1B650187E405100A11AF6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		07C1B658187E405100A11AF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C1B659187E405100A11AF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07C1B66E187E405100A11AF6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C1B66F187E405100A11AF6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07C1B673187E405100A11AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07C1B674187E405100A11AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07C1B676187E405100A11AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = V8KZUF7PTN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCMosaicImgViewDemo/JCMosaicImgViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "JCMosaicImgViewDemo/JCMosaicImgViewDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07C1B677187E405100A11AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = V8KZUF7PTN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCMosaicImgViewDemo/JCMosaicImgViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "JCMosaicImgViewDemo/JCMosaicImgViewDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		07C1B679187E405100A11AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JCMosaicImgViewDemo.app/JCMosaicImgViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCMosaicImgViewDemo/JCMosaicImgViewDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JCMosaicImgViewDemoTests/JCMosaicImgViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		07C1B67A187E405100A11AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JCMosaicImgViewDemo.app/JCMosaicImgViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCMosaicImgViewDemo/JCMosaicImgViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "JCMosaicImgViewDemoTests/JCMosaicImgViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07C1B63E187E405100A11AF6 /* Build configuration list for PBXProject "JCMosaicImgViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C1B673187E405100A11AF6 /* Debug */,
+				07C1B674187E405100A11AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C1B675187E405100A11AF6 /* Build configuration list for PBXNativeTarget "JCMosaicImgViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C1B676187E405100A11AF6 /* Debug */,
+				07C1B677187E405100A11AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C1B678187E405100A11AF6 /* Build configuration list for PBXNativeTarget "JCMosaicImgViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C1B679187E405100A11AF6 /* Debug */,
+				07C1B67A187E405100A11AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07C1B63B187E405100A11AF6 /* Project object */;
+}
