@@ -1,0 +1,2 @@
+# LXDDZ
+init
