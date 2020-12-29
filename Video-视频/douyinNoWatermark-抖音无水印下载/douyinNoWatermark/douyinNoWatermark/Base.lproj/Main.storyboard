@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="QxO-iz-7Iu">
+                                <rect key="frame" x="20" y="74" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="H2y-V9-6dU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-6K-GWY">
+                                <rect key="frame" x="20" y="119" width="374" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5P-iK-PzZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="40"/>
+                                        <state key="normal" title="粘贴"/>
+                                        <connections>
+                                            <action selector="pasteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tvX-vc-gjA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usa-Uf-NPH">
+                                        <rect key="frame" x="207" y="0.0" width="167" height="40"/>
+                                        <state key="normal" title="解析"/>
+                                        <connections>
+                                            <action selector="jiexiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pCe-pp-gAf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Dja-aJ-VqC"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0JB-xJ-5oJ">
+                                <rect key="frame" x="20" y="167" width="374" height="655"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ERM-bg-Qkb">
+                                <rect key="frame" x="20" y="824" width="374" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8w-BV-Fmy">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="70"/>
+                                        <state key="normal" title="复制视频地址"/>
+                                        <connections>
+                                            <action selector="copyVideoUrlButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ix-nM-9Nh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdx-1x-zHd">
+                                        <rect key="frame" x="207" y="0.0" width="167" height="70"/>
+                                        <state key="normal" title="保存到相册"/>
+                                        <connections>
+                                            <action selector="downLoadVedioButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MKm-Ol-bLt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0JB-xJ-5oJ" secondAttribute="trailing" constant="20" id="0BD-if-fxs"/>
+                            <constraint firstItem="QxO-iz-7Iu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="3Cg-VN-Pz7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ERM-bg-Qkb" secondAttribute="trailing" constant="20" id="FRV-SZ-74c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3gO-6K-GWY" secondAttribute="trailing" constant="20" id="PJB-iX-hN4"/>
+                            <constraint firstItem="ERM-bg-Qkb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R6Z-te-Szt"/>
+                            <constraint firstItem="QxO-iz-7Iu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RMi-s7-JAv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0JB-xJ-5oJ" secondAttribute="bottom" constant="40" id="Ra6-Pa-goY"/>
+                            <constraint firstAttribute="bottom" secondItem="ERM-bg-Qkb" secondAttribute="bottom" constant="2" id="dZH-Vg-xeR"/>
+                            <constraint firstItem="ERM-bg-Qkb" firstAttribute="top" secondItem="0JB-xJ-5oJ" secondAttribute="bottom" constant="2" id="ker-kg-Sfe"/>
+                            <constraint firstItem="0JB-xJ-5oJ" firstAttribute="top" secondItem="3gO-6K-GWY" secondAttribute="bottom" constant="8" id="rjf-hd-udb"/>
+                            <constraint firstItem="3gO-6K-GWY" firstAttribute="top" secondItem="QxO-iz-7Iu" secondAttribute="bottom" constant="5" id="uZm-7a-frw"/>
+                            <constraint firstItem="3gO-6K-GWY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="x1h-WD-zmx"/>
+                            <constraint firstItem="0JB-xJ-5oJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zBl-hW-qj2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QxO-iz-7Iu" secondAttribute="trailing" constant="20" id="zoa-Tn-hAp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="QxO-iz-7Iu" id="8DY-47-nTg"/>
+                        <outlet property="videoView" destination="0JB-xJ-5oJ" id="eRz-Ve-coC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="72.991071428571431"/>
+        </scene>
+    </scenes>
+</document>
