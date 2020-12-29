@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HKCollageDetailOrderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单编号:  16110700000003767" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MR-5u-gOS">
+                        <rect key="frame" x="16" y="21" width="258" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="LOQ-jQ-Bvg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单时间:  2017-11-08 20:50:20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2f-ld-NH7">
+                        <rect key="frame" x="16" y="51" width="258" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付方式:  乐币支付" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lu2-Nj-gmw">
+                        <rect key="frame" x="16" y="81" width="258" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdO-fs-TQE">
+                        <rect key="frame" x="239" y="21" width="65" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="erb-N5-S5x"/>
+                            <constraint firstAttribute="width" constant="65" id="u88-Dy-Vi6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="复制"/>
+                        <connections>
+                            <action selector="pasteClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Gem-Fp-ANY"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lu2-Nj-gmw" firstAttribute="trailing" secondItem="k2f-ld-NH7" secondAttribute="trailing" id="2g4-bx-IXi"/>
+                    <constraint firstItem="Lu2-Nj-gmw" firstAttribute="leading" secondItem="k2f-ld-NH7" secondAttribute="leading" id="4QC-7O-qAo"/>
+                    <constraint firstItem="k2f-ld-NH7" firstAttribute="top" secondItem="3MR-5u-gOS" secondAttribute="bottom" constant="10" id="Fja-kD-3pA"/>
+                    <constraint firstItem="Lu2-Nj-gmw" firstAttribute="height" secondItem="k2f-ld-NH7" secondAttribute="height" id="bFd-7r-gR5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3MR-5u-gOS" secondAttribute="trailing" constant="30" id="bqe-0d-Ay6"/>
+                    <constraint firstItem="gdO-fs-TQE" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="gx8-yP-wz8"/>
+                    <constraint firstItem="k2f-ld-NH7" firstAttribute="trailing" secondItem="3MR-5u-gOS" secondAttribute="trailing" id="jH8-PZ-7by"/>
+                    <constraint firstItem="3MR-5u-gOS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ljl-Wm-QWB"/>
+                    <constraint firstItem="k2f-ld-NH7" firstAttribute="height" secondItem="3MR-5u-gOS" secondAttribute="height" id="n8b-Q6-3yk"/>
+                    <constraint firstItem="3MR-5u-gOS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="qPz-rC-YL5"/>
+                    <constraint firstItem="k2f-ld-NH7" firstAttribute="leading" secondItem="3MR-5u-gOS" secondAttribute="leading" id="t94-v9-aXM"/>
+                    <constraint firstItem="gdO-fs-TQE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="usk-Cz-yka"/>
+                    <constraint firstItem="Lu2-Nj-gmw" firstAttribute="top" secondItem="k2f-ld-NH7" secondAttribute="bottom" constant="10" id="zDV-iO-Lmf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="orderNumberLabel" destination="3MR-5u-gOS" id="1DB-XY-MwY"/>
+                <outlet property="orderPay" destination="Lu2-Nj-gmw" id="5Oe-6J-nVP"/>
+                <outlet property="orderTimeLabel" destination="k2f-ld-NH7" id="FpM-iL-CyN"/>
+                <outlet property="pasteBtn" destination="gdO-fs-TQE" id="fvy-tW-R7k"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

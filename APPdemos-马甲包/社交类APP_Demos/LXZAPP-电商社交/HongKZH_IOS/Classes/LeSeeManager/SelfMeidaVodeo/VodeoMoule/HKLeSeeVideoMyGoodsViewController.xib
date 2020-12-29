@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HKLeSeeVideoMyGoodsViewController">
+            <connections>
+                <outlet property="collectionView" destination="bPJ-yS-ii3" id="Ugr-UZ-VHw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bPJ-yS-ii3">
+                    <rect key="frame" x="0.0" y="497" width="375" height="170"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="170" id="3b2-x1-E7F"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0d1-C9-Wxv">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可购买的商品" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6r-KP-gNs">
+                    <rect key="frame" x="0.0" y="447" width="375" height="50"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="wEb-Ny-5QH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WC-FS-7sF">
+                    <rect key="frame" x="347" y="463" width="13" height="18"/>
+                    <state key="normal" backgroundImage="zhankai"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGT-4h-Ruc">
+                    <rect key="frame" x="330.5" y="449" width="46" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="Zrb-cG-hvZ"/>
+                        <constraint firstAttribute="height" constant="46" id="kdA-tf-Q4K"/>
+                    </constraints>
+                    <connections>
+                        <action selector="closeClick:" destination="-1" eventType="touchUpInside" id="rPD-jO-06w"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6WC-FS-7sF" firstAttribute="centerY" secondItem="c6r-KP-gNs" secondAttribute="centerY" id="1BM-R3-zWU"/>
+                <constraint firstAttribute="bottom" secondItem="bPJ-yS-ii3" secondAttribute="bottom" id="42p-pg-J5j"/>
+                <constraint firstItem="c6r-KP-gNs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FL4-BA-J5A"/>
+                <constraint firstItem="bPJ-yS-ii3" firstAttribute="top" secondItem="c6r-KP-gNs" secondAttribute="bottom" id="IZa-a6-DhR"/>
+                <constraint firstAttribute="trailing" secondItem="bPJ-yS-ii3" secondAttribute="trailing" id="J5n-Ri-K1p"/>
+                <constraint firstAttribute="trailing" secondItem="6WC-FS-7sF" secondAttribute="trailing" constant="15" id="L3n-Z2-bhk"/>
+                <constraint firstItem="6WC-FS-7sF" firstAttribute="centerY" secondItem="OGT-4h-Ruc" secondAttribute="centerY" id="asn-A1-myQ"/>
+                <constraint firstItem="6WC-FS-7sF" firstAttribute="centerX" secondItem="OGT-4h-Ruc" secondAttribute="centerX" id="fjT-gq-nnL"/>
+                <constraint firstItem="bPJ-yS-ii3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g6j-Yf-Yme"/>
+                <constraint firstAttribute="trailing" secondItem="c6r-KP-gNs" secondAttribute="trailing" id="lqa-Th-tVc"/>
+            </constraints>
+            <point key="canvasLocation" x="83.5" y="153.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="zhankai" width="13" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+{
+    "musicName": null,
+    "name": "模糊",
+    "animations": [
+                   {
+                   "frames": [
+                              {
+                              "a": 0.0,
+                              "fx": 0.0,
+                              "fw": 480.0,
+                              "track": "a",
+                              "h": 1.0,
+                              "fh": 480.0,
+                              "cy": 240.0,
+                              "cx": 240.0,
+                              "t": 0,
+                              "w": 1.0,
+                              "fy": 0.0,
+                              "y": 240.0,
+                              "x": 240.0
+                              },
+                              {
+                              "a": 0.0,
+                              "fx": 0.0,
+                              "fw": 480.0,
+                              "track": "a",
+                              "h": 1.0,
+                              "fh": 480.0,
+                              "cy": 240.0,
+                              "cx": 240.0,
+                              "t": 449,
+                              "w": 1.0,
+                              "fy": 0.0,
+                              "y": 240.0,
+                              "x": 240.0
+                              }
+                              ],
+                   "name": "main"
+                   }
+                   ], 
+    "music": "music.mp3", 
+    "effects": [
+                {
+                "src": "", 
+                "range": "", 
+                "video": "main", 
+                "eid": 1
+                }, 
+                {
+                "filterName": "Blur",
+                "range": "", 
+                "eid": 2, 
+                "src": "1"
+                }
+                ], 
+    "filters": [
+                {
+                "images": [
+                ], 
+                "fragment": "precision mediump float;\nuniform sampler2D inputImageTexture;\nconst float uStrength = 1.0;\nconst highp vec2 iResolution = vec2(450.0,800.0);\nvarying vec2 textureCoordinate;\nvoid main(void) {\nvec2 vStep = vec2(1.0/iResolution.x,1.0/iResolution.y);\nvec2 coo_around[10];\nvec4 nc;\nvec4 sc;\ncoo_around[0] = textureCoordinate + vStep * vec2(0.0, -3.0);\ncoo_around[1] = textureCoordinate + vStep * vec2(0.0, 3.0);\ncoo_around[2] = textureCoordinate + vStep * vec2(-3.0, 0.0);\ncoo_around[3] = textureCoordinate + vStep * vec2(3.0, 0.0);\ncoo_around[4] = textureCoordinate + vStep * vec2(2.0, 6.0);\ncoo_around[5] = textureCoordinate + vStep * vec2(6.0, 2.0);\ncoo_around[6] = textureCoordinate + vStep * vec2(4.0, -5.0);\ncoo_around[7] = textureCoordinate + vStep * vec2(-2.0, -6.0);\ncoo_around[8] = textureCoordinate + vStep * vec2(-6.0, -2.0);\ncoo_around[9] = textureCoordinate + vStep * vec2(-4.0, 5.0);\nsc  = texture2D(inputImageTexture, textureCoordinate);\nnc  = sc*2.0;\nnc += texture2D(inputImageTexture, coo_around[0]) * 1.5;\nnc += texture2D(inputImageTexture, coo_around[1]) * 1.5;\nnc += texture2D(inputImageTexture, coo_around[2]) * 1.5;\nnc += texture2D(inputImageTexture, coo_around[3]) * 1.5;\nnc += texture2D(inputImageTexture, coo_around[4]);\nnc += texture2D(inputImageTexture, coo_around[5]);\nnc += texture2D(inputImageTexture, coo_around[6]);\nnc += texture2D(inputImageTexture, coo_around[7]);\nnc += texture2D(inputImageTexture, coo_around[8]);\nnc += texture2D(inputImageTexture, coo_around[9]);\nnc = nc / 14.0;\ngl_FragColor = vec4(sc.rgb*(1.0 - uStrength) + nc.rgb*uStrength, sc.a);\n}",
+                "name": "Blur"
+                }
+                ], 
+    "time": [
+             0
+             ], 
+    "icon": "icon.png", 
+    "musicIcon": "icon_music.png"
+}

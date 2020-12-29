@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HKNewPsonShowView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C68-rs-w0W">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jqH-oe-AoV">
+                            <rect key="frame" x="28" y="100" width="319" height="405"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="405" id="Gmg-d6-bcq"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGX-xa-yqa">
+                            <rect key="frame" x="170" y="530" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="1Qo-bH-riI"/>
+                                <constraint firstAttribute="width" constant="35" id="hzl-a2-bg4"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="gban"/>
+                            <connections>
+                                <action selector="Leave:" destination="iN0-l3-epB" eventType="touchUpInside" id="XXX-W5-H3t"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="jqH-oe-AoV" firstAttribute="top" secondItem="C68-rs-w0W" secondAttribute="top" constant="100" id="FTG-wm-hF8"/>
+                        <constraint firstItem="JGX-xa-yqa" firstAttribute="centerX" secondItem="jqH-oe-AoV" secondAttribute="centerX" id="Z7c-Ol-X2K"/>
+                        <constraint firstItem="JGX-xa-yqa" firstAttribute="top" secondItem="jqH-oe-AoV" secondAttribute="bottom" constant="25" id="i0w-pW-zPa"/>
+                        <constraint firstItem="jqH-oe-AoV" firstAttribute="leading" secondItem="C68-rs-w0W" secondAttribute="leading" constant="28" id="m41-gE-V7Y"/>
+                        <constraint firstAttribute="trailing" secondItem="jqH-oe-AoV" secondAttribute="trailing" constant="28" id="zsb-ed-aTg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="C68-rs-w0W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0k9-Oq-tIN"/>
+                <constraint firstAttribute="bottom" secondItem="C68-rs-w0W" secondAttribute="bottom" id="AO8-dg-vWr"/>
+                <constraint firstAttribute="trailing" secondItem="C68-rs-w0W" secondAttribute="trailing" id="g14-rI-4Eg"/>
+                <constraint firstItem="C68-rs-w0W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jR4-90-Weo"/>
+            </constraints>
+            <connections>
+                <outlet property="CancleBtn" destination="JGX-xa-yqa" id="hf0-cx-PbF"/>
+                <outlet property="contentView" destination="C68-rs-w0W" id="C9d-zn-r1Z"/>
+                <outlet property="rootImageView" destination="jqH-oe-AoV" id="Ope-ed-Y3f"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gban" width="37" height="37"/>
+    </resources>
+</document>

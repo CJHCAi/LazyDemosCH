@@ -1,0 +1,72 @@
+{
+  "icon": "icon.png",
+  "musicIcon": "icon_music.png",
+  "width": 640,
+  "musicName": "",
+  "type": 3,
+  "animations": [
+    {
+      "frames": [
+        {
+          "a": 0.0,
+          "fy": 0.0,
+          "fh": 480.0,
+          "track": "a",
+          "fx": 0.0,
+          "t": 0,
+          "x": 240.0,
+          "cx": 240.0,
+          "y": 240.0,
+          "h": 1.0,
+          "w": 1.0,
+          "cy": 240.0,
+          "fw": 480.0
+        },
+        {
+          "a": 0.0,
+          "fy": 0.0,
+          "fh": 480.0,
+          "track": "a",
+          "fx": 0.0,
+          "t": 449,
+          "x": 240.0,
+          "cx": 240.0,
+          "y": 240.0,
+          "h": 1.0,
+          "w": 1.0,
+          "cy": 240.0,
+          "fw": 480.0
+        }
+      ],
+      "name": "main"
+    }
+  ],
+  "name": "重影",
+  "height": 640,
+  "version": 2,
+  "effects": [
+    {
+      "video": "main",
+      "src": "",
+      "eid": 1
+    },
+    {
+      "filterName": "重影",
+      "src": "1",
+      "eid": 2
+    }
+  ],
+  "music": "music.mp3",
+  "filters": [
+    {
+      "images": [
+        "color.png"
+      ],
+      "fragment": "\n varying highp vec2 textureCoordinate;\n varying highp vec2 textureCoordinate2;\n\n uniform sampler2D inputImageTexture; \n uniform sampler2D inputImageTexture2; \n lowp vec3 blend = vec3(0.05, 0.2, 0.5); \n void main() { \n lowp vec4 textureColor = texture2D(inputImageTexture, textureCoordinate); \nlowp vec4 textureColor2 = texture2D(inputImageTexture2, textureCoordinate); \n gl_FragColor = vec4(mix(textureColor2.rgb, textureColor.rgb, blend), 1.0); \n}\n",
+      "name": "Vertigo"
+    }
+  ],
+  "time": [
+    0
+  ]
+}

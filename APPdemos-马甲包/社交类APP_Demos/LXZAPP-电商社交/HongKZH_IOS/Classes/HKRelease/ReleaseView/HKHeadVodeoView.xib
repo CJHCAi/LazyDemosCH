@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Mf8-Wa-179" customClass="HKHeadVodeoView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q67-wU-O9o">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ry-WS-gTD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvq-xF-s3t">
+                            <rect key="frame" x="15" y="12" width="31" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="31" id="7xv-6l-782"/>
+                                <constraint firstAttribute="height" constant="22" id="tua-Ce-5tb"/>
+                            </constraints>
+                            <state key="normal" image="back_arrow.png"/>
+                            <connections>
+                                <action selector="back:" destination="Mf8-Wa-179" eventType="touchUpInside" id="lKa-4Z-vd2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Pvq-xF-s3t" firstAttribute="leading" secondItem="5ry-WS-gTD" secondAttribute="leading" constant="15" id="AWi-bZ-Bmq"/>
+                        <constraint firstAttribute="height" constant="64" id="RrU-F7-y6P"/>
+                        <constraint firstItem="Pvq-xF-s3t" firstAttribute="top" secondItem="5ry-WS-gTD" secondAttribute="top" constant="12" id="lW1-ka-Xhg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+            <constraints>
+                <constraint firstItem="5ry-WS-gTD" firstAttribute="leading" secondItem="Mf8-Wa-179" secondAttribute="leading" id="8Bc-Hw-duw"/>
+                <constraint firstAttribute="trailing" secondItem="Q67-wU-O9o" secondAttribute="trailing" id="INL-Bs-ZkL"/>
+                <constraint firstItem="Q67-wU-O9o" firstAttribute="leading" secondItem="Mf8-Wa-179" secondAttribute="leading" id="Jlh-WP-kZg"/>
+                <constraint firstItem="5ry-WS-gTD" firstAttribute="top" secondItem="Mf8-Wa-179" secondAttribute="top" id="TrO-Kf-TXI"/>
+                <constraint firstAttribute="bottom" secondItem="Q67-wU-O9o" secondAttribute="bottom" id="a8K-FP-KHV"/>
+                <constraint firstItem="Q67-wU-O9o" firstAttribute="top" secondItem="Mf8-Wa-179" secondAttribute="top" id="bCp-1S-Ifs"/>
+                <constraint firstAttribute="trailing" secondItem="5ry-WS-gTD" secondAttribute="trailing" id="tx3-CK-4he"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backBtn" destination="Pvq-xF-s3t" id="bbt-Z5-gR1"/>
+                <outlet property="iconView" destination="Q67-wU-O9o" id="TLO-1B-7jR"/>
+            </connections>
+            <point key="canvasLocation" x="-21" y="28"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_arrow.png" width="10" height="16"/>
+    </resources>
+</document>

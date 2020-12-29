@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mLe-wI-5dn" customClass="HKSearchFootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="F2r-iS-VHr">
+                    <rect key="frame" x="15" y="15" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="TvP-By-ESN"/>
+                        <constraint firstAttribute="width" constant="12" id="pgy-6v-EsX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRG-D8-Rg2">
+                    <rect key="frame" x="33" y="12.5" width="30.5" height="17"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                    <color key="textColor" red="0.25098039215686274" green="0.56470588235294117" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_right" translatesAutoresizingMaskIntoConstraints="NO" id="C61-At-kXn">
+                    <rect key="frame" x="344" y="13" width="16" height="16"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPo-3C-phY">
+                    <rect key="frame" x="0.0" y="44.5" width="375" height="5.5"/>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09q-y7-pEc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
+                    <connections>
+                        <action selector="footerClick:" destination="mLe-wI-5dn" eventType="touchUpInside" id="gey-G9-1pT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GRG-D8-Rg2" firstAttribute="centerY" secondItem="F2r-iS-VHr" secondAttribute="centerY" id="9PY-IC-r9y"/>
+                <constraint firstAttribute="trailing" secondItem="vPo-3C-phY" secondAttribute="trailing" id="AtA-3T-XJN"/>
+                <constraint firstItem="vPo-3C-phY" firstAttribute="leading" secondItem="mLe-wI-5dn" secondAttribute="leading" id="Dnz-BI-hMz"/>
+                <constraint firstItem="GRG-D8-Rg2" firstAttribute="leading" secondItem="F2r-iS-VHr" secondAttribute="trailing" constant="6" id="IK0-9F-gmG"/>
+                <constraint firstItem="F2r-iS-VHr" firstAttribute="leading" secondItem="mLe-wI-5dn" secondAttribute="leading" constant="15" id="J1o-ZH-niQ"/>
+                <constraint firstItem="09q-y7-pEc" firstAttribute="top" secondItem="mLe-wI-5dn" secondAttribute="top" id="Mhb-Tg-9Cn"/>
+                <constraint firstItem="vPo-3C-phY" firstAttribute="top" secondItem="GRG-D8-Rg2" secondAttribute="bottom" constant="15" id="P6Q-1m-v3z"/>
+                <constraint firstItem="F2r-iS-VHr" firstAttribute="top" secondItem="mLe-wI-5dn" secondAttribute="top" constant="15" id="Sfh-sM-Cvi"/>
+                <constraint firstItem="C61-At-kXn" firstAttribute="centerY" secondItem="GRG-D8-Rg2" secondAttribute="centerY" id="dro-3i-WYJ"/>
+                <constraint firstItem="09q-y7-pEc" firstAttribute="leading" secondItem="mLe-wI-5dn" secondAttribute="leading" id="fk0-jV-uE8"/>
+                <constraint firstAttribute="bottom" secondItem="vPo-3C-phY" secondAttribute="bottom" id="g9G-Ec-AhW"/>
+                <constraint firstAttribute="trailing" secondItem="09q-y7-pEc" secondAttribute="trailing" id="pGo-iO-Q3Y"/>
+                <constraint firstAttribute="trailing" secondItem="C61-At-kXn" secondAttribute="trailing" constant="15" id="pI4-Ia-rvv"/>
+                <constraint firstItem="vPo-3C-phY" firstAttribute="top" secondItem="09q-y7-pEc" secondAttribute="bottom" id="qFd-RU-GVj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textL" destination="GRG-D8-Rg2" id="LJn-14-RsT"/>
+            </connections>
+            <point key="canvasLocation" x="43.5" y="22"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="list_right" width="16" height="16"/>
+        <image name="search" width="21" height="21"/>
+    </resources>
+</document>

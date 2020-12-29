@@ -1,0 +1,74 @@
+{
+  "icon": "icon.png",
+  "musicIcon": "icon_music.png",
+  "width": 640,
+  "musicName": "",
+  "animations": [
+    {
+      "frames": [
+        {
+          "a": 0.0,
+          "fy": 0.0,
+          "fh": 480.0,
+          "track": "a",
+          "fx": 0.0,
+          "t": 0,
+          "x": 240.0,
+          "cx": 240.0,
+          "y": 240.0,
+          "h": 1.0,
+          "w": 1.0,
+          "cy": 240.0,
+          "fw": 480.0
+        },
+        {
+          "a": 0.0,
+          "fy": 0.0,
+          "fh": 480.0,
+          "track": "a",
+          "fx": 0.0,
+          "t": 449,
+          "x": 240.0,
+          "cx": 240.0,
+          "y": 240.0,
+          "h": 1.0,
+          "w": 1.0,
+          "cy": 240.0,
+          "fw": 480.0
+        }
+      ],
+      "name": "main"
+    }
+  ],
+  "name": "美丽心灵",
+  "height": 640,
+  "version": 2,
+  "effects": [
+    {
+      "video": "main",
+      "src": "",
+      "eid": 1
+    },
+    {
+      "filterName": "meili",
+      "src": "1",
+      "eid": 2
+    }
+  ],
+  "music": "music.mp3",
+  "filters": [
+    {
+      "images": [
+        "color.png",
+        "color2.png",
+        "color3.png",
+        "color4.png"
+      ],
+      "fragment": "\nprecision highp float;\n     varying highp vec2 textureCoordinate;\n     varying highp vec2 textureCoordinate2;\n\n     uniform sampler2D inputImageTexture;\n     uniform sampler2D inputImageTexture2;\n     uniform sampler2D inputImageTexture3;\n     uniform sampler2D inputImageTexture4;\n     uniform sampler2D inputImageTexture5;\n\n     void main(void)\n     {\n         mediump vec4 oralData =texture2D(inputImageTexture, textureCoordinate).rgba;\n         mediump vec3 temp1 = texture2D(inputImageTexture2, textureCoordinate2).rgb;\n         mediump vec3 temp2 = texture2D(inputImageTexture3, textureCoordinate2).rgb;\n\n        oralData.r = oralData.r *0.7+0.3*texture2D(inputImageTexture5,vec2(temp2.r,oralData.r)).r;\n        oralData.g = oralData.g *0.7+0.3*texture2D(inputImageTexture5,vec2(temp2.g,oralData.g)).r;\n        oralData.b = oralData.b *0.7+0.3*texture2D(inputImageTexture5,vec2(temp2.b,oralData.b)).r;\n\n        oralData.r = oralData.r *0.6+0.4*texture2D(inputImageTexture5,vec2(temp1.r,oralData.r)).r;\n        oralData.g = oralData.g *0.6+0.4*texture2D(inputImageTexture5,vec2(temp1.g,oralData.g)).r;\n        oralData.b = oralData.b *0.6+0.4*texture2D(inputImageTexture5,vec2(temp1.b,oralData.b)).r;\n\n         oralData.r = texture2D( inputImageTexture4, vec2(oralData.r,0.5)).r;\n         oralData.g = texture2D( inputImageTexture4, vec2(oralData.g,0.5)).g;\n         oralData.b = texture2D( inputImageTexture4, vec2(oralData.b,0.5)).b;\n\n         gl_FragColor = oralData;\n     }\n",
+      "name": "meili"
+    }
+  ],
+  "time": [
+    0
+  ]
+}

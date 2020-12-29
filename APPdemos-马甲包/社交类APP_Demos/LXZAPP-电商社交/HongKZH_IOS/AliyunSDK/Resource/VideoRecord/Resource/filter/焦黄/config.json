@@ -1,0 +1,69 @@
+{
+    "musicName": null,
+    "name": "焦黄",
+    "animations": [
+                   {
+                   "frames": [
+                              {
+                              "a": 0.0,
+                              "fx": 0.0,
+                              "fw": 480.0,
+                              "track": "a",
+                              "h": 1.0,
+                              "fh": 480.0,
+                              "cy": 240.0,
+                              "cx": 240.0,
+                              "t": 0,
+                              "w": 1.0,
+                              "fy": 0.0,
+                              "y": 240.0,
+                              "x": 240.0
+                              },
+                              {
+                              "a": 0.0,
+                              "fx": 0.0,
+                              "fw": 480.0,
+                              "track": "a",
+                              "h": 1.0,
+                              "fh": 480.0,
+                              "cy": 240.0,
+                              "cx": 240.0,
+                              "t": 449,
+                              "w": 1.0,
+                              "fy": 0.0,
+                              "y": 240.0,
+                              "x": 240.0
+                              }
+                              ],
+                   "name": "main"
+                   }
+                   ], 
+    "music": "music.mp3", 
+    "effects": [
+                {
+                "src": "", 
+                "range": "", 
+                "video": "main", 
+                "eid": 1
+                }, 
+                {
+                "filterName": "Mosaic",
+                "range": "", 
+                "eid": 2, 
+                "src": "1"
+                }
+                ], 
+    "filters": [
+                {
+                "images": [
+                ], 
+                "fragment": "varying highp vec2 textureCoordinate;\n \n uniform sampler2D inputImageTexture;\n \n const lowp mat4 colorMatrix =mat4(0.3588, 0.7044, 0.1368, 0.0,0.2990, 0.5870, 0.1140, 0.0,0.2392, 0.4696, 0.0912 ,0.0,\n        0,0,0,1.0);\n void main()\n {\n     lowp float intensity = 1.0;\n     lowp vec4 textureColor = texture2D(inputImageTexture, textureCoordinate);\n     lowp vec4 outputColor = textureColor * colorMatrix;\n     \n     gl_FragColor = (intensity * outputColor) + ((1.0 - intensity) * textureColor);\n }",
+                "name": "BlackWhite"
+                }
+                ], 
+    "time": [
+             0
+             ], 
+    "icon": "icon.png", 
+    "musicIcon": "icon_music.png"
+}

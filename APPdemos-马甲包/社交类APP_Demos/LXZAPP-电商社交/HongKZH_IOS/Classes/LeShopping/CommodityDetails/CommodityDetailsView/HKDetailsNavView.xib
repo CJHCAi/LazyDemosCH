@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PXB-ee-RUf" customClass="HKDetailsNavView">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rI5-jb-IqU">
+                    <rect key="frame" x="15" y="44" width="37" height="37"/>
+                    <state key="normal" backgroundImage="sp_fh"/>
+                    <connections>
+                        <action selector="btnClick:" destination="PXB-ee-RUf" eventType="touchUpInside" id="ctk-xk-NFC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d1-Ij-qjx">
+                    <rect key="frame" x="277" y="44" width="37" height="37"/>
+                    <state key="normal" backgroundImage="sp_gw"/>
+                    <connections>
+                        <action selector="btnClick:" destination="PXB-ee-RUf" eventType="touchUpInside" id="Bbp-AL-vmj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HS3-XX-zkf">
+                    <rect key="frame" x="324" y="44" width="37" height="37"/>
+                    <state key="normal" backgroundImage="sp_jl"/>
+                    <connections>
+                        <action selector="btnClick:" destination="PXB-ee-RUf" eventType="touchUpInside" id="s7b-0Y-6uw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HS3-XX-zkf" firstAttribute="centerY" secondItem="rI5-jb-IqU" secondAttribute="centerY" id="6uN-fV-a94"/>
+                <constraint firstItem="8d1-Ij-qjx" firstAttribute="centerY" secondItem="rI5-jb-IqU" secondAttribute="centerY" id="7EM-Qd-VhU"/>
+                <constraint firstItem="rI5-jb-IqU" firstAttribute="centerY" secondItem="PXB-ee-RUf" secondAttribute="centerY" constant="20" id="Ffi-3A-Iz0"/>
+                <constraint firstItem="rI5-jb-IqU" firstAttribute="leading" secondItem="PXB-ee-RUf" secondAttribute="leading" constant="15" id="fxu-UA-JjA"/>
+                <constraint firstAttribute="trailing" secondItem="HS3-XX-zkf" secondAttribute="trailing" constant="15" id="pwV-Km-y7R"/>
+                <constraint firstItem="HS3-XX-zkf" firstAttribute="leading" secondItem="8d1-Ij-qjx" secondAttribute="trailing" constant="10" id="siC-bG-jh8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cartbtn" destination="8d1-Ij-qjx" id="TVf-cA-eQb"/>
+            </connections>
+            <point key="canvasLocation" x="51" y="210.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sp_fh" width="37" height="37"/>
+        <image name="sp_gw" width="37" height="37"/>
+        <image name="sp_jl" width="37" height="37"/>
+    </resources>
+</document>

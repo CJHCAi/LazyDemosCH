@@ -1,0 +1,12 @@
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/LXMThirdLoginManager
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/LXMThirdLoginManager/LXMThirdLoginManager/QQSDK/QQ_SDK_V2.9"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/LXMThirdLoginManager" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/LXMThirdLoginManager"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/LXMThirdLoginManager/LXMThirdLoginManager/SinaWeiboSDK/libWeiboSDK" "${PODS_ROOT}/LXMThirdLoginManager/LXMThirdLoginManager/WeChatSDK/WeChatSDK_1.5"
+OTHER_LDFLAGS = -l"WeChatSDK" -l"WeiboSDK" -l"c++" -l"iconv" -l"sqlite3" -l"sqlite3.0" -l"stdc++" -l"z" -framework "CoreGraphics" -framework "CoreTelephony" -framework "CoreText" -framework "Foundation" -framework "ImageIO" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "TencentOpenAPI" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/LXMThirdLoginManager
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES

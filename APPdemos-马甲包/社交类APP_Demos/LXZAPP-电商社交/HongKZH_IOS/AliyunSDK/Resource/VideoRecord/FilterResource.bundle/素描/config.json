@@ -1,0 +1,69 @@
+{
+    "musicName": null,
+    "name": "素描",
+    "animations": [
+                   {
+                   "frames": [
+                              {
+                              "a": 0.0,
+                              "fx": 0.0,
+                              "fw": 480.0,
+                              "track": "a",
+                              "h": 1.0,
+                              "fh": 480.0,
+                              "cy": 240.0,
+                              "cx": 240.0,
+                              "t": 0,
+                              "w": 1.0,
+                              "fy": 0.0,
+                              "y": 240.0,
+                              "x": 240.0
+                              },
+                              {
+                              "a": 0.0,
+                              "fx": 0.0,
+                              "fw": 480.0,
+                              "track": "a",
+                              "h": 1.0,
+                              "fh": 480.0,
+                              "cy": 240.0,
+                              "cx": 240.0,
+                              "t": 449,
+                              "w": 1.0,
+                              "fy": 0.0,
+                              "y": 240.0,
+                              "x": 240.0
+                              }
+                              ],
+                   "name": "main"
+                   }
+                   ], 
+    "music": "music.mp3", 
+    "effects": [
+                {
+                "src": "", 
+                "range": "", 
+                "video": "main", 
+                "eid": 1
+                }, 
+                {
+                "filterName": "Mosaic",
+                "range": "", 
+                "eid": 2, 
+                "src": "1"
+                }
+                ], 
+    "filters": [
+                {
+                "images": [
+                ], 
+                "fragment": "varying highp vec2 textureCoordinate;\n \n uniform sampler2D inputImageTexture;\n const highp float threshold = 0.45;\n \n const highp vec3 W = vec3(0.2125, 0.7154, 0.0721);\n\n void main()\n {\n     highp vec4 textureColor = texture2D(inputImageTexture, textureCoordinate);\n     highp float luminance = dot(textureColor.rgb, W);\n     highp float thresholdResult = step(threshold, luminance);\n     \n     gl_FragColor = vec4(vec3(thresholdResult), textureColor.w);\n }",
+                "name": "BlackWhite"
+                }
+                ], 
+    "time": [
+             0
+             ], 
+    "icon": "icon.png", 
+    "musicIcon": "icon_music.png"
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZCx-fr-KzC" customClass="ExpressTypeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbu-JX-wTj">
+                    <rect key="frame" x="0.0" y="7" width="125" height="30"/>
+                    <state key="normal" title="最近">
+                        <color key="titleColor" red="0.23921568627450979" green="0.52549019607843139" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHn-bX-s5q">
+                    <rect key="frame" x="250" y="7" width="125" height="30"/>
+                    <state key="normal" title="圈子">
+                        <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1n4-g5-ykI">
+                    <rect key="frame" x="125" y="7" width="125" height="30"/>
+                    <state key="normal" title="好友">
+                        <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Lh-rL-1PI">
+                    <rect key="frame" x="25" y="38" width="75" height="2"/>
+                    <color key="backgroundColor" red="0.23921568627450979" green="0.52549019607843139" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="PQc-5f-GLv"/>
+                        <constraint firstAttribute="height" constant="2" id="kRJ-wq-vEf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pHn-bX-s5q" firstAttribute="centerY" secondItem="zbu-JX-wTj" secondAttribute="centerY" id="4HE-og-m0M"/>
+                <constraint firstAttribute="trailing" secondItem="pHn-bX-s5q" secondAttribute="trailing" id="IdM-ek-S8u"/>
+                <constraint firstItem="1n4-g5-ykI" firstAttribute="centerY" secondItem="zbu-JX-wTj" secondAttribute="centerY" id="Iun-Cc-TUZ"/>
+                <constraint firstItem="zbu-JX-wTj" firstAttribute="centerY" secondItem="ZCx-fr-KzC" secondAttribute="centerY" id="YuI-9H-w3a"/>
+                <constraint firstItem="1n4-g5-ykI" firstAttribute="width" secondItem="zbu-JX-wTj" secondAttribute="width" id="brM-rL-zwh"/>
+                <constraint firstItem="pHn-bX-s5q" firstAttribute="leading" secondItem="1n4-g5-ykI" secondAttribute="trailing" id="czB-qb-tRG"/>
+                <constraint firstItem="4Lh-rL-1PI" firstAttribute="bottom" secondItem="ZCx-fr-KzC" secondAttribute="bottom" constant="-5" id="i9j-HW-E1C"/>
+                <constraint firstItem="4Lh-rL-1PI" firstAttribute="centerX" secondItem="zbu-JX-wTj" secondAttribute="centerX" id="jPl-4H-eHn"/>
+                <constraint firstItem="zbu-JX-wTj" firstAttribute="leading" secondItem="ZCx-fr-KzC" secondAttribute="leading" id="jr6-OH-CY3"/>
+                <constraint firstItem="1n4-g5-ykI" firstAttribute="leading" secondItem="zbu-JX-wTj" secondAttribute="trailing" id="tdF-lF-utY"/>
+                <constraint firstItem="pHn-bX-s5q" firstAttribute="width" secondItem="zbu-JX-wTj" secondAttribute="width" id="xJD-Zh-vTe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn0" destination="zbu-JX-wTj" id="f24-m7-A2v"/>
+                <outlet property="btn1" destination="1n4-g5-ykI" id="aln-vy-wls"/>
+                <outlet property="btn2" destination="pHn-bX-s5q" id="Qvv-Il-WDs"/>
+                <outlet property="downView" destination="4Lh-rL-1PI" id="weX-ME-jmM"/>
+            </connections>
+            <point key="canvasLocation" x="-291" y="-96"/>
+        </view>
+    </objects>
+</document>

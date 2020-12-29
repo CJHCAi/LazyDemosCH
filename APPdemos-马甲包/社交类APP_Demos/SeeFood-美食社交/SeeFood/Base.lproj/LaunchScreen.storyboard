@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="startBack" translatesAutoresizingMaskIntoConstraints="NO" id="SD2-Hr-KYA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logoBig" translatesAutoresizingMaskIntoConstraints="NO" id="OTK-JA-87D">
+                                <rect key="frame" x="238" y="147" width="124" height="186"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SeeFood" translatesAutoresizingMaskIntoConstraints="NO" id="XRT-z3-ET0">
+                                <rect key="frame" x="244" y="373" width="112" height="30"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OTK-JA-87D" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="4:5" id="1dq-g9-OI0"/>
+                            <constraint firstItem="SD2-Hr-KYA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="E0F-CP-2CC"/>
+                            <constraint firstItem="XRT-z3-ET0" firstAttribute="top" secondItem="OTK-JA-87D" secondAttribute="bottom" constant="40" id="FFO-Dy-OOw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SD2-Hr-KYA" secondAttribute="trailing" constant="-20" id="N4c-5x-7cm"/>
+                            <constraint firstItem="XRT-z3-ET0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Wud-zF-zY0"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="SD2-Hr-KYA" secondAttribute="bottom" id="g6j-0S-0jT"/>
+                            <constraint firstItem="SD2-Hr-KYA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="olw-lj-IyU"/>
+                            <constraint firstItem="OTK-JA-87D" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="z8X-H9-CCh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SeeFood" width="112" height="30"/>
+        <image name="logoBig" width="124" height="186"/>
+        <image name="startBack" width="320" height="568"/>
+    </resources>
+</document>

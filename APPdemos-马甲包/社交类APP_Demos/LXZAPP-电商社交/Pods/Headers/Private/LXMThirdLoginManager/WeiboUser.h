@@ -1,0 +1,1 @@
+../../../LXMThirdLoginManager/LXMThirdLoginManager/SinaWeiboSDK/libWeiboSDK/WeiboUser.h

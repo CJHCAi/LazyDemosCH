@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uZG-mb-mAq" customClass="HKHelpVideoPlay">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RzN-VF-ub8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0j-eh-nBZ">
+                    <rect key="frame" x="165" y="68" width="44" height="44"/>
+                    <state key="normal" backgroundImage="enterprise_play"/>
+                    <connections>
+                        <action selector="playBtnClick:" destination="uZG-mb-mAq" eventType="touchUpInside" id="Uar-Bx-HxM"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaj-qg-Bdk">
+                    <rect key="frame" x="0.0" y="160" width="375" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrT-hc-5Z8">
+                            <rect key="frame" x="15" y="0.0" width="0.0" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="CrT-hc-5Z8" firstAttribute="top" secondItem="gaj-qg-Bdk" secondAttribute="top" id="Ukk-df-Ocp"/>
+                        <constraint firstItem="CrT-hc-5Z8" firstAttribute="leading" secondItem="gaj-qg-Bdk" secondAttribute="leading" constant="15" id="cH3-yH-pAK"/>
+                        <constraint firstAttribute="bottom" secondItem="CrT-hc-5Z8" secondAttribute="bottom" id="enA-k2-u3v"/>
+                        <constraint firstAttribute="height" constant="20" id="h1k-BF-YEO"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGD-mc-EAd">
+                    <rect key="frame" x="335" y="10" width="30" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="Mhx-cH-OXg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="10"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1L-Kw-i48">
+                    <rect key="frame" x="333" y="12" width="34" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="vax-Fk-V9e"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HGD-mc-EAd" firstAttribute="top" secondItem="uZG-mb-mAq" secondAttribute="top" constant="10" id="41x-9B-wHL"/>
+                <constraint firstItem="RzN-VF-ub8" firstAttribute="top" secondItem="uZG-mb-mAq" secondAttribute="top" id="60o-ng-oVO"/>
+                <constraint firstAttribute="trailing" secondItem="gaj-qg-Bdk" secondAttribute="trailing" id="65I-cg-b5A"/>
+                <constraint firstItem="I0j-eh-nBZ" firstAttribute="centerY" secondItem="RzN-VF-ub8" secondAttribute="centerY" id="9Tb-dk-IIV"/>
+                <constraint firstItem="HGD-mc-EAd" firstAttribute="centerY" secondItem="B1L-Kw-i48" secondAttribute="centerY" id="P6U-Nz-6gY"/>
+                <constraint firstItem="HGD-mc-EAd" firstAttribute="centerX" secondItem="B1L-Kw-i48" secondAttribute="centerX" id="PvN-fQ-7dB"/>
+                <constraint firstItem="gaj-qg-Bdk" firstAttribute="leading" secondItem="uZG-mb-mAq" secondAttribute="leading" id="RyO-2y-D6p"/>
+                <constraint firstItem="HGD-mc-EAd" firstAttribute="trailing" secondItem="B1L-Kw-i48" secondAttribute="trailing" constant="-2" id="YDo-Nu-u0y"/>
+                <constraint firstItem="RzN-VF-ub8" firstAttribute="leading" secondItem="uZG-mb-mAq" secondAttribute="leading" id="fna-s4-fQK"/>
+                <constraint firstItem="HGD-mc-EAd" firstAttribute="leading" secondItem="B1L-Kw-i48" secondAttribute="leading" constant="2" id="h6Z-ux-yzl"/>
+                <constraint firstAttribute="trailing" secondItem="HGD-mc-EAd" secondAttribute="trailing" constant="10" id="hRO-ZE-q1D"/>
+                <constraint firstAttribute="bottom" secondItem="RzN-VF-ub8" secondAttribute="bottom" id="psL-G9-4ZZ"/>
+                <constraint firstItem="I0j-eh-nBZ" firstAttribute="centerX" secondItem="RzN-VF-ub8" secondAttribute="centerX" id="sUw-A1-zMF"/>
+                <constraint firstAttribute="trailing" secondItem="RzN-VF-ub8" secondAttribute="trailing" id="sqU-Sk-Uh4"/>
+                <constraint firstAttribute="bottom" secondItem="gaj-qg-Bdk" secondAttribute="bottom" id="uQf-bq-S5g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="downView" destination="gaj-qg-Bdk" id="FxG-pX-ulM"/>
+                <outlet property="iconView" destination="RzN-VF-ub8" id="gnV-01-HrN"/>
+                <outlet property="nextLabel" destination="CrT-hc-5Z8" id="CfU-5L-MWi"/>
+                <outlet property="playBtn" destination="I0j-eh-nBZ" id="aTb-96-enc"/>
+                <outlet property="timeBtn" destination="HGD-mc-EAd" id="Izp-Dt-6m5"/>
+                <outlet property="timeLabel" destination="B1L-Kw-i48" id="oOI-Jc-QR0"/>
+            </connections>
+            <point key="canvasLocation" x="110.5" y="-134"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="enterprise_play" width="44" height="44"/>
+    </resources>
+</document>

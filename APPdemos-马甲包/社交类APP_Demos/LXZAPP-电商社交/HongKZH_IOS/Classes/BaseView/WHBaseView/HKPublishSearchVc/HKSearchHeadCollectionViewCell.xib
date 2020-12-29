@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HKSearchHeadCollectionViewCell" id="gTV-IL-0wX" customClass="HKSearchHeadCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eK-jM-Obm">
+                        <rect key="frame" x="15" y="15" width="74" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="IK4-OA-HuG"/>
+                        </constraints>
+                        <state key="normal" title="历史记录">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" red="0.93725490196078431" green="0.34901960784313724" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnn-Ed-5jf">
+                        <rect key="frame" x="339" y="12" width="21" height="21"/>
+                        <state key="normal" backgroundImage="recruit_alldelege"/>
+                        <connections>
+                            <action selector="emptySearchHistory:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Gsa-S6-ena"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Rnn-Ed-5jf" firstAttribute="centerY" secondItem="9eK-jM-Obm" secondAttribute="centerY" id="Ne0-oF-k0b"/>
+                <constraint firstAttribute="trailing" secondItem="Rnn-Ed-5jf" secondAttribute="trailing" constant="15" id="Se4-Vn-Om3"/>
+                <constraint firstItem="9eK-jM-Obm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="jfn-gK-vl6"/>
+                <constraint firstItem="9eK-jM-Obm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="okO-ZT-srh"/>
+            </constraints>
+            <connections>
+                <outlet property="btn" destination="Rnn-Ed-5jf" id="hkH-5X-lGl"/>
+                <outlet property="labelText" destination="9eK-jM-Obm" id="VLx-Ei-Kdj"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="recruit_alldelege" width="21" height="21"/>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+{
+  "icon": "icon.png",
+  "musicIcon": "icon_music.png",
+  "width": 640,
+  "musicName": "",
+  "animations": [
+    {
+      "frames": [
+        {
+          "a": 0.0,
+          "fy": 0.0,
+          "fh": 480.0,
+          "track": "a",
+          "fx": 0.0,
+          "t": 0,
+          "x": 240.0,
+          "cx": 240.0,
+          "y": 240.0,
+          "h": 1.0,
+          "w": 1.0,
+          "cy": 240.0,
+          "fw": 480.0
+        },
+        {
+          "a": 0.0,
+          "fy": 0.0,
+          "fh": 480.0,
+          "track": "a",
+          "fx": 0.0,
+          "t": 449,
+          "x": 240.0,
+          "cx": 240.0,
+          "y": 240.0,
+          "h": 1.0,
+          "w": 1.0,
+          "cy": 240.0,
+          "fw": 480.0
+        }
+      ],
+      "name": "main"
+    }
+  ],
+  "name": "瑞秋",
+  "height": 640,
+  "version": 2,
+  "effects": [
+    {
+      "video": "main",
+      "src": "",
+      "eid": 1
+    },
+    {
+      "filterName": "ruiqiu",
+      "src": "1",
+      "eid": 2
+    }
+  ],
+  "music": "music.mp3",
+  "filters": [
+    {
+      "images": [
+        "color.png",
+        "color2.png"
+      ],
+      "fragment": "\nprecision highp float;\n         varying highp vec2 textureCoordinate;\n         varying highp vec2 textureCoordinate2;\n\n         uniform sampler2D inputImageTexture;\n         uniform sampler2D inputImageTexture2;\n         uniform sampler2D inputImageTexture3;\n\n         void main()\n        {\n            vec4 oralData = texture2D( inputImageTexture, textureCoordinate).rgba;\n            vec3 graymat = vec3(0.29,0.586,0.114);\n            float gray = dot(graymat,oralData.rgb);\n            oralData.r = texture2D( inputImageTexture2, vec2(gray,oralData.r)).r;\n            oralData.g = texture2D( inputImageTexture2, vec2(gray,oralData.g)).r;\n            oralData.b = texture2D( inputImageTexture2, vec2(gray,oralData.b)).r;\n            float x = 1.6;\n            float rm = 0.30859375*(1.0-x);\n            float gm =  0.609375*(1.0-x);\n            float bm = 0.08203125*(1.0-x);\n            float all = rm * oralData.r + gm * oralData.g + bm * oralData.b;\n            oralData.r = max(0.0,min(1.0,all + x * oralData.r));\n            oralData.g = max(0.0,min(1.0,all + x * oralData.g));\n            oralData.b = max(0.0,min(1.0,all + x * oralData.b));\n\n            oralData.r = texture2D( inputImageTexture3, vec2(oralData.r,0.5)).r;\n            oralData.g = texture2D( inputImageTexture3, vec2(oralData.g,0.5)).g;\n            oralData.b = texture2D( inputImageTexture3, vec2(oralData.b,0.5)).b;\n            gl_FragColor = oralData;\n        }\n",
+      "name": "ruiqiu"
+    }
+  ],
+  "time": [
+    0
+  ]
+}

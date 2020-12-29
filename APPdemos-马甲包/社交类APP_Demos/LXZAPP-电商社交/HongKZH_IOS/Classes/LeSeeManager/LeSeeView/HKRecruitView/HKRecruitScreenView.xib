@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3AF-KB-H7L" customClass="HKRecruitScreenView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYU-XW-jBK" customClass="HKTitleAndImageBtn">
+                    <rect key="frame" x="0.0" y="0.0" width="94" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edk-un-WEw" customClass="HKTitleAndImageBtn">
+                    <rect key="frame" x="94" y="0.0" width="93.5" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qg8-0b-XOE" customClass="HKTitleAndImageBtn">
+                    <rect key="frame" x="187.5" y="0.0" width="94" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuc-ef-FKh" customClass="HKTitleAndImageBtn">
+                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="edk-un-WEw" firstAttribute="leading" secondItem="IYU-XW-jBK" secondAttribute="trailing" id="9dD-t9-5gr"/>
+                <constraint firstItem="edk-un-WEw" firstAttribute="width" secondItem="IYU-XW-jBK" secondAttribute="width" id="EFp-V7-Qlq"/>
+                <constraint firstItem="IYU-XW-jBK" firstAttribute="top" secondItem="3AF-KB-H7L" secondAttribute="top" id="Edc-Az-e4e"/>
+                <constraint firstItem="qg8-0b-XOE" firstAttribute="width" secondItem="IYU-XW-jBK" secondAttribute="width" id="Pl4-3R-Tfz"/>
+                <constraint firstItem="qg8-0b-XOE" firstAttribute="height" secondItem="IYU-XW-jBK" secondAttribute="height" id="Q1y-o2-oEb"/>
+                <constraint firstItem="edk-un-WEw" firstAttribute="centerY" secondItem="IYU-XW-jBK" secondAttribute="centerY" id="Wp3-eA-hmh"/>
+                <constraint firstItem="fuc-ef-FKh" firstAttribute="leading" secondItem="qg8-0b-XOE" secondAttribute="trailing" id="Ygw-ih-RF8"/>
+                <constraint firstAttribute="trailing" secondItem="fuc-ef-FKh" secondAttribute="trailing" id="YlE-c3-9HU"/>
+                <constraint firstItem="IYU-XW-jBK" firstAttribute="leading" secondItem="3AF-KB-H7L" secondAttribute="leading" id="ZmO-49-LhY"/>
+                <constraint firstItem="edk-un-WEw" firstAttribute="height" secondItem="IYU-XW-jBK" secondAttribute="height" id="aZe-05-XGN"/>
+                <constraint firstItem="fuc-ef-FKh" firstAttribute="height" secondItem="IYU-XW-jBK" secondAttribute="height" id="aoq-8v-RiV"/>
+                <constraint firstItem="qg8-0b-XOE" firstAttribute="leading" secondItem="edk-un-WEw" secondAttribute="trailing" id="hA5-2q-GEW"/>
+                <constraint firstItem="fuc-ef-FKh" firstAttribute="width" secondItem="IYU-XW-jBK" secondAttribute="width" id="laR-oj-osU"/>
+                <constraint firstAttribute="bottom" secondItem="IYU-XW-jBK" secondAttribute="bottom" id="og3-6X-5Wg"/>
+                <constraint firstItem="fuc-ef-FKh" firstAttribute="centerY" secondItem="IYU-XW-jBK" secondAttribute="centerY" id="wQQ-PV-T9C"/>
+                <constraint firstItem="qg8-0b-XOE" firstAttribute="centerY" secondItem="IYU-XW-jBK" secondAttribute="centerY" id="zGp-MG-vAC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn1" destination="IYU-XW-jBK" id="oq0-wP-UMf"/>
+                <outlet property="btn2" destination="edk-un-WEw" id="Nyb-T0-cx3"/>
+                <outlet property="btn3" destination="qg8-0b-XOE" id="TYh-d7-clq"/>
+                <outlet property="btn4" destination="fuc-ef-FKh" id="Ylb-Pz-K9l"/>
+            </connections>
+            <point key="canvasLocation" x="105.5" y="47"/>
+        </view>
+    </objects>
+</document>

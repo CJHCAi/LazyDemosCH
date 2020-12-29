@@ -1,0 +1,71 @@
+{
+  "musicName": null, 
+  "name": "抖动",
+  "type": 4,
+  "animations": [
+    {
+      "frames": [
+        {
+          "a": 0.0, 
+          "fx": 0.0, 
+          "fw": 480.0, 
+          "track": "a", 
+          "h": 1.0, 
+          "fh": 480.0, 
+          "cy": 240.0, 
+          "cx": 240.0, 
+          "t": 0, 
+          "w": 1.0, 
+          "fy": 0.0, 
+          "y": 240.0, 
+          "x": 240.0
+        }, 
+        {
+          "a": 0.0, 
+          "fx": 0.0, 
+          "fw": 480.0, 
+          "track": "a", 
+          "h": 1.0, 
+          "fh": 480.0, 
+          "cy": 240.0, 
+          "cx": 240.0, 
+          "t": 449, 
+          "w": 1.0, 
+          "fy": 0.0, 
+          "y": 240.0, 
+          "x": 240.0
+        }
+      ], 
+      "name": "main"
+    }
+  ], 
+  "music": "music.mp3", 
+  "effects": [
+    {
+      "src": "", 
+      "range": "", 
+      "video": "main", 
+      "eid": 1
+    }, 
+    {
+      "filterName": "LookColor", 
+      "range": "", 
+      "eid": 2, 
+      "src": "1"
+    }
+  ], 
+  "filters": [
+    {
+      "images": [
+        "color.png"
+      ], 
+      "fragment": " \nprecision highp float;\nvarying highp vec2 textureCoordinate; \nuniform sampler2D inputImageTexture;\nuniform sampler2D inputImageTexture2;\nvoid main()\n{\n vec4 value = texture2D(inputImageTexture, textureCoordinate);\n float r = texture2D(inputImageTexture2, vec2(value.r, 0.5)).r;\n float g = texture2D(inputImageTexture2, vec2(value.g, 0.5)).g;\n float b = texture2D(inputImageTexture2, vec2(value.b, 0.5)).b;\n gl_FragColor = vec4(r,g,b,1.0);\n} ", 
+      "name": "LookColor"
+    }
+  ], 
+  "time": [
+    0
+  ], 
+  "icon": "icon.png", 
+  "musicIcon": "icon_music.png"
+}

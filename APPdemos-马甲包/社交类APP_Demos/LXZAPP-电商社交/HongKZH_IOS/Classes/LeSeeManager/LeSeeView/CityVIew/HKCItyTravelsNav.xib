@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ozp-zm-3j1" customClass="HKCItyTravelsNav">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSR-kK-QWQ">
+                    <rect key="frame" x="20" y="32" width="30" height="30"/>
+                    <state key="normal" backgroundImage="enterprise_goback"/>
+                    <connections>
+                        <action selector="backClick:" destination="Ozp-zm-3j1" eventType="touchUpInside" id="on7-ng-K9w"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gf-eB-jZv">
+                    <rect key="frame" x="330" y="30" width="30" height="34"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8Gf-eB-jZv" firstAttribute="centerY" secondItem="sSR-kK-QWQ" secondAttribute="centerY" id="0EI-iP-qtA"/>
+                <constraint firstItem="sSR-kK-QWQ" firstAttribute="top" secondItem="Ozp-zm-3j1" secondAttribute="top" constant="32" id="5rb-mr-agx"/>
+                <constraint firstItem="sSR-kK-QWQ" firstAttribute="leading" secondItem="Ozp-zm-3j1" secondAttribute="leading" constant="20" id="HUs-i4-iJf"/>
+                <constraint firstAttribute="trailing" secondItem="8Gf-eB-jZv" secondAttribute="trailing" constant="15" id="m2K-y6-DO1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="15" y="139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="enterprise_goback" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WhY-nC-IoJ" customClass="HKSubmissionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imc-sY-mGQ">
+                    <rect key="frame" x="15" y="30" width="345" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Qjd-Uh-DrO"/>
+                    </constraints>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="submission:" destination="WhY-nC-IoJ" eventType="touchUpInside" id="8Wp-lK-uyp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Imc-sY-mGQ" firstAttribute="leading" secondItem="WhY-nC-IoJ" secondAttribute="leading" constant="15" id="Dzf-6k-x7X"/>
+                <constraint firstAttribute="bottom" secondItem="Imc-sY-mGQ" secondAttribute="bottom" constant="31" id="puL-2e-zQM"/>
+                <constraint firstItem="Imc-sY-mGQ" firstAttribute="centerY" secondItem="WhY-nC-IoJ" secondAttribute="centerY" id="xUj-By-2gQ"/>
+                <constraint firstAttribute="trailing" secondItem="Imc-sY-mGQ" secondAttribute="trailing" constant="15" id="z6c-96-fkE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="submission" destination="Imc-sY-mGQ" id="UGP-JG-rLJ"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="-32"/>
+        </view>
+    </objects>
+</document>

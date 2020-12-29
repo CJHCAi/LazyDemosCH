@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HKBurstingtEndTitleTableViewCell" id="KGk-i7-Jjw" customClass="HKBurstingtEndTitleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="224.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QC0-Rp-BwO">
+                        <rect key="frame" x="0.0" y="204.5" width="320" height="20"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="299-o5-6EH"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofm-a0-SRA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="204.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kQ-Hy-xpW">
+                                <rect key="frame" x="125.5" y="44" width="69" height="70"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="27"/>
+                                <state key="normal" title="99" backgroundImage="yinpai">
+                                    <color key="titleColor" red="0.56862745098039214" green="0.58039215686274503" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" backgroundImage="jinpai">
+                                    <color key="titleColor" red="0.6470588235294118" green="0.50980392156862742" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未获奖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsD-6u-dXW">
+                                <rect key="frame" x="137" y="132" width="46" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="很遗憾，您未获得优惠券" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFr-lL-atd">
+                                <rect key="frame" x="83.5" y="162.5" width="154" height="20"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                <color key="textColor" red="0.93725490196078431" green="0.34901960784313724" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EFr-lL-atd" firstAttribute="centerX" secondItem="CsD-6u-dXW" secondAttribute="centerX" id="6en-PO-HWT"/>
+                            <constraint firstAttribute="height" constant="204.5" id="Ew5-xr-FTK"/>
+                            <constraint firstItem="1kQ-Hy-xpW" firstAttribute="centerX" secondItem="ofm-a0-SRA" secondAttribute="centerX" id="SI8-s6-w3N"/>
+                            <constraint firstItem="1kQ-Hy-xpW" firstAttribute="top" secondItem="ofm-a0-SRA" secondAttribute="top" constant="44" id="cuW-R1-d8v"/>
+                            <constraint firstItem="EFr-lL-atd" firstAttribute="top" secondItem="CsD-6u-dXW" secondAttribute="bottom" constant="12.5" id="dhP-nj-dDS"/>
+                            <constraint firstItem="CsD-6u-dXW" firstAttribute="centerX" secondItem="ofm-a0-SRA" secondAttribute="centerX" id="rFQ-4f-xXa"/>
+                            <constraint firstItem="CsD-6u-dXW" firstAttribute="top" secondItem="1kQ-Hy-xpW" secondAttribute="bottom" constant="18" id="taE-E9-riQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ofm-a0-SRA" secondAttribute="trailing" id="GIn-U1-jj7"/>
+                    <constraint firstItem="ofm-a0-SRA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ihh-2d-cIo"/>
+                    <constraint firstItem="ofm-a0-SRA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Kgh-7R-WSt"/>
+                    <constraint firstItem="QC0-Rp-BwO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Tie-vO-BsB"/>
+                    <constraint firstAttribute="bottom" secondItem="QC0-Rp-BwO" secondAttribute="bottom" id="elp-mV-Xx8"/>
+                    <constraint firstItem="QC0-Rp-BwO" firstAttribute="top" secondItem="ofm-a0-SRA" secondAttribute="bottom" id="q0M-5i-TWi"/>
+                    <constraint firstAttribute="trailing" secondItem="QC0-Rp-BwO" secondAttribute="trailing" id="sRg-Qm-XIP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="award" destination="CsD-6u-dXW" id="Rsj-3o-fTa"/>
+                <outlet property="awardDesc" destination="EFr-lL-atd" id="4Uz-4I-H5D"/>
+                <outlet property="placeBtn" destination="1kQ-Hy-xpW" id="Kfu-ig-4bB"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jinpai" width="69" height="70"/>
+        <image name="yinpai" width="69" height="70"/>
+    </resources>
+</document>

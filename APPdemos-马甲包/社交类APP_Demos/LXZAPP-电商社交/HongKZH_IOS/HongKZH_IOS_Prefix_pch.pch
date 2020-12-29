@@ -1,0 +1,279 @@
+////
+////  HongKZH_IOS_Prefix_pch.pch
+////  HongKZH_IOS
+////
+////  Created by hkzh on 2018/4/18.
+////  Copyright © 2018年 hkzh. All rights reserved.
+////
+//
+#ifndef HongKZH_IOS_Prefix_pch_pch
+#define HongKZH_IOS_Prefix_pch_pch
+
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "DbParmeter.h"
+#import "MJRefresh.h"
+#import "UIImage+CH.h"
+#import "UIView+FrameGeometry.h"
+#import "Hk_Tool.h"
+#import "UtilHKProtocol.h"
+#import "VersionAuditStaueTool.h"
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+#import "LoginUserDataModel.h"
+#import "HKMyFollowsEnterprise.h"
+#import "HKEditResume.h"
+#import "Masonry/Masonry.h"
+#import "SDCycleScrollView.h"
+#import "MoreLableButton.h"
+#import "MJExtension.h"
+#import "RACEXTScope.h"
+#import "TTTAttributedLabel.h"
+#import "UIBarButtonItem+SXCreate.h"
+#import "SCNSString+Utils.h"
+#import "HKComponentFactory.h"
+#import "HKReleaseVideoParam.h"
+#import "HKUserInfo.h"
+#import "EasyShowView.h"
+#import "AppUtils.h"
+#import "UIColor+Hex.h"
+#import "UINavigationBar+Awesome.h"
+#import "TTTAttributedLabel.h"
+#import "LKDB+Mapping.h"
+#import "NSObject+LKDBHelper.h"
+#import "LKDBHelper.h"
+#import "UITextView+Placeholder.h"
+#import "HKToolBarOverKeyboard.h"
+#import "UINavigationController+SXFullScreen.h"
+#import "HK_BaseInfoResponse.h"
+#import "ViewModelLocator.h"
+#import "FCFileManager.h"
+#import "SVProgressHUD.h"
+#import "UIAlertView+Blocks.h"
+#import "FontConst.h"
+#import "HKPublicHeader.h"
+#import "Toast.h"
+//#import "UrlConst.h"
+#import "SRActionSheet.h"
+typedef NS_ENUM(NSInteger, StatusCodeRequset) {
+    RequsetStatusCodeUnknown = 0,      //状态未知
+    RequsetStatusCodeNoWork  = -50,   //取消
+    RequsetStatusCodeCancel  = -100,   //取消
+    RequsetStatusCodeSuccess = 200,    //成功
+    RequsetStatusCodeHttpError   = -200,    //http未知错误
+    RequsetStatusCodeDataError   = -300,    //数据解析错误
+    RequsetStatusCodeProcessError   = -400,    //处理错误
+    RequsetStatusCodeUnknownError   = -500    //未知错误
+};
+static NSString * const kVer = @"1.0.0";
+static NSString * const kVev2 = @"278";
+static NSString * const kVerStr = @"2.7.8";
+
+static NSString * const kNo_Pay = @"kNo_Pay";
+static NSString * const kNo_Send = @"kNo_Send";
+static NSString * const kNo_Rev = @"kNo_Rev";
+typedef NS_ENUM(NSInteger,APICode) {
+    APICode_Success = 0,
+    APICode_Fail = 1
+};
+static NSString * const IdentityFieldDestail = @"您的身份信息将仅用于商品合法入境时的海关审核。请确保身份证与支付人、收件人姓名一致，我们将为您的上述信息严格保密。";
+#endif
+
+
+
+#ifndef __OBJC__
+
+#endif
+
+#ifndef TARGET_IPHONE_SIMULATOR
+#define TARGET_IPHONE_SIMULATOR 0
+#endif
+
+#define printf_console printf
+//
+//// Include any system framework and library headers here that should be included in all compilation units.
+//// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define HKZHKey @"HKZHkey"
+#define HKZHVal @"94465e0677da077021cda198874dc580"
+#define kDEFAULT_DATE_TIME_FORMAT (@"yyyy-MM-dd HH:mm:ss")
+//微信和QQ的Key ID
+#define QQAppID @"1107709449"
+//#define QQAppID @"1106489030"
+#define QQAppKey @"xXwwht1S5SVifuTw"
+#define WeChatAppID @"wx7d68492eec1fdf53"
+#define WeChatLoginMessage @"wechatLogin"
+#define WechatPayResult @"ORDER_PAY_NOTIFICATION"
+#define AliPayOrderResult @"alipayResult"
+#define RegeistNewPerson @"newPson"
+
+#define APP_Version @"4"
+#define changeMobile @"changeMobile"
+#define SHOPID @"1"
+#define servicePhone @"010-87654321"
+#define MainColor UICOLOR_RGB_Alpha(0xf2f2f2, 1);
+#define keyColor  RGB(239,89,60)
+
+#define kPlaceholderImage nil
+#define kPlaceholderHeadImage [UIImage imageNamed:@"Man"]
+// 系统版本
+#define SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define IS_IOS6 (SYSTEM_VERSION >= 6.0 && SYSTEM_VERSION < 7.0)
+#define IS_IOS7 (SYSTEM_VERSION >= 7.0 && SYSTEM_VERSION < 8.0)
+#define IS_IOS7H (SYSTEM_VERSION >= 7.0)
+#define IS_IOS8H (SYSTEM_VERSION >= 8.0)
+#define IS_IOS9 (SYSTEM_VERSION >= 9.0)
+// 获取屏幕 宽度、高度
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+// 手机（按屏幕划分）
+
+#define KAppdelegate (AppDelegate*) [UIApplication sharedApplication].delegate
+
+#define IS_IPHONE4 (SCREEN_HEIGHT == 480.0 && SCREEN_WIDTH==320.0)
+#define IS_IPHONE5 (SCREEN_HEIGHT == 568.0 && SCREEN_WIDTH==320.0)
+#define IS_IPHONE6 (SCREEN_HEIGHT == 667.0 && SCREEN_WIDTH==375.0)
+#define IS_IPHONEPLUS (SCREEN_HEIGHT == 736.0 && SCREEN_WIDTH==414.0)
+#define IOS7_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+//
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+//
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+//
+#define iPhone6plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+//
+//#define FooterNumber 5
+//
+////static NSString * const kSinaWeiboAppKey =nil;
+////static NSString * const kSinaWeiboRedirectURI = nil;
+//static NSString * const kSinaWeiboAppKey = @"22293940";
+//static NSString * const kSinaWeiboRedirectURI = @"https://api.weibo.com/oauth2/default.html";
+//static NSString * const kSinaWeiboAppSecret = @"e2a34687bc605673fd7e5311ff01f064";
+////static NSString * const kWeChatAppKey = @"wx6bb031961b01b9bb";
+////static NSString * const kWeChatAppSecret = @"478ab22857364d9d3534698d5ccee2a9";
+//static NSString * const kWeChatAppKey = @"wx763c5a692cde36e6";
+//static NSString * const kWeChatAppSecret = @"1d8bd7bb4ec4cada06ff4f81abc615b9";
+//static NSString * const kQQAppKey = nil;
+//static NSString * const SizeUrl = @"https://www.shoplinq.cn/welcome/size_women";
+////static NSString * const kTelNum = @"01058440365";
+//static NSString * const kTelNum = @"4006666009";
+
+//
+//static NSString * const kLayout_V = @"22";
+//
+//
+//
+//
+//static NSString * const kSinaShareDestail = @"【我刚刚下载了西有全球好店 App，全球尖货任你挑，与海外商品同时、同款、同价，无忧购物，海外直邮！推荐你也来试试！http://www.shoplinq.cn/  @西有全球好店】";
+//static NSString * const kWxProShareTitle1 =@"，你也来看看！";
+//static NSString * const kWxProShareTitle2 =@"我在西有发现了,";
+//static NSString * const kWxProShareTitle3 =@"欧洲同价只要[";
+//static NSString * const kWxProShareTitle4 =@"]元！";
+//
+////static NSString * const kSPUSinaShareDestailUrl = @"亲，我在西有全球好店发现一款好物！你也看看：url @西有全球好店";
+//static NSString * const kSPUSinaShareDestailUrl = @"我在西有发现了 url，只卖欧洲零售价！你也来看看！@西有全球好店";
+//static NSString * const kSPUWXShareDestail = @"亲，我在西有全球好店发现一款好物！你也看看：";
+//static NSString * const AlbumSinaShareDestailUrl = @"url，@西有全球好店";
+//static NSString * const CategorySinaShareDestailUrl = @"我在西有发现了海外买手店新款url，只卖当地零售价！抢鲜LOOK！@西有全球好店";
+//
+//static NSString * const BrandSinaShareDestailUrl = @"我在西有发现了海外买手店新款url，只卖当地零售价！一睹为快！@西有全球好店";
+//
+//static NSString * const ShopSinaShareDestailUrl = @"我在西有逛到一家超fashion的买手店：url，个性又好玩，推荐给你！";
+//
+//static NSString * const kSinaSharePicUrl1 = @"https://pic.shoplinq.cn/2016/0303/b74f0eab/1456970310/342/image.jpg";
+//static NSString * const kSinaSharePicUrl2 = @"https://pic.shoplinq.cn/2016/0303/26ceeb29/1456970342/794/image.jpg";
+//static NSString * const kSinaSharePicUrl3 = @"https://pic.shoplinq.cn/2016/0303/b931eb79/1456970362/731/image.jpg";
+//
+
+//
+//
+//static NSString * const kMessageCnt =@"kMessageCnt";
+//static NSString * const kMessagelist =@"kMessagelist";
+//
+//static NSString * const kMessagesetblackIcon =@"kMessagesetblackIcon";
+//static NSString * const kMessagesetIcon =@"kMessagesetIcon";
+//
+//static NSString *appKey = @"b281c46db0c884b544c1d1de";
+//static NSString *channel = @"Appstore";
+//static BOOL isProduction = FALSE;
+//
+//
+//#define WebViewURL  @"http://www.shoplinq.cn/"
+//#define WebViewURL2  @"http://www.shoplinq.cn/"
+//
+//static NSString * const shareUrl = @"http://www.shoplinq.cn/";
+//
+//static NSString * const iconUrl = @"https://pic.shoplinq.cn/2016/0510/3ea6934f/1462845269/63/image.jpg";
+//
+//
+//#define tagmessages 1
+//
+//#define tagredpacket 1
+//
+//#define tagcoupon 1
+//
+//#define tagfavorite 1
+//
+//#define taglogin 1
+//
+//#define tagSize 1
+//
+//#define tagAliDebug 0 //0为正常价 1为测试价格0.01
+//
+//
+//
+
+//#define tagSinaShare 1
+//
+#define Urldebug 1//0为正式环境 1为测试环境
+#define HKUSERLOGINID [LoginUserData sharedInstance].loginUid.length> 0 ? [LoginUserData sharedInstance].loginUid:@"0"
+#define HKUSERID [LoginUserData sharedInstance].chatId.length> 0 ? [LoginUserData sharedInstance].chatId:@"0"
+#define HKUSERName [LoginUserData sharedInstance].name.length> 0 ?  [LoginUserData sharedInstance].name :@""
+
+#ifdef DEBUG
+
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+
+#else
+
+#define DLog(...)
+
+#endif
+//
+//#define orderdebug 0
+//
+//#define tagcoupondebug 0
+////1为测试 0为
+//#define  myorder 0
+////1退换货订单
+//
+#define sp 0xB4B4B4
+//
+//#define  search 1
+//
+//#define  tagsearch 1
+//
+//#define SHOW_Guide_DEBUG 1
+//
+//#define  LAYOUT 0
+//
+//#define  NATIVELAYOUT 0
+//
+//#define  FilterIsShow 0//筛选 0为显示 1为隐藏
+//
+//#define  viewersIsShow 1
+//
+//#define  IfShare 1 //分享 搜索，分类，好店，专辑，品牌分享 1为显示 0为隐藏
+//
+//
+//
+#endif /* XiYou_IOS_Prefix_pch */
+
+
+
+//#endif /* HongKZH_IOS_Prefix_pch_pch */

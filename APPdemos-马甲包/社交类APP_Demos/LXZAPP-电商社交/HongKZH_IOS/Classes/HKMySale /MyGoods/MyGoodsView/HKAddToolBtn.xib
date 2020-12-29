@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wi6-7Z-rYg" customClass="HKAddToolBtn">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-Qg-2mg">
+                    <rect key="frame" x="145" y="0.0" width="85" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zkn" translatesAutoresizingMaskIntoConstraints="NO" id="0BF-kn-NxX">
+                            <rect key="frame" x="0.0" y="16" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="4FF-2N-QjX"/>
+                                <constraint firstAttribute="width" constant="18" id="O8b-pd-kxt"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加商品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwZ-rV-yas">
+                            <rect key="frame" x="21" y="13" width="64" height="23"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0BF-kn-NxX" firstAttribute="leading" secondItem="yhJ-Qg-2mg" secondAttribute="leading" id="8jF-qN-c5k"/>
+                        <constraint firstAttribute="width" constant="85" id="ex4-jA-OA3"/>
+                        <constraint firstAttribute="trailing" secondItem="ZwZ-rV-yas" secondAttribute="trailing" id="mBA-au-YkL"/>
+                        <constraint firstItem="0BF-kn-NxX" firstAttribute="centerY" secondItem="yhJ-Qg-2mg" secondAttribute="centerY" id="vJp-aF-eF3"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qW-Zy-jaz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <connections>
+                        <action selector="addClick:" destination="wi6-7Z-rYg" eventType="touchUpInside" id="CQ5-DR-VgV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8qW-Zy-jaz" firstAttribute="leading" secondItem="wi6-7Z-rYg" secondAttribute="leading" id="776-I2-4tZ"/>
+                <constraint firstAttribute="trailing" secondItem="8qW-Zy-jaz" secondAttribute="trailing" id="7NC-Ii-PJi"/>
+                <constraint firstAttribute="bottom" secondItem="yhJ-Qg-2mg" secondAttribute="bottom" id="Bvq-PD-Riz"/>
+                <constraint firstItem="8qW-Zy-jaz" firstAttribute="top" secondItem="wi6-7Z-rYg" secondAttribute="top" id="Hvz-qg-vvQ"/>
+                <constraint firstItem="yhJ-Qg-2mg" firstAttribute="centerX" secondItem="wi6-7Z-rYg" secondAttribute="centerX" id="VQE-5I-Y13"/>
+                <constraint firstItem="ZwZ-rV-yas" firstAttribute="centerY" secondItem="wi6-7Z-rYg" secondAttribute="centerY" id="Wsm-GG-79k"/>
+                <constraint firstItem="yhJ-Qg-2mg" firstAttribute="top" secondItem="wi6-7Z-rYg" secondAttribute="top" id="cot-Er-bAU"/>
+                <constraint firstAttribute="bottom" secondItem="8qW-Zy-jaz" secondAttribute="bottom" id="q0t-hi-KJ9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="314.5" y="9"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="zkn" width="23" height="23"/>
+    </resources>
+</document>

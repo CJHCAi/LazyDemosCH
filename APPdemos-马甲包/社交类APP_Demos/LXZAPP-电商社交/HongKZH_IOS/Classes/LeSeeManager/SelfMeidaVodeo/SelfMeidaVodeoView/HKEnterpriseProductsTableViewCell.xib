@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HKEnterpriseProductsTableViewCell" id="KGk-i7-Jjw" customClass="HKEnterpriseProductsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAM-Nn-uhU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旗下产品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBg-Fq-CTn">
+                                <rect key="frame" x="130.5" y="15" width="60" height="21"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gBg-Fq-CTn" firstAttribute="centerY" secondItem="mAM-Nn-uhU" secondAttribute="centerY" id="0kF-Il-p6f"/>
+                            <constraint firstItem="gBg-Fq-CTn" firstAttribute="centerX" secondItem="mAM-Nn-uhU" secondAttribute="centerX" id="1eC-b0-jIv"/>
+                            <constraint firstAttribute="height" constant="50" id="y4K-vx-oE6"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="v4l-5U-imP">
+                        <rect key="frame" x="0.0" y="50" width="320" height="140"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="1Y4-se-4r6"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Aez-dp-T3B">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRA-JX-KPi">
+                        <rect key="frame" x="0.0" y="190" width="320" height="10"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="kEz-BR-MNf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="v4l-5U-imP" secondAttribute="trailing" id="0Rf-f4-PSC"/>
+                    <constraint firstItem="v4l-5U-imP" firstAttribute="top" secondItem="mAM-Nn-uhU" secondAttribute="bottom" id="A6t-eq-DlQ"/>
+                    <constraint firstItem="oRA-JX-KPi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aSh-8c-P69"/>
+                    <constraint firstItem="mAM-Nn-uhU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iom-es-sH2"/>
+                    <constraint firstAttribute="trailing" secondItem="oRA-JX-KPi" secondAttribute="trailing" id="iw4-kI-4d1"/>
+                    <constraint firstAttribute="trailing" secondItem="mAM-Nn-uhU" secondAttribute="trailing" id="lR3-kb-aIP"/>
+                    <constraint firstAttribute="bottom" secondItem="oRA-JX-KPi" secondAttribute="bottom" id="lfo-Fm-Z1J"/>
+                    <constraint firstItem="oRA-JX-KPi" firstAttribute="top" secondItem="v4l-5U-imP" secondAttribute="bottom" id="tGT-y1-yLc"/>
+                    <constraint firstItem="mAM-Nn-uhU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wqI-ub-UgO"/>
+                    <constraint firstItem="v4l-5U-imP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ztR-yl-OSv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="v4l-5U-imP" id="PPl-To-JZk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

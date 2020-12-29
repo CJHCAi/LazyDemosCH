@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GYY-Gy-f6W" customClass="HKMyDyamincHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnN-r4-VZn" customClass="HKSearchBtn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="EJI-vr-aqR"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb6-1i-rNL">
+                    <rect key="frame" x="15" y="56" width="91" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="91" id="C34-4z-ZBb"/>
+                        <constraint firstAttribute="height" constant="27" id="eLe-M4-LNT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                    <state key="normal" title="全部关注">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="全部关注">
+                        <color key="titleColor" red="0.0" green="0.5725490196078431" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnParamtersIndex:" destination="GYY-Gy-f6W" eventType="touchUpInside" id="R2Z-bb-tnF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiP-fh-fOo">
+                    <rect key="frame" x="121" y="56" width="91" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="91" id="K4S-pd-iZi"/>
+                        <constraint firstAttribute="height" constant="27" id="Kx5-kl-9jG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                    <state key="normal" title="仅看好友">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="近看好友">
+                        <color key="titleColor" red="0.0" green="0.57254901960000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnParamtersIndex:" destination="GYY-Gy-f6W" eventType="touchUpInside" id="k2k-Qa-bcA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAD-3S-5IY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="tKF-IO-Ibu"/>
+                    </constraints>
+                    <connections>
+                        <action selector="search:" destination="GYY-Gy-f6W" eventType="touchUpInside" id="Z0h-YI-cfD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Him-uz-Zom">
+                    <rect key="frame" x="227" y="56" width="91" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="91" id="7Py-QF-KeQ"/>
+                        <constraint firstAttribute="height" constant="27" id="bht-aO-ugF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                    <state key="normal" title="我的动态">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="近看好友">
+                        <color key="titleColor" red="0.0" green="0.57254901960000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnParamtersIndex:" destination="GYY-Gy-f6W" eventType="touchUpInside" id="E8a-6o-wXg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zAD-3S-5IY" firstAttribute="top" secondItem="GYY-Gy-f6W" secondAttribute="top" id="5dG-S4-25g"/>
+                <constraint firstItem="yb6-1i-rNL" firstAttribute="leading" secondItem="GYY-Gy-f6W" secondAttribute="leading" constant="15" id="87K-88-Cnb"/>
+                <constraint firstItem="Him-uz-Zom" firstAttribute="leading" secondItem="eiP-fh-fOo" secondAttribute="trailing" constant="15" id="B6D-aG-Y9R"/>
+                <constraint firstItem="yb6-1i-rNL" firstAttribute="top" secondItem="NnN-r4-VZn" secondAttribute="bottom" constant="12" id="BZX-vE-gBH"/>
+                <constraint firstItem="eiP-fh-fOo" firstAttribute="centerY" secondItem="yb6-1i-rNL" secondAttribute="centerY" id="GEF-ch-1Hy"/>
+                <constraint firstItem="eiP-fh-fOo" firstAttribute="leading" secondItem="yb6-1i-rNL" secondAttribute="trailing" constant="15" id="Sbh-Hv-4hV"/>
+                <constraint firstItem="Him-uz-Zom" firstAttribute="centerY" secondItem="eiP-fh-fOo" secondAttribute="centerY" id="bYu-p1-fZm"/>
+                <constraint firstItem="NnN-r4-VZn" firstAttribute="leading" secondItem="GYY-Gy-f6W" secondAttribute="leading" id="d05-Hj-P2G"/>
+                <constraint firstItem="Him-uz-Zom" firstAttribute="height" secondItem="eiP-fh-fOo" secondAttribute="height" id="iMt-hz-hg2"/>
+                <constraint firstItem="Him-uz-Zom" firstAttribute="width" secondItem="eiP-fh-fOo" secondAttribute="width" id="jpA-iy-60r"/>
+                <constraint firstItem="NnN-r4-VZn" firstAttribute="top" secondItem="GYY-Gy-f6W" secondAttribute="top" id="noL-hM-G6i"/>
+                <constraint firstAttribute="trailing" secondItem="NnN-r4-VZn" secondAttribute="trailing" id="tBf-gE-Xzj"/>
+                <constraint firstAttribute="trailing" secondItem="zAD-3S-5IY" secondAttribute="trailing" id="tFt-tN-yha"/>
+                <constraint firstItem="zAD-3S-5IY" firstAttribute="leading" secondItem="GYY-Gy-f6W" secondAttribute="leading" id="tpH-if-a5Y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="allBtn" destination="yb6-1i-rNL" id="QL0-Gk-lYh"/>
+                <outlet property="myBtn" destination="Him-uz-Zom" id="mm1-wV-Z9T"/>
+                <outlet property="onlyBtn" destination="eiP-fh-fOo" id="BRz-KO-Shb"/>
+            </connections>
+            <point key="canvasLocation" x="-1.5" y="-17.5"/>
+        </view>
+    </objects>
+</document>

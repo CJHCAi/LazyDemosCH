@@ -1,0 +1,69 @@
+{
+    "musicName": null,
+    "name": "马赛克",
+    "animations": [
+                   {
+                   "frames": [
+                              {
+                              "a": 0.0,
+                              "fx": 0.0,
+                              "fw": 480.0,
+                              "track": "a",
+                              "h": 1.0,
+                              "fh": 480.0,
+                              "cy": 240.0,
+                              "cx": 240.0,
+                              "t": 0,
+                              "w": 1.0,
+                              "fy": 0.0,
+                              "y": 240.0,
+                              "x": 240.0
+                              },
+                              {
+                              "a": 0.0,
+                              "fx": 0.0,
+                              "fw": 480.0,
+                              "track": "a",
+                              "h": 1.0,
+                              "fh": 480.0,
+                              "cy": 240.0,
+                              "cx": 240.0,
+                              "t": 449,
+                              "w": 1.0,
+                              "fy": 0.0,
+                              "y": 240.0,
+                              "x": 240.0
+                              }
+                              ],
+                   "name": "main"
+                   }
+                   ], 
+    "music": "music.mp3", 
+    "effects": [
+                {
+                "src": "", 
+                "range": "", 
+                "video": "main", 
+                "eid": 1
+                }, 
+                {
+                "filterName": "Mosaic",
+                "range": "", 
+                "eid": 2, 
+                "src": "1"
+                }
+                ], 
+    "filters": [
+                {
+                "images": [
+                ], 
+                "fragment": "varying highp vec2 textureCoordinate;\nuniform sampler2D inputImageTexture;\nconst highp vec2 iResolution= vec2(540.0,960.0);\nconst highp float radius = 12.0;\nvoid main() {\nhighp float x = textureCoordinate.x * iResolution.x;\nhighp float y = textureCoordinate.y * iResolution.y;\nhighp float realX = floor(x/radius + 0.5) * radius;\nhighp float realY = floor(y/radius + 0.5) * radius;\ngl_FragColor = texture2D(inputImageTexture, vec2(realX/iResolution.x, realY/iResolution.y) );\n}",
+                "name": "BlackWhite"
+                }
+                ], 
+    "time": [
+             0
+             ], 
+    "icon": "icon.png", 
+    "musicIcon": "icon_music.png"
+}

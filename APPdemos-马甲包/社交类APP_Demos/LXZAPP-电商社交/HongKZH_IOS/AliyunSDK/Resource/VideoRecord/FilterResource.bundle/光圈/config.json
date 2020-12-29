@@ -1,0 +1,69 @@
+{
+    "musicName": null,
+    "name": "光圈",
+    "animations": [
+                   {
+                   "frames": [
+                              {
+                              "a": 0.0,
+                              "fx": 0.0,
+                              "fw": 480.0,
+                              "track": "a",
+                              "h": 1.0,
+                              "fh": 480.0,
+                              "cy": 240.0,
+                              "cx": 240.0,
+                              "t": 0,
+                              "w": 1.0,
+                              "fy": 0.0,
+                              "y": 240.0,
+                              "x": 240.0
+                              },
+                              {
+                              "a": 0.0,
+                              "fx": 0.0,
+                              "fw": 480.0,
+                              "track": "a",
+                              "h": 1.0,
+                              "fh": 480.0,
+                              "cy": 240.0,
+                              "cx": 240.0,
+                              "t": 449,
+                              "w": 1.0,
+                              "fy": 0.0,
+                              "y": 240.0,
+                              "x": 240.0
+                              }
+                              ],
+                   "name": "main"
+                   }
+                   ], 
+    "music": "music.mp3", 
+    "effects": [
+                {
+                "src": "", 
+                "range": "", 
+                "video": "main", 
+                "eid": 1
+                }, 
+                {
+                "filterName": "Mosaic",
+                "range": "", 
+                "eid": 2, 
+                "src": "1"
+                }
+                ], 
+    "filters": [
+                {
+                "images": [
+                ], 
+                "fragment": "uniform sampler2D inputImageTexture;\n varying highp vec2 textureCoordinate;\n void main()\n {\n     lowp vec2 vignetteCenter = vec2(0.5,0.5);\n     lowp vec3 vignetteColor = vec3(0.0,0.0,0.0);\n     highp float vignetteStart = 0.3;\n     highp float vignetteEnd = 0.75;\n     lowp vec4 sourceImageColor = texture2D(inputImageTexture, textureCoordinate);\n     lowp float d = distance(textureCoordinate, vec2(vignetteCenter.x, vignetteCenter.y));\n     lowp float percent = smoothstep(vignetteStart, vignetteEnd, d);\n     gl_FragColor = vec4(mix(sourceImageColor.rgb, vignetteColor, percent), sourceImageColor.a);\n }",
+                "name": "BlackWhite"
+                }
+                ], 
+    "time": [
+             0
+             ], 
+    "icon": "icon.png", 
+    "musicIcon": "icon_music.png"
+}
