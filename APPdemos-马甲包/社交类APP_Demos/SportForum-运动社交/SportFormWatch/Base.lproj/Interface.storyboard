@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--悦动力-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="悦动力" id="AgC-eL-Hgc" userLabel="悦动力" customClass="InterfaceController" customModule="SportFormWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="390" alignment="left" layout="vertical" id="cKa-lQ-BUL">
+                            <items>
+                                <group width="1" height="130" alignment="left" layout="vertical" id="iLb-a4-c4y">
+                                    <items>
+                                        <group width="1" height="83" alignment="left" backgroundImage="singleArc0.png" contentMode="scaleAspectFit" layout="vertical" id="sw1-k6-Irm">
+                                            <items>
+                                                <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="8h9-Hi-zrt">
+                                                    <items>
+                                                        <label alignment="center" verticalAlignment="center" id="lCW-Jq-5dX">
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="font" type="system" pointSize="34"/>
+                                                            <variation key="device=watch38mm">
+                                                                <fontDescription key="font" type="system" pointSize="30"/>
+                                                            </variation>
+                                                        </label>
+                                                        <group width="1" alignment="center" verticalAlignment="center" id="X00-rv-KSo">
+                                                            <items>
+                                                                <label alignment="center" id="pjQ-4C-0Tc">
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                                                    <variation key="device=watch38mm">
+                                                                        <fontDescription key="font" type="system" pointSize="8"/>
+                                                                    </variation>
+                                                                </label>
+                                                                <label alignment="center" verticalAlignment="center" id="gvv-6B-0q2">
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                                                    <variation key="device=watch38mm">
+                                                                        <fontDescription key="font" type="system" pointSize="8"/>
+                                                                    </variation>
+                                                                </label>
+                                                                <label alignment="center" id="suQ-xZ-4Id">
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                                                    <variation key="device=watch38mm">
+                                                                        <fontDescription key="font" type="system" pointSize="8"/>
+                                                                    </variation>
+                                                                </label>
+                                                            </items>
+                                                        </group>
+                                                    </items>
+                                                </group>
+                                                <label width="1" alignment="center" verticalAlignment="center" text="登录查看你的总分，与朋友们一较高下。" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="2" id="z2W-iC-CsI">
+                                                    <fontDescription key="font" type="boldSystem" pointSize="12"/>
+                                                </label>
+                                            </items>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            <variation key="device=watch38mm" height="105"/>
+                                            <variation key="device=watch42mm" height="120"/>
+                                        </group>
+                                        <group width="1" height="13" alignment="left" id="kSC-RP-EZ8">
+                                            <items>
+                                                <label width="1" alignment="left" text="你还没有运动哦，去跑步吧！" textAlignment="center" id="p9N-Zs-K68">
+                                                    <fontDescription key="font" type="system" weight="light" pointSize="11"/>
+                                                </label>
+                                                <label width="0.5" alignment="left" text="5.5公里" textAlignment="left" id="hp9-u2-UkZ">
+                                                    <fontDescription key="font" type="boldSystem" pointSize="13"/>
+                                                </label>
+                                                <label width="0.5" alignment="left" text="10:36" textAlignment="right" id="9v7-uA-LeW">
+                                                    <fontDescription key="font" type="boldSystem" pointSize="13"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <button width="1" height="25" alignment="left" title="提交" id="066-XX-NV7">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.44582824399999998" green="1" blue="0.099369567569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                            <connections>
+                                                <action selector="sendHeartAfterSupply" destination="AgC-eL-Hgc" id="I7b-cT-OZu"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    <variation key="device=watch38mm" height="160"/>
+                                    <variation key="device=watch42mm" height="170"/>
+                                </group>
+                                <group width="1" height="250" alignment="left" layout="vertical" id="lRi-oX-zUx">
+                                    <items>
+                                        <separator width="1" alignment="left" id="2lf-b3-Vfw">
+                                            <color key="color" white="1" alpha="0.74962284482758623" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <label width="1" height="15" alignment="left" text="10/13体能训练-户外步行" id="9ig-JN-aDt">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" weight="light" pointSize="10"/>
+                                        </label>
+                                        <label width="1" height="18" alignment="left" text="19:19 - 19:31" id="WD3-6y-eIY">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                        </label>
+                                        <separator width="1" alignment="left" id="ko9-3V-ogo">
+                                            <color key="color" white="1" alpha="0.74905711206896552" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <label width="1" height="15" alignment="left" text="活动时消耗的卡路里" id="0SS-eZ-j1R">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" weight="light" pointSize="10"/>
+                                        </label>
+                                        <label width="1" height="18" alignment="left" text="55 卡" id="q4T-eJ-blF">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                        </label>
+                                        <separator width="1" alignment="left" id="4Ai-mP-yC1">
+                                            <color key="color" white="1" alpha="0.75228987068965514" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <label width="1" height="15" alignment="left" text="时间总计" id="ZUJ-XX-4O6">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" weight="light" pointSize="10"/>
+                                        </label>
+                                        <label width="1" height="18" alignment="left" text="0:11:38" id="KMC-nW-mOw">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                        </label>
+                                        <separator width="1" alignment="left" id="IGp-hX-wVz">
+                                            <color key="color" white="1" alpha="0.74943426724137929" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <label width="1" height="15" alignment="left" text="距离总计" id="FA5-YZ-gew">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" weight="light" pointSize="10"/>
+                                        </label>
+                                        <label width="1" height="18" alignment="left" text="0.93公里" id="bes-Sy-3J9">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                        </label>
+                                        <separator width="1" alignment="left" id="caz-R7-p3E">
+                                            <color key="color" white="1" alpha="0.74730603448275867" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <label width="1" height="15" alignment="left" text="平均配速" id="ie1-IO-2hk">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" weight="light" pointSize="10"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="12‘29’公里" id="usS-HX-9ht">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    <variation key="device=watch38mm" height="250"/>
+                                    <variation key="device=watch42mm" height="270"/>
+                                </group>
+                            </items>
+                            <variation key="device=watch38mm" height="390"/>
+                            <variation key="device=watch42mm" height="420"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="calorieTitleLabel" destination="0SS-eZ-j1R" id="dwO-9Q-PcI"/>
+                        <outlet property="calorieValueLabel" destination="q4T-eJ-blF" id="oZj-88-fru"/>
+                        <outlet property="distanceLabel" destination="hp9-u2-UkZ" id="k6c-Mk-U5C"/>
+                        <outlet property="distanceTitleLabel" destination="FA5-YZ-gew" id="vL8-rN-PTF"/>
+                        <outlet property="distanceValueLabel" destination="bes-Sy-3J9" id="olh-jj-ulJ"/>
+                        <outlet property="durationLabel" destination="9v7-uA-LeW" id="gIR-dF-H1f"/>
+                        <outlet property="durationTitleLabel" destination="ZUJ-XX-4O6" id="8Nb-ej-tMg"/>
+                        <outlet property="durationValueLabel" destination="KMC-nW-mOw" id="uM7-Ep-gbd"/>
+                        <outlet property="group" destination="sw1-k6-Irm" id="tv4-Yg-CbR"/>
+                        <outlet property="groupBottom" destination="lRi-oX-zUx" id="QzD-lJ-MI5"/>
+                        <outlet property="groupCircleData" destination="8h9-Hi-zrt" id="kMN-zl-Ucd"/>
+                        <outlet property="logInfoLabel" destination="z2W-iC-CsI" id="6tc-gc-t2c"/>
+                        <outlet property="maxLabel" destination="gvv-6B-0q2" id="ucc-fn-evh"/>
+                        <outlet property="noRecordLabel" destination="p9N-Zs-K68" id="lrb-wy-BSG"/>
+                        <outlet property="ofLabel" destination="pjQ-4C-0Tc" id="LJy-uc-lwn"/>
+                        <outlet property="speedAvgTitleLabel" destination="ie1-IO-2hk" id="OYW-Vb-wLF"/>
+                        <outlet property="speedAvgValueLabel" destination="usS-HX-9ht" id="RCH-QH-ibl"/>
+                        <outlet property="supplyButton" destination="066-XX-NV7" id="Nvf-Al-qiP"/>
+                        <outlet property="unitLabel" destination="suQ-xZ-4Id" id="DCe-9N-R6h"/>
+                        <outlet property="valLabel" destination="lCW-Jq-5dX" id="GQl-tX-zx7"/>
+                        <outlet property="workoutTitleLabel" destination="9ig-JN-aDt" id="5ew-lI-Tgc"/>
+                        <outlet property="workoutValueLabel" destination="WD3-6y-eIY" id="pok-hU-oCc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="328" y="276.5"/>
+        </scene>
+        <!--取消-->
+        <scene sceneID="jPN-qP-Ije">
+            <objects>
+                <controller identifier="HeartRate" title="取消" hidesWhenLoading="NO" id="cXW-yv-7f5" customClass="HeartRateController" customModule="SportFormWatch_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="8DT-wl-Ows">
+                            <items>
+                                <imageView width="1" alignment="center" verticalAlignment="center" image="spinner1.png" contentMode="scaleAspectFit" id="JNN-nE-7au"/>
+                                <button alignment="left" hidden="YES" id="NfQ-dA-pBX">
+                                    <group key="contentGroup" width="1" height="90" alignment="left" backgroundImage="heart-beat-1.png" contentMode="scaleAspectFit" id="pHb-P1-haW">
+                                        <items>
+                                            <imageView alignment="center" verticalAlignment="center" image="spinner1.png" contentMode="scaleAspectFit" id="Ifr-xK-QWX"/>
+                                        </items>
+                                        <variation key="device=watch38mm" height="90"/>
+                                        <variation key="device=watch42mm" height="110"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="sendHeartReat" destination="cXW-yv-7f5" id="DvV-mV-yfj"/>
+                                    </connections>
+                                </button>
+                                <label width="1" alignment="left" hidden="YES" text="平均心率:114次/分" textAlignment="center" id="Z2O-E4-Enx">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                </label>
+                                <label width="1" alignment="left" hidden="YES" text="点按红心发送心跳" textAlignment="center" id="vkE-lz-JlH">
+                                    <color key="textColor" white="1" alpha="0.89560883620689657" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="light" pointSize="11"/>
+                                </label>
+                                <label width="1" alignment="left" hidden="YES" text="让运动的Ta感知运动韵律！" textAlignment="center" id="WiF-aQ-GP0">
+                                    <color key="textColor" white="1" alpha="0.85315193965517244" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="btnGroup" destination="NfQ-dA-pBX" id="hTv-KQ-fLM"/>
+                        <outlet property="group" destination="pHb-P1-haW" id="lbE-TQ-wLy"/>
+                        <outlet property="heartAvgLabel" destination="Z2O-E4-Enx" id="idZ-nj-6M7"/>
+                        <outlet property="imgActivity" destination="JNN-nE-7au" id="uIG-O2-TT0"/>
+                        <outlet property="imgGroupActivity" destination="Ifr-xK-QWX" id="llm-XG-RCX"/>
+                        <outlet property="tips1Label" destination="vkE-lz-JlH" id="V4e-B4-SoS"/>
+                        <outlet property="tips2Label" destination="WiF-aQ-GP0" id="pYy-PS-4bS"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="533" y="161"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SportFormWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="0.55303717372754613" blue="0.43623088540417232" alpha="1" colorSpace="calibratedRGB"/>
+</document>

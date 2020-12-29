@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FollowerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfw-Fj-FdT">
+                        <rect key="frame" x="53" y="12" width="34" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account_like" translatesAutoresizingMaskIntoConstraints="NO" id="wtA-hO-w0K">
+                        <rect key="frame" x="27" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="L0l-nM-0A3"/>
+                            <constraint firstAttribute="width" constant="20" id="bfr-11-53X"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account_star" translatesAutoresizingMaskIntoConstraints="NO" id="dpR-9f-4Zc">
+                        <rect key="frame" x="183" y="13" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="3vF-PO-2eW"/>
+                            <constraint firstAttribute="height" constant="20" id="u5M-Je-MxT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="粉丝" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtu-G4-CDW">
+                        <rect key="frame" x="215" y="12" width="34" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="102" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryb-UW-lIK" userLabel="follower_count">
+                        <rect key="frame" x="262" y="12" width="29" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJ1-2j-nA3" userLabel="like_count">
+                        <rect key="frame" x="106" y="12" width="20" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="wtA-hO-w0K" secondAttribute="centerY" id="8tQ-kx-Iu7"/>
+                    <constraint firstItem="Ryb-UW-lIK" firstAttribute="centerY" secondItem="iJ1-2j-nA3" secondAttribute="centerY" id="K4k-oO-eww"/>
+                    <constraint firstItem="Ryb-UW-lIK" firstAttribute="centerY" secondItem="wtA-hO-w0K" secondAttribute="centerY" id="QIZ-tP-WSM"/>
+                    <constraint firstItem="Ryb-UW-lIK" firstAttribute="centerY" secondItem="mfw-Fj-FdT" secondAttribute="centerY" id="TM8-xb-ozd"/>
+                    <constraint firstAttribute="centerX" secondItem="iJ1-2j-nA3" secondAttribute="centerX" constant="44" id="VAE-Ke-LsT"/>
+                    <constraint firstAttribute="centerX" secondItem="Dtu-G4-CDW" secondAttribute="centerX" constant="-72" id="Vgl-xt-bXG"/>
+                    <constraint firstAttribute="centerX" secondItem="wtA-hO-w0K" secondAttribute="centerX" constant="123" id="ecO-KO-Tda"/>
+                    <constraint firstAttribute="centerX" secondItem="dpR-9f-4Zc" secondAttribute="centerX" constant="-33" id="gyo-S1-AuO"/>
+                    <constraint firstAttribute="centerX" secondItem="Ryb-UW-lIK" secondAttribute="centerX" constant="-116" id="mKt-st-M2L"/>
+                    <constraint firstAttribute="centerX" secondItem="mfw-Fj-FdT" secondAttribute="centerX" constant="90" id="nW9-LB-cXn"/>
+                    <constraint firstItem="Ryb-UW-lIK" firstAttribute="centerY" secondItem="Dtu-G4-CDW" secondAttribute="centerY" id="p12-Xv-VPR"/>
+                    <constraint firstItem="Ryb-UW-lIK" firstAttribute="centerY" secondItem="dpR-9f-4Zc" secondAttribute="centerY" id="ti1-eb-0Yj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="401" y="461"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="account_like" width="13" height="12"/>
+        <image name="account_star" width="13" height="12"/>
+    </resources>
+</document>

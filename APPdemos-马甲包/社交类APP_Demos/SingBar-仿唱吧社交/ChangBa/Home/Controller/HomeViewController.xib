@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="detailLabel" destination="yFx-mT-PW3" id="ni2-hK-ZJZ"/>
+                <outlet property="headIV" destination="jPq-IT-bvj" id="9PC-bR-ORz"/>
+                <outlet property="nickLabel" destination="gdT-Wc-IiW" id="AcX-wX-gEy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDf-fC-FzO">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myinfo_head_bg" translatesAutoresizingMaskIntoConstraints="NO" id="gsV-BN-KDY"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xiaochang_default_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="jPq-IT-bvj">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="8dr-nk-vKq"/>
+                                <constraint firstAttribute="height" constant="55" id="hWu-uc-fUt"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录唱吧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdT-Wc-IiW">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启你的歌唱和发现之旅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFx-mT-PW3">
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqk-bD-RBz">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="PHJ-D1-G2K"/>
+                                <constraint firstAttribute="width" constant="25" id="kdw-gP-DvR"/>
+                            </constraints>
+                            <state key="normal" image="mini_play_btn_2_normal" backgroundImage="mini_play_btn_2_pressed"/>
+                            <state key="highlighted" image="mini_play_btn_2_pressed"/>
+                            <connections>
+                                <action selector="gotoPlayingViewAction:" destination="-1" eventType="touchUpInside" id="Yb7-ij-NAa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocK-cG-iAP">
+                            <frame key="frameInset" minX="12" minY="26" width="198" height="56"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="gotoLoginVC:" destination="-1" eventType="touchUpInside" id="l4t-Pp-Hsr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gdT-Wc-IiW" firstAttribute="top" secondItem="xDf-fC-FzO" secondAttribute="top" constant="36" id="0Hm-tg-bfx"/>
+                        <constraint firstAttribute="trailing" secondItem="rqk-bD-RBz" secondAttribute="trailing" constant="14" id="8fe-hQ-RAa"/>
+                        <constraint firstAttribute="trailing" secondItem="gsV-BN-KDY" secondAttribute="trailing" id="BMY-2O-FSx"/>
+                        <constraint firstItem="gdT-Wc-IiW" firstAttribute="leading" secondItem="jPq-IT-bvj" secondAttribute="trailing" constant="8" id="Dfa-n0-4P0"/>
+                        <constraint firstAttribute="height" constant="94" id="Gy5-TO-UW8"/>
+                        <constraint firstItem="yFx-mT-PW3" firstAttribute="leading" secondItem="jPq-IT-bvj" secondAttribute="trailing" constant="8" id="IHA-ai-I47"/>
+                        <constraint firstItem="gsV-BN-KDY" firstAttribute="top" secondItem="xDf-fC-FzO" secondAttribute="top" id="Q45-nu-4S2"/>
+                        <constraint firstItem="gsV-BN-KDY" firstAttribute="leading" secondItem="xDf-fC-FzO" secondAttribute="leading" id="Zbt-uA-dSm"/>
+                        <constraint firstItem="yFx-mT-PW3" firstAttribute="top" secondItem="gdT-Wc-IiW" secondAttribute="bottom" id="bwm-fA-D6u"/>
+                        <constraint firstItem="rqk-bD-RBz" firstAttribute="centerY" secondItem="xDf-fC-FzO" secondAttribute="centerY" constant="11.5" id="i4K-wb-Igb"/>
+                        <constraint firstAttribute="bottom" secondItem="jPq-IT-bvj" secondAttribute="bottom" constant="12" id="ofZ-YS-MNr"/>
+                        <constraint firstAttribute="bottom" secondItem="gsV-BN-KDY" secondAttribute="bottom" id="x74-Zr-vfo"/>
+                        <constraint firstItem="jPq-IT-bvj" firstAttribute="leading" secondItem="xDf-fC-FzO" secondAttribute="leading" constant="12" id="zkb-dY-LU3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xDf-fC-FzO" secondAttribute="trailing" id="0oZ-ft-Rdl"/>
+                <constraint firstItem="xDf-fC-FzO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Qg-aR-TV9"/>
+                <constraint firstItem="xDf-fC-FzO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="B2g-ke-mYS"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mini_play_btn_2_normal" width="76" height="76"/>
+        <image name="mini_play_btn_2_pressed" width="76" height="76"/>
+        <image name="myinfo_head_bg" width="480" height="135"/>
+        <image name="xiaochang_default_avatar" width="360" height="360"/>
+    </resources>
+</document>

@@ -1,0 +1,1 @@
+../../../MessageDisplayKit/MessageDisplayKit/Classes/Categorys/UIImage/UIImage+Resize.h

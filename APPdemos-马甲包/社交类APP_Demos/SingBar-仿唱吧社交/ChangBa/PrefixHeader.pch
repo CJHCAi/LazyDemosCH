@@ -1,0 +1,42 @@
+//
+//  PrefixHeader.pch
+//  游戏直播
+//
+//  Created by tarena on 16/9/8.
+//  Copyright © 2016年 tarena. All rights reserved.
+//
+
+#import "Utils.h"
+#import <UIImageView+WebCache.h>
+#import <MJExtension/MJExtension.h>
+#import "PlayingViewController.h"
+#import <BmobSDK/Bmob.h>
+#import <EaseMob.h>
+#import "EasemobManager.h"
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define kMargin 10 
+/*******    屏幕的宽高   *********/
+#define kScreenW    ([UIScreen mainScreen].bounds.size.width)
+#define kScreenH    ([UIScreen mainScreen].bounds.size.height)
+#define kNavigationBarH 64
+#define kTabBarH 49
+
+/********   快速三原色定制颜色   *********/
+#define kRGBA(r, g, b, a) ([UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a])
+//唱歌台
+#define URL_SingDianGeTaiPath @"http://api.changba.com/ktvboxmp.php?ac=getRecommendMusic&curuserid=0&channelsrc=appstore&version=7.5.3&token=&bless=0&macaddress=FA3B5753-18C7-412F-9F90-A6F0A0849CD1&ismember=0&openudid=5cf1e47941f9982acf766e4d669b0cd56e5ad4f6&systemversion=10.0.1&device=iPhone8,1&broken=0&gender=0&showduet=1&area=%25E6%259D%25AD%25E5%25B7%259E&secret=4c3ff4759c"
+//我的唱吧
+#define URL_MyChangBaPath @"http://timeline.api.changba.com/ktvbox.php?ac=getusertimeline&curuserid=0&channelsrc=appstore&version=7.5.3&token=&bless=0&macaddress=FA3B5753-18C7-412F-9F90-A6F0A0849CD1&ismember=0&openudid=5cf1e47941f9982acf766e4d669b0cd56e5ad4f6&systemversion=10.0.1&device=iPhone8,1&broken=0&fakeadv=1&maxid=-1&start=0&minid=0&stype=5&num=20&editorchoise=1&itemwidth=355&secret=0945916167"
+#define URL_MyChangBaMorePath @"http://timeline.api.changba.com/ktvbox.php?ac=getusertimeline&curuserid=0&channelsrc=appstore&version=7.5.3&token=&bless=0&macaddress=FA3B5753-18C7-412F-9F90-A6F0A0849CD1&ismember=0&openudid=5cf1e47941f9982acf766e4d669b0cd56e5ad4f6&systemversion=10.0.1&device=iPhone8,1&broken=0&fakeadv=1&maxid=2047135436&start=38&minid=-1&stype=5&num=20&editorchoise=1&itemwidth=355&secret=f8dcdceb33"
+//精彩表演
+#define URL_JingCaiBiaoYanPath @"http://api.changba.com/ktvbox.php?ac=gettopbannerwheel&curuserid=0&channelsrc=appstore&version=7.5.3&token=&bless=0&macaddress=FA3B5753-18C7-412F-9F90-A6F0A0849CD1&ismember=0&openudid=5cf1e47941f9982acf766e4d669b0cd56e5ad4f6&systemversion=10.0.1&device=iPhone8,1&broken=0&area=%E6%9D%AD%E5%B7%9E&secret=67ea9aa0ee"
+#define URL_PerfoermancePath @"http://vapi.changba.com/ktvbox_apiproxy.php?ac=gethottestwork&curuserid=0&channelsrc=appstore&version=7.5.3&token=&bless=0&macaddress=FA3B5753-18C7-412F-9F90-A6F0A0849CD1&ismember=0&openudid=5cf1e47941f9982acf766e4d669b0cd56e5ad4f6&systemversion=10.0.1&device=iPhone8,1&broken=0&start=0&num=96&area=%E6%9D%AD%E5%B7%9E&secret=1d8d89e2aa"
+
+
+#define MainColor [UIColor colorWithRed:254.0/255 green:49.0/255 blue:32.0/255 alpha:1]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

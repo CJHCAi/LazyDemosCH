@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=480,user-scalable=yes,uc-user-scalable=yes,target-densitydpi=high-dpi"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script language="javascript" type="text/javascript" src="jj.js"></script>
+    <script language="javascript" type="text/javascript" src="min.js"></script>
+    <title>飞跃吧蜘蛛侠</title>
+<style>
+	body{margin:0px; background-color:#434243; color:#6A6A6A;}
+	.bandiv{float:left; width:100%; background-color:#DBD1BB;}
+		.bandiv div{padding:10px; text-align:left;}
+</style>
+</head>
+<body onload="main()" lang="http://web10.916d.com/" id="0">
+<div style="text-align:center;">
+	<canvas id="jsGameScreen"> 
+	</canvas> 
+</div>
+
+		<script language=javascript>
+		function connectWebViewJavascriptBridge(callback)
+{
+  if (window.WebViewJavascriptBridge) {
+    callback(WebViewJavascriptBridge)
+  } else {
+    document.addEventListener('WebViewJavascriptBridgeReady', function() {
+      callback(WebViewJavascriptBridge)
+    }, false)
+  }
+}
+
+function play_result(score, bestScore) {
+	connectWebViewJavascriptBridge(function(bridge) {
+      var data = {'CurrentScore' : score / 10, "BestScore" : bestScore / 10}
+     
+      bridge.send(data, function(responseData) {
+      	console.log("Javascript got its response", responseData) 
+      })
+   })
+}
+
+		function dp_submitScore(bestScore,score){
+			connectWebViewJavascriptBridge(function(bridge) {
+      			var data = {'CurrentScore' : score, "BestScore" : bestScore}
+     
+      			bridge.send(data, function(responseData) {
+      				console.log("Javascript got its response", responseData) 
+      			})
+   			})
+		}
+		
+		function dp_share(t){
+		}
+
+		function showAd(){
+		}
+		function hideAd(){
+		}
+		</script>
+
+
+<div id='share' style="display:none">
+
+</div>
+</body>
+</html>

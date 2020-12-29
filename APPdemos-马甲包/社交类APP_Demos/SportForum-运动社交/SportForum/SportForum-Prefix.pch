@@ -1,0 +1,36 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #import "SFCommom.h"
+    #import "UIScreen+Additions.h"
+    #import "UIImage+Webp.h"
+#endif
+
+#define APP_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define APP_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define APP_BORDER_BG_COLOR [UIColor colorWithRed:246.0 / 255.0 green:246.0 / 255.0 blue:246.0 / 255.0 alpha:0.5];
+#define APP_MAIN_BG_COLOR [UIColor colorWithRed:246.0 / 255.0 green:246.0 / 255.0 blue:246.0 / 255.0 alpha:1];
+#define IOS7_OR_LATER ([[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending)
+#define IOS8_OR_LATER ([[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending)
+
+#define DISMISS_TIME 1.5
+#define ALLOW_NUMS @"0123456789."
+#define ALLOW_CHARS @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+#define EMAIL_REGEXP @"^[a-zA-Z0-9_\\-\\.]{1,}@[a-zA-Z0-9_\\-]{1,}\\.[a-zA-Z0-9_\\-.]{1,}$"
+#define SMS_INVITE @"我在玩悦动力，她是一个有趣的运动俱乐部。赶紧加入，和我一起玩吧，下载链接是https://itunes.apple.com/cn/app/yue-dong-li/id949784698?l=en&mt=8"
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define IS_RETINA ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && ([UIScreen mainScreen].scale == 2.0))

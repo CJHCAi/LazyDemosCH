@@ -1,0 +1,60 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta id="viewport" name="viewport" content="width=480,user-scalable=no,target-densitydpi=high-dpi" />
+<script data-main="js/main2" src="js/require.js"></script>
+<title>爱之跳跳</title>
+<style type="text/css">
+body{
+margin:0px;
+padding:0px;
+overflow: hidden;
+}
+</style>
+<script>
+var product = 'other', ua = navigator.userAgent.toLowerCase();
+if(ua.indexOf('micromessenger') != -1) {
+    product = 'micromessenger';
+}
+var isbaidu = ua.match(/baidubrowser\/([\w\.]+)\s\(Baidu;\s(P\d)\s([\w\.]+)\)$/i);
+if(isbaidu && isbaidu[2] != 'p2') {
+    product = 'baidubrowser';
+}
+
+function connectWebViewJavascriptBridge(callback)
+{
+  if (window.WebViewJavascriptBridge) {
+    callback(WebViewJavascriptBridge)
+  } else {
+    document.addEventListener('WebViewJavascriptBridgeReady', function() {
+      callback(WebViewJavascriptBridge)
+    }, false)
+  }
+}
+
+function submitScore(score,bestScore){
+  connectWebViewJavascriptBridge(function(bridge) {
+      var data = {'CurrentScore' : score * 10, "BestScore" : bestScore * 10}
+     
+      bridge.send(data, function(responseData) {
+        console.log("Javascript got its response", responseData) 
+      })
+   })
+}
+
+function showAd(){}
+function hideAd(){}
+</script>
+</head>
+<body>
+<div style="text-align:center;" >
+<canvas id="linkScreen">很遗憾，您的浏览器不支持HTML5，请使用支持HTML5的浏览器。</canvas>
+</div>
+
+<div id="share" style="display: none;">
+    <img width=100% src="images/share.png" style="position: fixed;z-index:9999; top: 0; left: 0; display: " ontouchstart="document.getElementById('share').style.display='none';">
+</div><img src="">
+<script type="text/javascript" src="" charset="UTF-8"></script></body>
+</html>

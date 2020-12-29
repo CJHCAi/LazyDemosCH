@@ -1,0 +1,1 @@
+../../../MessageDisplayKit/MessageDisplayKit/Classes/Views/MessageInputView/XHMessageInputView.h
