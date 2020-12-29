@@ -1,0 +1,76 @@
+//
+//  MITO-prefix.pch
+//  MITO
+//
+//  Created by keenteam on 2017/12/9.
+//  Copyright © 2017年 keenteam. All rights reserved.
+//
+
+#ifndef MITO_prefix_pch
+#define MITO_prefix_pch
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+typedef enum :NSInteger{
+    LJObjectsViewControllerHot,
+    LJObjectsViewControllerFresh,
+    LJObjectsViewControllerShare,
+    LJObjectsViewControllerDistinct,
+    LJObjectsViewControllerFind,
+    LJObjectsViewControllerPicture,
+    LJObjectsViewControllerSexy,
+    LJObjectsViewControllerAmuse
+}LJObjectsViewControllerType;
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIView+frame.h"
+#import "UIBarButtonItem+item.h"
+#import "UIImageView+download.h"
+#import "UIImage+image.h"
+#import "TGConst.h"
+#import "NSDate+calendar.h"
+#import "TGRefresh.h"
+#import "AFNetworking.h"
+#import "SVProgressHUD.h"
+#import "KTHttpTool.h"
+#import "Masonry.h"
+#import "Constants.h"
+#import <YYModel.h>
+#import "MJRefresh.h"
+
+#define AFNWriteToPlist(filename) [responseObject writeToFile:[NSString stringWithFormat:@"/Users/targetcloud/Desktop/%@.plist", @#filename] atomically:YES];
+
+#define CachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
+#define TGAlphaColor(a,r,g,b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:a]
+#define TGColor(r,g,b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]
+#define TGGrayColor(v) TGColor(v,v,v)
+#define TGRandomColor TGColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define NavTinColor [TGColor(252, 49, 89) colorWithAlphaComponent:0.9]
+
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+#define RootV [UIApplication sharedApplication].keyWindow.rootViewController.view
+#define iphone6P (ScreenH == 736)
+#define iphone6 (ScreenH == 667)
+#define iphone5 (ScreenH == 568)
+#define iphone4 (ScreenH == 480)
+
+#define TGFunc KTLog(@"%s",__func__)
+
+#ifdef DEBUG // 调试
+#define KTLog(...) NSLog(__VA_ARGS__);
+#else // 发布
+#define KTLog(...)
+#endif
+
+#define TagBgColor [UIColor whiteColor]//TGColor(74,139,209)
+#define TagTitleColor TGColor(74,139,209)
+#define TagFont [UIFont systemFontOfSize:14]
+#define IOS(version) ([UIDevice currentDevice].systemVersion.doubleValue >= (version))
+
+#endif /* MITO_prefix_pch */
