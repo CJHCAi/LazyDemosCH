@@ -9,6 +9,13 @@
 #import "QZWebViewViewController.h"
 #import "QZWebView.h"
 
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+
+#define STATUSBAR_HEIGHT ([UIApplication sharedApplication].statusBarFrame.size.height)
+#define IS_iPhoneX ((STATUSBAR_HEIGHT >= 44) ? YES : NO)
+#define NAVBAR_HEIGHT (IS_iPhoneX ? 88 : 64)
+
 @interface QZWebViewViewController () <QZWebViewDelegate>
 @property (nonatomic,  copy ) NSString *url;
 @property (nonatomic, strong) QZWebView *webView;

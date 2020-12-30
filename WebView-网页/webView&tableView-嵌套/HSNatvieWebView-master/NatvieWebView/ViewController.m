@@ -49,10 +49,6 @@ WKNavigationDelegate>
     [self removeObservers];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 - (void)initValue{
     _lastWebViewContentHeight = 0;
     _lastTableViewContentHeight = 0;
@@ -162,7 +158,7 @@ WKNavigationDelegate>
 
 #pragma mark - UITableViewDataSouce
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return 3;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
