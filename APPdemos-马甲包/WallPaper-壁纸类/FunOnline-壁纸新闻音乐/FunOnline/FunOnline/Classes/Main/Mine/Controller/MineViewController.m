@@ -74,6 +74,7 @@ static NSString *const kMineCellReuseIdentifier = @"kMineCellReuseIdentifier";
     
     // d0e765, 33aab4
     IBWaterWaveView *waveView = [[IBWaterWaveView alloc] initWithFrame:headerView.bounds startColor:IBHexColorA(0xd0e765, 0.5) endColor:IBHexColorA(0x33aab4, 0.7)];
+    
     UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[self reloadLogonImage]];
     logoImageView.frame = CGRectMake(0, 0, 90, 90);
     logoImageView.center = CGPointMake(headerView.mj_w*0.5, headerView.mj_h*0.5);
