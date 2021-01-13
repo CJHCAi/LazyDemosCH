@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oc与html交互</title>
+    <script>
+        //<------------------------------调用oc的方法
+        //不传值的方法
+        function transferOCAction() {
+            document.getElementById('transferOCAction').innerHTML = '调用oc的方法'
+            window.webkit.messageHandlers.JS_OCAction.postMessage(null)
+        }
+        //传递参数的方法
+        function transferOCActionAndMessage() {
+            var x = document.getElementById('inp').value
+            window.webkit.messageHandlers.JS_OCActionAndMessage.postMessage(x)
+        }
+
+
+        //<------------------------------oc调用js的方法
+        //不带参数的方法
+        function transferJSAction() {
+           document.getElementById('receiveOCData').innerHTML = '已经收到oc的信息回传。不带参数'
+        }
+        //带参数的方法
+        function transferJSActionAndMessage(message) {
+           document.getElementById('receiveOCDataMessage').innerHTML = '回传的信息已经收到是：'+message+';就这么多信息'
+        }
+    </script>
+</head>
+<body>
+<br>
+
+<br>
+<div>
+    <button type="button" style="font-size: 38px;" onclick="transferOCAction()">
+        不传值的调用方法
+    </button>
+
+    <br>
+    <br>
+
+    <label id="transferOCAction" style="font-size: 38px">是否调用oc的方法</label>
+
+    <br>
+    <br>
+
+    <br>
+    <br>
+
+    <br>
+    <br>
+
+    <label id="receiveOCData" style="font-size: 38px;color: red"></label>
+
+    <br>
+    <br>
+</div>
+
+<br>
+<br>
+
+<div>
+    <input id="inp"style="font-size: 38px">
+    <button type="button" style="font-size: 38px" onclick="transferOCActionAndMessage()">
+        传一个字符串到oc界面
+    </button>
+
+    <br>
+    <br>
+
+    <label id="receiveOCDataMessage" style="font-size: 38px;color: red"></label>
+</div>
+
+</body>
+</html>
