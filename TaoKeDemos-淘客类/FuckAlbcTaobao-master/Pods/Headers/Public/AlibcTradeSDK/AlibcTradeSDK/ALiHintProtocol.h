@@ -1,0 +1,1 @@
+../../../../AlibcTradeSDK/AlibcTradeSDK.framework/Headers/ALiHintProtocol.h

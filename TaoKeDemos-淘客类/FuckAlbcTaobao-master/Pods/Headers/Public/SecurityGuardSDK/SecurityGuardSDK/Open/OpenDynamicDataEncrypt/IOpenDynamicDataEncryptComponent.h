@@ -1,0 +1,1 @@
+../../../../../../SecurityGuardSDK/SecurityGuardSDK.framework/Headers/Open/OpenDynamicDataEncrypt/IOpenDynamicDataEncryptComponent.h

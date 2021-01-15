@@ -1,0 +1,1 @@
+../../../../../SecurityGuardSDK/SecurityGuardSDK.framework/Headers/JAQ/SecuritySignature.h
