@@ -86,14 +86,13 @@
     [self animationWithIndex:index];//动画
     [self playSound];//音效
     if([item.title isEqualToString:@"首页"]){
-        
+        NSLog(@"点击了首页");
     }
 }
 
 
 
 -(void) playSound{
-    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"like" ofType:@"caf"];
     SystemSoundID soundID;
     NSURL *soundURL = [NSURL fileURLWithPath:path];
