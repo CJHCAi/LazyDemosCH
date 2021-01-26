@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="monthDayViewCell" id="gTV-IL-0wX" customClass="CJMonthDayCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="53" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="53" height="50"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="初一" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5Q-vS-MHS">
+                        <rect key="frame" x="0.0" y="25" width="53" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.30835336540000002" green="0.30835336540000002" blue="0.30835336540000002" alpha="0.90439116379310347" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-Gt-UZU">
+                        <rect key="frame" x="0.0" y="0.0" width="53" height="25"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="S5Q-vS-MHS" secondAttribute="bottom" id="18q-mL-CH5"/>
+                <constraint firstAttribute="trailing" secondItem="S5Q-vS-MHS" secondAttribute="trailing" id="D67-ci-oEE"/>
+                <constraint firstItem="S5Q-vS-MHS" firstAttribute="top" secondItem="SF7-Gt-UZU" secondAttribute="bottom" id="Hsb-rd-69h"/>
+                <constraint firstItem="S5Q-vS-MHS" firstAttribute="width" secondItem="SF7-Gt-UZU" secondAttribute="width" id="UTq-XD-eDK"/>
+                <constraint firstItem="S5Q-vS-MHS" firstAttribute="height" secondItem="SF7-Gt-UZU" secondAttribute="height" id="VnP-VH-LOm"/>
+                <constraint firstItem="S5Q-vS-MHS" firstAttribute="top" secondItem="SF7-Gt-UZU" secondAttribute="bottom" id="a6w-5h-Unl"/>
+                <constraint firstItem="SF7-Gt-UZU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bzJ-oL-Fh7"/>
+                <constraint firstItem="S5Q-vS-MHS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="grI-kR-6eg"/>
+                <constraint firstAttribute="trailing" secondItem="SF7-Gt-UZU" secondAttribute="trailing" id="jJx-ZH-E7h"/>
+                <constraint firstItem="SF7-Gt-UZU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sav-Y8-WPH"/>
+            </constraints>
+            <size key="customSize" width="53" height="50"/>
+            <connections>
+                <outlet property="gregoiainDaylabel" destination="SF7-Gt-UZU" id="aTJ-ez-cRU"/>
+                <outlet property="lunarDayLabel" destination="S5Q-vS-MHS" id="KGS-ZR-zaL"/>
+            </connections>
+            <point key="canvasLocation" x="301.5" y="300"/>
+        </collectionViewCell>
+    </objects>
+</document>

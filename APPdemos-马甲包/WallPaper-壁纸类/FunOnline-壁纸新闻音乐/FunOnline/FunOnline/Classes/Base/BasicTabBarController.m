@@ -57,11 +57,11 @@
     HomeViewController *wallpaper = [[HomeViewController alloc] init];
     [self setupOneChildrenController:wallpaper title:@"壁纸" image:@"item-01-normal" selectedImage:@"item-01-select"];
     
-    NewsViewController *news = [[NewsViewController alloc] init];
-    [self setupOneChildrenController:news title:@"新闻" image:@"item-02-normal" selectedImage:@"item-02-select"];
+//    NewsViewController *news = [[NewsViewController alloc] init];
+//    [self setupOneChildrenController:news title:@"新闻" image:@"item-02-normal" selectedImage:@"item-02-select"];
     
-    MusicBaseViewController *music = [[MusicBaseViewController alloc] init];
-    [self setupOneChildrenController:music title:@"乐库" image:@"item-03-normal" selectedImage:@"item-03-select"];
+//    MusicBaseViewController *music = [[MusicBaseViewController alloc] init];
+//    [self setupOneChildrenController:music title:@"乐库" image:@"item-03-normal" selectedImage:@"item-03-select"];
     
     MineViewController *mine = [[MineViewController alloc] init];
     [self setupOneChildrenController:mine title:@"我的" image:@"item-04-normal" selectedImage:@"item-04-select"];
