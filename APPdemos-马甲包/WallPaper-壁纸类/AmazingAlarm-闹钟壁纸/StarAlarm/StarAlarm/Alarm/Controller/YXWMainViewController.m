@@ -64,7 +64,7 @@
     //通知显现粒子动画
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(PSONotification:) name:@"lizi" object:nil];
     [[NSUserDefaults standardUserDefaults] objectForKey:@"lizi"];
-    //
+    //通知获取天气
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getWeather:) name:@"city" object:nil];
     [[NSUserDefaults standardUserDefaults] objectForKey:@"city"];
     
