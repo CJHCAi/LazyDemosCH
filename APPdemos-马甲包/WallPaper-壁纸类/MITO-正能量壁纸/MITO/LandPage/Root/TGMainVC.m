@@ -40,9 +40,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
     [self setupAllChildVC];
     [self setupAllTitleButton];
     [self setupTabBar];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(back) name:BackEssenceNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(across) name:AcrossEssenceNotification object:nil];
 }
@@ -70,9 +72,13 @@
 }
 
 - (void)setupAllChildVC{
+    //壁纸
     TGNavigationVC *essenceVc = [[TGNavigationVC alloc] initWithRootViewController:[[TGEssenceNewVC alloc] init]];
+    //发现
     TGNavigationVC *newVc = [[TGNavigationVC alloc] initWithRootViewController:[[TGNewestVC alloc] init]];
+    //图卡
     TGNavigationVC *ftVc = [[TGNavigationVC alloc] initWithRootViewController:[[TGFriendTrendVC alloc] init]];
+    //设置
     TGNavigationVC *meVc = [[TGNavigationVC alloc] initWithRootViewController:[[TGMeVC alloc] init]];
 
     

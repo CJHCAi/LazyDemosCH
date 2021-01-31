@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     UIImageView *imageView = [[UIImageView alloc] init];
     if (self.imageUrl) {
      [imageView sd_setImageWithURL:[NSURL URLWithString:self.imageUrl]];
@@ -28,6 +29,7 @@
     imageView.frame = self.view.frame;
     [self.view addSubview:imageView];
     [self.view bringSubviewToFront:imageView];
+    
     NSArray *array = @[@"music",@"account_setting",@"aio_icons_freeaudio",@"aio_icons_togetherplay"];
     NSArray *titleArray = @[@"音乐",@"设置",@"通讯录",@"游戏"];
     for (int i = 0; i < array.count; i ++) {
@@ -71,7 +73,6 @@
         //transition.type = @"oglFilp";
         //立方体翻转
         transition.type = @"push";
-        
         //4.设置动画的方向，从那个方向出来
         transition.subtype = @"fromLeft";
         //5.将动画添加到UIView上
