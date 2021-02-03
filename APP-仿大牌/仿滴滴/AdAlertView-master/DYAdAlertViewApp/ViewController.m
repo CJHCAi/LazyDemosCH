@@ -27,7 +27,7 @@
     _imgArr = [self setImgArr];
 }
 -(NSMutableArray *)setImgArr{
-    NSMutableArray *arr = [[NSMutableArray alloc]initWithCapacity:0];
+    NSMutableArray *arr = [[NSMutableArray alloc] initWithCapacity:0];
     for (int i = 1; i<=5; i++) {
         DYAdModel *adModel  = [[DYAdModel alloc]init];
         adModel.imgStr      = [NSString stringWithFormat:@"%d",i];
