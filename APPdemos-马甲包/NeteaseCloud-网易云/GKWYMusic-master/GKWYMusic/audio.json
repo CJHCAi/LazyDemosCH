@@ -1,0 +1,82 @@
+// 百度音乐api接口（通过Charles抓包，从iOS版百度音乐中获取）
+
+基础域名：https://musicapi.qianqian.com
+
+基本参数：format：json            // 格式
+        from：ios               // 来源
+        channel：appstore       // 渠道
+        method：                // 方法名
+
+部分接口：
+1、获取榜单列表
+baidu.ting.billboard.billList
+
+https://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.billboard.billList&type=1&format=json&offset=0&size=100&from=ios&fields=title,song_id,author,resource_type,havehigh,is_new,has_mv_mobile,has_mv,album_title,ting_uid,album_id,charge,all_rate,mv_provider&cuid=2c02f143b48e415e568cf806b7691a02e318beb6&channel=appstore&from=ios&version=6.2.0
+
+type:榜单类型（1、新歌榜 2、热歌榜 3、摇滚榜 4、爵士榜 5、流行榜 6、欧美金曲榜 7、经典老歌榜 8、情歌对唱榜 9、影视金曲榜 10、网络金曲榜）
+fields：应该是需要返回的参数
+
+2、获取歌曲信息(播放)
+baidu.ting.song.play
+
+https://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.song.play&ts=1526440518&songid=243531021&nw=2&l2p=1637.1&lpb=320000&ext=MP3&format=json&from=ios&usup=1&lebo=0&aac=0&ucf=4&vid=2c02f143b48e415e568cf806b7691a02e318beb6&res=1&e=E3LDgFBFuJprSiGBm3nsBcq5yZJvSmqhpJK6053SHm4%3D&cuid=2c02f143b48e415e568cf806b7691a02e318beb6&channel=appstore&from=ios&version=6.2.0
+
+songid: 歌曲id
+
+3、获取歌手信息
+baidu.ting.artist.getinfo
+
+https://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.artist.getinfo&format=json&tinguid=2517&artistid=88&from=ios&cuid=2c02f143b48e415e568cf806b7691a02e318beb6&channel=appstore&from=ios&version=6.2.0
+
+tinguid：
+artistid：
+
+4、获取歌手音乐列表
+baidu.ting.artist.getSongList
+
+https://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.artist.getSongList&format=json&tinguid=2517&artistid=88&limits=50&order=2&offset=0&cuid=2c02f143b48e415e568cf806b7691a02e318beb6&channel=appstore&from=ios&version=6.2.0
+
+5、获取歌手专辑列表
+baidu.ting.artist.getAlbumList
+
+https://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.artist.getAlbumList&format=json&tinguid=2517&artistid=88&order=1&limits=30&offset=0&cuid=2c02f143b48e415e568cf806b7691a02e318beb6&channel=appstore&from=ios&version=6.2.0
+
+6、获取歌手MV列表
+baidu.ting.artist.getArtistMVList
+
+https://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.artist.getArtistMVList&id=2517&page=0&size=50&usetinguid=1&cuid=2c02f143b48e415e568cf806b7691a02e318beb6&channel=appstore&from=ios&version=6.2.0
+
+7、获取歌手相似歌手（推荐）
+
+baidu.ting.artist.recommendArtist
+
+https://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.artist.recommendArtist&ting_uid=1078&cuid=2c02f143b48e415e568cf806b7691a02e318beb6&channel=appstore&from=ios&version=6.2.0
+
+8、获取专辑信息
+baidu.ting.album.getAlbumInfo
+
+https://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.album.getAlbumInfo&album_id=243532285&res=1&format=json&from=ios&cuid=2c02f143b48e415e568cf806b7691a02e318beb6&channel=appstore&from=ios&version=6.2.0
+
+9、获取MV信息
+baidu.ting.mv.playMV
+
+https://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.mv.playMV&mv_id=&song_id=33847306&definition=(null)&cuid=2c02f143b48e415e568cf806b7691a02e318beb6&channel=appstore&from=ios&version=6.2.0
+
+song_id : 歌曲id
+
+10、搜索
+热门搜索 baidu.ting.search.hot
+https://musicapi.qianqian.com/v1/restserver/ting?&method=baidu.ting.search.hot&page_num=20&cuid=2c02f143b48e415e568cf806b7691a02e318beb6&channel=appstore&from=ios&version=6.2.0
+
+搜索建议 baidu.ting.search.catalogSug
+https://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.search.catalogSug&query=%E5%93%88%E5%93%88&format=json&from=ios&cuid=2c02f143b48e415e568cf806b7691a02e318beb6&channel=appstore&from=ios&version=6.2.0
+
+搜索结果 baidu.ting.search.merge
+https://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.search.merge&isNew=1&query=%E5%93%88%E5%93%88&page_size=30&page_no=1&type=-1&format=json&from=ios&cuid=2c02f143b48e415e568cf806b7691a02e318beb6&channel=appstore&from=ios&version=6.2.0
+结果：     song_info     歌曲
+          artist_info   歌手
+          album_info    专辑
+          video_info    视频
+          playlist_info 歌单
+          user_info     用户
+          topic_info    话题
