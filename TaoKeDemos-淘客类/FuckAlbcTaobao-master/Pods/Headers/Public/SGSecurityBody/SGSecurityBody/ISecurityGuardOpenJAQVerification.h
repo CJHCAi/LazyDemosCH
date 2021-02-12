@@ -1,0 +1,1 @@
+../../../../SGSecurityBody/SGSecurityBody.framework/Headers/ISecurityGuardOpenJAQVerification.h

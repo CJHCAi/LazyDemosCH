@@ -1,0 +1,1 @@
+../../../GKNavigationBar/GKNavigationBar/GestureHandle/GKPushAnimatedTransition.h

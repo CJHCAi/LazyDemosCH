@@ -6,8 +6,8 @@
 //  Copyright © 2016年 YXW. All rights reserved.
 //
 
-#import "ViewController.h"
+//#import "ViewController.h"
 
-@interface YXWBaseViewController : ViewController
+@interface YXWBaseViewController : UIViewController
 
 @end

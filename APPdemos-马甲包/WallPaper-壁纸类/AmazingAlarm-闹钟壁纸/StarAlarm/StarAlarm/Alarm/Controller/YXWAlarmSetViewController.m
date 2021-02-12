@@ -659,7 +659,9 @@
         view = [[UIView alloc] init];
     }
     [[pickerView.subviews objectAtIndex:1] setHidden:TRUE];
-    [[pickerView.subviews objectAtIndex:2] setHidden:TRUE];
+    if (pickerView.subviews.count > 2) {
+        [[pickerView.subviews objectAtIndex:2] setHidden:TRUE];
+    }
     
     if (component == 0) {
         UILabel *hoursLabel = [[UILabel alloc] init];

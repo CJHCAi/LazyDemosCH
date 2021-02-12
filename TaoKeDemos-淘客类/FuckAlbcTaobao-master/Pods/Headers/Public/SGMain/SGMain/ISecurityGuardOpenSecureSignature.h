@@ -1,0 +1,1 @@
+../../../../SGMain/SGMain.framework/Headers/ISecurityGuardOpenSecureSignature.h

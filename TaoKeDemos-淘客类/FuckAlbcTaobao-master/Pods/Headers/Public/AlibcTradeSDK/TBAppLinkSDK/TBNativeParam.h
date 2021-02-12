@@ -1,0 +1,1 @@
+../../../../AlibcTradeSDK/TBAppLinkSDK.framework/Headers/TBNativeParam.h

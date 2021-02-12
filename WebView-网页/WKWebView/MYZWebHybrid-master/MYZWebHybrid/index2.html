@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<script language="javascript">
+    function CallApp(name, params, callback) {
+        if (params == null) {
+            params = {}
+        };
+        let data = {
+            name: name,
+            params: params,
+            callback: null
+        };
+        if (callback != null) {
+            var callback_name = 'C' + Math.random().toString(36).substr(2);
+            window[callback_name] = function(obj) {
+                callback(obj);
+                delete window[callback_name]
+            };
+            data.callback = callback_name
+        }
+        //Android.call(JSON.stringify(data));
+        //alert(JSON.stringify(data))
+        window.webkit.messageHandlers.call.postMessage(JSON.stringify(data));
+    };
+</script>
+
+<body>
+    <h1>Index2
+        <h1><br/>
+            <div style="font-size: 30px;">
+                <a href="javascript:CallApp('WebViewClose', {'name':'webview1'})">Close</a><br/>
+                <a href="javascript:CallApp('WebViewOpen', {'name':'webview2', 'url':'index2'})">Open new</a><br/>
+            </div>
+</body>
+
+</html>
