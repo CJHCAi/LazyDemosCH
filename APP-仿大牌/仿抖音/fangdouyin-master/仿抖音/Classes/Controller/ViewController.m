@@ -30,7 +30,9 @@
     
     
     [self cardView];
+    
     [self setupCommentView];
+    
     [self loadData];
     
     __weak typeof(self) weakSelf = self;
@@ -46,14 +48,14 @@
 {
     if (!_mainViewNavigitionView) {
         _mainViewNavigitionView = [[MainViewNavigitionView alloc] initWithFrame:CGRectMake(0, 0, kWidth, kNavHeight)];
-        _mainViewNavigitionView.backgroundColor = [UIColor clearColor];
+        _mainViewNavigitionView.backgroundColor = [UIColor orangeColor];
     }
     return _mainViewNavigitionView;
 }
 
 -(void)setupCommentView{
     self.commentActionView = [[CommentActionSheet alloc]init];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.commentActionView];
     [self.view bringSubviewToFront:self.commentActionView];
 
@@ -75,6 +77,7 @@
 {
 //    NSLog(@"begin %ld", (long)index);
     MusicCell *musicCell = (MusicCell*)view;
+    musicCell.backgroundColor = [UIColor purpleColor];
     self.currentMusicCell=musicCell;
      musicCell.deledate=nil;
     [musicCell.musicImageView.layer removeAllAnimations];

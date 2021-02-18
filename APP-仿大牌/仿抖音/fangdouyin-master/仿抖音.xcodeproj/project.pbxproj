@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C64B06138CF30EF5210D0D5 /* Pods____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4D294D9816E59CD90F05D2 /* Pods____.framework */; };
 		DB4A95742069E3CA002CC9A2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4A95732069E3CA002CC9A2 /* HomeViewController.m */; };
 		DB92CFC020AEAFB6000ADC69 /* HeartAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB92CFBF20AEAFB6000ADC69 /* HeartAnimation.m */; };
 		DB92CFC220AEAFE9000ADC69 /* img_like.png in Resources */ = {isa = PBXBuildFile; fileRef = DB92CFC120AEAFE9000ADC69 /* img_like.png */; };
@@ -57,7 +56,6 @@
 /* Begin PBXFileReference section */
 		11EB6DD1F70809EB776D4048 /* Pods-仿抖音.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-仿抖音.release.xcconfig"; path = "Pods/Target Support Files/Pods-仿抖音/Pods-仿抖音.release.xcconfig"; sourceTree = "<group>"; };
 		5369B5ED823762341ECAB1C4 /* Pods-仿抖音.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-仿抖音.debug.xcconfig"; path = "Pods/Target Support Files/Pods-仿抖音/Pods-仿抖音.debug.xcconfig"; sourceTree = "<group>"; };
-		6A4D294D9816E59CD90F05D2 /* Pods____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4A95722069E3CA002CC9A2 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		DB4A95732069E3CA002CC9A2 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		DB92CFBE20AEAFB6000ADC69 /* HeartAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartAnimation.h; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C64B06138CF30EF5210D0D5 /* Pods____.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +240,6 @@
 		FE2D8E65360E52D4F9964282 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6A4D294D9816E59CD90F05D2 /* Pods____.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -382,7 +378,6 @@
 				FF178E97205A20E8006FE406 /* Frameworks */,
 				FF178E98205A20E8006FE406 /* Resources */,
 				5B1DB5F52C1BD16BEEB888DB /* [CP] Embed Pods Frameworks */,
-				86E91E48D14B5A46EDF9CC98 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -481,7 +476,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-仿抖音/Pods-仿抖音-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-仿抖音/Pods-仿抖音-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
@@ -498,22 +493,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-仿抖音/Pods-仿抖音-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		86E91E48D14B5A46EDF9CC98 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-仿抖音/Pods-仿抖音-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-仿抖音/Pods-仿抖音-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C708E44B2137EFB6C7E4A020 /* [CP] Check Pods Manifest.lock */ = {
@@ -531,7 +511,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
