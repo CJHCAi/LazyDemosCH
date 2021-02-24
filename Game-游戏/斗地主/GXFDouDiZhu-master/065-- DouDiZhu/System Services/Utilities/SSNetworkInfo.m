@@ -15,11 +15,14 @@
 #import <arpa/inet.h>
 
 // route
-#if TARGET_IPHONE_SIMULATOR
-#include <net/route.h>
-#else
 #include "route.h"
-#endif
+#include <net/route.h>
+
+//#if TARGET_IPHONE_SIMULATOR
+//#include <net/route.h>
+//#else
+//#include "route.h"
+//#endif
 
 // sysctl
 #import <sys/sysctl.h>
