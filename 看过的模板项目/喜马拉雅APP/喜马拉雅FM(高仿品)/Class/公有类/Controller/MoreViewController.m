@@ -20,7 +20,7 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(back)];
     
 //    WMPageController 设置
-    self.menuHeight = 35;
+//    self.menuHeight = 35;
     self.itemsWidths = [self titleWidth];
     self.menuViewStyle = WMMenuViewStyleLine;
     self.progressColor = [UIColor redColor];

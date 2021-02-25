@@ -27,14 +27,14 @@
 //        WMPageController的设置
         downloadVC.menuViewStyle = WMMenuViewStyleLine;
         // 设置背景色
-        downloadVC.menuBGColor = [UIColor whiteColor];
+//        downloadVC.menuBGColor = [UIColor whiteColor];
         // 选中时颜色
         downloadVC.titleColorSelected = [UIColor redColor];
         // 设置每个item的宽
         downloadVC.itemsWidths = @[@(kWindowW/3),@(kWindowW/3),@(kWindowW/3)];
         downloadVC.progressHeight = 3.5;
-        downloadVC.menuHeight = 45;
-        downloadVC.viewFrame = CGRectMake(0, 20, kWindowW, kWindowH-20);
+//        downloadVC.menuHeight = 45;
+//        downloadVC.viewFrame = CGRectMake(0, 20, kWindowW, kWindowH-20);
     });
     return downloadVC;
 }

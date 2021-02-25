@@ -931,12 +931,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C26B966D1BF0B3CC005355A7 /* Build configuration list for PBXNativeTarget "喜马拉雅FM(高仿品)" */;
 			buildPhases = (
+				E47D8CE65F2914D389846988 /* [CP] Check Pods Manifest.lock */,
 				4F20F665C8938BDAD5A2EC60 /* Check Pods Manifest.lock */,
 				C26B96521BF0B3CC005355A7 /* Sources */,
 				C26B96531BF0B3CC005355A7 /* Frameworks */,
 				C26B96541BF0B3CC005355A7 /* Resources */,
-				E0076B3312C5607573673A79 /* Embed Pods Frameworks */,
 				BA16DA5544F7EBF6DCFF5C6D /* Copy Pods Resources */,
+				2D3AE97C539EFF1ABA6F6B53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -996,6 +997,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2D3AE97C539EFF1ABA6F6B53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-喜马拉雅FM(高仿品)/Pods-喜马拉雅FM(高仿品)-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-喜马拉雅FM(高仿品)/Pods-喜马拉雅FM(高仿品)-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4F20F665C8938BDAD5A2EC60 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1026,19 +1045,26 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-喜马拉雅FM(高仿品)/Pods-喜马拉雅FM(高仿品)-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E0076B3312C5607573673A79 /* Embed Pods Frameworks */ = {
+		E47D8CE65F2914D389846988 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-喜马拉雅FM(高仿品)-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-喜马拉雅FM(高仿品)/Pods-喜马拉雅FM(高仿品)-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

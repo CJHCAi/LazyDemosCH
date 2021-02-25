@@ -23,16 +23,19 @@ static AFHTTPSessionManager *manager = nil;
 
 + (id)GET:(NSString *)path parameters:(NSDictionary *)params complationHandle:(void (^)(id, NSError *))completed {
     NSLog(@"Request Path: %@, params %@", path, params);
-    return [[self defaultManager] GET:path parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+    ;
+    return [[self defaultManager] GET:path parameters:params headers:@{} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         completed(responseObject,nil);
+
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"GET ERROR: %@",error.userInfo);
+
     }];
 }
 
 + (id)POST:(NSString *)path parameters:(NSDictionary *)params complationHandle:(void (^)(id, NSError *))completed {
-   return [[self defaultManager] POST:path parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-       completed(responseObject,nil);
+    return [[self defaultManager] POST:path parameters:params headers:@{} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        completed(responseObject,nil);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"POST ERROR: %@",error.userInfo);
     }];
