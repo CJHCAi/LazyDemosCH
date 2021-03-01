@@ -1,0 +1,8 @@
+# HTMLDescription
+
+在社区应用中很常见的场景：发布帖子时附有URL，希望在TimeLine里显示一个带有标题和描述的卡片样式的连接。
+
+本Demo实现了自动识别TextView中的URL并抓取URL对应网页的标题、描述和封面图，将抓取的这些字段保存至服务器，就可以实现TimeLine里卡片样式的显示啦~
+
+代码比较简洁，使用YYTextView文本输入框并实现YYTextParser匹配和高亮URL；  
+使用系统libxml解析HTML，使用前记得引入`libxml2.tbd`
