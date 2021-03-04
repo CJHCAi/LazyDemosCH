@@ -43,8 +43,8 @@ static const CGFloat GADAdViewHeight = 100;
   _adsToLoad = [[NSMutableArray alloc] init];
   _loadStateForAds = [[NSMutableDictionary alloc] init];
 
-  // A banner ad is placed in the UITableView once per adInterval. iPads will have a
-  // larger ad interval to avoid mutliple ads being on screen at the same time.
+    //一个横幅广告被放置在UITableView每adInterval一次。ipad将有一个
+    //更大的广告间隔，以避免多个广告同时出现在屏幕上。
   _adInterval = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 16 : 8;
 
   [self.tableView registerNib:[UINib nibWithNibName:@"MenuItem" bundle:nil]
@@ -52,24 +52,23 @@ static const CGFloat GADAdViewHeight = 100;
   [self.tableView registerNib:[UINib nibWithNibName:@"BannerAd" bundle:nil]
        forCellReuseIdentifier:@"GADBannerViewCell"];
 
-  // Allow row height to be determined dynamically while optimizing with an estimated row height.
+    //允许在使用估计的行高度优化时动态地确定行高度。
   self.tableView.rowHeight = UITableViewAutomaticDimension;
   self.tableView.estimatedRowHeight = 135;
 
-  // Load the sample data.
+  //加载示例数据。
   [self addMenuItems];
   [self addBannerAds];
   [self preloadNextAd];
 }
 
-// Return string containing memory address location of a GADBannerView to be used to
-// uniquely identify the object.
+//返回包含要使用的GADBannerView的内存地址位置的字符串
+//唯一标识对象。
 - (NSString *)referenceKeyForAdView:(GADBannerView *)adView {
   return [[NSString alloc] initWithFormat:@"%p", adView];
 }
 
 // MARK: - UITableView delegate methods
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
   return 1;
 }
@@ -95,15 +94,15 @@ static const CGFloat GADAdViewHeight = 100;
         [self.tableView dequeueReusableCellWithIdentifier:@"GADBannerViewCell"
                                              forIndexPath:indexPath];
 
-    // Remove previous GADBannerView from the content view before adding a new one.
+      //在添加一个新的GADBannerView之前，从内容视图中删除之前的GADBannerView。
     for (UIView *subview in reusableAdCell.contentView.subviews) {
       [subview removeFromSuperview];
     }
 
     GADBannerView *adView = _tableViewItems[indexPath.row];
     [reusableAdCell.contentView addSubview:adView];
-    // Center GADBannerView in the table cell's content view.
-    adView.center = reusableAdCell.contentView.center;
+      // GADBannerView在表格单元格的内容视图中Center。
+      adView.center = reusableAdCell.contentView.center;
 
     return reusableAdCell;
   } else {
@@ -123,27 +122,25 @@ static const CGFloat GADAdViewHeight = 100;
 }
 
 // MARK: - GADBannerView delegate methods
-
 - (void)adViewDidReceiveAd:(GADBannerView *)bannerView {
-  // Mark banner ad as succesfully loaded.
+  // 标记横幅广告成功加载。
   _loadStateForAds[[self referenceKeyForAdView:bannerView]] = @YES;
-  // Load the next ad in the adsToLoad list.
+  // adstload列表中加载下一个广告。
   [self preloadNextAd];
 }
 
-- (void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(GADRequestError *)error {
+- (void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(NSError *)error {
   NSLog(@"Failed to receive ad: %@", error.localizedDescription);
   // Load the next ad in the adsToLoad list.
   [self preloadNextAd];
 }
 
 // MARK: - UITableView source data generation
-
-/// Adds banner ads to the tableViewItems list.
+///添加横幅广告到tableViewItems列表。
 - (void)addBannerAds {
   NSInteger index = _adInterval;
-  // Ensure subview layout has been performed before accessing subview sizes.
-  [self.tableView layoutIfNeeded];
+    //确保子视图布局在访问子视图大小之前已经执行。
+    [self.tableView layoutIfNeeded];
 
   while (index < _tableViewItems.count) {
     GADBannerView *adView = [[GADBannerView alloc]
@@ -161,7 +158,7 @@ static const CGFloat GADAdViewHeight = 100;
   }
 }
 
-/// Preloads banner ads sequentially. Dequeues and loads next ad from adsToLoad list.
+///按顺序预加载横幅广告。从adstload列表中取出并加载下一个广告。
 - (void)preloadNextAd {
   if (!_adsToLoad.count) {
     return;
@@ -169,11 +166,11 @@ static const CGFloat GADAdViewHeight = 100;
   GADBannerView *adView = _adsToLoad.firstObject;
   [_adsToLoad removeObjectAtIndex:0];
   GADRequest *request = [GADRequest request];
-  request.testDevices = @[ kGADSimulatorID ];
+//  request.testDevices = @[ kGADSimulatorID ];
   [adView loadRequest:request];
 }
 
-/// Parse menuItemsJSON.json file and populate MenuItems in the tableViewItems list.
+///解析menuItemsJSON。json文件，并填充tableViewItems列表中的菜单项。
 - (void)addMenuItems {
   NSError *error = nil;
   NSString *JSONPath = [[NSBundle mainBundle] pathForResource:@"menuItemsJSON" ofType:@"json"];
