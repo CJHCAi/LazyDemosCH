@@ -19,17 +19,14 @@
 #import "MenuItem.h"
 #import "MenuItemTableViewCell.h"
 
-static NSString *const GADAdUnitID = @"ca-app-pub-3940256099942544/2934735716";
+static NSString *const GADAdUnitID = @"ca-app-pub-6871053871578343/5952056250";
 static const CGFloat GADAdViewHeight = 100;
 
 @interface TableViewController () <GADBannerViewDelegate> {
-  /// UITableView source items.
   NSMutableArray *_tableViewItems;
-  /// List of ads remaining to be preloaded.
   NSMutableArray<GADBannerView *> *_adsToLoad;
-  /// Mapping of GADBannerView ads to their load state.
   NSMutableDictionary<NSString *, NSNumber *> *_loadStateForAds;
-  /// A banner ad is placed in the UITableView once per adInterval.
+  ///将GADBannerView广告映射到加载状态。
   NSInteger _adInterval;
 }
 @end
@@ -45,7 +42,7 @@ static const CGFloat GADAdViewHeight = 100;
 
     //一个横幅广告被放置在UITableView每adInterval一次。ipad将有一个
     //更大的广告间隔，以避免多个广告同时出现在屏幕上。
-  _adInterval = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 16 : 8;
+  _adInterval = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 16 : 6;
 
   [self.tableView registerNib:[UINib nibWithNibName:@"MenuItem" bundle:nil]
        forCellReuseIdentifier:@"MenuItemViewCell"];
@@ -59,11 +56,10 @@ static const CGFloat GADAdViewHeight = 100;
   //加载示例数据。
   [self addMenuItems];
   [self addBannerAds];
-  [self preloadNextAd];
+//  [self preloadNextAd];
 }
 
-//返回包含要使用的GADBannerView的内存地址位置的字符串
-//唯一标识对象。
+//返回包含要使用的GADBannerView的内存地址位置的字符串，唯一标识对象。
 - (NSString *)referenceKeyForAdView:(GADBannerView *)adView {
   return [[NSString alloc] initWithFormat:@"%p", adView];
 }
@@ -81,6 +77,7 @@ static const CGFloat GADAdViewHeight = 100;
   if ([_tableViewItems[indexPath.row] isKindOfClass:[GADBannerView class]]) {
     GADBannerView *adView = _tableViewItems[indexPath.row];
     BOOL isLoaded = [_loadStateForAds[[self referenceKeyForAdView:adView]] boolValue];
+      isLoaded = YES;
     return isLoaded ? GADAdViewHeight : 0;
   }
 
@@ -89,22 +86,24 @@ static const CGFloat GADAdViewHeight = 100;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
   if ([_tableViewItems[indexPath.row] isKindOfClass:[GADBannerView class]]) {
-    UITableViewCell *reusableAdCell =
-        [self.tableView dequeueReusableCellWithIdentifier:@"GADBannerViewCell"
+    UITableViewCell *reusableAdCell =[self.tableView dequeueReusableCellWithIdentifier:@"GADBannerViewCell"
                                              forIndexPath:indexPath];
-
-      //在添加一个新的GADBannerView之前，从内容视图中删除之前的GADBannerView。
+    //在添加一个新的GADBannerView之前，从内容视图中删除之前的GADBannerView。
     for (UIView *subview in reusableAdCell.contentView.subviews) {
       [subview removeFromSuperview];
     }
 
     GADBannerView *adView = _tableViewItems[indexPath.row];
     [reusableAdCell.contentView addSubview:adView];
-      // GADBannerView在表格单元格的内容视图中Center。
-      adView.center = reusableAdCell.contentView.center;
-
+    adView.frame = reusableAdCell.bounds;
+    adView.backgroundColor = [UIColor orangeColor];
+    adView.adUnitID = GADAdUnitID;
+    [adView loadRequest:[GADRequest request]];
+    adView.delegate =self;
     return reusableAdCell;
+      
   } else {
     MenuItem *menuItem = _tableViewItems[indexPath.row];
     MenuItemTableViewCell *reusableMenuItemCell =
@@ -126,16 +125,15 @@ static const CGFloat GADAdViewHeight = 100;
   // 标记横幅广告成功加载。
   _loadStateForAds[[self referenceKeyForAdView:bannerView]] = @YES;
   // adstload列表中加载下一个广告。
-  [self preloadNextAd];
+//  [self preloadNextAd];
 }
 
 - (void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(NSError *)error {
   NSLog(@"Failed to receive ad: %@", error.localizedDescription);
-  // Load the next ad in the adsToLoad list.
-  [self preloadNextAd];
+  //在adstload列表中加载下一个广告。
+//  [self preloadNextAd];
 }
 
-// MARK: - UITableView source data generation
 ///添加横幅广告到tableViewItems列表。
 - (void)addBannerAds {
   NSInteger index = _adInterval;
@@ -149,26 +147,28 @@ static const CGFloat GADAdViewHeight = 100;
     adView.adUnitID = GADAdUnitID;
     adView.rootViewController = self;
     adView.delegate = self;
-
+    
     [_tableViewItems insertObject:adView atIndex:index];
     [_adsToLoad addObject:adView];
     _loadStateForAds[[self referenceKeyForAdView:adView]] = @NO;
 
     index += _adInterval;
   }
+    
+    [self.tableView reloadData];
 }
 
-///按顺序预加载横幅广告。从adstload列表中取出并加载下一个广告。
-- (void)preloadNextAd {
-  if (!_adsToLoad.count) {
-    return;
-  }
-  GADBannerView *adView = _adsToLoad.firstObject;
-  [_adsToLoad removeObjectAtIndex:0];
-  GADRequest *request = [GADRequest request];
-//  request.testDevices = @[ kGADSimulatorID ];
-  [adView loadRequest:request];
-}
+/////按顺序预加载横幅广告。从adstload列表中取出并加载下一个广告。
+//- (void)preloadNextAd {
+//  if (!_adsToLoad.count) {
+//    return;
+//  }
+//  GADBannerView *adView = _adsToLoad.firstObject;
+//  [_adsToLoad removeObjectAtIndex:0];
+//  GADRequest *request = [GADRequest request];
+////  request.testDevices = @[ kGADSimulatorID ];
+//  [adView loadRequest:request];
+//}
 
 ///解析menuItemsJSON。json文件，并填充tableViewItems列表中的菜单项。
 - (void)addMenuItems {
@@ -185,7 +185,6 @@ static const CGFloat GADAdViewHeight = 100;
     return;
   }
 
-  // Create custom objects from JSON array.
   for (NSDictionary *dict in JSONArray) {
     MenuItem *menuIem = [[MenuItem alloc] initWithDictionary:dict];
     [_tableViewItems addObject:menuIem];
