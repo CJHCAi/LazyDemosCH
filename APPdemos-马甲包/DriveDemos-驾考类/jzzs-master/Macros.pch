@@ -1,0 +1,69 @@
+//
+//  Macros.pch
+//  驾照助手
+//
+//  Created by 淡定独行 on 16/5/13.
+//  Copyright © 2016年 肖辉良. All rights reserved.
+//
+
+#ifndef Macros_pch
+#define Macros_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//----------------获取设备信息------------------
+#define kNavigationBar_HEIGHT 44 //导航条高度
+#define kStatusBar_HEIGHT 20 //状态栏高度
+#define kScreen_Width ([UIScreen mainScreen].bounds.size.width) //屏幕宽度
+#define kScreen_Height ([UIScreen mainScreen].bounds.size.height)//屏幕高度
+//判断是否 是Retina屏
+#define kIsRetina ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kIsPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)  //是否是 iPad
+
+//----------------获取系统信息------------------
+//系统版本-float
+#define kIOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+//系统版本-string
+#define kCurrentSystemVersion ([[UIDevice currentDevice] systemVersion])
+//系统语言
+#define kCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
+
+//------------------IOS 版本-------------------
+#define kIOS5_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"5.0"] != NSOrderedAscending )
+#define kIOS6_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"6.0"] != NSOrderedAscending )
+#define kIOS7_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+#define kIOS8_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
+#define kIOS9_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"9.0"] != NSOrderedAscending )
+
+//-----------------字体大小---------------------
+#define kFont_10 [UIFont systemFontOfSize:10]
+#define kFont_11 [UIFont systemFontOfSize:11]
+#define kFont_12 [UIFont systemFontOfSize:12]
+#define kFont_13 [UIFont systemFontOfSize:13]
+#define kFont_14 [UIFont systemFontOfSize:14]
+#define kFont_15 [UIFont systemFontOfSize:15]
+#define kFont_16 [UIFont systemFontOfSize:16]
+#define kFont_17 [UIFont systemFontOfSize:17]
+#define kFont_18 [UIFont systemFontOfSize:18]
+//自定义字体大小
+#define kFont(X) [UIFont systemFontOfSize:X]
+
+//-----------------RGB 转换---------------------
+#define kRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define kRGBAColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+//判断是否为空
+#define kNotNilAndNull(_ref)  (((_ref) != nil) && (![(_ref) isEqual:[NSNull null]]))
+#define kIsNilOrNull(_ref)   (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]))
+
+//图片资源获取
+#define kImgFromBundle(file,ext )     [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
+#define kImgNamed(file)         [UIImage imageNamed:file]
+
+//沙盒存储路径
+#define kHomeDirectory [NSHomeDirectory() stringByAppendingString:@"/Documents/"]
+//缓存路径
+#define kApp_Caches_Path [NSSearchPathForDirectoriesInDomains (NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+#endif /* Macros_pch */
