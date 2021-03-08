@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="9SS-tp-Odg" customClass="ZQAlbumCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vRa-kc-TwT">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_def_photoPickerVC.png" translatesAutoresizingMaskIntoConstraints="NO" id="JdE-jI-pMq">
+                        <rect key="frame" x="71" y="2" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="elp-4D-Kap"/>
+                            <constraint firstAttribute="height" constant="27" id="tIm-TQ-SeG"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXA-qL-oAp">
+                        <rect key="frame" x="0.0" y="83" width="100" height="17"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cby-RI-mYD">
+                                <rect key="frame" x="63" y="0.0" width="31.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VideoSendIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="TPJ-W8-3hO">
+                                <rect key="frame" x="5" y="0.0" width="17" height="17"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TPJ-W8-3hO" firstAttribute="leading" secondItem="KXA-qL-oAp" secondAttribute="leading" constant="5" id="L0p-xt-7Bd"/>
+                            <constraint firstAttribute="height" constant="17" id="Zed-b6-0VC"/>
+                            <constraint firstAttribute="bottom" secondItem="TPJ-W8-3hO" secondAttribute="bottom" id="hSp-dj-9v2"/>
+                            <constraint firstAttribute="trailing" secondItem="cby-RI-mYD" secondAttribute="trailing" constant="5" id="iRC-Kn-Rzx"/>
+                            <constraint firstAttribute="bottom" secondItem="cby-RI-mYD" secondAttribute="bottom" id="lYB-RO-fUd"/>
+                            <constraint firstItem="cby-RI-mYD" firstAttribute="top" secondItem="KXA-qL-oAp" secondAttribute="top" id="sa6-gT-zS8"/>
+                            <constraint firstItem="TPJ-W8-3hO" firstAttribute="top" secondItem="KXA-qL-oAp" secondAttribute="top" id="vYE-p5-O9s"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="vRa-kc-TwT" firstAttribute="top" secondItem="9SS-tp-Odg" secondAttribute="top" id="1Qk-wk-38S"/>
+                <constraint firstAttribute="trailing" secondItem="JdE-jI-pMq" secondAttribute="trailing" constant="2" id="3Jj-KV-eRA"/>
+                <constraint firstItem="JdE-jI-pMq" firstAttribute="top" secondItem="9SS-tp-Odg" secondAttribute="top" constant="2" id="8Av-wu-Dsc"/>
+                <constraint firstAttribute="bottom" secondItem="vRa-kc-TwT" secondAttribute="bottom" id="FNa-9F-pdk"/>
+                <constraint firstItem="vRa-kc-TwT" firstAttribute="leading" secondItem="9SS-tp-Odg" secondAttribute="leading" id="Frb-Nh-OsN"/>
+                <constraint firstAttribute="trailing" secondItem="KXA-qL-oAp" secondAttribute="trailing" id="Ooc-rb-9kR"/>
+                <constraint firstAttribute="trailing" secondItem="vRa-kc-TwT" secondAttribute="trailing" id="Ywx-TW-7du"/>
+                <constraint firstAttribute="bottom" secondItem="KXA-qL-oAp" secondAttribute="bottom" id="bBI-MF-b4g"/>
+                <constraint firstItem="KXA-qL-oAp" firstAttribute="leading" secondItem="9SS-tp-Odg" secondAttribute="leading" id="hww-73-u0D"/>
+            </constraints>
+            <size key="customSize" width="106" height="99"/>
+            <connections>
+                <outlet property="imageView" destination="vRa-kc-TwT" id="Ltd-ry-aoo"/>
+                <outlet property="ivSelect" destination="JdE-jI-pMq" id="2sS-yJ-Ow6"/>
+                <outlet property="lblDuration" destination="cby-RI-mYD" id="BKu-8d-3dA"/>
+                <outlet property="vVideoMask" destination="KXA-qL-oAp" id="T5d-WI-S4U"/>
+            </connections>
+            <point key="canvasLocation" x="-254" y="344"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="VideoSendIcon.png" width="17" height="17"/>
+        <image name="photo_def_photoPickerVC.png" width="27" height="27"/>
+    </resources>
+</document>
