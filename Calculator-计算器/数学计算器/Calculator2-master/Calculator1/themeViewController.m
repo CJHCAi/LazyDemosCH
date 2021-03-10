@@ -31,10 +31,16 @@
     }else{
         currentSelcetTheme=themeDic[@"theme_name"];
     }
+
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     themeArray=[self loadTheme];
     [self loadThemeList];
 
 }
+
 -(NSArray *)loadTheme{
     return @[@{
                  @"theme_name":@"默认",
@@ -120,9 +126,7 @@
                  },
              ];
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
+
 -(UIView *)makeThemeCell:(NSDictionary  *)theme{//绘制主题单元格
     UIView *cell=[[[NSBundle mainBundle]loadNibNamed:@"themeCell" owner:self options:nil]lastObject];//@"themeCell"是.xib的名字
     UIButton * button=[cell viewWithTag:1000];
@@ -139,6 +143,7 @@
     [button addTarget:self action:@selector(themeClick:) forControlEvents:UIControlEventTouchUpInside];//绑定button事件
     return cell;
 }
+
 -(void)themeClick:(UIButton *)button{
     
     int index = (int)button.superview.tag - 5000;
@@ -158,6 +163,7 @@
 
     [self loadThemeList];
 }
+
 -(void)loadThemeList{
     int rowHight=0;
     int rowNum=0;
@@ -251,7 +257,11 @@
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 - (IBAction)gotoBack:(id)sender {
     [self.navigationController popViewControllerAnimated:true];
 }
+
+
+
 @end
