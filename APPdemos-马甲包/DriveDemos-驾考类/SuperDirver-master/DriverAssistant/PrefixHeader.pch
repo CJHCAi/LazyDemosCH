@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  SuperDriver
+//
+//  Created by 王俊钢 on 2017/2/22.
+//  Copyright © 2017年 C. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//屏幕宽度
+#define DEVICE_WIDTH [UIScreen mainScreen].bounds.size.width
+//屏幕高度
+#define DEVICE_HEIGHT [UIScreen mainScreen].bounds.size.height
+//屏幕宽度比
+#define WIDTH_SCALE [UIScreen mainScreen].bounds.size.width / 375
+//屏幕高度比
+#define HEIGHT_SCALE [UIScreen mainScreen].bounds.size.height / 667
+//颜色RGBA
+#define kCOLOR(R, G, B, A) [UIColor colorWithRed:R /255.0 green:G /255.0 blue:B /255.0 alpha:A]
+
+#define KNAV_Blue kCOLOR(57, 160, 219, 1)
+
+#define Line_Color kCOLOR(210, 210, 210, 0.3)
+
+#endif /* PrefixHeader_pch */
+
+#import <MBProgressHUD.h>
+
+#import "UIColor+WJColor.h"
+#import "UIImageView+WebCache.h"
+#ifdef __OBJC__
+#endif
