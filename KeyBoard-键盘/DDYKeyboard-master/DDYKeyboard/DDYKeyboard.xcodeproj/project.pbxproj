@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4C67419210EDDF80059E1DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C67403210EDDF80059E1DF /* AppDelegate.m */; };
+		A4C6741A210EDDF80059E1DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C67404210EDDF80059E1DF /* LaunchScreen.storyboard */; };
+		A4C6741B210EDDF80059E1DF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4C67406210EDDF80059E1DF /* Info.plist */; };
+		A4C6741C210EDDF80059E1DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C67407210EDDF80059E1DF /* main.m */; };
+		A4C6741D210EDDF80059E1DF /* qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C67408210EDDF80059E1DF /* qrcode.png */; };
+		A4C6741E210EDDF80059E1DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6740A210EDDF80059E1DF /* ViewController.m */; };
+		A4C67656210FEB890059E1DF /* DDYVoice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4C67655210FEB890059E1DF /* DDYVoice.bundle */; };
+		A4C67659210FF1920059E1DF /* DDYVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C67658210FF1920059E1DF /* DDYVoiceView.m */; };
+		A4C676632110082C0059E1DF /* DDYVoiceIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676622110082C0059E1DF /* DDYVoiceIndicator.m */; };
+		A4C6766A2110147F0059E1DF /* DDYVoiceTalkView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676692110147F0059E1DF /* DDYVoiceTalkView.m */; };
+		A4C6766D2110181D0059E1DF /* DDYVoiceStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6766C2110181D0059E1DF /* DDYVoiceStateView.m */; };
+		A4C676702110361D0059E1DF /* DDYVoiceChangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6766F2110361D0059E1DF /* DDYVoiceChangeView.m */; };
+		A4C676732110364E0059E1DF /* DDYVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676722110364E0059E1DF /* DDYVoiceRecordView.m */; };
+		A4C6767821103CBC0059E1DF /* DDYVoicePlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6767721103CBC0059E1DF /* DDYVoicePlayView.m */; };
+		A4C676CF2110702E0059E1DF /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676B72110702E0059E1DF /* MASCompositeConstraint.m */; };
+		A4C676D02110702E0059E1DF /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676BA2110702E0059E1DF /* MASConstraint.m */; };
+		A4C676D12110702E0059E1DF /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676BC2110702E0059E1DF /* MASConstraintMaker.m */; };
+		A4C676D22110702E0059E1DF /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676BE2110702E0059E1DF /* MASLayoutConstraint.m */; };
+		A4C676D32110702E0059E1DF /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676C22110702E0059E1DF /* MASViewAttribute.m */; };
+		A4C676D42110702E0059E1DF /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676C42110702E0059E1DF /* MASViewConstraint.m */; };
+		A4C676D52110702E0059E1DF /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676C62110702E0059E1DF /* NSArray+MASAdditions.m */; };
+		A4C676D62110702E0059E1DF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676C92110702E0059E1DF /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		A4C676D72110702E0059E1DF /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676CB2110702E0059E1DF /* View+MASAdditions.m */; };
+		A4C676D82110702E0059E1DF /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676CE2110702E0059E1DF /* ViewController+MASAdditions.m */; };
+		A4C676DC211070400059E1DF /* DDYAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676DB211070400059E1DF /* DDYAuthorityManager.m */; };
+		A4C676F6211070760059E1DF /* DDYCamera.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4C676ED211070760059E1DF /* DDYCamera.bundle */; };
+		A4C676F7211070760059E1DF /* DDYCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676EF211070760059E1DF /* DDYCameraController.m */; };
+		A4C676F8211070760059E1DF /* DDYCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676F1211070760059E1DF /* DDYCameraManager.m */; };
+		A4C676F9211070760059E1DF /* DDYCameraTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676F3211070760059E1DF /* DDYCameraTool.m */; };
+		A4C676FA211070760059E1DF /* DDYCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676F5211070760059E1DF /* DDYCameraView.m */; };
+		A4C676FE211070B80059E1DF /* DDYVideoPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C676FD211070B80059E1DF /* DDYVideoPlayController.m */; };
+		A4C677012110748F0059E1DF /* DDYEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C677002110748F0059E1DF /* DDYEmojiView.m */; };
+		A4C67704211074A20059E1DF /* DDYGifView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C67703211074A20059E1DF /* DDYGifView.m */; };
+		A4C67707211074B30059E1DF /* DDYMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C67706211074B30059E1DF /* DDYMoreView.m */; };
+		A4C6770A211074C10059E1DF /* DDYPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C67709211074C10059E1DF /* DDYPhotoView.m */; };
+		A4C6770D211074DF0059E1DF /* DDYRedBagView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6770C211074DF0059E1DF /* DDYRedBagView.m */; };
+		A4C67710211075420059E1DF /* DDYShakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6770F211075420059E1DF /* DDYShakeView.m */; };
+		A4C677162111505F0059E1DF /* DDYPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C677152111505F0059E1DF /* DDYPhotoCell.m */; };
+		A4C6771C2111601C0059E1DF /* DDYPhoto.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4C6771B2111601B0059E1DF /* DDYPhoto.bundle */; };
+		A4C6771F2113E70F0059E1DF /* DDYKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6771E2113E70F0059E1DF /* DDYKeyboard.m */; };
+		A4C677232113E7760059E1DF /* DDYKeyboardToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C677222113E7750059E1DF /* DDYKeyboardToolBar.m */; };
+		A4C677262113E8410059E1DF /* DDYKeyboardFunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C677252113E8410059E1DF /* DDYKeyboardFunctionView.m */; };
+		A4C6772C211422B90059E1DF /* DDYKeyboardTextBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6772B211422B80059E1DF /* DDYKeyboardTextBar.m */; };
+		A4C6779721143C0C0059E1DF /* keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = A4C6778021143C0B0059E1DF /* keccak.c */; };
+		A4C6779821143C0C0059E1DF /* NSArray+DDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6778321143C0B0059E1DF /* NSArray+DDYExtension.m */; };
+		A4C6779921143C0C0059E1DF /* NSString+DDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6778521143C0B0059E1DF /* NSString+DDYExtension.m */; };
+		A4C6779A21143C0C0059E1DF /* NSTimer+DDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6778721143C0B0059E1DF /* NSTimer+DDYExtension.m */; };
+		A4C6779B21143C0C0059E1DF /* UIButton+DDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6778A21143C0B0059E1DF /* UIButton+DDYExtension.m */; };
+		A4C6779C21143C0C0059E1DF /* UIColor+DDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6778C21143C0B0059E1DF /* UIColor+DDYExtension.m */; };
+		A4C6779D21143C0C0059E1DF /* UIImage+DDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6778E21143C0B0059E1DF /* UIImage+DDYExtension.m */; };
+		A4C6779E21143C0C0059E1DF /* UITextView+DDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6779021143C0B0059E1DF /* UITextView+DDYExtension.m */; };
+		A4C6779F21143C0C0059E1DF /* UIView+DDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6779221143C0C0059E1DF /* UIView+DDYExtension.m */; };
+		A4C677A021143C0C0059E1DF /* UIViewController+DDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6779421143C0C0059E1DF /* UIViewController+DDYExtension.m */; };
+		A4C677A321143CBE0059E1DF /* DDYKeyboard.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4C677A121143CBE0059E1DF /* DDYKeyboard.bundle */; };
+		A4DE0879211935920073CEA1 /* DDYLongPressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DE0878211935920073CEA1 /* DDYLongPressManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A4C673EB210EDD620059E1DF /* DDYKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDYKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C67402210EDDF80059E1DF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A4C67403210EDDF80059E1DF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A4C67405210EDDF80059E1DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4C67406210EDDF80059E1DF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C67407210EDDF80059E1DF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4C67408210EDDF80059E1DF /* qrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qrcode.png; sourceTree = "<group>"; };
+		A4C67409210EDDF80059E1DF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A4C6740A210EDDF80059E1DF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A4C67655210FEB890059E1DF /* DDYVoice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DDYVoice.bundle; sourceTree = "<group>"; };
+		A4C67657210FF1920059E1DF /* DDYVoiceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYVoiceView.h; sourceTree = "<group>"; };
+		A4C67658210FF1920059E1DF /* DDYVoiceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYVoiceView.m; sourceTree = "<group>"; };
+		A4C676612110082B0059E1DF /* DDYVoiceIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYVoiceIndicator.h; sourceTree = "<group>"; };
+		A4C676622110082C0059E1DF /* DDYVoiceIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYVoiceIndicator.m; sourceTree = "<group>"; };
+		A4C676682110147F0059E1DF /* DDYVoiceTalkView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYVoiceTalkView.h; sourceTree = "<group>"; };
+		A4C676692110147F0059E1DF /* DDYVoiceTalkView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYVoiceTalkView.m; sourceTree = "<group>"; };
+		A4C6766B2110181D0059E1DF /* DDYVoiceStateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYVoiceStateView.h; sourceTree = "<group>"; };
+		A4C6766C2110181D0059E1DF /* DDYVoiceStateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYVoiceStateView.m; sourceTree = "<group>"; };
+		A4C6766E2110361D0059E1DF /* DDYVoiceChangeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYVoiceChangeView.h; sourceTree = "<group>"; };
+		A4C6766F2110361D0059E1DF /* DDYVoiceChangeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYVoiceChangeView.m; sourceTree = "<group>"; };
+		A4C676712110364E0059E1DF /* DDYVoiceRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYVoiceRecordView.h; sourceTree = "<group>"; };
+		A4C676722110364E0059E1DF /* DDYVoiceRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYVoiceRecordView.m; sourceTree = "<group>"; };
+		A4C6767621103CBC0059E1DF /* DDYVoicePlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYVoicePlayView.h; sourceTree = "<group>"; };
+		A4C6767721103CBC0059E1DF /* DDYVoicePlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYVoicePlayView.m; sourceTree = "<group>"; };
+		A4C676B62110702E0059E1DF /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		A4C676B72110702E0059E1DF /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		A4C676B82110702E0059E1DF /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		A4C676B92110702E0059E1DF /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		A4C676BA2110702E0059E1DF /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		A4C676BB2110702E0059E1DF /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		A4C676BC2110702E0059E1DF /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		A4C676BD2110702E0059E1DF /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		A4C676BE2110702E0059E1DF /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		A4C676BF2110702E0059E1DF /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		A4C676C02110702E0059E1DF /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		A4C676C12110702E0059E1DF /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		A4C676C22110702E0059E1DF /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		A4C676C32110702E0059E1DF /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		A4C676C42110702E0059E1DF /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		A4C676C52110702E0059E1DF /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		A4C676C62110702E0059E1DF /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		A4C676C72110702E0059E1DF /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		A4C676C82110702E0059E1DF /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		A4C676C92110702E0059E1DF /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		A4C676CA2110702E0059E1DF /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		A4C676CB2110702E0059E1DF /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		A4C676CC2110702E0059E1DF /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		A4C676CD2110702E0059E1DF /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		A4C676CE2110702E0059E1DF /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		A4C676DA211070400059E1DF /* DDYAuthorityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYAuthorityManager.h; sourceTree = "<group>"; };
+		A4C676DB211070400059E1DF /* DDYAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYAuthorityManager.m; sourceTree = "<group>"; };
+		A4C676ED211070760059E1DF /* DDYCamera.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DDYCamera.bundle; sourceTree = "<group>"; };
+		A4C676EE211070760059E1DF /* DDYCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYCameraController.h; sourceTree = "<group>"; };
+		A4C676EF211070760059E1DF /* DDYCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYCameraController.m; sourceTree = "<group>"; };
+		A4C676F0211070760059E1DF /* DDYCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYCameraManager.h; sourceTree = "<group>"; };
+		A4C676F1211070760059E1DF /* DDYCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYCameraManager.m; sourceTree = "<group>"; };
+		A4C676F2211070760059E1DF /* DDYCameraTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYCameraTool.h; sourceTree = "<group>"; };
+		A4C676F3211070760059E1DF /* DDYCameraTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYCameraTool.m; sourceTree = "<group>"; };
+		A4C676F4211070760059E1DF /* DDYCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYCameraView.h; sourceTree = "<group>"; };
+		A4C676F5211070760059E1DF /* DDYCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYCameraView.m; sourceTree = "<group>"; };
+		A4C676FC211070B80059E1DF /* DDYVideoPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYVideoPlayController.h; sourceTree = "<group>"; };
+		A4C676FD211070B80059E1DF /* DDYVideoPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYVideoPlayController.m; sourceTree = "<group>"; };
+		A4C676FF2110748F0059E1DF /* DDYEmojiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYEmojiView.h; sourceTree = "<group>"; };
+		A4C677002110748F0059E1DF /* DDYEmojiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYEmojiView.m; sourceTree = "<group>"; };
+		A4C67702211074A20059E1DF /* DDYGifView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYGifView.h; sourceTree = "<group>"; };
+		A4C67703211074A20059E1DF /* DDYGifView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYGifView.m; sourceTree = "<group>"; };
+		A4C67705211074B30059E1DF /* DDYMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYMoreView.h; sourceTree = "<group>"; };
+		A4C67706211074B30059E1DF /* DDYMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYMoreView.m; sourceTree = "<group>"; };
+		A4C67708211074C10059E1DF /* DDYPhotoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYPhotoView.h; sourceTree = "<group>"; };
+		A4C67709211074C10059E1DF /* DDYPhotoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYPhotoView.m; sourceTree = "<group>"; };
+		A4C6770B211074DF0059E1DF /* DDYRedBagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYRedBagView.h; sourceTree = "<group>"; };
+		A4C6770C211074DF0059E1DF /* DDYRedBagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYRedBagView.m; sourceTree = "<group>"; };
+		A4C6770E211075410059E1DF /* DDYShakeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYShakeView.h; sourceTree = "<group>"; };
+		A4C6770F211075420059E1DF /* DDYShakeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYShakeView.m; sourceTree = "<group>"; };
+		A4C677142111505F0059E1DF /* DDYPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYPhotoCell.h; sourceTree = "<group>"; };
+		A4C677152111505F0059E1DF /* DDYPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYPhotoCell.m; sourceTree = "<group>"; };
+		A4C6771B2111601B0059E1DF /* DDYPhoto.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DDYPhoto.bundle; sourceTree = "<group>"; };
+		A4C6771D2113E70F0059E1DF /* DDYKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYKeyboard.h; sourceTree = "<group>"; };
+		A4C6771E2113E70F0059E1DF /* DDYKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYKeyboard.m; sourceTree = "<group>"; };
+		A4C677212113E7750059E1DF /* DDYKeyboardToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYKeyboardToolBar.h; sourceTree = "<group>"; };
+		A4C677222113E7750059E1DF /* DDYKeyboardToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYKeyboardToolBar.m; sourceTree = "<group>"; };
+		A4C677242113E8410059E1DF /* DDYKeyboardFunctionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYKeyboardFunctionView.h; sourceTree = "<group>"; };
+		A4C677252113E8410059E1DF /* DDYKeyboardFunctionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYKeyboardFunctionView.m; sourceTree = "<group>"; };
+		A4C6772A211422B80059E1DF /* DDYKeyboardTextBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYKeyboardTextBar.h; sourceTree = "<group>"; };
+		A4C6772B211422B80059E1DF /* DDYKeyboardTextBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYKeyboardTextBar.m; sourceTree = "<group>"; };
+		A4C6777E21143C0B0059E1DF /* DDYCategoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYCategoryHeader.h; sourceTree = "<group>"; };
+		A4C6778021143C0B0059E1DF /* keccak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keccak.c; sourceTree = "<group>"; };
+		A4C6778121143C0B0059E1DF /* keccak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keccak.h; sourceTree = "<group>"; };
+		A4C6778221143C0B0059E1DF /* NSArray+DDYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DDYExtension.h"; sourceTree = "<group>"; };
+		A4C6778321143C0B0059E1DF /* NSArray+DDYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DDYExtension.m"; sourceTree = "<group>"; };
+		A4C6778421143C0B0059E1DF /* NSString+DDYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDYExtension.h"; sourceTree = "<group>"; };
+		A4C6778521143C0B0059E1DF /* NSString+DDYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDYExtension.m"; sourceTree = "<group>"; };
+		A4C6778621143C0B0059E1DF /* NSTimer+DDYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+DDYExtension.h"; sourceTree = "<group>"; };
+		A4C6778721143C0B0059E1DF /* NSTimer+DDYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+DDYExtension.m"; sourceTree = "<group>"; };
+		A4C6778921143C0B0059E1DF /* UIButton+DDYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DDYExtension.h"; sourceTree = "<group>"; };
+		A4C6778A21143C0B0059E1DF /* UIButton+DDYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DDYExtension.m"; sourceTree = "<group>"; };
+		A4C6778B21143C0B0059E1DF /* UIColor+DDYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DDYExtension.h"; sourceTree = "<group>"; };
+		A4C6778C21143C0B0059E1DF /* UIColor+DDYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DDYExtension.m"; sourceTree = "<group>"; };
+		A4C6778D21143C0B0059E1DF /* UIImage+DDYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DDYExtension.h"; sourceTree = "<group>"; };
+		A4C6778E21143C0B0059E1DF /* UIImage+DDYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DDYExtension.m"; sourceTree = "<group>"; };
+		A4C6778F21143C0B0059E1DF /* UITextView+DDYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+DDYExtension.h"; sourceTree = "<group>"; };
+		A4C6779021143C0B0059E1DF /* UITextView+DDYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+DDYExtension.m"; sourceTree = "<group>"; };
+		A4C6779121143C0B0059E1DF /* UIView+DDYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDYExtension.h"; sourceTree = "<group>"; };
+		A4C6779221143C0C0059E1DF /* UIView+DDYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDYExtension.m"; sourceTree = "<group>"; };
+		A4C6779321143C0C0059E1DF /* UIViewController+DDYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DDYExtension.h"; sourceTree = "<group>"; };
+		A4C6779421143C0C0059E1DF /* UIViewController+DDYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DDYExtension.m"; sourceTree = "<group>"; };
+		A4C6779621143C0C0059E1DF /* DDYMacrol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYMacrol.h; sourceTree = "<group>"; };
+		A4C677A121143CBE0059E1DF /* DDYKeyboard.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DDYKeyboard.bundle; sourceTree = "<group>"; };
+		A4C677A221143CBE0059E1DF /* DDYKeyboardConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYKeyboardConfig.h; sourceTree = "<group>"; };
+		A4DE0877211935920073CEA1 /* DDYLongPressManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYLongPressManager.h; sourceTree = "<group>"; };
+		A4DE0878211935920073CEA1 /* DDYLongPressManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYLongPressManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4C673E8210EDD620059E1DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4C673E2210EDD620059E1DF = {
+			isa = PBXGroup;
+			children = (
+				A4C673ED210EDD620059E1DF /* DDYKeyboard */,
+				A4C673EC210EDD620059E1DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4C673EC210EDD620059E1DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4C673EB210EDD620059E1DF /* DDYKeyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4C673ED210EDD620059E1DF /* DDYKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6777C21143C0B0059E1DF /* DDYUtils */,
+				A4C676FB211070B70059E1DF /* DDYTempPlayer */,
+				A4C676EC211070760059E1DF /* DDYCameraManager */,
+				A4C676D9211070400059E1DF /* DDYAuthorityManager */,
+				A4C676B52110702E0059E1DF /* Masonry */,
+				A4C6740B210EDDF80059E1DF /* DDYKeyBoard */,
+				A4C67401210EDDF80059E1DF /* System */,
+			);
+			path = DDYKeyboard;
+			sourceTree = "<group>";
+		};
+		A4C67401210EDDF80059E1DF /* System */ = {
+			isa = PBXGroup;
+			children = (
+				A4C67402210EDDF80059E1DF /* AppDelegate.h */,
+				A4C67403210EDDF80059E1DF /* AppDelegate.m */,
+				A4C67404210EDDF80059E1DF /* LaunchScreen.storyboard */,
+				A4C67406210EDDF80059E1DF /* Info.plist */,
+				A4C67407210EDDF80059E1DF /* main.m */,
+				A4C67408210EDDF80059E1DF /* qrcode.png */,
+				A4C67409210EDDF80059E1DF /* ViewController.h */,
+				A4C6740A210EDDF80059E1DF /* ViewController.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		A4C6740B210EDDF80059E1DF /* DDYKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6771D2113E70F0059E1DF /* DDYKeyboard.h */,
+				A4C6771E2113E70F0059E1DF /* DDYKeyboard.m */,
+				A4C677202113E7400059E1DF /* DDYKeyboardView */,
+				A4C6757B210EF23E0059E1DF /* DDYKeyboardTextView */,
+				A4C67418210EDDF80059E1DF /* DDYKeyboardVoice */,
+				A4C6740C210EDDF80059E1DF /* DDYKeyboardEmoji */,
+				A4C6740D210EDDF80059E1DF /* DDYKeyboardGif */,
+				A4C6740E210EDDF80059E1DF /* DDYKeyboardMore */,
+				A4C6740F210EDDF80059E1DF /* DDYKeyboardPhoto */,
+				A4C67410210EDDF80059E1DF /* DDYKeyboardRedBag */,
+				A4C67411210EDDF80059E1DF /* DDYKeyboardShake */,
+			);
+			path = DDYKeyBoard;
+			sourceTree = "<group>";
+		};
+		A4C6740C210EDDF80059E1DF /* DDYKeyboardEmoji */ = {
+			isa = PBXGroup;
+			children = (
+				A4C676FF2110748F0059E1DF /* DDYEmojiView.h */,
+				A4C677002110748F0059E1DF /* DDYEmojiView.m */,
+			);
+			path = DDYKeyboardEmoji;
+			sourceTree = "<group>";
+		};
+		A4C6740D210EDDF80059E1DF /* DDYKeyboardGif */ = {
+			isa = PBXGroup;
+			children = (
+				A4C67702211074A20059E1DF /* DDYGifView.h */,
+				A4C67703211074A20059E1DF /* DDYGifView.m */,
+			);
+			path = DDYKeyboardGif;
+			sourceTree = "<group>";
+		};
+		A4C6740E210EDDF80059E1DF /* DDYKeyboardMore */ = {
+			isa = PBXGroup;
+			children = (
+				A4C67705211074B30059E1DF /* DDYMoreView.h */,
+				A4C67706211074B30059E1DF /* DDYMoreView.m */,
+			);
+			path = DDYKeyboardMore;
+			sourceTree = "<group>";
+		};
+		A4C6740F210EDDF80059E1DF /* DDYKeyboardPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6771B2111601B0059E1DF /* DDYPhoto.bundle */,
+				A4C67708211074C10059E1DF /* DDYPhotoView.h */,
+				A4C67709211074C10059E1DF /* DDYPhotoView.m */,
+				A4C677142111505F0059E1DF /* DDYPhotoCell.h */,
+				A4C677152111505F0059E1DF /* DDYPhotoCell.m */,
+				A4DE0877211935920073CEA1 /* DDYLongPressManager.h */,
+				A4DE0878211935920073CEA1 /* DDYLongPressManager.m */,
+			);
+			path = DDYKeyboardPhoto;
+			sourceTree = "<group>";
+		};
+		A4C67410210EDDF80059E1DF /* DDYKeyboardRedBag */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6770B211074DF0059E1DF /* DDYRedBagView.h */,
+				A4C6770C211074DF0059E1DF /* DDYRedBagView.m */,
+			);
+			path = DDYKeyboardRedBag;
+			sourceTree = "<group>";
+		};
+		A4C67411210EDDF80059E1DF /* DDYKeyboardShake */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6770E211075410059E1DF /* DDYShakeView.h */,
+				A4C6770F211075420059E1DF /* DDYShakeView.m */,
+			);
+			path = DDYKeyboardShake;
+			sourceTree = "<group>";
+		};
+		A4C67418210EDDF80059E1DF /* DDYKeyboardVoice */ = {
+			isa = PBXGroup;
+			children = (
+				A4C67655210FEB890059E1DF /* DDYVoice.bundle */,
+				A4C6767521103C680059E1DF /* DDYVoicePlay */,
+				A4C67654210F278A0059E1DF /* DDYSoundTouch */,
+				A4C67653210F27720059E1DF /* DDYVoiceRecord */,
+				A4C67652210F27650059E1DF /* DDYVoiceTalk */,
+				A4C67651210F274F0059E1DF /* DDYVoiceChange */,
+				A4C67660211008210059E1DF /* DDYVoiceCustomView */,
+				A4C67650210F27340059E1DF /* DDYVoiceView */,
+			);
+			path = DDYKeyboardVoice;
+			sourceTree = "<group>";
+		};
+		A4C6757B210EF23E0059E1DF /* DDYKeyboardTextView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DDYKeyboardTextView;
+			sourceTree = "<group>";
+		};
+		A4C67650210F27340059E1DF /* DDYVoiceView */ = {
+			isa = PBXGroup;
+			children = (
+				A4C67657210FF1920059E1DF /* DDYVoiceView.h */,
+				A4C67658210FF1920059E1DF /* DDYVoiceView.m */,
+			);
+			path = DDYVoiceView;
+			sourceTree = "<group>";
+		};
+		A4C67651210F274F0059E1DF /* DDYVoiceChange */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6766E2110361D0059E1DF /* DDYVoiceChangeView.h */,
+				A4C6766F2110361D0059E1DF /* DDYVoiceChangeView.m */,
+			);
+			path = DDYVoiceChange;
+			sourceTree = "<group>";
+		};
+		A4C67652210F27650059E1DF /* DDYVoiceTalk */ = {
+			isa = PBXGroup;
+			children = (
+				A4C676682110147F0059E1DF /* DDYVoiceTalkView.h */,
+				A4C676692110147F0059E1DF /* DDYVoiceTalkView.m */,
+			);
+			path = DDYVoiceTalk;
+			sourceTree = "<group>";
+		};
+		A4C67653210F27720059E1DF /* DDYVoiceRecord */ = {
+			isa = PBXGroup;
+			children = (
+				A4C676712110364E0059E1DF /* DDYVoiceRecordView.h */,
+				A4C676722110364E0059E1DF /* DDYVoiceRecordView.m */,
+			);
+			path = DDYVoiceRecord;
+			sourceTree = "<group>";
+		};
+		A4C67654210F278A0059E1DF /* DDYSoundTouch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DDYSoundTouch;
+			sourceTree = "<group>";
+		};
+		A4C67660211008210059E1DF /* DDYVoiceCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				A4C676612110082B0059E1DF /* DDYVoiceIndicator.h */,
+				A4C676622110082C0059E1DF /* DDYVoiceIndicator.m */,
+				A4C6766B2110181D0059E1DF /* DDYVoiceStateView.h */,
+				A4C6766C2110181D0059E1DF /* DDYVoiceStateView.m */,
+			);
+			path = DDYVoiceCustomView;
+			sourceTree = "<group>";
+		};
+		A4C6767521103C680059E1DF /* DDYVoicePlay */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6767621103CBC0059E1DF /* DDYVoicePlayView.h */,
+				A4C6767721103CBC0059E1DF /* DDYVoicePlayView.m */,
+			);
+			path = DDYVoicePlay;
+			sourceTree = "<group>";
+		};
+		A4C676B52110702E0059E1DF /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				A4C676B62110702E0059E1DF /* MASCompositeConstraint.h */,
+				A4C676B72110702E0059E1DF /* MASCompositeConstraint.m */,
+				A4C676B82110702E0059E1DF /* MASConstraint+Private.h */,
+				A4C676B92110702E0059E1DF /* MASConstraint.h */,
+				A4C676BA2110702E0059E1DF /* MASConstraint.m */,
+				A4C676BB2110702E0059E1DF /* MASConstraintMaker.h */,
+				A4C676BC2110702E0059E1DF /* MASConstraintMaker.m */,
+				A4C676BD2110702E0059E1DF /* MASLayoutConstraint.h */,
+				A4C676BE2110702E0059E1DF /* MASLayoutConstraint.m */,
+				A4C676BF2110702E0059E1DF /* Masonry.h */,
+				A4C676C02110702E0059E1DF /* MASUtilities.h */,
+				A4C676C12110702E0059E1DF /* MASViewAttribute.h */,
+				A4C676C22110702E0059E1DF /* MASViewAttribute.m */,
+				A4C676C32110702E0059E1DF /* MASViewConstraint.h */,
+				A4C676C42110702E0059E1DF /* MASViewConstraint.m */,
+				A4C676C52110702E0059E1DF /* NSArray+MASAdditions.h */,
+				A4C676C62110702E0059E1DF /* NSArray+MASAdditions.m */,
+				A4C676C72110702E0059E1DF /* NSArray+MASShorthandAdditions.h */,
+				A4C676C82110702E0059E1DF /* NSLayoutConstraint+MASDebugAdditions.h */,
+				A4C676C92110702E0059E1DF /* NSLayoutConstraint+MASDebugAdditions.m */,
+				A4C676CA2110702E0059E1DF /* View+MASAdditions.h */,
+				A4C676CB2110702E0059E1DF /* View+MASAdditions.m */,
+				A4C676CC2110702E0059E1DF /* View+MASShorthandAdditions.h */,
+				A4C676CD2110702E0059E1DF /* ViewController+MASAdditions.h */,
+				A4C676CE2110702E0059E1DF /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		A4C676D9211070400059E1DF /* DDYAuthorityManager */ = {
+			isa = PBXGroup;
+			children = (
+				A4C676DA211070400059E1DF /* DDYAuthorityManager.h */,
+				A4C676DB211070400059E1DF /* DDYAuthorityManager.m */,
+			);
+			path = DDYAuthorityManager;
+			sourceTree = "<group>";
+		};
+		A4C676EC211070760059E1DF /* DDYCameraManager */ = {
+			isa = PBXGroup;
+			children = (
+				A4C676ED211070760059E1DF /* DDYCamera.bundle */,
+				A4C676EE211070760059E1DF /* DDYCameraController.h */,
+				A4C676EF211070760059E1DF /* DDYCameraController.m */,
+				A4C676F0211070760059E1DF /* DDYCameraManager.h */,
+				A4C676F1211070760059E1DF /* DDYCameraManager.m */,
+				A4C676F2211070760059E1DF /* DDYCameraTool.h */,
+				A4C676F3211070760059E1DF /* DDYCameraTool.m */,
+				A4C676F4211070760059E1DF /* DDYCameraView.h */,
+				A4C676F5211070760059E1DF /* DDYCameraView.m */,
+			);
+			path = DDYCameraManager;
+			sourceTree = "<group>";
+		};
+		A4C676FB211070B70059E1DF /* DDYTempPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A4C676FC211070B80059E1DF /* DDYVideoPlayController.h */,
+				A4C676FD211070B80059E1DF /* DDYVideoPlayController.m */,
+			);
+			path = DDYTempPlayer;
+			sourceTree = "<group>";
+		};
+		A4C677202113E7400059E1DF /* DDYKeyboardView */ = {
+			isa = PBXGroup;
+			children = (
+				A4C677A121143CBE0059E1DF /* DDYKeyboard.bundle */,
+				A4C677A221143CBE0059E1DF /* DDYKeyboardConfig.h */,
+				A4C6772A211422B80059E1DF /* DDYKeyboardTextBar.h */,
+				A4C6772B211422B80059E1DF /* DDYKeyboardTextBar.m */,
+				A4C677212113E7750059E1DF /* DDYKeyboardToolBar.h */,
+				A4C677222113E7750059E1DF /* DDYKeyboardToolBar.m */,
+				A4C677242113E8410059E1DF /* DDYKeyboardFunctionView.h */,
+				A4C677252113E8410059E1DF /* DDYKeyboardFunctionView.m */,
+			);
+			path = DDYKeyboardView;
+			sourceTree = "<group>";
+		};
+		A4C6777C21143C0B0059E1DF /* DDYUtils */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6777D21143C0B0059E1DF /* DDYCategory */,
+				A4C6779521143C0C0059E1DF /* DDYTools */,
+			);
+			path = DDYUtils;
+			sourceTree = "<group>";
+		};
+		A4C6777D21143C0B0059E1DF /* DDYCategory */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6777E21143C0B0059E1DF /* DDYCategoryHeader.h */,
+				A4C6777F21143C0B0059E1DF /* Foundation */,
+				A4C6778821143C0B0059E1DF /* UIKit */,
+			);
+			path = DDYCategory;
+			sourceTree = "<group>";
+		};
+		A4C6777F21143C0B0059E1DF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6778021143C0B0059E1DF /* keccak.c */,
+				A4C6778121143C0B0059E1DF /* keccak.h */,
+				A4C6778221143C0B0059E1DF /* NSArray+DDYExtension.h */,
+				A4C6778321143C0B0059E1DF /* NSArray+DDYExtension.m */,
+				A4C6778421143C0B0059E1DF /* NSString+DDYExtension.h */,
+				A4C6778521143C0B0059E1DF /* NSString+DDYExtension.m */,
+				A4C6778621143C0B0059E1DF /* NSTimer+DDYExtension.h */,
+				A4C6778721143C0B0059E1DF /* NSTimer+DDYExtension.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		A4C6778821143C0B0059E1DF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6778921143C0B0059E1DF /* UIButton+DDYExtension.h */,
+				A4C6778A21143C0B0059E1DF /* UIButton+DDYExtension.m */,
+				A4C6778B21143C0B0059E1DF /* UIColor+DDYExtension.h */,
+				A4C6778C21143C0B0059E1DF /* UIColor+DDYExtension.m */,
+				A4C6778D21143C0B0059E1DF /* UIImage+DDYExtension.h */,
+				A4C6778E21143C0B0059E1DF /* UIImage+DDYExtension.m */,
+				A4C6778F21143C0B0059E1DF /* UITextView+DDYExtension.h */,
+				A4C6779021143C0B0059E1DF /* UITextView+DDYExtension.m */,
+				A4C6779121143C0B0059E1DF /* UIView+DDYExtension.h */,
+				A4C6779221143C0C0059E1DF /* UIView+DDYExtension.m */,
+				A4C6779321143C0C0059E1DF /* UIViewController+DDYExtension.h */,
+				A4C6779421143C0C0059E1DF /* UIViewController+DDYExtension.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A4C6779521143C0C0059E1DF /* DDYTools */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6779621143C0C0059E1DF /* DDYMacrol.h */,
+			);
+			path = DDYTools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4C673EA210EDD620059E1DF /* DDYKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C673FE210EDD6D0059E1DF /* Build configuration list for PBXNativeTarget "DDYKeyboard" */;
+			buildPhases = (
+				A4C673E7210EDD620059E1DF /* Sources */,
+				A4C673E8210EDD620059E1DF /* Frameworks */,
+				A4C673E9210EDD620059E1DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDYKeyboard;
+			productName = DDYKeyboard;
+			productReference = A4C673EB210EDD620059E1DF /* DDYKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4C673E3210EDD620059E1DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = com.smartmesh;
+				TargetAttributes = {
+					A4C673EA210EDD620059E1DF = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = A4C673E6210EDD620059E1DF /* Build configuration list for PBXProject "DDYKeyboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4C673E2210EDD620059E1DF;
+			productRefGroup = A4C673EC210EDD620059E1DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4C673EA210EDD620059E1DF /* DDYKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4C673E9210EDD620059E1DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C6741D210EDDF80059E1DF /* qrcode.png in Resources */,
+				A4C6741B210EDDF80059E1DF /* Info.plist in Resources */,
+				A4C67656210FEB890059E1DF /* DDYVoice.bundle in Resources */,
+				A4C6771C2111601C0059E1DF /* DDYPhoto.bundle in Resources */,
+				A4C676F6211070760059E1DF /* DDYCamera.bundle in Resources */,
+				A4C677A321143CBE0059E1DF /* DDYKeyboard.bundle in Resources */,
+				A4C6741A210EDDF80059E1DF /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4C673E7210EDD620059E1DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C6741E210EDDF80059E1DF /* ViewController.m in Sources */,
+				A4C67704211074A20059E1DF /* DDYGifView.m in Sources */,
+				A4C6772C211422B90059E1DF /* DDYKeyboardTextBar.m in Sources */,
+				A4C677162111505F0059E1DF /* DDYPhotoCell.m in Sources */,
+				A4C6779821143C0C0059E1DF /* NSArray+DDYExtension.m in Sources */,
+				A4C676CF2110702E0059E1DF /* MASCompositeConstraint.m in Sources */,
+				A4C677012110748F0059E1DF /* DDYEmojiView.m in Sources */,
+				A4C676D82110702E0059E1DF /* ViewController+MASAdditions.m in Sources */,
+				A4C676FE211070B80059E1DF /* DDYVideoPlayController.m in Sources */,
+				A4C676D72110702E0059E1DF /* View+MASAdditions.m in Sources */,
+				A4C6766D2110181D0059E1DF /* DDYVoiceStateView.m in Sources */,
+				A4C6779D21143C0C0059E1DF /* UIImage+DDYExtension.m in Sources */,
+				A4C6767821103CBC0059E1DF /* DDYVoicePlayView.m in Sources */,
+				A4C676D22110702E0059E1DF /* MASLayoutConstraint.m in Sources */,
+				A4C676D52110702E0059E1DF /* NSArray+MASAdditions.m in Sources */,
+				A4C676FA211070760059E1DF /* DDYCameraView.m in Sources */,
+				A4C6779B21143C0C0059E1DF /* UIButton+DDYExtension.m in Sources */,
+				A4C6779C21143C0C0059E1DF /* UIColor+DDYExtension.m in Sources */,
+				A4C6779F21143C0C0059E1DF /* UIView+DDYExtension.m in Sources */,
+				A4C676732110364E0059E1DF /* DDYVoiceRecordView.m in Sources */,
+				A4C6766A2110147F0059E1DF /* DDYVoiceTalkView.m in Sources */,
+				A4C676D02110702E0059E1DF /* MASConstraint.m in Sources */,
+				A4C6741C210EDDF80059E1DF /* main.m in Sources */,
+				A4C676D42110702E0059E1DF /* MASViewConstraint.m in Sources */,
+				A4C6771F2113E70F0059E1DF /* DDYKeyboard.m in Sources */,
+				A4C676F7211070760059E1DF /* DDYCameraController.m in Sources */,
+				A4C67707211074B30059E1DF /* DDYMoreView.m in Sources */,
+				A4C67659210FF1920059E1DF /* DDYVoiceView.m in Sources */,
+				A4C676D32110702E0059E1DF /* MASViewAttribute.m in Sources */,
+				A4C677232113E7760059E1DF /* DDYKeyboardToolBar.m in Sources */,
+				A4C6770D211074DF0059E1DF /* DDYRedBagView.m in Sources */,
+				A4DE0879211935920073CEA1 /* DDYLongPressManager.m in Sources */,
+				A4C6779A21143C0C0059E1DF /* NSTimer+DDYExtension.m in Sources */,
+				A4C6779E21143C0C0059E1DF /* UITextView+DDYExtension.m in Sources */,
+				A4C676F8211070760059E1DF /* DDYCameraManager.m in Sources */,
+				A4C676DC211070400059E1DF /* DDYAuthorityManager.m in Sources */,
+				A4C676D62110702E0059E1DF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A4C677A021143C0C0059E1DF /* UIViewController+DDYExtension.m in Sources */,
+				A4C6770A211074C10059E1DF /* DDYPhotoView.m in Sources */,
+				A4C67710211075420059E1DF /* DDYShakeView.m in Sources */,
+				A4C6779721143C0C0059E1DF /* keccak.c in Sources */,
+				A4C676F9211070760059E1DF /* DDYCameraTool.m in Sources */,
+				A4C676D12110702E0059E1DF /* MASConstraintMaker.m in Sources */,
+				A4C6779921143C0C0059E1DF /* NSString+DDYExtension.m in Sources */,
+				A4C676702110361D0059E1DF /* DDYVoiceChangeView.m in Sources */,
+				A4C67419210EDDF80059E1DF /* AppDelegate.m in Sources */,
+				A4C677262113E8410059E1DF /* DDYKeyboardFunctionView.m in Sources */,
+				A4C676632110082C0059E1DF /* DDYVoiceIndicator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4C67404210EDDF80059E1DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C67405210EDDF80059E1DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4C673FC210EDD6D0059E1DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A4C673FD210EDD6D0059E1DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4C673FF210EDD6D0059E1DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23JJ7VRKJT;
+				INFOPLIST_FILE = "$(SRCROOT)/DDYKeyboard/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartmesh.smart2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4C67400210EDD6D0059E1DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23JJ7VRKJT;
+				INFOPLIST_FILE = "$(SRCROOT)/DDYKeyboard/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartmesh.smart2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4C673E6210EDD620059E1DF /* Build configuration list for PBXProject "DDYKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C673FC210EDD6D0059E1DF /* Debug */,
+				A4C673FD210EDD6D0059E1DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4C673FE210EDD6D0059E1DF /* Build configuration list for PBXNativeTarget "DDYKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C673FF210EDD6D0059E1DF /* Debug */,
+				A4C67400210EDD6D0059E1DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4C673E3210EDD620059E1DF /* Project object */;
+}
