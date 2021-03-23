@@ -30,11 +30,6 @@
     self.dataArray = @[@"默认黑色",@"自定义颜色",@"自定义logo与颜色",@"已有二维码改色",@"已有二维码加logo",@"其他"];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 #pragma mark - TableView dataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
