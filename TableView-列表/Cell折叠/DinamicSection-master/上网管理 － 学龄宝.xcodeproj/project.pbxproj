@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0498FC9D1A81DCE90023B5A9 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0498FC9C1A81DCE90023B5A9 /* CustomCell.xib */; };
+		0498FCA01A8203870023B5A9 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498FC9F1A8203870023B5A9 /* CustomCell.m */; };
+		0498FCA31A8213970023B5A9 /* NetInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0498FCA21A8213970023B5A9 /* NetInfo.plist */; };
+		0498FCAA1A8217220023B5A9 /* BrowseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498FCA91A8217220023B5A9 /* BrowseInfo.m */; };
+		04B0718E1A8065BE002A0A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0718D1A8065BE002A0A59 /* main.m */; };
+		04B071911A8065BE002A0A59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B071901A8065BE002A0A59 /* AppDelegate.m */; };
+		04B071941A8065BE002A0A59 /* __________.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04B071921A8065BE002A0A59 /* __________.xcdatamodeld */; };
+		04B071971A8065BE002A0A59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B071961A8065BE002A0A59 /* ViewController.m */; };
+		04B0719A1A8065BE002A0A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B071981A8065BE002A0A59 /* Main.storyboard */; };
+		04B0719C1A8065BE002A0A59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B0719B1A8065BE002A0A59 /* Images.xcassets */; };
+		04B0719F1A8065BE002A0A59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0719D1A8065BE002A0A59 /* LaunchScreen.xib */; };
+		04B071AB1A8065BE002A0A59 /* __________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B071AA1A8065BE002A0A59 /* __________Tests.m */; };
+		04B071B51A806730002A0A59 /* 浏览内容.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B071B41A806730002A0A59 /* 浏览内容.png */; };
+		04B071B81A8067BD002A0A59 /* 黑名单.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B071B71A8067BD002A0A59 /* 黑名单.png */; };
+		04B071BA1A806813002A0A59 /* 阻止内容.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B071B91A806813002A0A59 /* 阻止内容.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04B071A51A8065BE002A0A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04B071801A8065BE002A0A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B071871A8065BE002A0A59;
+			remoteInfo = "上网管理 － 学龄宝";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0498FC9C1A81DCE90023B5A9 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomCell.xib; path = ../CustomCell.xib; sourceTree = "<group>"; };
+		0498FC9E1A8203870023B5A9 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		0498FC9F1A8203870023B5A9 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		0498FCA21A8213970023B5A9 /* NetInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetInfo.plist; sourceTree = "<group>"; };
+		0498FCA81A8217220023B5A9 /* BrowseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseInfo.h; sourceTree = "<group>"; };
+		0498FCA91A8217220023B5A9 /* BrowseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseInfo.m; sourceTree = "<group>"; };
+		0498FCAC1A8217C70023B5A9 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		04B071881A8065BE002A0A59 /* 上网管理 － 学龄宝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "上网管理 － 学龄宝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B0718C1A8065BE002A0A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B0718D1A8065BE002A0A59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04B0718F1A8065BE002A0A59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04B071901A8065BE002A0A59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04B071931A8065BE002A0A59 /* __________.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "__________.xcdatamodel"; sourceTree = "<group>"; };
+		04B071951A8065BE002A0A59 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04B071961A8065BE002A0A59 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04B071991A8065BE002A0A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04B0719B1A8065BE002A0A59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		04B0719E1A8065BE002A0A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		04B071A41A8065BE002A0A59 /* 上网管理 － 学龄宝Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "上网管理 － 学龄宝Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B071A91A8065BE002A0A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B071AA1A8065BE002A0A59 /* __________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__________Tests.m"; sourceTree = "<group>"; };
+		04B071B41A806730002A0A59 /* 浏览内容.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "浏览内容.png"; sourceTree = "<group>"; };
+		04B071B71A8067BD002A0A59 /* 黑名单.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黑名单.png"; sourceTree = "<group>"; };
+		04B071B91A806813002A0A59 /* 阻止内容.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "阻止内容.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04B071851A8065BE002A0A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B071A11A8065BE002A0A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0498FCA11A8203CF0023B5A9 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				0498FC9E1A8203870023B5A9 /* CustomCell.h */,
+				0498FC9F1A8203870023B5A9 /* CustomCell.m */,
+				0498FC9C1A81DCE90023B5A9 /* CustomCell.xib */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		0498FCAB1A8217330023B5A9 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				0498FCAC1A8217C70023B5A9 /* Global.h */,
+				0498FCA81A8217220023B5A9 /* BrowseInfo.h */,
+				0498FCA91A8217220023B5A9 /* BrowseInfo.m */,
+			);
+			name = NSObject;
+			sourceTree = "<group>";
+		};
+		0498FCAD1A8220420023B5A9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04B071951A8065BE002A0A59 /* ViewController.h */,
+				04B071961A8065BE002A0A59 /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		0498FCAE1A8220550023B5A9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04B0718F1A8065BE002A0A59 /* AppDelegate.h */,
+				04B071901A8065BE002A0A59 /* AppDelegate.m */,
+				04B0719B1A8065BE002A0A59 /* Images.xcassets */,
+				04B0719D1A8065BE002A0A59 /* LaunchScreen.xib */,
+				04B071921A8065BE002A0A59 /* __________.xcdatamodeld */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		049F7EA01A83096A007FDF6F /* html */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = html;
+			sourceTree = "<group>";
+		};
+		04B0717F1A8065BE002A0A59 = {
+			isa = PBXGroup;
+			children = (
+				04B0718A1A8065BE002A0A59 /* 上网管理 － 学龄宝 */,
+				04B071A71A8065BE002A0A59 /* 上网管理 － 学龄宝Tests */,
+				04B071891A8065BE002A0A59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04B071891A8065BE002A0A59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04B071881A8065BE002A0A59 /* 上网管理 － 学龄宝.app */,
+				04B071A41A8065BE002A0A59 /* 上网管理 － 学龄宝Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04B0718A1A8065BE002A0A59 /* 上网管理 － 学龄宝 */ = {
+			isa = PBXGroup;
+			children = (
+				049F7EA01A83096A007FDF6F /* html */,
+				0498FCAB1A8217330023B5A9 /* NSObject */,
+				0498FCA11A8203CF0023B5A9 /* CustomCell */,
+				0498FCAD1A8220420023B5A9 /* ViewController */,
+				04B071981A8065BE002A0A59 /* Main.storyboard */,
+				0498FCAE1A8220550023B5A9 /* Main */,
+				04B0718B1A8065BE002A0A59 /* Supporting Files */,
+			);
+			path = "上网管理 － 学龄宝";
+			sourceTree = "<group>";
+		};
+		04B0718B1A8065BE002A0A59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04B071B61A806734002A0A59 /* Images */,
+				0498FCA21A8213970023B5A9 /* NetInfo.plist */,
+				04B0718C1A8065BE002A0A59 /* Info.plist */,
+				04B0718D1A8065BE002A0A59 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04B071A71A8065BE002A0A59 /* 上网管理 － 学龄宝Tests */ = {
+			isa = PBXGroup;
+			children = (
+				04B071AA1A8065BE002A0A59 /* __________Tests.m */,
+				04B071A81A8065BE002A0A59 /* Supporting Files */,
+			);
+			path = "上网管理 － 学龄宝Tests";
+			sourceTree = "<group>";
+		};
+		04B071A81A8065BE002A0A59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04B071A91A8065BE002A0A59 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04B071B61A806734002A0A59 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				04B071B91A806813002A0A59 /* 阻止内容.png */,
+				04B071B71A8067BD002A0A59 /* 黑名单.png */,
+				04B071B41A806730002A0A59 /* 浏览内容.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04B071871A8065BE002A0A59 /* 上网管理 － 学龄宝 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B071AE1A8065BE002A0A59 /* Build configuration list for PBXNativeTarget "上网管理 － 学龄宝" */;
+			buildPhases = (
+				04B071841A8065BE002A0A59 /* Sources */,
+				04B071851A8065BE002A0A59 /* Frameworks */,
+				04B071861A8065BE002A0A59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "上网管理 － 学龄宝";
+			productName = "上网管理 － 学龄宝";
+			productReference = 04B071881A8065BE002A0A59 /* 上网管理 － 学龄宝.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04B071A31A8065BE002A0A59 /* 上网管理 － 学龄宝Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B071B11A8065BE002A0A59 /* Build configuration list for PBXNativeTarget "上网管理 － 学龄宝Tests" */;
+			buildPhases = (
+				04B071A01A8065BE002A0A59 /* Sources */,
+				04B071A11A8065BE002A0A59 /* Frameworks */,
+				04B071A21A8065BE002A0A59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04B071A61A8065BE002A0A59 /* PBXTargetDependency */,
+			);
+			name = "上网管理 － 学龄宝Tests";
+			productName = "上网管理 － 学龄宝Tests";
+			productReference = 04B071A41A8065BE002A0A59 /* 上网管理 － 学龄宝Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04B071801A8065BE002A0A59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = SaiHello;
+				TargetAttributes = {
+					04B071871A8065BE002A0A59 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					04B071A31A8065BE002A0A59 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 04B071871A8065BE002A0A59;
+					};
+				};
+			};
+			buildConfigurationList = 04B071831A8065BE002A0A59 /* Build configuration list for PBXProject "上网管理 － 学龄宝" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04B0717F1A8065BE002A0A59;
+			productRefGroup = 04B071891A8065BE002A0A59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04B071871A8065BE002A0A59 /* 上网管理 － 学龄宝 */,
+				04B071A31A8065BE002A0A59 /* 上网管理 － 学龄宝Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04B071861A8065BE002A0A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B0719A1A8065BE002A0A59 /* Main.storyboard in Resources */,
+				04B071BA1A806813002A0A59 /* 阻止内容.png in Resources */,
+				0498FCA31A8213970023B5A9 /* NetInfo.plist in Resources */,
+				0498FC9D1A81DCE90023B5A9 /* CustomCell.xib in Resources */,
+				04B0719F1A8065BE002A0A59 /* LaunchScreen.xib in Resources */,
+				04B071B81A8067BD002A0A59 /* 黑名单.png in Resources */,
+				04B071B51A806730002A0A59 /* 浏览内容.png in Resources */,
+				04B0719C1A8065BE002A0A59 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B071A21A8065BE002A0A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04B071841A8065BE002A0A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B071911A8065BE002A0A59 /* AppDelegate.m in Sources */,
+				0498FCAA1A8217220023B5A9 /* BrowseInfo.m in Sources */,
+				04B071941A8065BE002A0A59 /* __________.xcdatamodeld in Sources */,
+				04B071971A8065BE002A0A59 /* ViewController.m in Sources */,
+				0498FCA01A8203870023B5A9 /* CustomCell.m in Sources */,
+				04B0718E1A8065BE002A0A59 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B071A01A8065BE002A0A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B071AB1A8065BE002A0A59 /* __________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04B071A61A8065BE002A0A59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04B071871A8065BE002A0A59 /* 上网管理 － 学龄宝 */;
+			targetProxy = 04B071A51A8065BE002A0A59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04B071981A8065BE002A0A59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B071991A8065BE002A0A59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04B0719D1A8065BE002A0A59 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B0719E1A8065BE002A0A59 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04B071AC1A8065BE002A0A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04B071AD1A8065BE002A0A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04B071AF1A8065BE002A0A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "上网管理 － 学龄宝/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04B071B01A8065BE002A0A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "上网管理 － 学龄宝/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04B071B21A8065BE002A0A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "上网管理 － 学龄宝Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/上网管理 － 学龄宝.app/上网管理 － 学龄宝";
+			};
+			name = Debug;
+		};
+		04B071B31A8065BE002A0A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "上网管理 － 学龄宝Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/上网管理 － 学龄宝.app/上网管理 － 学龄宝";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04B071831A8065BE002A0A59 /* Build configuration list for PBXProject "上网管理 － 学龄宝" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B071AC1A8065BE002A0A59 /* Debug */,
+				04B071AD1A8065BE002A0A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B071AE1A8065BE002A0A59 /* Build configuration list for PBXNativeTarget "上网管理 － 学龄宝" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B071AF1A8065BE002A0A59 /* Debug */,
+				04B071B01A8065BE002A0A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B071B11A8065BE002A0A59 /* Build configuration list for PBXNativeTarget "上网管理 － 学龄宝Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B071B21A8065BE002A0A59 /* Debug */,
+				04B071B31A8065BE002A0A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04B071921A8065BE002A0A59 /* __________.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04B071931A8065BE002A0A59 /* __________.xcdatamodel */,
+			);
+			currentVersion = 04B071931A8065BE002A0A59 /* __________.xcdatamodel */;
+			path = "__________.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04B071801A8065BE002A0A59 /* Project object */;
+}
