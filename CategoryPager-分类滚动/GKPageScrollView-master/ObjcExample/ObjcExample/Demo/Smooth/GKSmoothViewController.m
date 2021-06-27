@@ -8,12 +8,13 @@
 
 #import "GKSmoothViewController.h"
 #import "GKPageSmoothView.h"
-#import <JXCategoryView/JXCategoryView.h>
 #import "GKSmoothListView.h"
 #import "GKDYHeaderView.h"
 #import "GKBaseListViewController.h"
+#import <MJRefresh/MJRefresh.h>
+#import "GKSmoothListViewController.h"
 
-@interface GKSmoothViewController ()<GKPageSmoothViewDataSource, GKPageSmoothViewDelegate>
+@interface GKSmoothViewController ()<GKPageSmoothViewDataSource, GKPageSmoothViewDelegate, GKSmoothListViewDelegate, GKSmoothListViewControllerDelegate>
 
 @property (nonatomic, strong) GKPageSmoothView  *smoothView;
 
@@ -67,9 +68,12 @@
 }
 
 - (id<GKPageSmoothListViewDelegate>)smoothView:(GKPageSmoothView *)smoothView initListAtIndex:(NSInteger)index {
-    GKSmoothListView *listView = [[GKSmoothListView alloc] initWithListType:index];
+    GKSmoothListView *listView = [[GKSmoothListView alloc] initWithListType:index deleagte:self];
     [listView requestData];
     return listView;
+//    GKSmoothListViewController *listVC = [GKSmoothListViewController new];
+//    listVC.delegate = self;
+//    return listVC;
 }
 
 #pragma mark - GKPageSmoothViewDelegate
@@ -87,8 +91,13 @@
         alpha = (offsetY - 200) / (kDYHeaderHeight - kNavBarHeight - 200);
     }
     self.gk_navBarAlpha = alpha;
-    
-    [self.headerView scrollViewDidScroll:offsetY];
+//    
+//    [self.headerView scrollViewDidScroll:offsetY];
+}
+
+#pragma mark - GKSmoothListViewDelegate
+- (CGFloat)smoothViewHeaderContainerHeight {
+    return self.smoothView.headerContainerHeight;
 }
 
 #pragma mark - 懒加载
@@ -129,6 +138,7 @@
         _categoryView.titleColor = [UIColor blackColor];
         _categoryView.titleSelectedColor = [UIColor blackColor];
         _categoryView.titleLabelZoomEnabled = YES;
+        _categoryView.contentScrollViewClickTransitionAnimationEnabled = NO;
         
         JXCategoryIndicatorLineView *lineView = [JXCategoryIndicatorLineView new];
         lineView.lineStyle = JXCategoryIndicatorLineStyle_Lengthen;

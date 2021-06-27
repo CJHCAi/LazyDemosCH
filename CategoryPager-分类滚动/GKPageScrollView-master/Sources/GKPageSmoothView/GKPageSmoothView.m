@@ -159,6 +159,14 @@ static NSString *const GKPageSmoothViewCellID = @"smoothViewCell";
     }];
 }
 
+- (void)scrollToOriginalPoint {
+    [self.currentListScrollView setContentOffset:CGPointMake(0, -self.headerContainerHeight) animated:YES];
+}
+
+- (void)scrollToCriticalPoint {
+    [self.currentListScrollView setContentOffset:CGPointMake(0, -(self.segmentedHeight+self.ceilPointHeight)) animated:YES];
+}
+
 - (void)showingOnTop {
     if (self.bottomContainerView.isHidden) return;
     [self dragBegan];
@@ -247,6 +255,8 @@ static NSString *const GKPageSmoothViewCellID = @"smoothViewCell";
         }
         self.listHeaderDict[@(indexPath.item)] = listHeader;
         [listScrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+        // bug fix #69 修复首次进入时可能出现的headerView无法下拉的问题
+        [listScrollView setContentOffset:listScrollView.contentOffset];
     }
     for (id<GKPageSmoothListViewDelegate> listItem in self.listDict.allValues) {
         listItem.listScrollView.scrollsToTop = (listItem == list);
@@ -323,8 +333,9 @@ static NSString *const GKPageSmoothViewCellID = @"smoothViewCell";
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    NSInteger index = scrollView.contentOffset.x / scrollView.bounds.size.width;
-    [self horizontalScrollDidEndAtIndex:index];
+    // 修复快速闪烁问题
+    self.currentIndex = scrollView.contentOffset.x / scrollView.bounds.size.width;
+    self.currentListScrollView = self.listDict[@(self.currentIndex)].listScrollView;
 }
 
 #pragma mark - KVO
@@ -601,7 +612,9 @@ static NSString *const GKPageSmoothViewCellID = @"smoothViewCell";
         CGRect frame = self.headerContainerView.frame;
         frame.origin.y = 0;
         self.headerContainerView.frame = frame;
-        [listHeader addSubview:self.headerContainerView];
+        if (self.headerContainerView.superview != listHeader) {
+            [listHeader addSubview:self.headerContainerView];
+        }
     }
 }
 

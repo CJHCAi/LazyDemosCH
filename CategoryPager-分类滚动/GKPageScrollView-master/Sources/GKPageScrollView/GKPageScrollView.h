@@ -170,28 +170,23 @@
 - (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
 - (instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;
 
-/**
- 刷新headerView，headerView高度改变时调用
- */
+/// 刷新headerView，headerView高度改变时调用
 - (void)refreshHeaderView;
 
-/**
- 刷新数据，刷新后pageView才能显示出来
- */
+/// 刷新segmentedView，segmentedView高度变化时调用
+- (void)refreshSegmentedView;
+
+/// 刷新数据，刷新后pageView才能显示出来
 - (void)reloadData;
 
 // 处理左右滑动与上下滑动的冲突
 - (void)horizonScrollViewWillBeginScroll;
 - (void)horizonScrollViewDidEndedScroll;
 
-/**
- 滑动到原点，可用于在吸顶状态下，点击返回按钮，回到原始状态
- */
+// 滑动到原点，可用于在吸顶状态下，点击返回按钮，回到原始状态
 - (void)scrollToOriginalPoint;
 
-/**
- 滑动到临界点，可用于当headerView较长情况下，直接跳到临界点状态
- */
+// 滑动到临界点，可用于当headerView较长情况下，直接跳到临界点状态
 - (void)scrollToCriticalPoint;
 
 // 用于自行处理滑动

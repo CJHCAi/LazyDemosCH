@@ -54,7 +54,6 @@ typedef NS_ENUM(NSUInteger, GKPageSmoothHoverType) {
 @protocol GKPageSmoothViewDelegate <NSObject>
 
 @optional
-
 /// 列表容器滑动代理
 /// @param smoothView smoothView
 /// @param scrollView containerScrollView
@@ -86,6 +85,7 @@ typedef NS_ENUM(NSUInteger, GKPageSmoothHoverType) {
 @property (nonatomic, strong, readonly) NSDictionary <NSNumber *, id<GKPageSmoothListViewDelegate>> *listDict;
 @property (nonatomic, strong, readonly) UICollectionView *listCollectionView;
 @property (nonatomic, assign) NSInteger defaultSelectedIndex;
+@property (nonatomic, weak, readonly) UIScrollView *currentListScrollView;
 
 /// 吸顶临界高度（默认为0）
 @property (nonatomic, assign) CGFloat ceilPointHeight;
@@ -99,7 +99,7 @@ typedef NS_ENUM(NSUInteger, GKPageSmoothHoverType) {
 /// 是否允许底部拖拽，默认NO，当bottomHover为YES时才生效
 @property (nonatomic, assign, getter=isAllowDragBottom) BOOL allowDragBottom;
 
-/// 是否允许底部拖拽时滑动scrollView，默认NO
+/// 是否允许底部拖拽到临界位置时可滑动scrollView，默认NO
 @property (nonatomic, assign, getter=isAllowDragScroll) BOOL allowDragScroll;
 
 /// smoothView悬停类型
@@ -107,6 +107,9 @@ typedef NS_ENUM(NSUInteger, GKPageSmoothHoverType) {
 
 /// 是否通过拖拽滑动到顶部
 @property (nonatomic, assign, readonly) BOOL isOnTop;
+
+/// header容器的高度
+@property (nonatomic, assign, readonly) CGFloat headerContainerHeight;
 
 - (instancetype)initWithDataSource:(id<GKPageSmoothViewDataSource>)dataSource NS_DESIGNATED_INITIALIZER;
 - (instancetype)init NS_UNAVAILABLE;
@@ -123,6 +126,16 @@ typedef NS_ENUM(NSUInteger, GKPageSmoothHoverType) {
  注意：如果需要动态改变headerView的高度，请在refreshHeaderView后在调用reloadData方法
  */
 - (void)reloadData;
+
+/**
+ 滑动到原点，可用于在吸顶状态下，点击返回按钮，回到原始状态
+ */
+- (void)scrollToOriginalPoint;
+
+/**
+ 滑动到临界点，可用于当headerView较长情况下，直接跳到临界点状态
+ */
+- (void)scrollToCriticalPoint;
 
 /// 显示在顶部
 - (void)showingOnTop;
